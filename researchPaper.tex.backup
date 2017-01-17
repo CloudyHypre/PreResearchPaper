@@ -1,0 +1,86 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Auslagerung der Ausführung von Methoden der HYPRE Bibliothek in ein Cloudsystem
+Recherche und Literaturverzeichnis}
+\author{Thomas Rückert}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\begin{abstract}
+
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Informationssammlung zu Themen für die Arbeit}
+\subsection{Recherche zum Thema Cloud}
+
+\begin{itemize}
+ \item was ist eine cloud?
+ \item welche arten gibt es
+ \item welche gibt es
+\end{itemize}
+
+\subsection{HYPRE - Überblick über die Bibliothek}
+
+\begin{itemize}
+ \item metainfos
+ \item sprache(n)
+ \item performance
+ \item welche probleme löst die bib
+ \item 
+\end{itemize}
+
+\newpage
+
+\section{Vergleich verschiedener Technologien und Werkzeuge für den Einsatz bei der Implementierung}
+
+\subsection{'private' vs 'public' Cloud}
+
+\begin{itemize}
+ \item gibt es open source cloud systeme? welche?
+ \item welche public clouds gibt es (zB aws)
+ \item was sind unterschiede (neben dem access, zB performance?)
+\end{itemize}
+
+\subsection{Technologie}
+
+\begin{itemize}
+ \item welche Werkzeuge für die kommunikation zwischen client und cloud
+ \item rpc, socket, service ...
+ \item abwägen zwischen performance, aufwand ...
+ \item welche framework könnten genutzt werden
+\end{itemize}
+
+
+\subsection{Cloudtyp}
+
+wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
+
+\begin{itemize}
+ \item Infrastructure as a Service (IaaS)
+ \item Platform as a Service (PaaS)
+ \item Software as a Service (SaaS)
+ \item hybrid
+ \item wie eignen sich diese typen für `unsere` Implementierung
+\end{itemize}
+
+\subsection{Sprache}
+
+\begin{itemize}
+ \item hardware-nah: C/C++ (bessere performance)
+ \item vs netzwerknah: (bessere möglichkeiten die kommunikation zu Implementieren)
+ \item kann eine hybridform eingsetzt werden? zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
+\end{itemize}
+
+
+\end{document}

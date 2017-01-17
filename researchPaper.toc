@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Informationssammlung zu Themen f\IeC {\"u}r die Arbeit}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Recherche zum Thema Cloud}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}HYPRE - \IeC {\"U}berblick \IeC {\"u}ber die Bibliothek}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Technologie}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cloudtyp}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sprache}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hren Arbeiten}{6}{section.3}
