@@ -23,15 +23,49 @@ Recherche und Literaturverzeichnis}
 \newpage
 
 \section{Informationssammlung zu Themen für die Arbeit}
+
 \subsection{Recherche zum Thema Cloud}
 
+\subsubsection{Einführung zu Cloudcomputing}
+
+Entwicklung von monolitischen Systemen zu verteilten Anwendungen (SOA, Client/Server).
+Ermöglicht Auslagerung kostenpflichtiger Berechnungen auf Server, `schwacher` Client kein Problem mehr.
+Serverlast kann bei Anwendungen stark schwanken.
+Zum Beispiel periodische Schwankungen Tag vs Nacht.
+Klassischer Server muss die hohe Last stemmen, hat dann in anderen Perioden starken leerlauf.
+Einmalige, sehr hohe Last bei besonderen Situationen (zum Beispiel durch einmalige, nicht wiederkehrende Sportevents wie Olympia/WM).
+Klassischer Server könnte in diesem Zeitraum komplett ausfallen.
+Cloud soll dynamische Resource sein, die sich je nach Bedarf skalieren kann.
+
+\subsubsection{Arten von Cloud}
+
 \begin{itemize}
- \item was ist eine cloud?
- \item welche arten gibt es
- \item welche gibt es
+ \item Infrastructure as a Service (IaaS)
+ \item Platform as a Service (PaaS)
+ \item Software as a Service (SaaS)
 \end{itemize}
 
-\url{https://aws.amazon.com/types-of-cloud-computing/}
+\subsubsection{Cloudsysteme}
+
+\paragraph{Verfügbare Cloudsysteme}
+
+Vergleich in Tabelle
+
+\paragraph{Open Source Cloudsystem für private Clouds}
+
+\begin{itemize}
+ \item openstack \url{https://www.openstack.org/}
+ \item apache cloudstack \url{https://cloudstack.apache.org/}
+ \item a guide to open source cloud \url{http://www.tomsitpro.com/articles/open-source-cloud-computing-software,2-754.html}
+ \item 5 open source cloud platforms \url{http://solutionsreview.com/cloud-platforms/open-source-cloud-platforms-enterprise/}
+\end{itemize}
+
+\subsubsection{weiterführende Resourcen}
+
+\begin{itemize}
+ \item amazon aws \url{https://aws.amazon.com/types-of-cloud-computing/}
+ \item BOOK: cloud computing patterns \url{https://katalog.bibliothek.tu-chemnitz.de/Record/0012763915}
+\end{itemize}
 
 \subsection{HYPRE - Überblick über die Bibliothek}
 
@@ -51,7 +85,7 @@ Recherche und Literaturverzeichnis}
 
 \begin{itemize}
  \item gibt es open source cloud systeme? welche?
- \item welche public clouds gibt es (zB aws)
+ \item welche public clouds gibt es (zB aws, windows azure, adobe creative)
  \item was sind unterschiede (neben dem access, zB performance?)
 \end{itemize}
 
@@ -73,8 +107,7 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  \item Infrastructure as a Service (IaaS)
  \item Platform as a Service (PaaS)
  \item Software as a Service (SaaS)
- \item hybrid
- \item wie eignen sich diese typen für `unsere` Implementierung
+ \item aber entscheidend: wie eignen sich diese typen für `unsere` Implementierung
 \end{itemize}
 
 \subsection{Sprache}
@@ -82,12 +115,13 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
 \begin{itemize}
  \item hardware-nah: C/C++ (bessere performance)
  \item vs netzwerknah: (bessere möglichkeiten die kommunikation zu Implementieren)
- \item kann eine hybridform eingsetzt werden? zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
+ \item kann eine hybridform eingsetzt werden? 
+ zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
 \end{itemize}
 
 \newpage
 
-\section{Zukünftige, weiterführen Arbeiten}
+\section{Zukünftige, weiterführende Arbeiten}
 
 eventuell werden Teile von hier in die aktuelle Arbeit verschoben
 
