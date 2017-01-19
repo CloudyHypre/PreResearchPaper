@@ -1,13 +1,15 @@
-\BOOKMARK [1][-]{section.1}{Informationssammlung zu Themen f\374r die Arbeit}{}% 1
+\BOOKMARK [1][-]{section.1}{Informationssammlung und Einf\374hrung in die relevanten Themen}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Recherche zum Thema Cloud}{section.1}% 2
 \BOOKMARK [3][-]{subsubsection.1.1.1}{Einf\374hrung zu Cloudcomputing}{subsection.1.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.2}{Arten von Cloud}{subsection.1.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.1.3}{Cloudsysteme}{subsection.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.4}{weiterf\374hrende Resourcen}{subsection.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.2}{HYPRE - \334berblick \374ber die Bibliothek}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{Vergleich verschiedener Technologien und Werkzeuge f\374r den Einsatz bei der Implementierung}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{'private' vs 'public' Cloud}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{Technologie}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.3}{Cloudtyp}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.4}{Sprache}{section.2}% 12
-\BOOKMARK [1][-]{section.3}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 13
+\BOOKMARK [3][-]{subsubsection.1.1.2}{NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{IDEAL cloud-native applications [CloudcomputingPatterns chap. 1.2]}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{Arten von Cloud}{subsection.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.5}{Cloudsysteme}{subsection.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.6}{weiterf\374hrende Resourcen}{subsection.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.2}{HYPRE - \334berblick \374ber die Bibliothek}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{Vergleich verschiedener Technologien und Werkzeuge f\374r den Einsatz bei der Implementierung}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{'private' vs 'public' Cloud}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Technologie}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.3}{Cloudtyp}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.4}{Sprache}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 15

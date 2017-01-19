@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 %opening
 \title{Auslagerung der Ausführung von Methoden der HYPRE Bibliothek in ein Cloudsystem
@@ -22,7 +23,7 @@ Recherche und Literaturverzeichnis}
 
 \newpage
 
-\section{Informationssammlung zu Themen für die Arbeit}
+\section{Informationssammlung und Einführung in die relevanten Themen}
 
 \subsection{Recherche zum Thema Cloud}
 
@@ -37,13 +38,131 @@ Einmalige, sehr hohe Last bei besonderen Situationen (zum Beispiel durch einmali
 Klassischer Server könnte in diesem Zeitraum komplett ausfallen.
 Cloud soll dynamische Resource sein, die sich je nach Bedarf skalieren kann.
 
+\begin{figure}[htbp]
+\centering
+\caption{Übersicht Grundlagen Cloud Computing}
+\label{fig:cloudComputingOverview}
+\includegraphics[width=\textwidth]{graphics/cloudComputingOverview.pdf}
+\end{figure}
+
+Im Folgenden werden die eben kurz angeschnittenen Eigenschaften von Cloudsystemen näher betrachtet.
+Ein Übersicht dazu ist in Abbildung \ref{fig:cloudComputingOverview} gegeben.
+
+\paragraph{Verteilung der Last von Anwendungen}
+
+Im Buch Cloud Computing Patterns von Christoph Fehling wird die Verteilung von Last in die folgenden Kategorien eingeteilt:
+
+\begin{itemize}
+ \item static workload
+ \item periodic workload
+ \item once-in-a-lifetime workload
+ \item unpredictable workload
+ \item continuously changing workload
+\end{itemize}
+
+\textbf{Static workload} beschreibt eine nicht oder nur minimal schwankende Last.
+\textbf{Periodic workload} hat dagegen wiederkehrende Schwankungen. Diese können zum Beispiel von der Tageszeit abhängig sein.
+Ein \textbf{Once-in-a-lifetime workload} ist eine einmalige Lastspitze.
+\textbf{Unpredictable workload} liegt vor, wenn sich die Last ständig, jedoch unregelmäßig und zufällig verändert, sodass diese nicht vorhersehbar ist.
+\textbf{Continuously changing workload} verändert sich in linear steigend oder fallend.
+
+\subsubsection{NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}
+
+\begin{itemize}
+ \item On-demand self-service
+ \item Broad network access
+ \item Measured service (pay-per-use)
+ \item Resource pooling
+ \item Rapid elasticity
+\end{itemize}
+
+\paragraph{On-demand self-service}
+`Provisioning` und `decomissioning` als Aktivitäten zum Hinzufügen oder Entfernen von weiteren Ressourcen.
+Das kann durch Benutzer über grafische oder Kommandozeilenschnittstellen geschehen oder automatisiert über eine API.
+\paragraph{Broad network access}
+Ein starkes Netzwerk [genauer definieren] ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen. 
+So kann Zugriffszeit auf Daten weniger abhängig von ihrem pysikalischen Speicherort werden.
+\paragraph{Measured service (pay-per-use)}
+Durch die Nutzung von Cloudsystemen kann man stark von der Flexibilität der Ressourcen profitieren.
+Diese Flexibilität muss sich auch im Bezahlmodell widerspiegeln.
+\paragraph{Resource pooling}
+Ein Cloudsystem benötigt einen (großen [genauer definieren]) Pool an Ressourcen.
+Nur so kann Flexibilität für die Nutzer gewährleistet werden.
+Um eine Austauschbarkeit der Ressourcen zu ermöglichen muss eine homogene Nutzung der Ressourcen existieren. [warum? flexible Nutzung, Kosten]
+\paragraph{Rapid elasticity}
+Elastizität von Cloudsystemen ermöglicht eine Effiziente Zuweisung von Ressourcen auf die Nutzer.
+Der Ressourcepool muss dynamisch unter den Nutzern aufgeteilt werden können.
+
+\subsubsection{IDEAL cloud-native applications [CloudcomputingPatterns chap. 1.2]}
+
+\begin{itemize}
+ \item Isolated state
+ \item Distribution
+ \item Elasticity
+ \item Automated management
+ \item Loose coupling
+\end{itemize}
+
+\paragraph{Isolated state}
+Cloudanwendungen und ihre Komponenten sollten zustandslos sein.
+Jede Ressource die zustandslos ist kann deutlich einfacher entfernt oder hinzugefügt werden als eine Ressource mit einem Zustand.
+So können aufeinander folgende Interaktionen eines Nutzers beliebig auf verschiedene Ressourcen verteilt werden.
+Eine Ressource die beispielsweise die erste Interaktion getätigt hat wird für weitere Interaktionen nicht mehr benötigt.
+\paragraph{Distribution}
+Cloudsysteme können auf viele verschiedene Standorte verteilt sein.
+In jedem Fall bestehen sie aus vielen verschiedenen Ressourcen.
+Anwendungen sollten daher aus mehreren Komponenten bestehen, die auf verschiedene Ressourcen verteilt werden können.
+\paragraph{Elasticity}
+Horizontale Skalierung statt vertikaler Skalierung:
+Anwendung soll vom Hinzufügen weiterer Ressourcen profitieren können (horizontal).
+Es soll nicht nur die `Verbesserung` einer Ressource eine bessere performance ermöglichen (vertikal).
+Die Stärke von Cloudsystemen ist die dynamische Zuweisung von Ressourcen.
+Cloudanwendungen müssen daher horizontal skalieren, also eine Parallelisierbarkeit vorweisen.
+\paragraph{Automated management}
+Durch die Elastizität können Ressourcen von Cloudanwendungen während der Laufzeit ständig hinzugefügt und entfernt werden.
+Diese Aktionen sollten aufgrund von Monitoring der Systemlast ausgelöst werden.
+Damit die Verwaltung der Ressourcen jederzeit schnell und entsprechend der aktuellen Lage stattfindet sollte sie automatisiert sein.
+\paragraph{Loose coupling}
+Da sich die verfügbaren Ressourcen der Anwendung während der Laufzeit ändern können sollten Komponenten möglichst unabhängig voneinander sein.
+Das reduziert die Fehleranfälligkeit für die Fälle in denen Komponenten kurzzeitig nicht verfügbar sind. [wie?]
+Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webservices, SOA, asynchrone Kommunikation relevant für Cloudanwendungen. [Technologien etwas weiter ausführen]
+
 \subsubsection{Arten von Cloud}
+
+\paragraph{Cloud Service Models}
 
 \begin{itemize}
  \item Infrastructure as a Service (IaaS)
  \item Platform as a Service (PaaS)
  \item Software as a Service (SaaS)
 \end{itemize}
+
+\textbf{Infrastructure as a Service} gibt einem Zugang zu Netzwerk, Computern (unter umständen virtuell) und Speicher.
+Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Server Lösungen. [wie zum beispiel, kurz erläutern]
+\textbf{Platform as a Service} dageben entfernt die Notwendigkeit die unterliegende Infrastruktur zu verwalten.
+Das betrifft Hardware sowie die Betriebssystemebene.
+Man erhält eine Umgebung in der man seine Anwendung ausführen kann, ohne sich um Themen wie Updates, Kapazitäten von Speicher und anderen Ressourcen oder ähnliche typische Adminaufgaben kümmern zu müssen.
+\textbf{Software as a Service} stellt ein Cloudmodell dar, welches sich eher an Endnutzer richtet.
+Man erhält Zugriff auf eine Komplette Anwendung, wie zum Beispiel einen Mailserver.
+Bei dieser Variante muss sich der Nutzer um keinerlei Aufgaben der Verwaltung der Software kümmern.
+
+\paragraph{Organisatorische Arten von Clouds (Deployment Types)}
+
+\begin{itemize}
+ \item public
+ \item private
+ \item community
+ \item hybrid
+\end{itemize}
+
+Eine \textbf{public cloud} ist für jeden verfügbar.
+Eine \textbf{private cloud} dagegen nur für ein einziges Unternehmen oder einen Nutzer (od. Interessengemeinschaft).
+Eine \textbf{community cloud} liegt zwischen den beiden ersten Varianten. 
+Sie ist in der Regel für eine Menge von Unternehmen verfügbar.
+Das kann notwendig werden, falls die Unternehmen an einem gemeinsamen Projekt arbeiten.
+Bei \textbf{hybrid clouds} ist von mehreren Clouds die Rede.
+Diese können aus verschiedenen Arten bestehen und sind untereinander verbunden.
+So können sich unterschiedliche Anwendungen unter eigenständigen Umgebungen Informationen austauschen und interagieren.
 
 \subsubsection{Cloudsysteme}
 
