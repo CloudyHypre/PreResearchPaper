@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Informationssammlung und Einf\IeC {\"u}hrung in die relevanten Themen}{4}{section.1}
 \contentsline {subsection}{\numberline {1.1}Recherche zum Thema Cloud}{4}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Einf\IeC {\"u}hrung zu Cloudcomputing}{4}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Einf\IeC {\"u}hrung und Grundbegriffe zu Cloudcomputing}{4}{subsubsection.1.1.1}
 \contentsline {paragraph}{Verteilung der Last von Anwendungen}{4}{section*.2}
 \contentsline {subsubsection}{\numberline {1.1.2}NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}{5}{subsubsection.1.1.2}
 \contentsline {paragraph}{On-demand self-service}{5}{section*.3}
@@ -20,8 +20,12 @@
 \contentsline {subsubsection}{\numberline {1.1.5}Cloudsysteme}{7}{subsubsection.1.1.5}
 \contentsline {paragraph}{Verf\IeC {\"u}gbare Cloudsysteme}{7}{section*.15}
 \contentsline {paragraph}{Open Source Cloudsystem f\IeC {\"u}r private Clouds}{7}{section*.16}
-\contentsline {subsubsection}{\numberline {1.1.6}weiterf\IeC {\"u}hrende Resourcen}{8}{subsubsection.1.1.6}
+\contentsline {subsubsection}{\numberline {1.1.6}Ressourcen}{8}{subsubsection.1.1.6}
 \contentsline {subsection}{\numberline {1.2}HYPRE - \IeC {\"U}berblick \IeC {\"u}ber die Bibliothek}{8}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Funktionsumfang allgemein}{8}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Funktionsweise}{8}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Ressourcen}{8}{subsubsection.1.2.3}
+\contentsline {subsection}{\numberline {1.3}weiteres [umbenennen]}{8}{subsection.1.3}
 \contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{9}{section.2}
 \contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{9}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Technologie}{9}{subsection.2.2}
