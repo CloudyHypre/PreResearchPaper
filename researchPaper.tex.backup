@@ -27,7 +27,7 @@ Recherche und Literaturverzeichnis}
 
 \subsection{Recherche zum Thema Cloud}
 
-\subsubsection{Einführung zu Cloudcomputing}
+\subsubsection{Einführung und Grundbegriffe zu Cloudcomputing}
 
 Entwicklung von monolitischen Systemen zu verteilten Anwendungen (SOA, Client/Server).
 Ermöglicht Auslagerung kostenpflichtiger Berechnungen auf Server, `schwacher` Client kein Problem mehr.
@@ -138,8 +138,13 @@ Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webserv
 \end{itemize}
 
 \textbf{Infrastructure as a Service} gibt einem Zugang zu Netzwerk, Computern (unter umständen virtuell) und Speicher.
-Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Server Lösungen.
-
+Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Server Lösungen. [wie zum beispiel, kurz erläutern]
+\textbf{Platform as a Service} dageben entfernt die Notwendigkeit die unterliegende Infrastruktur zu verwalten.
+Das betrifft Hardware sowie die Betriebssystemebene.
+Man erhält eine Umgebung in der man seine Anwendung ausführen kann, ohne sich um Themen wie Updates, Kapazitäten von Speicher und anderen Ressourcen oder ähnliche typische Adminaufgaben kümmern zu müssen.
+\textbf{Software as a Service} stellt ein Cloudmodell dar, welches sich eher an Endnutzer richtet.
+Man erhält Zugriff auf eine Komplette Anwendung, wie zum Beispiel einen Mailserver.
+Bei dieser Variante muss sich der Nutzer um keinerlei Aufgaben der Verwaltung der Software kümmern.
 
 \paragraph{Organisatorische Arten von Clouds (Deployment Types)}
 
@@ -149,6 +154,15 @@ Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Se
  \item community
  \item hybrid
 \end{itemize}
+
+Eine \textbf{public cloud} ist für jeden verfügbar.
+Eine \textbf{private cloud} dagegen nur für ein einziges Unternehmen oder einen Nutzer (od. Interessengemeinschaft).
+Eine \textbf{community cloud} liegt zwischen den beiden ersten Varianten. 
+Sie ist in der Regel für eine Menge von Unternehmen verfügbar.
+Das kann notwendig werden, falls die Unternehmen an einem gemeinsamen Projekt arbeiten.
+Bei \textbf{hybrid clouds} ist von mehreren Clouds die Rede.
+Diese können aus verschiedenen Arten bestehen und sind untereinander verbunden.
+So können sich unterschiedliche Anwendungen unter eigenständigen Umgebungen Informationen austauschen und interagieren.
 
 \subsubsection{Cloudsysteme}
 
@@ -165,7 +179,7 @@ Vergleich in Tabelle
  \item 5 open source cloud platforms \url{http://solutionsreview.com/cloud-platforms/open-source-cloud-platforms-enterprise/}
 \end{itemize}
 
-\subsubsection{weiterführende Resourcen}
+\subsubsection{Ressourcen}
 
 \begin{itemize}
  \item amazon aws \url{https://aws.amazon.com/types-of-cloud-computing/}
@@ -174,13 +188,48 @@ Vergleich in Tabelle
 
 \subsection{HYPRE - Überblick über die Bibliothek}
 
+HYPRE ist eine freie Software von Lawrence Livermore National Laboratory.
+Es ist unter der GNU Lesser General Public License (Free Software Foundation) Version 2.1 lizensiert.
+Der Funktionsumfang von HYPRE umfasst 'Scalable Linear Solvers and Multigrid Methods'.
+Es steht als Bibliothek für die Sprachen C (nativ) und FORTRAN bereit.
+Die aktuellste Version 2.11.1 ist seit dem 09.06.2016 verfügbar.
+Bis zur vorletzten Version 2.10.1 wurde HYRPE auch mit dem Babel Interface bereit.
+Dieses bot die Möglichkeit HYPRE von anderen Sprachen als C und FORTRAN zu nutzen.
+So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
+
+-performance?
+
+\subsubsection{Funktionsumfang allgemein}
+
+welche probleme löst die bib
+
+\subsubsection{Funktionsweise}
+
+wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)
+
+\subsubsection{Ressourcen}
+
 \begin{itemize}
- \item metainfos
- \item sprache(n)
- \item performance
- \item welche probleme löst die bib
- \item 
+ \item Übersicht Publikationen: \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/publications}
+ \item Pursuing scalability for hypre's conceptual interfaces \url{http://dl.acm.org/citation.cfm?doid=1089014.1089018}
 \end{itemize}
+
+\subsection{weiteres [umbenennen]}
+
+\begin{itemize}
+ \item c/c++ json lib benchmarks \url{https://github.com/miloyip/nativejson-benchmark}
+ \item nur innerhalb der cloud (ungeeignet): Light-weight remote communication for high-performance cloud networks \url{http://ieeexplore.ieee.org/document/6483669/}
+ \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
+\end{itemize}
+
+\paragraph{rpc}
+
+\begin{itemize}
+ \item understanding rest and rpc for http \url{https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/}
+ \item Implementing remote procedure calls \url{http://dl.acm.org/citation.cfm?id=357392}
+ \item c++ json-rpc lib \url{https://github.com/cinemast/libjson-rpc-cpp/}
+\end{itemize}
+
 
 \newpage
 

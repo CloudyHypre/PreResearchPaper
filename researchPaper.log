@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.8)  20 JAN 2017 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.8)  24 JAN 2017 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -638,38 +638,63 @@ Overfull \hbox (32.9708pt too wide) in paragraph at lines 186--187
  []
 
 
-Overfull \hbox (239.80193pt too wide) in paragraph at lines 208--209
+Overfull \hbox (239.80193pt too wide) in paragraph at lines 221--222
 [][]\OT1/cmr/m/n/10 Ubersicht Pub-lika-tio-nen: []$\OT1/cmtt/m/n/10 http : / / 
 computation . llnl . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]mul
 tigrid-[]methods /
  []
 
 
-Overfull \hbox (46.27588pt too wide) in paragraph at lines 215--216
+Overfull \hbox (46.27588pt too wide) in paragraph at lines 228--229
 []\OT1/cmr/m/n/10 c/c++ json lib bench-marks []$\OT1/cmtt/m/n/10 https : / / gi
 thub . com / miloyip / nativejson-[]benchmark$[] 
  []
 
+
+Overfull \hbox (28.05423pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/n/10 for high-performance cloud net-works []$\OT1/cmtt/m/n/10 http :
+ / / ieeexplore . ieee . org / document /
+ []
+
 [8]
-Overfull \hbox (50.1479pt too wide) in paragraph at lines 222--222
-[]\OT1/cmr/bx/n/14.4 Vergleich ver-schiedener Tech-nolo-gien und Werkzeuge
+Overfull \hbox (10.19304pt too wide) in paragraph at lines 230--231
+\OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http : / / 
+ieeexplore . ieee . org / abstract /
+ []
+
+
+Overfull \hbox (3.7211pt too wide) in paragraph at lines 237--238
+[]\OT1/cmr/m/n/10 Implementing re-mote pro-ce-dure calls []$\OT1/cmtt/m/n/10 ht
+tp : / / dl . acm . org / citation . cfm ?
  []
 
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+Overfull \hbox (50.1479pt too wide) in paragraph at lines 244--244
+[]\OT1/cmr/bx/n/14.4 Vergleich ver-schiedener Tech-nolo-gien und Werkzeuge
+ []
+
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./researchPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
-Package rerunfilecheck Info: File `researchPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 1E2B83308D3AB034D18ED513C937D722;1653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
+
+
+Package rerunfilecheck Warning: File `researchPaper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `researchPaper.out':
+(rerunfilecheck)             Before: 1E2B83308D3AB034D18ED513C937D722;1653
+(rerunfilecheck)             After:  FCD9ABA5EDC99C958EB866FFD7FCA96E;1723.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
- 5465 strings out of 493013
- 78660 string characters out of 6139317
- 165084 words of memory out of 5000000
+ 5468 strings out of 493013
+ 78697 string characters out of 6139317
+ 166084 words of memory out of 5000000
  8928 multiletter control sequences out of 15000+600000
  8670 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -681,10 +706,10 @@ ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
 r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on researchPaper.pdf (10 pages, 135683 bytes).
+Output written on researchPaper.pdf (11 pages, 137477 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

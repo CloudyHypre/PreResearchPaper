@@ -24,11 +24,13 @@
 \contentsline {subsection}{\numberline {1.2}HYPRE - \IeC {\"U}berblick \IeC {\"u}ber die Bibliothek}{8}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Funktionsumfang allgemein}{8}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Funktionsweise}{8}{subsubsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.3}Ressourcen}{8}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3}Verwendung}{8}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Ressourcen}{8}{subsubsection.1.2.4}
 \contentsline {subsection}{\numberline {1.3}weiteres [umbenennen]}{8}{subsection.1.3}
-\contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{9}{section.2}
-\contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{9}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Technologie}{9}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Cloudtyp}{9}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Sprache}{9}{subsection.2.4}
-\contentsline {section}{\numberline {3}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{10}{section.3}
+\contentsline {paragraph}{rpc}{9}{section*.17}
+\contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Technologie}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cloudtyp}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sprache}{10}{subsection.2.4}
+\contentsline {section}{\numberline {3}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{11}{section.3}
