@@ -197,19 +197,66 @@ Bis zur vorletzten Version 2.10.1 wurde HYRPE auch mit dem Babel Interface berei
 Dieses bot die Möglichkeit HYPRE von anderen Sprachen als C und FORTRAN zu nutzen.
 So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
 
+Nutzt MPI für Parallelisierbarung.
+
 -performance?
 
 \subsubsection{Funktionsumfang allgemein}
 
-welche probleme löst die bib
+Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
+-was heist das? was genau kann man lösen?
+
+\paragraph{Conceptual Interfaces}
+\paragraph{Solver Strategies}
+\paragraph{Preconditioner(s)}
 
 \subsubsection{Funktionsweise}
 
 wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)
 
+-wie funktioniert das? (lässt sich das beantworten)
+
+\subsubsection{Verwendung}
+
+\paragraph{Installation}
+
+Download von \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/software} oder \url{https://github.com/LLNL/hypre}.
+Innerhalb des Verzeichnis muss `configure` gefolgt von einem `make` ausgeführt werden.
+Alternativ kann auch das build tool CMake eingesetzt werden.
+
+\paragraph{Vorbereitungen vor einer Implementierung}
+
+\paragraph{erste Implementierung}
+
+liste siehe manual:
+
+\begin{enumerate}
+ \item Build any necessary auxiliary structures for your chosen conceptual interface. /
+ Datenstrukturen für Gitter (Grid) und Schablone (Stencil) aufbauen, abhängig vom gewählten Interface.
+ \item Build the matrix, solution vector, and right-hand-side vector through your chosen conceptual interface. /
+ Matrix, Lösungsvektor, right-hand-side Vektor aufbauen. 
+ Diese können über verschiedene HYPRE-calls mit den jeweiligen Informationen gefüllt werden.
+ \item Build solvers and preconditioners and set solver parameters (optional). /
+ Solver und preconditioner aufbauen und deren Parameter setzen.
+ Je nach conceptual interface sind verschiedene solver verfügbar.
+ \item Call the solve function for the solver. /
+ Solver aufrufen damit das Problem berechnet wird.
+ \item Retrieve desired information from solver. /
+ Lösung vom solver abrufen.
+\end{enumerate}
+
+\paragraph{Ausführung, Test}
+
+In der HYPRE-Bibliothek steht eine Reihe von Beipielen für die Benutzung zur Verfügung.
+An dieser Stelle wird das Beispiel 5 näher betrachtet.
+Dieses löst ein zweidimensionales Laplaceproblem (nxn) ohne Randbedingungen.
+Die Anzahl der Unbekannten beträgt daher N=n².
+
+
 \subsubsection{Ressourcen}
 
 \begin{itemize}
+ \item offiziell: \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods}
  \item Übersicht Publikationen: \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/publications}
  \item Pursuing scalability for hypre's conceptual interfaces \url{http://dl.acm.org/citation.cfm?doid=1089014.1089018}
 \end{itemize}
@@ -224,10 +271,40 @@ wie löst sie die probleme (groben einblick in die funktionsweise der methoden, 
 
 \paragraph{rpc}
 
+RPC steht für Remote Procedure Call.
+Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
+Im Gegensatz zu Protokollen wie HTTP oder REST sieht RPC wie ein Methodenaufruf aus.
+Protokolle sind zum Beispiel XML-RPC und Json-RPC.
+
 \begin{itemize}
  \item understanding rest and rpc for http \url{https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/}
  \item Implementing remote procedure calls \url{http://dl.acm.org/citation.cfm?id=357392}
  \item c++ json-rpc lib \url{https://github.com/cinemast/libjson-rpc-cpp/}
+\end{itemize}
+
+\subparagraph{json vs xml}
+
+\subparagraph{xml-rpc}
+
+XML-RPC Bibliothek für C und C++ \url{http://xmlrpc-c.sourceforge.net/}.
+
+\subparagraph{json-rpc}
+
+information: \url{http://www.simple-is-better.org/json-rpc/}
+wiki: \url{https://en.wikipedia.org/wiki/JSON-RPC}
+
+json rpc server: \url{https://github.com/hmng/jsonrpc-c}
+
+rpc client?: \url{https://groups.google.com/forum/#!topic/json-rpc/9O1dbQehU04}
+
+tcp client: \url{http://jsonrpc-cpp.sourceforge.net/index.php?n=Main.HomePage}
+
+json-rpc-libs:
+\begin{itemize}
+ \item \url{https://github.com/yeryomin/libjrpc}
+ \item \url{https://github.com/jhlee4bb/jsonrpC}
+ \item \url{https://github.com/hmng/jsonrpc-c}
+ \item \url{https://github.com/pijyoi/jsonrpc}
 \end{itemize}
 
 
