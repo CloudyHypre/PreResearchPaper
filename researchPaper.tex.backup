@@ -259,9 +259,32 @@ Die Anzahl der Unbekannten beträgt daher N=n².
  \item offiziell: \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods}
  \item Übersicht Publikationen: \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/publications}
  \item Pursuing scalability for hypre's conceptual interfaces \url{http://dl.acm.org/citation.cfm?doid=1089014.1089018}
+ \item (mehr) beispiele \url{https://redmine.scorec.rpi.edu/anonsvn/fastmath/docs/ATPESC_2013/Exercises/hypre/examples/README_files/c.html}
 \end{itemize}
 
-\subsection{weiteres [umbenennen]}
+\subsection{Werkzeuge für die verteilte Ausführung}
+
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+
+Müssen wir structs übertragen?????????
+
+Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
+
+Beeinflusst die Entscheidung der Wahl des Frameworks.
+
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
 
 \begin{itemize}
  \item c/c++ json lib benchmarks \url{https://github.com/miloyip/nativejson-benchmark}
@@ -269,11 +292,12 @@ Die Anzahl der Unbekannten beträgt daher N=n².
  \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
 \end{itemize}
 
-\paragraph{rpc}
+\subsubsection{RPC}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
 Im Gegensatz zu Protokollen wie HTTP oder REST sieht RPC wie ein Methodenaufruf aus.
+Das Ziel ist die Ausführung einer bestimmten Prozedur, nicht das verwalten einer bestimmten Ressource.
 Protokolle sind zum Beispiel XML-RPC und Json-RPC.
 
 \begin{itemize}
@@ -282,13 +306,19 @@ Protokolle sind zum Beispiel XML-RPC und Json-RPC.
  \item c++ json-rpc lib \url{https://github.com/cinemast/libjson-rpc-cpp/}
 \end{itemize}
 
-\subparagraph{json vs xml}
-
-\subparagraph{xml-rpc}
+\paragraph{xml-rpc}
 
 XML-RPC Bibliothek für C und C++ \url{http://xmlrpc-c.sourceforge.net/}.
 
-\subparagraph{json-rpc}
+Installation: 
+In the simplest case, it's just a conventional\\
+./configure \\
+make \\
+make install \\
+And then, if Linux:\\
+ldconfig
+
+\paragraph{json-rpc}
 
 information: \url{http://www.simple-is-better.org/json-rpc/}
 wiki: \url{https://en.wikipedia.org/wiki/JSON-RPC}
@@ -307,6 +337,40 @@ json-rpc-libs:
  \item \url{https://github.com/pijyoi/jsonrpc}
 \end{itemize}
 
+\subparagraph{libjrpc}
+
+\url{https://github.com/yeryomin/libjrpc}
+
+install:
+
+git clone git@github.com:yeryomin/libjrpc.git
+git clone git@github.com:yeryomin/libipsc.git
+git clone git@github.com:yeryomin/libfmt.git
+git clone git@github.com:zserge/jsmn.git
+
+cd libipsc
+make
+sudo ln -s /path/to/libipsc.h /usr/include
+cd ..
+
+cd jsmn
+make
+sudo ln -s /path/to/jsmn.h /usr/include
+cd ..
+
+cd libfmt
+make
+sudo ln -s /path/to/libfmt.h /usr/include
+cd ..
+
+cd libjrpc
+make
+sudo ln -s /path/to/libjrpc.h /usr/include
+
+\paragraph{json vs xml}
+
+\subsubsection{Service}
+\subsubsection{Socket}
 
 \newpage
 

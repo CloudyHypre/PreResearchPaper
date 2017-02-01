@@ -37,12 +37,14 @@
 \contentsline {subsubsection}{\numberline {1.3.1}RPC}{10}{subsubsection.1.3.1}
 \contentsline {paragraph}{xml-rpc}{10}{section*.24}
 \contentsline {paragraph}{json-rpc}{10}{section*.25}
-\contentsline {paragraph}{json vs xml}{10}{section*.26}
-\contentsline {subsubsection}{\numberline {1.3.2}Service}{10}{subsubsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.3}Socket}{10}{subsubsection.1.3.3}
-\contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{11}{section.2}
-\contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{11}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Technologie}{11}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Cloudtyp}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Sprache}{11}{subsection.2.4}
-\contentsline {section}{\numberline {3}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{12}{section.3}
+\contentsline {subparagraph}{yeryomin/libjrpc}{11}{section*.26}
+\contentsline {subparagraph}{jhlee4bb/jsonrpC}{11}{section*.27}
+\contentsline {paragraph}{json vs xml}{11}{section*.28}
+\contentsline {subsubsection}{\numberline {1.3.2}Service}{11}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Socket}{11}{subsubsection.1.3.3}
+\contentsline {section}{\numberline {2}Vergleich verschiedener Technologien und Werkzeuge f\IeC {\"u}r den Einsatz bei der Implementierung}{12}{section.2}
+\contentsline {subsection}{\numberline {2.1}'private' vs 'public' Cloud}{12}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Technologie}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cloudtyp}{12}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sprache}{12}{subsection.2.4}
+\contentsline {section}{\numberline {3}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{13}{section.3}

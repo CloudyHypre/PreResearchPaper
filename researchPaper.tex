@@ -264,13 +264,35 @@ Die Anzahl der Unbekannten beträgt daher N=n².
 
 \subsection{Werkzeuge für die verteilte Ausführung}
 
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+
+Müssen wir structs übertragen?????????
+
+Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
+
+Beeinflusst die Entscheidung der Wahl des Frameworks.
+
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+
 \begin{itemize}
  \item c/c++ json lib benchmarks \url{https://github.com/miloyip/nativejson-benchmark}
  \item nur innerhalb der cloud (ungeeignet): Light-weight remote communication for high-performance cloud networks \url{http://ieeexplore.ieee.org/document/6483669/}
  \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
 \end{itemize}
 
-\subsubsection{RPC}
+\subsubsection{Using RPC inside of C}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
@@ -315,7 +337,58 @@ json-rpc-libs:
  \item \url{https://github.com/pijyoi/jsonrpc}
 \end{itemize}
 
+\subparagraph{yeryomin/libjrpc}
+
+\url{https://github.com/yeryomin/libjrpc}
+
+install:
+
+git clone git@github.com:yeryomin/libjrpc.git
+git clone git@github.com:yeryomin/libipsc.git
+git clone git@github.com:yeryomin/libfmt.git
+git clone git@github.com:zserge/jsmn.git
+git clone git@github.com:yeryomin/liba.git
+
+cd libipsc
+make
+sudo ln -s /path/to/libipsc.h /usr/include
+cd ..
+
+cd jsmn
+make
+sudo ln -s /path/to/jsmn.h /usr/include
+cd ..
+
+cd libfmt
+make
+sudo ln -s /path/to/libfmt.h /usr/include
+cd ..
+
+cd libjrpc
+make
+sudo ln -s /path/to/libjrpc.h /usr/include
+
+so many unresolved dependencies.............. wow
+
+\subparagraph{jhlee4bb/jsonrpC}
+
+(needs libwebsockets installed: `yaourt libwebsockets` etc.)
+
+git clone git@github.com:jhlee4bb/jsonrpC.git
+cd jsonrpC
+mkdir build
+cd build
+cmake ..
+make
+build output left in jsonrpc-x.y
+
+völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
+
 \paragraph{json vs xml}
+
+\subsubsection{Calling Python from C}
+
+\url{https://docs.python.org/2.5/ext/callingPython.html}
 
 \subsubsection{Service}
 \subsubsection{Socket}
