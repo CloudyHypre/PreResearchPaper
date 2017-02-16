@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.8)  1 FEB 2017 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.8)  16 FEB 2017 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,55 +478,379 @@ File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count98
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count99
+\lst@currlwidth=\dimen109
+\lst@column=\count100
+\lst@pos=\count101
+\lst@lostspace=\dimen110
+\lst@width=\dimen111
+\lst@newlines=\count102
+\lst@lineno=\count103
+\lst@maxwidth=\dimen112
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count104
+\lst@skipnumbers=\count105
+\lst@framebox=\box27
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count106
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen113
+\pgfutil@tempdimb=\dimen114
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+
+(/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen115
+\pgf@y=\dimen116
+\pgf@xa=\dimen117
+\pgf@ya=\dimen118
+\pgf@xb=\dimen119
+\pgf@yb=\dimen120
+\pgf@xc=\dimen121
+\pgf@yc=\dimen122
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count107
+\c@pgf@countb=\count108
+\c@pgf@countc=\count109
+\c@pgf@countd=\count110
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count111
+\pgfsyssoftpath@bigbuffer@items=\count112
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen123
+\pgfmath@count=\count113
+\pgfmath@box=\box29
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count114
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen124
+\pgf@picmaxx=\dimen125
+\pgf@picminy=\dimen126
+\pgf@picmaxy=\dimen127
+\pgf@pathminx=\dimen128
+\pgf@pathmaxx=\dimen129
+\pgf@pathminy=\dimen130
+\pgf@pathmaxy=\dimen131
+\pgf@xx=\dimen132
+\pgf@xy=\dimen133
+\pgf@yx=\dimen134
+\pgf@yy=\dimen135
+\pgf@zx=\dimen136
+\pgf@zy=\dimen137
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen138
+\pgf@path@lasty=\dimen139
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen140
+\pgf@shorten@start@additional=\dimen141
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count115
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen142
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen143
+\pgf@pt@y=\dimen144
+\pgf@pt@temp=\dimen145
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen146
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen147
+\pgf@sys@shading@range@num=\count116
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box33
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box34
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen148
+\pgf@nodesepend=\dimen149
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen150
+\pgffor@skip=\dimen151
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count117
+\pgfplotmarksize=\dimen152
+)
+\tikz@lastx=\dimen153
+\tikz@lasty=\dimen154
+\tikz@lastxsaved=\dimen155
+\tikz@lastysaved=\dimen156
+\tikzleveldistance=\dimen157
+\tikzsiblingdistance=\dimen158
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count118
+\tikznumberofchildren=\count119
+\tikznumberofcurrentchild=\count120
+\tikz@fig@count=\count121
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count122
+\pgfmatrixcurrentcolumn=\count123
+\pgf@matrix@numberofcolumns=\count124
+)
+\tikz@expandcount=\count125
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+positioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count126
+\calc@Bcount=\count127
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count128
+\calc@Cskip=\skip46
+)
+\c@@todonotes@numberoftodonotes=\count129
+)
 (./researchPaper.aux)
 \openout1 = `researchPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-\AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring OFF on input line 14.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count98
+\c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
 
 (./researchPaper.out) (./researchPaper.out)
-\@outlinefile=\write3
-\openout3 = `researchPaper.out'.
+\@outlinefile=\write4
+\openout4 = `researchPaper.out'.
 
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
-\scratchdimen=\dimen109
-\scratchbox=\box27
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count102
-\MPscratchDim=\dimen110
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count131
+\scratchdimen=\dimen161
+\scratchbox=\box40
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen162
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks34
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -544,107 +868,192 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
- [1
+\c@lstlisting=\count137
+
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./researchPaper.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-
 Overfull \hbox (6.7496pt too wide) in paragraph at lines 11--11
  [][] [][]\OT1/cmr/m/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing
 -Pat-terns 
  []
 
 )
-\tf@toc=\write4
-\openout4 = `researchPaper.toc'.
+\tf@toc=\write5
+\openout5 = `researchPaper.toc'.
 
- [3] <graphics/cloudComputingOverview.pdf, id=144, 552.0625pt x 491.8375pt>
+ (./researchPaper.tdo)
+\tf@tdo=\write6
+\openout6 = `researchPaper.tdo'.
+
+ [3]
+<graphics/cloudComputingOverview.pdf, id=176, 552.0625pt x 491.8375pt>
 File: graphics/cloudComputingOverview.pdf Graphic file (type pdf)
 
 <use graphics/cloudComputingOverview.pdf>
 Package pdftex.def Info: graphics/cloudComputingOverview.pdf used on input line
- 45.
+ 64.
 (pdftex.def)             Requested size: 345.0pt x 307.37515pt.
 
-Overfull \hbox (17.2228pt too wide) in paragraph at lines 48--50
+Overfull \hbox (17.2228pt too wide) in paragraph at lines 67--69
 []\OT1/cmr/m/n/10 Im Fol-gen-den wer-den die eben kurz angeschnit-te-nen Eigen-
 schaften von Cloudsys-
  []
 
 [4 <./graphics/cloudComputingOverview.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
-Overfull \hbox (12.30008pt too wide) in paragraph at lines 89--92
+Overfull \hbox (12.30008pt too wide) in paragraph at lines 108--111
  []\OT1/cmr/bx/n/10 Resource pool-ing[] \OT1/cmr/m/n/10 Ein Cloudsys-tem ben^^?
 otigt einen (gro^^Yen [genauer definieren])
  []
 
 [5]
-Overfull \hbox (13.45087pt too wide) in paragraph at lines 96--96
+Overfull \hbox (13.45087pt too wide) in paragraph at lines 115--115
 []\OT1/cmr/bx/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing-Pat-te
 rns chap.
  []
 
 
-Overfull \hbox (5.72266pt too wide) in paragraph at lines 116--121
+Overfull \hbox (5.72266pt too wide) in paragraph at lines 135--140
 \OT1/cmr/m/n/10 nicht nur die `Verbesserung` einer Ressource eine bessere per-f
 or-mance erm^^?oglichen
  []
 
 
-Overfull \hbox (21.43027pt too wide) in paragraph at lines 122--125
+Overfull \hbox (21.43027pt too wide) in paragraph at lines 141--144
  []\OT1/cmr/bx/n/10 Automated man-age-ment[] \OT1/cmr/m/n/10 Durch die Elas-tiz
 it^^?at k^^?onnen Ressourcen von Cloudan-
  []
 
 
-Overfull \hbox (7.25075pt too wide) in paragraph at lines 126--129
+Overfull \hbox (7.25075pt too wide) in paragraph at lines 145--148
 \OT1/cmr/m/n/10 der Laufzeit ^^?andern k^^?onnen soll-ten Kom-po-nen-ten m^^?og
 lichst un-abh^^?angig voneinan-
  []
 
 [6]
-Overfull \hbox (177.27475pt too wide) in paragraph at lines 178--179
+Overfull \hbox (7.78207pt too wide) in paragraph at lines 195--197
+ []\OT1/cmr/bx/n/10 Amazon EC2[] []$\OT1/cmtt/m/n/10 https : / / www . youtube 
+. com / watch ? v = jLVPqoV4YjU & index =
+ []
+
+[7]
+Overfull \hbox (177.27475pt too wide) in paragraph at lines 213--214
 []\OT1/cmr/m/n/10 a guide to open source cloud []$\OT1/cmtt/m/n/10 http : / / w
 ww . tomsitpro . com / articles / open-[]source-[]cloud-[]computing-[]software 
 ,[]
  []
 
 
-Overfull \hbox (35.30385pt too wide) in paragraph at lines 179--180
+Overfull \hbox (35.30385pt too wide) in paragraph at lines 214--215
 []\OT1/cmr/m/n/10 5 open source cloud plat-forms []$\OT1/cmtt/m/n/10 http : / /
  solutionsreview . com / cloud-[]platforms /
  []
 
-[7]
-Overfull \hbox (32.9708pt too wide) in paragraph at lines 186--187
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
+
+ []
+
+
+Overfull \hbox (30.6098pt too wide) in paragraph at lines 235--239
+\OT1/cmr/m/n/10 devstack for get-ting started with open-stack []$\OT1/cmtt/m/n/
+10 http : / / docs . openstack . org / developer /
+ []
+
+
+Overfull \hbox (1.91495pt too wide) in paragraph at lines 235--239
+\OT1/cmr/m/n/10 install open-stack on ubuntu []$\OT1/cmtt/m/n/10 https : / / ww
+w . youtube . com / watch ? v = jpk4i66-[]IU4$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+
+Overfull \hbox (31.27573pt too wide) in paragraph at lines 247--248
+[]\OT1/cmr/m/n/10 Beispielkonfiguration: []$\OT1/cmtt/m/n/10 https : / / www . 
+openstack . org / software / sample-[]configs #
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 267.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Overfull \hbox (4.38959pt too wide) in paragraph at lines 275--277
+\OT1/cmr/m/n/10 pro-vi-sion re-sources' [http://docs.cloudstack.apache.org/en/l
+atest/concepts.html] 
+ []
+
+
+Overfull \hbox (32.9708pt too wide) in paragraph at lines 285--286
 []\OT1/cmr/m/n/10 BOOK: cloud com-put-ing pat-terns []$\OT1/cmtt/m/n/10 https :
  / / katalog . bibliothek . tu-[]chemnitz .
  []
 
 
-Overfull \hbox (234.35144pt too wide) in paragraph at lines 223--226
+Overfull \hbox (142.6639pt too wide) in paragraph at lines 286--287
+[]\OT1/cmr/m/n/10 raspberry pi pri-vate cloud []$\OT1/cmtt/m/n/10 https : / / s
+c5 . io / posts / a-[]private-[]raspberry-[]pi-[]cloud-[]with-[]arm-[]docker/$[
+] 
+ []
+
+
+Overfull \hbox (5.19235pt too wide) in paragraph at lines 287--288
+[]\OT1/cmr/m/n/10 more rasp-berry []$\OT1/cmtt/m/n/10 https : / / www . raspber
+rypi . org / forums / viewtopic . php ?
+ []
+
+[9]
+Overfull \hbox (234.35144pt too wide) in paragraph at lines 324--327
  []\OT1/cmr/bx/n/10 Installation[] \OT1/cmr/m/n/10 Down-load von []$\OT1/cmtt/m
 /n/10 http : / / computation . llnl . gov / projects / hypre-[]scalable-[]linea
 r-[]solvers-[]multigrid-[]methods /
  []
 
-[8]
 
 ! Package inputenc Error: Unicode char ² (U+B2)
 (inputenc)                not set up for use with LaTeX.
@@ -653,182 +1062,210 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 ...zahl der Unbekannten beträgt daher N=n²
+l.354 ...zahl der Unbekannten beträgt daher N=n²
                                                   .
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Overfull \hbox (160.71848pt too wide) in paragraph at lines 259--260
+[10]
+Overfull \hbox (160.71848pt too wide) in paragraph at lines 360--361
 []\OT1/cmr/m/n/10 offiziell: []$\OT1/cmtt/m/n/10 http : / / computation . llnl 
 . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]multigrid-[]methods$[]
  
  []
 
 
-Overfull \hbox (239.80193pt too wide) in paragraph at lines 260--261
+Overfull \hbox (239.80193pt too wide) in paragraph at lines 361--362
 [][]\OT1/cmr/m/n/10 Ubersicht Pub-lika-tio-nen: []$\OT1/cmtt/m/n/10 http : / / 
 computation . llnl . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]mul
 tigrid-[]methods /
  []
 
 
-Overfull \hbox (3.47017pt too wide) in paragraph at lines 262--263
+Overfull \hbox (3.47017pt too wide) in paragraph at lines 363--364
 []\OT1/cmr/m/n/10 (mehr) beispiele []$\OT1/cmtt/m/n/10 https : / / redmine . sc
 orec . rpi . edu / anonsvn / fastmath /
  []
 
 
-Overfull \hbox (0.24724pt too wide) in paragraph at lines 262--263
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 363--364
 \OT1/cmtt/m/n/10 docs / ATPESC _ 2013 / Exercises / hypre / examples / README _
  files / c . html$[] 
  []
 
 
-Overfull \hbox (79.8161pt too wide) in paragraph at lines 267--274
-\OT1/cmr/m/n/10 .................................................. ............
-...................................... ........................................
-..........
- []
-
-
-Overfull \hbox (79.8161pt too wide) in paragraph at lines 267--274
-\OT1/cmr/m/n/10 .................................................. ............
-...................................... ........................................
-..........
- []
-
-
-Overfull \hbox (94.8161pt too wide) in paragraph at lines 281--288
-[]\OT1/cmr/m/n/10 .................................................. ..........
-........................................ ......................................
-............
- []
-
-
-Overfull \hbox (79.8161pt too wide) in paragraph at lines 281--288
-\OT1/cmr/m/n/10 .................................................. ............
-...................................... ........................................
-..........
- []
-
-
-Overfull \hbox (46.27588pt too wide) in paragraph at lines 290--291
+Overfull \hbox (46.27588pt too wide) in paragraph at lines 369--370
 []\OT1/cmr/m/n/10 c/c++ json lib bench-marks []$\OT1/cmtt/m/n/10 https : / / gi
 thub . com / miloyip / nativejson-[]benchmark$[] 
  []
 
 
-Overfull \hbox (28.05423pt too wide) in paragraph at lines 291--292
+Overfull \hbox (28.05423pt too wide) in paragraph at lines 370--371
 \OT1/cmr/m/n/10 for high-performance cloud net-works []$\OT1/cmtt/m/n/10 http :
  / / ieeexplore . ieee . org / document /
  []
 
-[9]
-Overfull \hbox (10.19304pt too wide) in paragraph at lines 292--293
+
+Overfull \hbox (10.19304pt too wide) in paragraph at lines 371--372
 \OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http : / / 
 ieeexplore . ieee . org / abstract /
  []
 
 
-Overfull \hbox (3.7211pt too wide) in paragraph at lines 305--306
+Overfull \hbox (3.7211pt too wide) in paragraph at lines 384--385
 []\OT1/cmr/m/n/10 Implementing re-mote pro-ce-dure calls []$\OT1/cmtt/m/n/10 ht
 tp : / / dl . acm . org / citation . cfm ?
  []
 
 
-Overfull \hbox (17.03831pt too wide) in paragraph at lines 311--312
+Overfull \hbox (17.03831pt too wide) in paragraph at lines 390--391
  []\OT1/cmr/bx/n/10 xml-rpc[] \OT1/cmr/m/n/10 XML-RPC Bib-lio-thek f^^?ur C und
  C++ []$\OT1/cmtt/m/n/10 http : / / xmlrpc-[]c . sourceforge .
  []
 
 
-Overfull \hbox (2.90924pt too wide) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+[11]
+Overfull \hbox (2.90924pt too wide) in paragraph at lines 404--406
  []\OT1/cmr/bx/n/10 json-rpc[] \OT1/cmr/m/n/10 in-for-ma-tion: []$\OT1/cmtt/m/n
 /10 http : / / www . simple-[]is-[]better . org / json-[]rpc/$[] \OT1/cmr/m/n/1
 0 wiki:
  []
 
 
-Overfull \hbox (36.91399pt too wide) in paragraph at lines 328--329
+Overfull \hbox (36.91399pt too wide) in paragraph at lines 409--410
 []\OT1/cmr/m/n/10 rpc client?: []$\OT1/cmtt/m/n/10 https : / / groups . google 
 . com / forum / # ! topic / json-[]rpc / 9O1dbQehU04$[] 
  []
 
 
-Overfull \hbox (31.8862pt too wide) in paragraph at lines 330--331
+Overfull \hbox (31.8862pt too wide) in paragraph at lines 411--412
 []\OT1/cmr/m/n/10 tcp client: []$\OT1/cmtt/m/n/10 http : / / jsonrpc-[]cpp . so
 urceforge . net / index . php ? n = Main . HomePage$[] 
  []
 
-
-Overfull \hbox (66.25093pt too wide) in paragraph at lines 346--351
-[]\OT1/cmr/m/n/10 git clone git@github.com:yeryomin/libjrpc.git git clone git@g
-ithub.com:yeryomin/libipsc.git
+[12]
+Overfull \hbox (13.9444pt too wide) in paragraph at lines 478--480
+ []\OT1/cmr/bx/n/10 ressourcen[] []$\OT1/cmtt/m/n/10 https : / / docs . python 
+. org / 2 . 5 / ext / callingPython . html$[] []$https :
  []
 
 
-Overfull \hbox (27.66753pt too wide) in paragraph at lines 346--351
-\OT1/cmr/m/n/10 git clone git@github.com:yeryomin/libfmt.git git clone git@gith
-ub.com:zserge/jsmn.git
- []
-
-[10]
-Overfull \hbox (172.38712pt too wide) in paragraph at lines 391--393
-[]$\OT1/cmtt/m/n/10 https : / / docs . python . org / 2 . 5 / ext / callingPyth
-on . html$[] \OT1/cmr/m/n/10 https://www.codeproject.com/articles/11805/embeddi
-ng-
+Overfull \hbox (9.74693pt too wide) in paragraph at lines 478--480
+\OT1/cmtt/m/n/10 / / www . codeproject . com / articles / 11805 / embedding-[]p
+ython-[]in-[]c-[]c-[]part-[]i$[] 
  []
 
 
-Overfull \hbox (116.05655pt too wide) in paragraph at lines 396--398
-[]\OT1/cmr/m/n/10 http://www.linuxjournal.com/article/8497 https://www.codeproj
-ect.com/articles/820116/embedding-
+Overfull \hbox (8.21928pt too wide) in paragraph at lines 483--485
+[][]$\OT1/cmtt/m/n/10 http : / / www . linuxjournal . com / article / 8497$[] [
+]$https : / / www . codeproject .
  []
 
-[11]
-Overfull \hbox (50.1479pt too wide) in paragraph at lines 404--404
+
+Overfull \hbox (4.99698pt too wide) in paragraph at lines 483--485
+\OT1/cmtt/m/n/10 com / articles / 820116 / embedding-[]python-[]program-[]in-[]
+a-[]c-[]cplusplus-[]code$[] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 489.
+
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 489.
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 504--505
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[13]
+Overfull \hbox (50.1479pt too wide) in paragraph at lines 521--521
 []\OT1/cmr/bx/n/14.4 Vergleich ver-schiedener Tech-nolo-gien und Werkzeuge
  []
 
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
+
+Overfull \hbox (37.0244pt too wide) in paragraph at lines 526--527
+[]\OT1/cmr/m/n/10 HPC in der Cloud []$\OT1/cmtt/m/n/10 http : / / grids . ucs .
+ indiana . edu / ptliupages / publications /
+ []
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 541.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 579.
+
+[14] [15]
+Overfull \hbox (116.24602pt too wide) in paragraph at lines 595--600
+[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
+ntu-[]on-[]virtualbox-[]for-[]devstack-[]2016-[]03-[]30/$[] 
+ []
+
+
+Overfull \hbox (46.99661pt too wide) in paragraph at lines 595--600
+[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
+ntu-[]using-[]vagrant-[]2016-[]04-[]01/$[] 
+ []
+
+
+Overfull \hbox (67.49643pt too wide) in paragraph at lines 595--600
+[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / downloading-[]and-
+[]installing-[]devstack-[]2016-[]04-[]02/$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--600
+
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 605--618
+[]$ 
+ []
+
+[16]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 640--667
+[]$[]$ 
+ []
+
+[17] [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 697.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 697.
  (./researchPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
-
-
-Package rerunfilecheck Warning: File `researchPaper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `researchPaper.out':
-(rerunfilecheck)             Before: 5B24CF9250B3471859C4E0472274E484;1942
-(rerunfilecheck)             After:  1E0003B954B9430A81E535459732434D;2041.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 462.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 697.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 697.
+Package rerunfilecheck Info: File `researchPaper.out' has not changed.
+(rerunfilecheck)             Checksum: B8E32AD759E0D8619817E6D7E7AC3F73;2356.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 697.
  ) 
 Here is how much of TeX's memory you used:
- 5495 strings out of 493013
- 79027 string characters out of 6139317
- 168087 words of memory out of 5000000
- 8933 multiletter control sequences out of 15000+600000
- 8670 words of font info for 31 fonts, out of 8000000 for 9000
+ 17986 strings out of 493013
+ 326221 string characters out of 6139317
+ 398740 words of memory out of 5000000
+ 21028 multiletter control sequences out of 15000+600000
+ 12278 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,28p,258b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,76p,423b,1219s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on researchPaper.pdf (13 pages, 146923 bytes).
+/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb>
+Output written on researchPaper.pdf (18 pages, 195482 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

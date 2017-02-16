@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 
 %opening
 \title{Auslagerung der Ausführung von Methoden der HYPRE Bibliothek in ein Cloudsystem
@@ -9,6 +12,21 @@ Recherche und Literaturverzeichnis}
 \author{Thomas Rückert}
 
 \begin{document}
+
+\newenvironment{boxed}[1]
+{\begin{center}Definition\\
+\begin{tabular}{|p{0.9\textwidth}|}
+\hline\\
+\textbf{#1}\\\\
+}
+{
+\\\\\hline
+\end{tabular} 
+\end{center}
+}
+
+\newcommand{\mycheckbox}[0]{\makebox[0pt][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$\checkmark$}}
+\newcommand{\myuncheckbox}[0]{\makebox[0em][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$ $}}
 
 \maketitle
 \newpage
@@ -20,6 +38,7 @@ Recherche und Literaturverzeichnis}
 \newpage
 
 \tableofcontents
+\listoftodos
 
 \newpage
 
@@ -166,24 +185,106 @@ So können sich unterschiedliche Anwendungen unter eigenständigen Umgebungen In
 
 \subsubsection{Cloudsysteme}
 
-\paragraph{Verfügbare Cloudsysteme}
-
 Vergleich in Tabelle
+
+
+\paragraph{Verfügbare Cloudsysteme für public Clouds}
+
+\subparagraph{Amazon EC2}
+
+\url{https://www.youtube.com/watch?v=jLVPqoV4YjU&index=3&list=WL}
+ssh Zugang siehe ab Minute 50
+
+Instances mit verschiedenen verfügbaren Images = AMI (Linux, Windows).
+ELB als elastischer Loadbalancer.
+EBS - elastischer Blockstorage.
+CloudWatch zum Überwachen von Ressourcen und Applikationen.
+Kann zum automatischen Skalieren genutzt werden.
+EC2 Actions - Recover, Stop, Terminate.
+AWS CodeDeplay erlaubt deploying ohne downtime.
+Amazon
+Amazon EC2 Container Service ist ein Containermanagementservice zur Nutzung von Docker Containern.
+
+Kostenloser Testzugang: \url{https://aws.amazon.com/free/}
 
 \paragraph{Open Source Cloudsystem für private Clouds}
 
 \begin{itemize}
- \item openstack \url{https://www.openstack.org/}
- \item apache cloudstack \url{https://cloudstack.apache.org/}
  \item a guide to open source cloud \url{http://www.tomsitpro.com/articles/open-source-cloud-computing-software,2-754.html}
  \item 5 open source cloud platforms \url{http://solutionsreview.com/cloud-platforms/open-source-cloud-platforms-enterprise/}
 \end{itemize}
+
+\subparagraph{Sandstorm}
+
+Link: \url{https://sandstorm.io/}\\
+
+Kann als private oder public cloud genutzt werden.
+Kann entweder im bestehenden Cloudsystem von Sandstorm genutzt werden oder selbst gehostet werden.
+Im Cloudsystem von Sandstorm stehen SaaS und PaaS bereit.
+Wenn man selbst hostet sind alle Service Modelle verfügbar, also zusätzlich auch IaaS.
+
+Die verfügbaren Platformen stellen ein Linuxsystem bereit.
+Daher kann jede beliebige Sprache genutzt werden welche auf Linux läuft.
+Ist aber in erster Linie für SaaS-Apps gedacht.\\
+
+Fazit:
+wohl ungeeignet
+
+\subparagraph{Openstack}
+
+Link: \url{https://www.openstack.org/}\\
+Openstack kostenlos testen: \url{http://trystack.org/}\\
+devstack for getting started with openstack \url{http://docs.openstack.org/developer/devstack/}\\
+install openstack on ubuntu \url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
+
+why openstack? \url{https://www.youtube.com/watch?v=Bk4NoUsikVA}\\
+
+Wird in erster Linie als IaaS verwendet.
+Man kann bestehende Hardware mit Cloudstack in ein Cloudsystem umwandeln.
+Es stehen verschiedene Services bereit, mit denen Kernanforderungen wie Speicher (Swift) oder Rechenleistung (Nova) befriedigt werden können.
+Es gibt darüber hinaus weitere optionale Services für beispielsweise Datenbanken (Trove), Messaging (Zaqar), Container (Magnum) und viele Weitere.\\
+
+Beispielkonfiguration: \url{https://www.openstack.org/software/sample-configs#high-throughput-computing}
+
+GLANCE - Image Service
+'Stores and retrieves virtual machine disk images. OpenStack Compute makes use of this during instance provisioning.'
+
+NOVA - Compute
+'Manages the lifecycle of compute instances in an OpenStack environment. Responsibilities include spawning, scheduling and decomissioning of machines on demand.'
+
+KEYSTONE - Identity
+'Provides an authentication and authorization service for other OpenStack services. Provides a catalog of endpoints for all OpenStack services.'
+
+CINDER - Block Storage
+'Provides persistent block storage to running instances. Its pluggable driver architecture facilitates the creation and management of block storage devices.'\\
+
+Fazit:
+modulare Services
+passend für Anforderungen
+
+\subparagraph{Apache Cloudstack}
+
+\begin{boxed}{Apache Cloudstack \url{https://cloudstack.apache.org/}}
+'Apache CloudStack is an open source Infrastructure-as-a-Service platform that manages and orchestrates pools of storage, network, and computer resources to build a public or private IaaS compute cloud.
+\end{boxed}
+
+\url{https://cloudstack.apache.org/}\\
+
+With CloudStack you can:
+
+Set up an on-demand elastic cloud computing service.
+Allow end-users to provision resources' [http://docs.cloudstack.apache.org/en/latest/concepts.html]
+
+private
+IaaS
 
 \subsubsection{Ressourcen}
 
 \begin{itemize}
  \item amazon aws \url{https://aws.amazon.com/types-of-cloud-computing/}
  \item BOOK: cloud computing patterns \url{https://katalog.bibliothek.tu-chemnitz.de/Record/0012763915}
+ \item raspberry pi private cloud \url{https://sc5.io/posts/a-private-raspberry-pi-cloud-with-arm-docker/}
+ \item more raspberry \url{https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=54997}
 \end{itemize}
 
 \subsection{HYPRE - Überblick über die Bibliothek}
@@ -264,35 +365,13 @@ Die Anzahl der Unbekannten beträgt daher N=n².
 
 \subsection{Werkzeuge für die verteilte Ausführung}
 
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-
-Müssen wir structs übertragen?????????
-
-Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
-
-Beeinflusst die Entscheidung der Wahl des Frameworks.
-
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-
 \begin{itemize}
  \item c/c++ json lib benchmarks \url{https://github.com/miloyip/nativejson-benchmark}
  \item nur innerhalb der cloud (ungeeignet): Light-weight remote communication for high-performance cloud networks \url{http://ieeexplore.ieee.org/document/6483669/}
  \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
 \end{itemize}
 
-\subsubsection{RPC}
+\subsubsection{Using RPC inside of C}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
@@ -312,11 +391,13 @@ XML-RPC Bibliothek für C und C++ \url{http://xmlrpc-c.sourceforge.net/}.
 
 Installation: 
 In the simplest case, it's just a conventional\\
-./configure \\
-make \\
-make install \\
-And then, if Linux:\\
+\begin{lstlisting}
+./configure
+make
+make install
+//And then, if Linux:
 ldconfig
+\end{lstlisting}
 
 \paragraph{json-rpc}
 
@@ -337,16 +418,18 @@ json-rpc-libs:
  \item \url{https://github.com/pijyoi/jsonrpc}
 \end{itemize}
 
-\subparagraph{libjrpc}
+\subparagraph{yeryomin/libjrpc}
 
 \url{https://github.com/yeryomin/libjrpc}
 
 install:
 
+\begin{lstlisting}
 git clone git@github.com:yeryomin/libjrpc.git
 git clone git@github.com:yeryomin/libipsc.git
 git clone git@github.com:yeryomin/libfmt.git
 git clone git@github.com:zserge/jsmn.git
+git clone git@github.com:yeryomin/liba.git
 
 cd libipsc
 make
@@ -366,8 +449,69 @@ cd ..
 cd libjrpc
 make
 sudo ln -s /path/to/libjrpc.h /usr/include
+\end{lstlisting}
+
+so many unresolved dependencies.............. wow
+
+\subparagraph{jhlee4bb/jsonrpC}
+
+(needs libwebsockets installed: `yaourt libwebsockets` etc.)
+
+\begin{lstlisting}
+git clone git@github.com:jhlee4bb/jsonrpC.git
+cd jsonrpC
+mkdir build
+cd build
+cmake ..
+make
+build output left in jsonrpc-x.y
+\end{lstlisting}
+
+völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 
 \paragraph{json vs xml}
+
+\subsubsection{Calling Python from C}
+
+\paragraph{ressourcen}
+
+\url{https://docs.python.org/2.5/ext/callingPython.html}
+\url{https://www.codeproject.com/articles/11805/embedding-python-in-c-c-part-i}
+
+better
+
+\url{http://www.linuxjournal.com/article/8497}
+\url{https://www.codeproject.com/articles/820116/embedding-python-program-in-a-c-cplusplus-code}
+
+\paragraph{basics}
+
+\begin{lstlisting}
+#include <python3.6m/Python.h>
+
+int main()
+{
+  Py_Initialize();
+  PyRun_SimpleString(
+    "print('Hello World from Embedded Python!!!')"
+  );
+  Py_Finalize();
+}
+\end{lstlisting}
+
+kompilieren von c-code mit python3.6
+
+\begin{lstlisting}
+cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m 
+  -lm -L/usr/lib/python3.6
+\end{lstlisting}
+
+\subsubsection{spring-server framework}
+
+\url{https://github.com/bartobri/spring-server}
+
+\begin{lstlisting}
+git clone git@github.com:bartobri/spring-server.git
+\end{lstlisting}
 
 \subsubsection{Service}
 \subsubsection{Socket}
@@ -375,6 +519,13 @@ sudo ln -s /path/to/libjrpc.h /usr/include
 \newpage
 
 \section{Vergleich verschiedener Technologien und Werkzeuge für den Einsatz bei der Implementierung}
+
+\subsection{Ressourcen}
+
+\begin{itemize}
+ \item HPC in der Cloud \url{http://grids.ucs.indiana.edu/ptliupages/publications/cloud_handbook_final-with-diagrams.pdf}
+\end{itemize}
+
 
 \subsection{'private' vs 'public' Cloud}
 
@@ -385,6 +536,13 @@ sudo ln -s /path/to/libjrpc.h /usr/include
 \end{itemize}
 
 \subsection{Technologie}
+
+
+\todo{Was muss zwischen Client und Server übertragen werden:}
+
+Müssen wir structs übertragen?
+Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
+Beeinflusst die Entscheidung der Wahl des Frameworks.
 
 \begin{itemize}
  \item welche Werkzeuge für die kommunikation zwischen client und cloud
@@ -413,6 +571,100 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  \item kann eine hybridform eingsetzt werden? 
  zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
 \end{itemize}
+
+\subsection{Vergleich ausgewählter Cloudsysteme in einer Tabelle}
+
+anhand relevanter (für das Projekt) Eigenschaften
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lllll}
+Cloudsystem & private       & PaaS & ... &  \\
+Openstack   & \mycheckbox   &  &     &  \\
+Apache CS   & \mycheckbox   &  &     &  \\
+Amazon AWS  & \myuncheckbox & \mycheckbox &     & 
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section{(Test-)Installation OpenStack}
+
+\url{http://docs.openstack.org/developer/devstack/}\\
+\url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
+\url{http://ronaldbradford.com/blog/setting-up-ubuntu-on-virtualbox-for-devstack-2016-03-30/}\\
+\url{http://ronaldbradford.com/blog/setting-up-ubuntu-using-vagrant-2016-04-01/}\\
+\url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
+
+\paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
+
+\begin{enumerate}
+ \item vagrant init bento/ubuntu-16.04
+ \item Vagrantfile anpassen\\
+\begin{minipage}{\textwidth}
+\begin{lstlisting}
+Vagrant.configure(2) do |config|
+  config.vm.box = "bento/ubuntu-16.04"
+  config.vm.network "private_network", type: "dhcp"
+ 
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+  end
+end
+\end{lstlisting}
+\end{minipage}
+ \item vagrant up
+ \item vagrant ssh
+\end{enumerate}
+ 
+\paragraph{Devstack}
+ 
+
+ 
+\begin{enumerate}
+ \item DevStack installieren \begin{enumerate}
+                              \item git repository clonen
+                              \item zu einer stable branch wechseln, zB git checkout stable/ocata oder stable/mitaka
+                              \item local.conf konfigurieren
+                              \item ./stack.sh
+                             \end{enumerate}
+ \item dashboard im Browser aufrufen
+
+\end{enumerate}
+
+\begin{minipage}{\textwidth}
+\begin{lstlisting}
+=========================
+DevStack Component Timing
+=========================
+Total runtime         1379
+
+run_process            63
+test_with_retry         2
+apt-get-update          7
+pip_install           323
+restart_apache_server  15
+wait_for_service       14
+git_timed             270
+apt-get                99
+=========================
+
+
+
+This is your host IP address: 172.28.128.4
+This is your host IPv6 address: ::1
+Horizon is now available at http://172.28.128.4/dashboard
+Keystone is serving at http://172.28.128.4/identity/
+The default users are: admin and demo
+The password: nomoresecret
+\end{lstlisting}
+\end{minipage}
+
+\paragraph{starten}
+
+\url{http://172.28.128.4/dashboard} öffnen
 
 \newpage
 
