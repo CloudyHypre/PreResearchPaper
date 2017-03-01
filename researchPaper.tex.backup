@@ -601,8 +601,8 @@ Amazon AWS  & \myuncheckbox & \mycheckbox &     &
 \paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
 
 \begin{enumerate}
- \item vagrant init bento/ubuntu-16.04
- \item Vagrantfile anpassen\\
+ \item \begin{verbatim}vagrant init bento/ubuntu-16.04\end{verbatim}
+ \item Vagrantfile anpassen. Es sollten mindestens 4GB RAM zugewiesen werden, damit OpenStack performant läuft.\\
 \begin{minipage}{\textwidth}
 \begin{lstlisting}
 Vagrant.configure(2) do |config|
@@ -615,56 +615,84 @@ Vagrant.configure(2) do |config|
 end
 \end{lstlisting}
 \end{minipage}
- \item vagrant up
- \item vagrant ssh
+ \item \begin{verbatim}vagrant up\end{verbatim}
+ \item \begin{verbatim}vagrant ssh\end{verbatim}
 \end{enumerate}
  
-\paragraph{Devstack}
- 
-
- 
+\paragraph{Devstack installieren}
+  
 \begin{enumerate}
- \item DevStack installieren \begin{enumerate}
-                              \item git repository clonen
-                              \item zu einer stable branch wechseln, zB git checkout stable/ocata oder stable/mitaka
-                              \item local.conf konfigurieren
-                              \item ./stack.sh
-                             \end{enumerate}
- \item dashboard im Browser aufrufen
-
+ \item \begin{verbatim}git clone https://git.openstack.org/openstack-dev/devstack \end{verbatim}
+ \item  \begin{verbatim}cd devstack\end{verbatim}
+ \item Bei Bedarf zu einem (älteren) stable release wechseln: \begin{verbatim}git checkout stable/ocata\end{verbatim} oder \begin{verbatim}git checkout stable/mitaka\end{verbatim} Die master-branch kann auch genutzt werden.
+ \item \begin{verbatim}ifconfig enp0s8 | grep addr\end{verbatim}
+ \item \begin{verbatim}inet addr kopieren\end{verbatim}
+ \item \begin{verbatim}cp samples/local.conf .\end{verbatim}
+ \item \begin{verbatim}HOST_IP="xxx.xxx.xxx.xxx"\end{verbatim}
+ \item \begin{verbatim}echo "HOST_IP=${HOST_IP}" >> local.conf\end{verbatim}
+ \item Es muss ein user mit sudo-rechten (ohne passwort) existieren, der nicht root ist. Der Standarduser vagrant ist dafür geeignet.
+ \item \begin{verbatim}./stack.sh\end{verbatim}
 \end{enumerate}
+
+Am Ende der erfolgreichen Installation erscheint die folgende Ausgabe in etwa so.
+Von hier können die nötigen Informationen für das weitere Vorgehen entnommen werden.
 
 \begin{minipage}{\textwidth}
 \begin{lstlisting}
 =========================
 DevStack Component Timing
 =========================
-Total runtime         1379
+Total runtime         3644
 
-run_process            63
-test_with_retry         2
-apt-get-update          7
-pip_install           323
-restart_apache_server  15
-wait_for_service       14
-git_timed             270
-apt-get                99
+run_process            87
+test_with_retry         7
+apt-get-update         12
+pip_install           881
+restart_apache_server  20
+wait_for_service       61
+git_timed             355
+apt-get               457
 =========================
 
 
 
-This is your host IP address: 172.28.128.4
+This is your host IP address: 172.28.128.3
 This is your host IPv6 address: ::1
-Horizon is now available at http://172.28.128.4/dashboard
-Keystone is serving at http://172.28.128.4/identity/
+Horizon is now available at http://172.28.128.3/dashboard
+Keystone is serving at http://172.28.128.3/identity/
 The default users are: admin and demo
 The password: nomoresecret
 \end{lstlisting}
 \end{minipage}
 
-\paragraph{starten}
+\paragraph{Openstack (Horizon) starten}
 
-\url{http://172.28.128.4/dashboard} öffnen
+Die folgenden Informationen sind abhängig von der Konfiguration.
+Für dieses Beispiel sind folgende Daten notwendig.
+
+\begin{enumerate}
+ \item \url{http://172.28.128.3/dashboard} in einem Browser öffnen
+ \item Benutzername admin oder demo
+ \item Password nomoresecret
+\end{enumerate}
+
+\paragraph{Reboot}
+
+\url{https://ask.openstack.org/en/question/5423/rebooting-with-devstack/}
+Wenn die Vagrantbox herunter gefahren wurde muss devstack nach einem erneuten Start ebenfalls neu gestartet werden.
+
+\begin{verbatim}
+ ./unstack.sh
+ ./stack.sh
+\end{verbatim}
+
+
+Bei einem erneuten Ausführen von stack.sh würden jedoch alle Datenbanken neu erstellt werden.
+Das würde zu einem kompletten Datenverlust führen.
+
+\begin{verbatim}
+ screen -c stack-screenrc
+\end{verbatim}
 
 \newpage
 

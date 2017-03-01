@@ -598,6 +598,8 @@ Amazon AWS  & \myuncheckbox & \mycheckbox &     &
 \url{http://ronaldbradford.com/blog/setting-up-ubuntu-using-vagrant-2016-04-01/}\\
 \url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
 
+Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
+
 \paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
 
 \begin{enumerate}
@@ -675,6 +677,36 @@ Für dieses Beispiel sind folgende Daten notwendig.
  \item Benutzername admin oder demo
  \item Password nomoresecret
 \end{enumerate}
+
+\paragraph{Reboot}
+
+\url{https://ask.openstack.org/en/question/5423/rebooting-with-devstack/}
+Wenn die Vagrantbox herunter gefahren wurde muss devstack nach einem erneuten Start ebenfalls neu gestartet werden.
+Ansonsten können die verschiedenen Services nicht genutzt werden.
+Das Webfrontend Horizon kann in diesem Fall keinerlei Ressourcen laden.
+Zum erneuten Erstellen der openstack Umgebung können die folgenden Befehle genutzt werden.
+
+\begin{verbatim}
+ ./unstack.sh
+ ./stack.sh
+\end{verbatim}
+
+Bei einem erneuten Ausführen von stack.sh würden jedoch alle Datenbanken neu erstellt werden.
+Das würde zu einem kompletten Datenverlust führen.
+Dies ist aber nicht in jedem Fall gewünscht.
+Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services gestartet werden können.
+
+\url{http://stackoverflow.com/questions/36268822/no-rejoin-stack-sh-script-in-my-setup}
+
+\begin{verbatim}
+ screen -c stack-screenrc
+\end{verbatim}
+
+So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
+
+\paragraph{Verbindung zur Cloud}
+
+http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
 
 \newpage
 
