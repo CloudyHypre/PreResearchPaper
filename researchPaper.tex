@@ -518,7 +518,10 @@ git clone git@github.com:bartobri/spring-server.git
 
 \newpage
 
-\section{Vergleich verschiedener Technologien und Werkzeuge für den Einsatz bei der Implementierung}
+\section{Vergleiche und Vorbereitungen für die Implementierung}
+
+Vergleiche verschiedener Technologien und Werkzeuge.
+Auswahl für den Einsatz bei der Implementierung.
 
 \subsection{Ressourcen}
 
@@ -537,20 +540,12 @@ git clone git@github.com:bartobri/spring-server.git
 
 \subsection{Technologie}
 
-
-\todo{Was muss zwischen Client und Server übertragen werden:}
-
-Müssen wir structs übertragen?
-Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
-Beeinflusst die Entscheidung der Wahl des Frameworks.
-
 \begin{itemize}
  \item welche Werkzeuge für die kommunikation zwischen client und cloud
  \item rpc, socket, service ...
  \item abwägen zwischen performance, aufwand ...
  \item welche framework könnten genutzt werden
 \end{itemize}
-
 
 \subsection{Cloudtyp}
 
@@ -587,6 +582,53 @@ Apache CS   & \mycheckbox   &  &     &  \\
 Amazon AWS  & \myuncheckbox & \mycheckbox &     & 
 \end{tabular}
 \end{table}
+
+
+\subsection{Roadmap Implementierung}
+
+\paragraph{Was muss zwischen Client und Server übertragen werden:}
+
+Anzahl der calls zwischen Client und Server sollte so gering wie möglich gehalten werden.
+Der Aufbau der Datenstrukturen sollte daher komplett innerhalb des Clients passieren.
+Sobald alle Eingabedaten erstellt sind muss ein Solver aufgerufen werden.
+Die Solver sollten auf dem Server ausgeführt werden.
+
+\subparagraph{(später:)}
+
+Eventuell kann sogar der Aufwand der Berechnung abgeschätzt werden.
+Somit könnten einfache Berechnungen innerhalb des Client ausgeführt werden.
+Lediglich komplexe Berechnungen an den Server übermittelt werden.
+
+\subparagraph{Fazit}
+
+1. Möglichkeit:
+Es müssen (alle) HYPRE-Datentypen übertragen werden können.
+Dazu muss ein Mapper existieren.
+Dieser sollte die Datenstrukturen in ein Datenformat umwandeln welches übertragen werden kann (json).
+Er muss außerdem die übertragbaren Daten wieder in die Datenstrukturen zurück umwandeln können.
+
+2. Möglichkeit:
+Alle Eingabeparameter und Funktionsaufrufe werden gesammelt.
+Auf Seite des Servers werden diese nacheinander ausgeführt um die Datenstrukturen zu bilden.
+Danach wird der Solver ausgeführt.
+Am Ende die lediglich die Antwort umgewandelt und übertragen.
+
+\paragraph{Client}
+
+\subparagraph{Anforderungen}
+
+Bibliothek.
+Alle HYPRE-Calls implementieren die einen solver ausführen.
+Statt der direkten Ausführung müssen die Input-Daten an den Server übertragen werden.
+Außerdem muss der Call-Name übertragen werden.
+Nach Ausführung auf dem Server muss die Antwort wiederum in die entsprechenden Datentypen umgewandelt werden.
+
+\subparagraph{Kernmodule}
+
+Einige HYPRE-Methoden überschreiben.
+Mapping HYPRE-Datentypen zu JSON.
+Mapping JSON zu HYPRE-Datentypen.
+Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 

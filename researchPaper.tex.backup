@@ -518,7 +518,10 @@ git clone git@github.com:bartobri/spring-server.git
 
 \newpage
 
-\section{Vergleich verschiedener Technologien und Werkzeuge für den Einsatz bei der Implementierung}
+\section{Vergleiche und Vorbereitungen für die Implementierung}
+
+Vergleiche verschiedener Technologien und Werkzeuge.
+Auswahl für den Einsatz bei der Implementierung.
 
 \subsection{Ressourcen}
 
@@ -537,20 +540,12 @@ git clone git@github.com:bartobri/spring-server.git
 
 \subsection{Technologie}
 
-
-\todo{Was muss zwischen Client und Server übertragen werden:}
-
-Müssen wir structs übertragen?
-Reicht es inbuild data types zu übertragen und structs werden nur auf dem server erstellt?
-Beeinflusst die Entscheidung der Wahl des Frameworks.
-
 \begin{itemize}
  \item welche Werkzeuge für die kommunikation zwischen client und cloud
  \item rpc, socket, service ...
  \item abwägen zwischen performance, aufwand ...
  \item welche framework könnten genutzt werden
 \end{itemize}
-
 
 \subsection{Cloudtyp}
 
@@ -588,6 +583,42 @@ Amazon AWS  & \myuncheckbox & \mycheckbox &     &
 \end{tabular}
 \end{table}
 
+
+\subsection{Roadmap Implementierung}
+
+\paragraph{Was muss zwischen Client und Server übertragen werden:}
+
+Anzahl der calls zwischen Client und Server sollte so gering wie möglich gehalten werden.
+Der Aufbau der Datenstrukturen sollte daher komplett innerhalb des Clients passieren.
+Sobald alle Eingabedaten erstellt sind muss ein Solver aufgerufen werden.
+Die Solver sollten auf dem Server ausgeführt werden.
+
+\subparagraph{(später:)}
+
+Eventuell kann sogar der Aufwand der Berechnung abgeschätzt werden.
+Somit könnten einfache Berechnungen innerhalb des Client ausgeführt werden.
+Lediglich komplexe Berechnungen an den Server übermittelt werden.
+
+\subparagraph{Fazit}
+
+1. Möglichkeit:
+Es müssen (alle) HYPRE-Datentypen übertragen werden können.
+Dazu muss ein Mapper existieren.
+Dieser sollte die Datenstrukturen in ein Datenformat umwandeln welches übertragen werden kann (json).
+Er muss außerdem die übertragbaren Daten wieder in die Datenstrukturen zurück umwandeln können.
+
+2. Möglichkeit:
+Alle Eingabeparameter und Funktionsaufrufe werden gesammelt.
+Auf Seite des Servers werden diese nacheinander ausgeführt um die Datenstrukturen zu bilden.
+Danach wird der Solver ausgeführt.
+Am Ende die lediglich die Antwort umgewandelt und übertragen.
+
+\paragraph{Client}
+
+\subparagraph{Anforderungen}
+
+
+
 \newpage
 
 \section{(Test-)Installation OpenStack}
@@ -597,6 +628,8 @@ Amazon AWS  & \myuncheckbox & \mycheckbox &     &
 \url{http://ronaldbradford.com/blog/setting-up-ubuntu-on-virtualbox-for-devstack-2016-03-30/}\\
 \url{http://ronaldbradford.com/blog/setting-up-ubuntu-using-vagrant-2016-04-01/}\\
 \url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
+
+Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
 
 \paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
 
@@ -680,19 +713,31 @@ Für dieses Beispiel sind folgende Daten notwendig.
 
 \url{https://ask.openstack.org/en/question/5423/rebooting-with-devstack/}
 Wenn die Vagrantbox herunter gefahren wurde muss devstack nach einem erneuten Start ebenfalls neu gestartet werden.
+Ansonsten können die verschiedenen Services nicht genutzt werden.
+Das Webfrontend Horizon kann in diesem Fall keinerlei Ressourcen laden.
+Zum erneuten Erstellen der openstack Umgebung können die folgenden Befehle genutzt werden.
 
 \begin{verbatim}
  ./unstack.sh
  ./stack.sh
 \end{verbatim}
 
-
 Bei einem erneuten Ausführen von stack.sh würden jedoch alle Datenbanken neu erstellt werden.
 Das würde zu einem kompletten Datenverlust führen.
+Dies ist aber nicht in jedem Fall gewünscht.
+Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services gestartet werden können.
+
+\url{http://stackoverflow.com/questions/36268822/no-rejoin-stack-sh-script-in-my-setup}
 
 \begin{verbatim}
  screen -c stack-screenrc
 \end{verbatim}
+
+So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
+
+\paragraph{Verbindung zur Cloud}
+
+http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
 
 \newpage
 
