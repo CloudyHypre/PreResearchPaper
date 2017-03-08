@@ -471,6 +471,15 @@ völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 
 \paragraph{json vs xml}
 
+\paragraph{complete RPC libs}
+
+\begin{itemize}
+ \item client and server stubs: \url{https://github.com/masroorhasan/RPC}
+ \item hpc optimized: \url{https://github.com/mercury-hpc/mercury}
+ \item protobuf: \url{https://github.com/protobuf-c/protobuf-c-rpc}
+ \item rpc for php and c: \url{https://github.com/laruence/yar}
+\end{itemize}
+
 \subsubsection{Calling Python from C}
 
 \paragraph{ressourcen}
@@ -515,6 +524,23 @@ git clone git@github.com:bartobri/spring-server.git
 
 \subsubsection{Service}
 \subsubsection{Socket}
+
+\subsection{Serialisierung}
+
+\url{https://www.quora.com/Is-there-a-C-struct-to-JSON-generator-library}
+
+\paragraph{Protocol Buffers}
+
+\url{https://developers.google.com/protocol-buffers/}
+Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
+Implementierung für C:
+\url{https://github.com/protobuf-c/protobuf-c}
+
+\subparagraph{Fazit}
+
+Generiert den Code für structs selbstständig.
+Für den Anwendungsfall bestehen die Strukturen jedoch bereits und müssen umgewandelt werden.
+Ist daher ungeeignet.
 
 \newpage
 

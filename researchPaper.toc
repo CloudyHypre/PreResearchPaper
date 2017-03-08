@@ -44,29 +44,33 @@
 \contentsline {subparagraph}{yeryomin/libjrpc}{12}{section*.31}
 \contentsline {subparagraph}{jhlee4bb/jsonrpC}{13}{section*.32}
 \contentsline {paragraph}{json vs xml}{13}{section*.33}
+\contentsline {paragraph}{complete RPC libs}{13}{section*.34}
 \contentsline {subsubsection}{\numberline {1.3.2}Calling Python from C}{13}{subsubsection.1.3.2}
-\contentsline {paragraph}{ressourcen}{13}{section*.34}
-\contentsline {subsubsection}{\numberline {1.3.3}spring-server framework}{13}{subsubsection.1.3.3}
-\contentsline {subsubsection}{\numberline {1.3.4}Service}{13}{subsubsection.1.3.4}
-\contentsline {subsubsection}{\numberline {1.3.5}Socket}{13}{subsubsection.1.3.5}
-\contentsline {section}{\numberline {2}Vergleiche und Vorbereitungen f\IeC {\"u}r die Implementierung}{14}{section.2}
-\contentsline {subsection}{\numberline {2.1}Ressourcen}{14}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}'private' vs 'public' Cloud}{14}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Technologie}{14}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Cloudtyp}{14}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Sprache}{14}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{14}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Roadmap Implementierung}{15}{subsection.2.7}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{15}{section*.36}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{15}{section*.37}
-\contentsline {subparagraph}{Fazit}{15}{section*.38}
-\contentsline {paragraph}{Client}{15}{section*.39}
-\contentsline {subparagraph}{Anforderungen}{15}{section*.40}
-\contentsline {subparagraph}{Kernmodule}{15}{section*.41}
-\contentsline {section}{\numberline {3}(Test-)Installation OpenStack}{16}{section.3}
-\contentsline {paragraph}{Ubuntu 16.04 in Vagrant aufsetzen}{16}{section*.42}
-\contentsline {paragraph}{Devstack installieren}{16}{section*.43}
-\contentsline {paragraph}{Openstack (Horizon) starten}{17}{section*.44}
-\contentsline {paragraph}{Reboot}{17}{section*.45}
-\contentsline {paragraph}{Verbindung zur Cloud}{18}{section*.46}
-\contentsline {section}{\numberline {4}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{19}{section.4}
+\contentsline {paragraph}{ressourcen}{13}{section*.35}
+\contentsline {subsubsection}{\numberline {1.3.3}spring-server framework}{14}{subsubsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.4}Service}{14}{subsubsection.1.3.4}
+\contentsline {subsubsection}{\numberline {1.3.5}Socket}{14}{subsubsection.1.3.5}
+\contentsline {subsection}{\numberline {1.4}Serialisierung}{14}{subsection.1.4}
+\contentsline {paragraph}{Protocol Buffers}{14}{section*.37}
+\contentsline {subparagraph}{Fazit}{14}{section*.38}
+\contentsline {section}{\numberline {2}Vergleiche und Vorbereitungen f\IeC {\"u}r die Implementierung}{15}{section.2}
+\contentsline {subsection}{\numberline {2.1}Ressourcen}{15}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}'private' vs 'public' Cloud}{15}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Technologie}{15}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Cloudtyp}{15}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Sprache}{15}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{15}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Roadmap Implementierung}{16}{subsection.2.7}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{16}{section*.39}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{16}{section*.40}
+\contentsline {subparagraph}{Fazit}{16}{section*.41}
+\contentsline {paragraph}{Client}{16}{section*.42}
+\contentsline {subparagraph}{Anforderungen}{16}{section*.43}
+\contentsline {subparagraph}{Kernmodule}{16}{section*.44}
+\contentsline {section}{\numberline {3}(Test-)Installation OpenStack}{17}{section.3}
+\contentsline {paragraph}{Ubuntu 16.04 in Vagrant aufsetzen}{17}{section*.45}
+\contentsline {paragraph}{Devstack installieren}{17}{section*.46}
+\contentsline {paragraph}{Openstack (Horizon) starten}{18}{section*.47}
+\contentsline {paragraph}{Reboot}{18}{section*.48}
+\contentsline {paragraph}{Verbindung zur Cloud}{19}{section*.49}
+\contentsline {section}{\numberline {4}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{20}{section.4}
