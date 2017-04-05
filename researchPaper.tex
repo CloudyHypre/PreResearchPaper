@@ -371,7 +371,7 @@ Die Anzahl der Unbekannten beträgt daher N=n².
  \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
 \end{itemize}
 
-\subsubsection{Using RPC inside of C}
+\subsubsection{RPC Bibliotheken}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
@@ -469,9 +469,69 @@ build output left in jsonrpc-x.y
 
 völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 
-\paragraph{json vs xml}
+\paragraph{gRPC} \url{http://www.grpc.io/}
 
-\paragraph{complete RPC libs}
+Googles open source RPC framework.
+Dokumentation: \url{http://www.grpc.io/docs/}.
+
+\subparagraph{Einführung}
+
+Benutzt Protobuf zum erstellen von Services und Nachrichtenobjekten (stubs).
+Offizieller support für C++ vorhanden.
+Implementierung für c vorhanden \url{https://github.com/protobuf-c/protobuf-c}.
+Das Basisframework von gRPC ist ebenfalls in nativem C geschrieben.
+Die Highlevel-Framework-API ist jedoch nicht in C verfügbar.
+
+Da die Definitionen der stubs nicht sprachgebunden erfolgen ist eine (spätere) Umstellung auf eine andere Sprache einfacher.
+Es müssen die stubs für die neue Sprache lediglich aus den gleichen Definitionen neu generiert werden.
+
+\begin{lstlisting}
+  package helloworld;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
+\end{lstlisting}
+
+\subparagraph{Installation}
+
+Installiere vagrant ubuntu 16.04.
+Setup von gRPC nach der Installation:
+
+\begin{lstlisting}
+    cd /vagrant
+    sudo apt-get install build-essential autoconf libtool
+    sudo apt-get install libgflags-dev libgtest-dev
+    sudo apt-get install clang libc++-dev
+    git clone -b $(curl -L http://grpc.io/release) \\
+	https://github.com/grpc/grpc
+    cd grpc
+    git submodule update --init
+    make && sudo make install
+    cd third_party/protobuf
+    sudo apt-get install unzip
+    ./autogen.sh
+    ./configure
+    make && sudo make install
+    cd -
+    cd examples/cpp/helloworld/
+    sudo apt-get install pkg-config
+    make
+\end{lstlisting}
+
+\paragraph{weitere RPC libs}
 
 \begin{itemize}
  \item client and server stubs: \url{https://github.com/masroorhasan/RPC}
@@ -479,6 +539,30 @@ völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
  \item protobuf: \url{https://github.com/protobuf-c/protobuf-c-rpc}
  \item rpc for php and c: \url{https://github.com/laruence/yar}
 \end{itemize}
+
+\subparagraph{Mercury}
+
+Homepage: \url{https://mercury-hpc.github.io/}
+Dokumentation: \url{http://mercury-hpc.github.io/documentation/}
+High-level RPC Layer: \url{http://mercury-hpc.github.io/documentation/#high-level-rpc-layer}
+Mailing-List: \url{https://lists.mcs.anl.gov/mailman/private/mercury/}
+
+Für HPC optimierte c-Bibliothek.
+Bietet außerdem MPI-Unterstützung.
+(Etwas) Dokumentation vorhanden.
+
+\subparagraph{Trios/Nessie}
+
+\url{https://software.sandia.gov/trac/nessie/wiki/WikiStart}
+
+\subparagraph{Portals}
+
+\url{https://www.researchgate.net/publication/221201996_Efficient_Data-Movement_for_Lightweight_IO}
+
+\subparagraph{DART}
+
+\url{http://coewww.rutgers.edu/www4/cacweb/TASSL/Papers/dart_hpdc.pdf}
+\url{https://www.researchgate.net/publication/220717741_DART_a_substrate_for_high_speed_asynchronous_data_IO}
 
 \subsubsection{Calling Python from C}
 
@@ -525,7 +609,7 @@ git clone git@github.com:bartobri/spring-server.git
 \subsubsection{Service}
 \subsubsection{Socket}
 
-\subsection{Serialisierung}
+\subsubsection{Serialisierung}
 
 \url{https://www.quora.com/Is-there-a-C-struct-to-JSON-generator-library}
 
@@ -535,6 +619,7 @@ git clone git@github.com:bartobri/spring-server.git
 Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
 Implementierung für C:
 \url{https://github.com/protobuf-c/protobuf-c}
+\url{https://github.com/protobuf-c/protobuf-c-rpc}
 
 \subparagraph{Fazit}
 

@@ -371,7 +371,7 @@ Die Anzahl der Unbekannten beträgt daher N=n².
  \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
 \end{itemize}
 
-\subsubsection{Using RPC inside of C}
+\subsubsection{RPC Bibliotheken}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
@@ -469,7 +469,40 @@ build output left in jsonrpc-x.y
 
 völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 
-\paragraph{json vs xml}
+\paragraph{gRPC}
+
+\paragraph{weitere RPC libs}
+
+\begin{itemize}
+ \item client and server stubs: \url{https://github.com/masroorhasan/RPC}
+ \item hpc optimized: \url{https://github.com/mercury-hpc/mercury}
+ \item protobuf: \url{https://github.com/protobuf-c/protobuf-c-rpc}
+ \item rpc for php and c: \url{https://github.com/laruence/yar}
+\end{itemize}
+
+\subparagraph{Mercury}
+
+Homepage: \url{https://mercury-hpc.github.io/}
+Dokumentation: \url{http://mercury-hpc.github.io/documentation/}
+High-level RPC Layer: \url{http://mercury-hpc.github.io/documentation/#high-level-rpc-layer}
+Mailing-List: \url{https://lists.mcs.anl.gov/mailman/private/mercury/}
+
+Für HPC optimierte c-Bibliothek.
+Bietet außerdem MPI-Unterstützung.
+(Etwas) Dokumentation vorhanden.
+
+\subparagraph{Trios/Nessie}
+
+\url{https://software.sandia.gov/trac/nessie/wiki/WikiStart}
+
+\subparagraph{Portals}
+
+\url{https://www.researchgate.net/publication/221201996_Efficient_Data-Movement_for_Lightweight_IO}
+
+\subparagraph{DART}
+
+\url{http://coewww.rutgers.edu/www4/cacweb/TASSL/Papers/dart_hpdc.pdf}
+\url{https://www.researchgate.net/publication/220717741_DART_a_substrate_for_high_speed_asynchronous_data_IO}
 
 \subsubsection{Calling Python from C}
 
@@ -515,6 +548,24 @@ git clone git@github.com:bartobri/spring-server.git
 
 \subsubsection{Service}
 \subsubsection{Socket}
+
+\subsubsection{Serialisierung}
+
+\url{https://www.quora.com/Is-there-a-C-struct-to-JSON-generator-library}
+
+\paragraph{Protocol Buffers}
+
+\url{https://developers.google.com/protocol-buffers/}
+Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
+Implementierung für C:
+\url{https://github.com/protobuf-c/protobuf-c}
+\url{https://github.com/protobuf-c/protobuf-c-rpc}
+
+\subparagraph{Fazit}
+
+Generiert den Code für structs selbstständig.
+Für den Anwendungsfall bestehen die Strukturen jedoch bereits und müssen umgewandelt werden.
+Ist daher ungeeignet.
 
 \newpage
 
@@ -617,7 +668,18 @@ Am Ende die lediglich die Antwort umgewandelt und übertragen.
 
 \subparagraph{Anforderungen}
 
+Bibliothek.
+Alle HYPRE-Calls implementieren die einen solver ausführen.
+Statt der direkten Ausführung müssen die Input-Daten an den Server übertragen werden.
+Außerdem muss der Call-Name übertragen werden.
+Nach Ausführung auf dem Server muss die Antwort wiederum in die entsprechenden Datentypen umgewandelt werden.
 
+\subparagraph{Kernmodule}
+
+Einige HYPRE-Methoden überschreiben.
+Mapping HYPRE-Datentypen zu JSON.
+Mapping JSON zu HYPRE-Datentypen.
+Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 
