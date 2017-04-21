@@ -321,9 +321,25 @@ wie löst sie die probleme (groben einblick in die funktionsweise der methoden, 
 
 \paragraph{Installation}
 
-Download von \url{http://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/software} oder \url{https://github.com/LLNL/hypre}.
-Innerhalb des Verzeichnis muss `configure` gefolgt von einem `make` ausgeführt werden.
-Alternativ kann auch das build tool CMake eingesetzt werden.
+\begin{lstlisting}
+cd /vagrant
+
+//yaourt mpich2
+//yaourt openmpi
+sudo apt-get install mpich
+
+//Download https://github.com/LLNL/hypre
+git clone https://github.com/LLNL/hypre
+
+//Innerhalb des Verzeichnis muss `configure` 
+//gefolgt von einem `make` ausgeführt werden. 
+cd hypre/src
+
+./configure
+
+//Alternativ kann auch das build tool CMake eingesetzt werden.
+make
+\end{lstlisting}
 
 \paragraph{Vorbereitungen vor einer Implementierung}
 
@@ -474,7 +490,33 @@ völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 Googles open source RPC framework.
 Dokumentation: \url{http://www.grpc.io/docs/}.
 
-\subparagraph{Einführung}
+\subparagraph{Installation}
+
+Installiere vagrant ubuntu 16.04.
+Setup von gRPC nach der Installation:
+
+\begin{lstlisting}
+cd /vagrant
+sudo apt-get install build-essential autoconf libtool
+sudo apt-get install libgflags-dev libgtest-dev
+sudo apt-get install clang libc++-dev
+git clone -b $(curl -L http://grpc.io/release) \\
+https://github.com/grpc/grpc
+cd grpc
+git submodule update --init
+make && sudo make install
+cd third_party/protobuf
+sudo apt-get install unzip
+./autogen.sh
+./configure
+make && sudo make install
+cd -
+cd examples/cpp/helloworld/
+sudo apt-get install pkg-config
+make
+\end{lstlisting}
+
+\subparagraph{kurze Einführung}
 
 Benutzt Protobuf zum erstellen von Services und Nachrichtenobjekten (stubs).
 Offizieller support für C++ vorhanden.
@@ -486,7 +528,7 @@ Da die Definitionen der stubs nicht sprachgebunden erfolgen ist eine (spätere) 
 Es müssen die stubs für die neue Sprache lediglich aus den gleichen Definitionen neu generiert werden.
 
 \begin{lstlisting}
-  package helloworld;
+package helloworld;
 
 // The greeting service definition.
 service Greeter {
@@ -505,31 +547,24 @@ message HelloReply {
 }
 \end{lstlisting}
 
-\subparagraph{Installation}
+\subparagraph{Überblick Funktionsumfang}
 
-Installiere vagrant ubuntu 16.04.
-Setup von gRPC nach der Installation:
+Ein definierter Service steht nach dem generieren der Implementierung in der gewünschten Sprache als Interface bereit.
+Dieses kann alternativ auch als AsyncService implementiert werden.
 
 \begin{lstlisting}
-    cd /vagrant
-    sudo apt-get install build-essential autoconf libtool
-    sudo apt-get install libgflags-dev libgtest-dev
-    sudo apt-get install clang libc++-dev
-    git clone -b $(curl -L http://grpc.io/release) \\
-	https://github.com/grpc/grpc
-    cd grpc
-    git submodule update --init
-    make && sudo make install
-    cd third_party/protobuf
-    sudo apt-get install unzip
-    ./autogen.sh
-    ./configure
-    make && sudo make install
-    cd -
-    cd examples/cpp/helloworld/
-    sudo apt-get install pkg-config
-    make
+//synchron
+class X : public Greeter::Service {}
+//oder asynchron
+class X : public Greeter::AsyncService {}
 \end{lstlisting}
+
+Listen von Request- oder Responseobjekten können in Form eines Streams übertragen werden.
+
+\begin{lstlisting}
+rpc ListFeatures(Rectangle) returns (stream Feature) {}
+\end{lstlisting}
+
 
 \paragraph{weitere RPC libs}
 
