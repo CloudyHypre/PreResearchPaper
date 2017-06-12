@@ -32,19 +32,35 @@ Recherche und Literaturverzeichnis}
 \newpage
 
 \begin{abstract}
-
+\todo{abstract formulieren}
 \end{abstract}
 
 \newpage
 
 \tableofcontents
-\listoftodos
+\newpage
 
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\lstlistoflistings
+\newpage
+
+\listoftodos
 \newpage
 
 \section{Informationssammlung und Einführung in die relevanten Themen}
 
-\subsection{Recherche zum Thema Cloud}
+\subsection{Allgemeines und Recherche zum Thema Cloud}
+
+\todo{check das hier:}
+\begin{itemize}
+ \item nur innerhalb der cloud (ungeeignet): Light-weight remote communication for high-performance cloud networks \url{http://ieeexplore.ieee.org/document/6483669/}
+ \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
+\end{itemize}
 
 \subsubsection{Einführung und Grundbegriffe zu Cloudcomputing}
 
@@ -287,6 +303,20 @@ IaaS
  \item more raspberry \url{https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=54997}
 \end{itemize}
 
+\subsubsection{Webtechnologien}
+
+\paragraph{RPC}
+
+(Vergleich zu REST etc)
+
+\paragraph{Service}
+
+\todo{erklärung service kommunikation allgemein}
+
+\paragraph{Socket}
+
+\todo{erklärung socket allgemein}
+
 \subsection{HYPRE - Überblick über die Bibliothek}
 
 HYPRE ist eine freie Software von Lawrence Livermore National Laboratory.
@@ -300,12 +330,14 @@ So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
 
 Nutzt MPI für Parallelisierbarung.
 
--performance?
+\todo{performance}
+\todo{HYPRE genauer beschreiben}
+\todo{HYPRE beispiel ex5}
 
 \subsubsection{Funktionsumfang allgemein}
 
 Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
--was heist das? was genau kann man lösen?
+\todo{was heist das? was genau kann man lösen?}
 
 \paragraph{Conceptual Interfaces}
 \paragraph{Solver Strategies}
@@ -315,13 +347,16 @@ Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Sol
 
 wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)
 
--wie funktioniert das? (lässt sich das beantworten)
+\todo{wie funktioniert das? (lässt sich das beantworten)}
 
 \subsubsection{Verwendung}
 
 \paragraph{Installation}
 
-\begin{lstlisting}
+Um HYPRE zu installieren sind einige Abhängigkeiten zu erfüllen.
+Die nötigen Schritte in einem Ubuntu sehen wie folgt aus:
+
+\begin{lstlisting}[frame=single,caption=Ubuntu Installation]
 cd /vagrant
 
 //yaourt mpich2
@@ -337,7 +372,8 @@ cd hypre/src
 
 ./configure
 
-//Alternativ kann auch das build tool CMake eingesetzt werden.
+//Alternativ kann auch das build tool CMake 
+//eingesetzt werden.
 make
 \end{lstlisting}
 
@@ -369,7 +405,6 @@ An dieser Stelle wird das Beispiel 5 näher betrachtet.
 Dieses löst ein zweidimensionales Laplaceproblem (nxn) ohne Randbedingungen.
 Die Anzahl der Unbekannten beträgt daher N=n².
 
-
 \subsubsection{Ressourcen}
 
 \begin{itemize}
@@ -381,17 +416,13 @@ Die Anzahl der Unbekannten beträgt daher N=n².
 
 \subsection{Werkzeuge für die verteilte Ausführung}
 
-\begin{itemize}
- \item c/c++ json lib benchmarks \url{https://github.com/miloyip/nativejson-benchmark}
- \item nur innerhalb der cloud (ungeeignet): Light-weight remote communication for high-performance cloud networks \url{http://ieeexplore.ieee.org/document/6483669/}
- \item Performance Analysis of High Performance Computing Applications on the Amazon Web Services Cloud \url{http://ieeexplore.ieee.org/abstract/document/5708447/}
-\end{itemize}
+\subsubsection{RPC}
 
-\subsubsection{RPC Bibliotheken}
+\todo{rpc aufräumen}
 
 RPC steht für Remote Procedure Call.
 Sie bieten die Möglichkeit von Funktionsaufrufen in verteilten Systemen.
-Im Gegensatz zu Protokollen wie HTTP oder REST sieht RPC wie ein Methodenaufruf aus.
+Im Gegensatz zu Protokollen wie REST sieht RPC wie ein Methodenaufruf aus.
 Das Ziel ist die Ausführung einer bestimmten Prozedur, nicht das verwalten einer bestimmten Ressource.
 Protokolle sind zum Beispiel XML-RPC und Json-RPC.
 
@@ -401,12 +432,24 @@ Protokolle sind zum Beispiel XML-RPC und Json-RPC.
  \item c++ json-rpc lib \url{https://github.com/cinemast/libjson-rpc-cpp/}
 \end{itemize}
 
-\paragraph{xml-rpc}
+\paragraph{REST vs RPC}
+
+\todo{skizze rpc call (vs skizze rest call)}
+\todo{warum rest ungeeignet}
+
+\paragraph{XML-RPC}
+
+XML-RPC ist ein Protokoll für Remote Procedure Calls.
+In diesem wird XML zur Formatierung der übertragenen Daten verwendet.
+Wie in RPC besteht auch in XML-RPC der Bezug auf Methoden.
+Darin besteht der Unterschied zu anderen Protokollen, welche sich auf die Manipulation von Daten beziehungsweise Ressourcen beziehen.
+Es gibt in verschiedenen Sprachen Implementierungen von Server-Client-Frameworks die das XML-RPC Protokoll zur Kommunikation verwenden.
+
+\subparagraph{xml-rpc}
 
 XML-RPC Bibliothek für C und C++ \url{http://xmlrpc-c.sourceforge.net/}.
 
-Installation: 
-In the simplest case, it's just a conventional\\
+Installation: \\
 \begin{lstlisting}
 ./configure
 make
@@ -415,16 +458,33 @@ make install
 ldconfig
 \end{lstlisting}
 
-\paragraph{json-rpc}
+Diese Bibliothek bietet ein performantes Framework zur Implementierung von XML-RPC Anwendungen.
+Sie bietet sicher Kommunikation per HTTPS.
+Es können größere Datenmengen per Packet Stream übertragen werden.
+Die Verwendung der Frameworkmethoden erfolgt sehr transparent und modular, wodurch man leicht Einfluss auf die funktionsweise nehmen kann.
+Das führt allerdings auch dazu, dass im Vergleich zu modernen Frameworks recht viel boiler plate code erforderlich ist.
 
-information: \url{http://www.simple-is-better.org/json-rpc/}
-wiki: \url{https://en.wikipedia.org/wiki/JSON-RPC}
+\paragraph{JSON-RPC}
 
-json rpc server: \url{https://github.com/hmng/jsonrpc-c}
+JSON-RPC ist wie XML-RPC ein Protokoll für Remote Procedure Calls.
+Dieses verwendet für die Formatierung der Daten das Json-Format, was den wesentlichen Unterschied zum XML-RPC darstellt.
+Das Json-Format benötigt im Vergleich zu XML wesentlich weniger Zeichen für die Strukturierung der Daten.
+Durch die unterschiedliche Effizienz in der Repräsentation der Daten ergeben sich bei JSON-RPC bessere Übertragungsgeschwindigkeiten.
+Die Auswahl an JSON Bibliotheken welche in C und C++ implementiert sind ist groß.
+Im folgenden github-Projekt wurde eine große Auswahl miteinander verglichen: \url{https://github.com/miloyip/nativejson-benchmark}.
 
-rpc client?: \url{https://groups.google.com/forum/#!topic/json-rpc/9O1dbQehU04}
+\todo{liste durchgehen}
+\begin{itemize}
+ \item information: \url{http://www.simple-is-better.org/json-rpc/}
+ \item wiki: \url{https://en.wikipedia.org/wiki/JSON-RPC}
+ \item json rpc server: \url{https://github.com/hmng/jsonrpc-c}
+ \item tcp client: \url{http://jsonrpc-cpp.sourceforge.net/index.php?n=Main.HomePage}
+ \item rpc client?: \url{https://groups.google.com/forum/#!topic/json-rpc/9O1dbQehU04}
+\end{itemize}
 
-tcp client: \url{http://jsonrpc-cpp.sourceforge.net/index.php?n=Main.HomePage}
+Im folgenden Abschnitt wird eine Auswahl von JSON-RPC Bibliotheken vorgestellt:
+
+\subparagraph{json-rpc}
 
 json-rpc-libs:
 \begin{itemize}
@@ -485,95 +545,10 @@ build output left in jsonrpc-x.y
 
 völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 
-\paragraph{gRPC} \url{http://www.grpc.io/}
+\todo{client and server stubs: \url{https://github.com/masroorhasan/RPC}}
+\todo{rpc for php and c: \url{https://github.com/laruence/yar}}
 
-Googles open source RPC framework.
-Dokumentation: \url{http://www.grpc.io/docs/}.
-
-\subparagraph{Installation}
-
-Installiere vagrant ubuntu 16.04.
-Setup von gRPC nach der Installation:
-
-\begin{lstlisting}
-cd /vagrant
-sudo apt-get install build-essential autoconf libtool
-sudo apt-get install libgflags-dev libgtest-dev
-sudo apt-get install clang libc++-dev
-git clone -b $(curl -L http://grpc.io/release) \\
-https://github.com/grpc/grpc
-cd grpc
-git submodule update --init
-make && sudo make install
-cd third_party/protobuf
-sudo apt-get install unzip
-./autogen.sh
-./configure
-make && sudo make install
-cd -
-cd examples/cpp/helloworld/
-sudo apt-get install pkg-config
-make
-\end{lstlisting}
-
-\subparagraph{kurze Einführung}
-
-Benutzt Protobuf zum erstellen von Services und Nachrichtenobjekten (stubs).
-Offizieller support für C++ vorhanden.
-Implementierung für c vorhanden \url{https://github.com/protobuf-c/protobuf-c}.
-Das Basisframework von gRPC ist ebenfalls in nativem C geschrieben.
-Die Highlevel-Framework-API ist jedoch nicht in C verfügbar.
-
-Da die Definitionen der stubs nicht sprachgebunden erfolgen ist eine (spätere) Umstellung auf eine andere Sprache einfacher.
-Es müssen die stubs für die neue Sprache lediglich aus den gleichen Definitionen neu generiert werden.
-
-\begin{lstlisting}
-package helloworld;
-
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
-}
-
-// The request message containing the user's name.
-message HelloRequest {
-  string name = 1;
-}
-
-// The response message containing the greetings
-message HelloReply {
-  string message = 1;
-}
-\end{lstlisting}
-
-\subparagraph{Überblick Funktionsumfang}
-
-Ein definierter Service steht nach dem generieren der Implementierung in der gewünschten Sprache als Interface bereit.
-Dieses kann alternativ auch als AsyncService implementiert werden.
-
-\begin{lstlisting}
-//synchron
-class X : public Greeter::Service {}
-//oder asynchron
-class X : public Greeter::AsyncService {}
-\end{lstlisting}
-
-Listen von Request- oder Responseobjekten können in Form eines Streams übertragen werden.
-
-\begin{lstlisting}
-rpc ListFeatures(Rectangle) returns (stream Feature) {}
-\end{lstlisting}
-
-
-\paragraph{weitere RPC libs}
-
-\begin{itemize}
- \item client and server stubs: \url{https://github.com/masroorhasan/RPC}
- \item hpc optimized: \url{https://github.com/mercury-hpc/mercury}
- \item protobuf: \url{https://github.com/protobuf-c/protobuf-c-rpc}
- \item rpc for php and c: \url{https://github.com/laruence/yar}
-\end{itemize}
+\paragraph{Bibliotheken/Frameworks/Implementierungen}
 
 \subparagraph{Mercury}
 
@@ -597,11 +572,13 @@ Bietet außerdem MPI-Unterstützung.
 \subparagraph{DART}
 
 \url{http://coewww.rutgers.edu/www4/cacweb/TASSL/Papers/dart_hpdc.pdf}
-\url{https://www.researchgate.net/publication/220717741_DART_a_substrate_for_high_speed_asynchronous_data_IO}
+% \url{https://www.researchgate.net/publication/220717741_DART_a_substrate_for_high_speed_asynchronous_data_IO}
 
-\subsubsection{Calling Python from C}
+\subsubsection{andere}
 
-\paragraph{ressourcen}
+\paragraph{Calling Python from C}
+
+\subparagraph{ressourcen}
 
 \url{https://docs.python.org/2.5/ext/callingPython.html}
 \url{https://www.codeproject.com/articles/11805/embedding-python-in-c-c-part-i}
@@ -611,7 +588,7 @@ better
 \url{http://www.linuxjournal.com/article/8497}
 \url{https://www.codeproject.com/articles/820116/embedding-python-program-in-a-c-cplusplus-code}
 
-\paragraph{basics}
+\subparagraph{basics}
 
 \begin{lstlisting}
 #include <python3.6m/Python.h>
@@ -633,7 +610,7 @@ cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m
   -lm -L/usr/lib/python3.6
 \end{lstlisting}
 
-\subsubsection{spring-server framework}
+\paragraph{spring-server framework}
 
 \url{https://github.com/bartobri/spring-server}
 
@@ -641,14 +618,15 @@ cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m
 git clone git@github.com:bartobri/spring-server.git
 \end{lstlisting}
 
-\subsubsection{Service}
-\subsubsection{Socket}
-
 \subsubsection{Serialisierung}
 
 \url{https://www.quora.com/Is-there-a-C-struct-to-JSON-generator-library}
 
 \paragraph{Protocol Buffers}
+
+\todo{protobuf überarbeiten und nach oben zu grpc verweisen}
+
+protobuf: \url{https://github.com/protobuf-c/protobuf-c-rpc}
 
 \url{https://developers.google.com/protocol-buffers/}
 Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
@@ -664,17 +642,8 @@ Ist daher ungeeignet.
 
 \newpage
 
-\section{Vergleiche und Vorbereitungen für die Implementierung}
-
-Vergleiche verschiedener Technologien und Werkzeuge.
-Auswahl für den Einsatz bei der Implementierung.
-
-\subsection{Ressourcen}
-
-\begin{itemize}
- \item HPC in der Cloud \url{http://grids.ucs.indiana.edu/ptliupages/publications/cloud_handbook_final-with-diagrams.pdf}
-\end{itemize}
-
+\section{Vergleiche und Auswahl von Werkzeugen}
+\todo{vergleiche kapitel ausarbeiten}
 
 \subsection{'private' vs 'public' Cloud}
 
@@ -685,6 +654,8 @@ Auswahl für den Einsatz bei der Implementierung.
 \end{itemize}
 
 \subsection{Technologie}
+
+\todo{tabelle/vergleiche zwischen technologien: rpc,socket,service etc}
 
 \begin{itemize}
  \item welche Werkzeuge für die kommunikation zwischen client und cloud
@@ -729,8 +700,104 @@ Amazon AWS  & \myuncheckbox & \mycheckbox &     &
 \end{tabular}
 \end{table}
 
+\newpage
+
+\section{Vorbereitungen für die Implementierung}
+
+Vergleiche verschiedener Technologien und Werkzeuge.
+Auswahl für den Einsatz bei der Implementierung.
+
+\subsection{gRPC} \url{http://www.grpc.io/}
+
+Googles open source RPC framework.
+Dokumentation: \url{http://www.grpc.io/docs/}.
+
+\paragraph{Installation}
+
+Installiere vagrant ubuntu 16.04.
+Setup von gRPC nach der Installation:
+
+\begin{lstlisting}
+cd /vagrant
+sudo apt-get install build-essential autoconf libtool
+sudo apt-get install libgflags-dev libgtest-dev
+sudo apt-get install clang libc++-dev
+git clone -b $(curl -L http://grpc.io/release) \\
+https://github.com/grpc/grpc
+cd grpc
+git submodule update --init
+make && sudo make install
+cd third_party/protobuf
+sudo apt-get install unzip
+./autogen.sh
+./configure
+make && sudo make install
+cd -
+cd examples/cpp/helloworld/
+sudo apt-get install pkg-config
+make
+\end{lstlisting}
+
+\paragraph{kurze Einführung}
+
+\todo{grpc genauer beschreiben (auch protobuf)}
+
+Benutzt Protobuf zum erstellen von Services und Nachrichtenobjekten (stubs).
+Offizieller support für C++ vorhanden.
+Implementierung für c vorhanden \url{https://github.com/protobuf-c/protobuf-c}.
+Das Basisframework von gRPC ist ebenfalls in nativem C geschrieben.
+Die Highlevel-Framework-API ist jedoch nicht in C verfügbar.
+
+Da die Definitionen der stubs nicht sprachgebunden erfolgen ist eine (spätere) Umstellung auf eine andere Sprache einfacher.
+Es müssen die stubs für die neue Sprache lediglich aus den gleichen Definitionen neu generiert werden.
+
+\begin{lstlisting}
+package helloworld;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
+\end{lstlisting}
+
+\paragraph{Überblick Funktionsumfang}
+
+Ein definierter Service steht nach dem generieren der Implementierung in der gewünschten Sprache als Interface bereit.
+Dieses kann alternativ auch als AsyncService implementiert werden.
+
+\begin{lstlisting}
+//synchron
+class X : public Greeter::Service {}
+//oder asynchron
+class X : public Greeter::AsyncService {}
+\end{lstlisting}
+
+Listen von Request- oder Responseobjekten können in Form eines Streams übertragen werden.
+
+\begin{lstlisting}
+rpc ListFeatures(Rectangle) returns (stream Feature) {}
+\end{lstlisting}
+
+\subsection{Ressourcen}
+
+\begin{itemize}
+ \item HPC in der Cloud \url{http://grids.ucs.indiana.edu/ptliupages/publications/cloud_handbook_final-with-diagrams.pdf}
+\end{itemize}
 
 \subsection{Roadmap Implementierung}
+
+\todo{roadmap checken/erweitern/abhaken}
 
 \paragraph{Was muss zwischen Client und Server übertragen werden:}
 
@@ -900,7 +967,7 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \section{Zukünftige, weiterführende Arbeiten}
 
-eventuell werden Teile von hier in die aktuelle Arbeit verschoben
+\todo{eventuell werden Teile von hier in die aktuelle Arbeit verschoben}
 
 \begin{itemize}
  \item Skalierbarkeit der Cloud (einsetzen)

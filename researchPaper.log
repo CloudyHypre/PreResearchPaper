@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.8)  19 APR 2017 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.24)  12 JUN 2017 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **researchPaper.tex
 (./researchPaper.tex
-LaTeX2e <2016/03/31> patch level 3
+LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -29,14 +29,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -248,6 +248,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
@@ -268,12 +270,14 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -314,7 +318,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -338,7 +342,7 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -354,7 +358,7 @@ Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -362,7 +366,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -402,7 +406,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count88
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -411,33 +415,33 @@ Now handling font encoding PD1 ...
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4486.
-Package hyperref Info: Link nesting OFF on input line 4491.
-Package hyperref Info: Hyper index ON on input line 4494.
-Package hyperref Info: Plain pages OFF on input line 4501.
-Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4735.
+Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count90
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5088.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen104
 \Fld@menulength=\count91
 \Field@Width=\dimen105
 \Fld@charsize=\dimen106
-Package hyperref Info: Hyper figures OFF on input line 6342.
-Package hyperref Info: Link nesting OFF on input line 6347.
-Package hyperref Info: Hyper index ON on input line 6350.
-Package hyperref Info: backreferencing OFF on input line 6357.
-Package hyperref Info: Link coloring OFF on input line 6362.
-Package hyperref Info: Link coloring with OCG OFF on input line 6367.
-Package hyperref Info: PDF/A mode OFF on input line 6372.
-LaTeX Info: Redefining \ref on input line 6412.
-LaTeX Info: Redefining \pageref on input line 6416.
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
 \Hy@abspage=\count92
 \c@Item=\count93
 \c@Hfootnote=\count94
@@ -446,7 +450,7 @@ LaTeX Info: Redefining \pageref on input line 6416.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count95
 \c@bookmark@seq@number=\count96
 
@@ -461,7 +465,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -472,7 +476,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 \Gread@gobject=\count97
 ))
 \Gin@req@height=\dimen107
@@ -882,7 +886,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./researchPaper.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 35.
+ [2] (./researchPaper.toc
 Overfull \hbox (6.7496pt too wide) in paragraph at lines 11--11
  [][] [][]\OT1/cmr/m/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing
 -Pat-terns 
@@ -892,162 +899,203 @@ Overfull \hbox (6.7496pt too wide) in paragraph at lines 11--11
 \tf@toc=\write5
 \openout5 = `researchPaper.toc'.
 
- (./researchPaper.tdo)
-\tf@tdo=\write6
-\openout6 = `researchPaper.tdo'.
+ [3] (./researchPaper.lof)
+\tf@lof=\write6
+\openout6 = `researchPaper.lof'.
 
- [3]
-<graphics/cloudComputingOverview.pdf, id=183, 552.0625pt x 491.8375pt>
+ [4] (./researchPaper.lot)
+\tf@lot=\write7
+\openout7 = `researchPaper.lot'.
+
+ [5] (./researchPaper.lol)
+\tf@lol=\write8
+\openout8 = `researchPaper.lol'.
+
+[6] (./researchPaper.tdo)
+\tf@tdo=\write9
+\openout9 = `researchPaper.tdo'.
+
+ [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+
+Overfull \hbox (28.05423pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/10 for high-performance cloud net-works []$\OT1/cmtt/m/n/10 http :
+ / / ieeexplore . ieee . org / document /
+ []
+
+
+Overfull \hbox (10.19304pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http : / / 
+ieeexplore . ieee . org / abstract /
+ []
+
+<graphics/cloudComputingOverview.pdf, id=257, 552.0625pt x 491.8375pt>
 File: graphics/cloudComputingOverview.pdf Graphic file (type pdf)
 
 <use graphics/cloudComputingOverview.pdf>
 Package pdftex.def Info: graphics/cloudComputingOverview.pdf used on input line
- 64.
+ 80.
 (pdftex.def)             Requested size: 345.0pt x 307.37515pt.
 
-Overfull \hbox (17.2228pt too wide) in paragraph at lines 67--69
+Overfull \hbox (17.2228pt too wide) in paragraph at lines 83--85
 []\OT1/cmr/m/n/10 Im Fol-gen-den wer-den die eben kurz angeschnit-te-nen Eigen-
 schaften von Cloudsys-
  []
 
-[4 <./graphics/cloudComputingOverview.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
-
-(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-
-Overfull \hbox (12.30008pt too wide) in paragraph at lines 108--111
+[8] [9 <./graphics/cloudComputingOverview.pdf>]
+Overfull \hbox (12.30008pt too wide) in paragraph at lines 124--127
  []\OT1/cmr/bx/n/10 Resource pool-ing[] \OT1/cmr/m/n/10 Ein Cloudsys-tem ben^^?
 otigt einen (gro^^Yen [genauer definieren])
  []
 
-[5]
-Overfull \hbox (13.45087pt too wide) in paragraph at lines 115--115
+
+Overfull \hbox (13.45087pt too wide) in paragraph at lines 131--131
 []\OT1/cmr/bx/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing-Pat-te
 rns chap.
  []
 
-
-Overfull \hbox (5.72266pt too wide) in paragraph at lines 135--140
+[10]
+Overfull \hbox (5.72266pt too wide) in paragraph at lines 151--156
 \OT1/cmr/m/n/10 nicht nur die `Verbesserung` einer Ressource eine bessere per-f
 or-mance erm^^?oglichen
  []
 
 
-Overfull \hbox (21.43027pt too wide) in paragraph at lines 141--144
+Overfull \hbox (21.43027pt too wide) in paragraph at lines 157--160
  []\OT1/cmr/bx/n/10 Automated man-age-ment[] \OT1/cmr/m/n/10 Durch die Elas-tiz
 it^^?at k^^?onnen Ressourcen von Cloudan-
  []
 
 
-Overfull \hbox (7.25075pt too wide) in paragraph at lines 145--148
+Overfull \hbox (7.25075pt too wide) in paragraph at lines 161--164
 \OT1/cmr/m/n/10 der Laufzeit ^^?andern k^^?onnen soll-ten Kom-po-nen-ten m^^?og
 lichst un-abh^^?angig voneinan-
  []
 
-[6]
-Overfull \hbox (7.78207pt too wide) in paragraph at lines 195--197
+[11]
+Overfull \hbox (7.78207pt too wide) in paragraph at lines 211--213
  []\OT1/cmr/bx/n/10 Amazon EC2[] []$\OT1/cmtt/m/n/10 https : / / www . youtube 
 . com / watch ? v = jLVPqoV4YjU & index =
  []
 
-[7]
-Overfull \hbox (177.27475pt too wide) in paragraph at lines 213--214
+
+Overfull \hbox (177.27475pt too wide) in paragraph at lines 229--230
 []\OT1/cmr/m/n/10 a guide to open source cloud []$\OT1/cmtt/m/n/10 http : / / w
 ww . tomsitpro . com / articles / open-[]source-[]cloud-[]computing-[]software 
 ,[]
  []
 
 
-Overfull \hbox (35.30385pt too wide) in paragraph at lines 214--215
+Overfull \hbox (35.30385pt too wide) in paragraph at lines 230--231
 []\OT1/cmr/m/n/10 5 open source cloud plat-forms []$\OT1/cmtt/m/n/10 http : / /
  solutionsreview . com / cloud-[]platforms /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--229
-
- []
-
-
-Overfull \hbox (30.6098pt too wide) in paragraph at lines 235--239
+Overfull \hbox (30.6098pt too wide) in paragraph at lines 251--255
 \OT1/cmr/m/n/10 devstack for get-ting started with open-stack []$\OT1/cmtt/m/n/
 10 http : / / docs . openstack . org / developer /
  []
 
 
-Overfull \hbox (1.91495pt too wide) in paragraph at lines 235--239
+Overfull \hbox (1.91495pt too wide) in paragraph at lines 251--255
 \OT1/cmr/m/n/10 install open-stack on ubuntu []$\OT1/cmtt/m/n/10 https : / / ww
 w . youtube . com / watch ? v = jpk4i66-[]IU4$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--239
+Underfull \hbox (badness 10000) in paragraph at lines 251--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
+Underfull \hbox (badness 10000) in paragraph at lines 258--262
 
  []
 
 
-Overfull \hbox (31.27573pt too wide) in paragraph at lines 247--248
+Overfull \hbox (31.27573pt too wide) in paragraph at lines 263--264
 []\OT1/cmr/m/n/10 Beispielkonfiguration: []$\OT1/cmtt/m/n/10 https : / / www . 
 openstack . org / software / sample-[]configs #
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 267.
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 283.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Overfull \hbox (4.38959pt too wide) in paragraph at lines 275--277
+Overfull \hbox (4.38959pt too wide) in paragraph at lines 291--293
 \OT1/cmr/m/n/10 pro-vi-sion re-sources' [http://docs.cloudstack.apache.org/en/l
 atest/concepts.html] 
  []
 
 
-Overfull \hbox (32.9708pt too wide) in paragraph at lines 285--286
+Overfull \hbox (32.9708pt too wide) in paragraph at lines 301--302
 []\OT1/cmr/m/n/10 BOOK: cloud com-put-ing pat-terns []$\OT1/cmtt/m/n/10 https :
  / / katalog . bibliothek . tu-[]chemnitz .
  []
 
 
-Overfull \hbox (142.6639pt too wide) in paragraph at lines 286--287
+Overfull \hbox (142.6639pt too wide) in paragraph at lines 302--303
 []\OT1/cmr/m/n/10 raspberry pi pri-vate cloud []$\OT1/cmtt/m/n/10 https : / / s
 c5 . io / posts / a-[]private-[]raspberry-[]pi-[]cloud-[]with-[]arm-[]docker/$[
 ] 
  []
 
 
-Overfull \hbox (5.19235pt too wide) in paragraph at lines 287--288
+Overfull \hbox (5.19235pt too wide) in paragraph at lines 303--304
 []\OT1/cmr/m/n/10 more rasp-berry []$\OT1/cmtt/m/n/10 https : / / www . raspber
 rypi . org / forums / viewtopic . php ?
  []
 
-[9]
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+[14]
+Overfull \hbox (5.77127pt too wide) in paragraph at lines 356--358
+ []\OT1/cmr/bx/n/10 Installation[] \OT1/cmr/m/n/10 Um HYPRE zu in-stal-lieren s
+ind einige Abh^^?angigkeiten zu erf^^?ullen.
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 359.
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -1056,7 +1104,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 //gefolgt von einem `make` ausgeführt 
+l.370 //gefolgt von einem `make` ausgeführt 
                                              werden.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1070,17 +1118,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 //gefolgt von einem `make` ausgeführt 
+l.370 //gefolgt von einem `make` ausgeführt 
                                              werden.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 340--341
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[10]
+[15]
 
 ! Package inputenc Error: Unicode char ² (U+B2)
 (inputenc)                not set up for use with LaTeX.
@@ -1089,316 +1132,327 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 ...zahl der Unbekannten beträgt daher N=n²
+l.406 ...zahl der Unbekannten beträgt daher N=n²
                                                   .
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (160.71848pt too wide) in paragraph at lines 376--377
+Overfull \hbox (160.71848pt too wide) in paragraph at lines 411--412
 []\OT1/cmr/m/n/10 offiziell: []$\OT1/cmtt/m/n/10 http : / / computation . llnl 
 . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]multigrid-[]methods$[]
  
  []
 
 
-Overfull \hbox (239.80193pt too wide) in paragraph at lines 377--378
+Overfull \hbox (239.80193pt too wide) in paragraph at lines 412--413
 [][]\OT1/cmr/m/n/10 Ubersicht Pub-lika-tio-nen: []$\OT1/cmtt/m/n/10 http : / / 
 computation . llnl . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]mul
 tigrid-[]methods /
  []
 
 
-Overfull \hbox (3.47017pt too wide) in paragraph at lines 379--380
+Overfull \hbox (3.47017pt too wide) in paragraph at lines 414--415
 []\OT1/cmr/m/n/10 (mehr) beispiele []$\OT1/cmtt/m/n/10 https : / / redmine . sc
 orec . rpi . edu / anonsvn / fastmath /
  []
 
 
-Overfull \hbox (0.24724pt too wide) in paragraph at lines 379--380
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 414--415
 \OT1/cmtt/m/n/10 docs / ATPESC _ 2013 / Exercises / hypre / examples / README _
  files / c . html$[] 
  []
 
 
-Overfull \hbox (46.27588pt too wide) in paragraph at lines 385--386
-[]\OT1/cmr/m/n/10 c/c++ json lib bench-marks []$\OT1/cmtt/m/n/10 https : / / gi
-thub . com / miloyip / nativejson-[]benchmark$[] 
- []
-
-
-Overfull \hbox (28.05423pt too wide) in paragraph at lines 386--387
-\OT1/cmr/m/n/10 for high-performance cloud net-works []$\OT1/cmtt/m/n/10 http :
- / / ieeexplore . ieee . org / document /
- []
-
-
-Overfull \hbox (10.19304pt too wide) in paragraph at lines 387--388
-\OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http : / / 
-ieeexplore . ieee . org / abstract /
- []
-
-[11]
-Overfull \hbox (3.7211pt too wide) in paragraph at lines 400--401
+Overfull \hbox (3.7211pt too wide) in paragraph at lines 431--432
 []\OT1/cmr/m/n/10 Implementing re-mote pro-ce-dure calls []$\OT1/cmtt/m/n/10 ht
 tp : / / dl . acm . org / citation . cfm ?
  []
 
 
-Overfull \hbox (17.03831pt too wide) in paragraph at lines 406--407
+LaTeX Warning: Marginpar on page 16 moved.
+
+[16]
+Overfull \hbox (32.03831pt too wide) in paragraph at lines 450--451
  []\OT1/cmr/bx/n/10 xml-rpc[] \OT1/cmr/m/n/10 XML-RPC Bib-lio-thek f^^?ur C und
  C++ []$\OT1/cmtt/m/n/10 http : / / xmlrpc-[]c . sourceforge .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--410
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
 
-Overfull \hbox (2.90924pt too wide) in paragraph at lines 420--422
- []\OT1/cmr/bx/n/10 json-rpc[] \OT1/cmr/m/n/10 in-for-ma-tion: []$\OT1/cmtt/m/n
-/10 http : / / www . simple-[]is-[]better . org / json-[]rpc/$[] \OT1/cmr/m/n/1
-0 wiki:
- []
-
-
-Overfull \hbox (36.91399pt too wide) in paragraph at lines 425--426
+Overfull \hbox (46.91402pt too wide) in paragraph at lines 482--483
 []\OT1/cmr/m/n/10 rpc client?: []$\OT1/cmtt/m/n/10 https : / / groups . google 
 . com / forum / # ! topic / json-[]rpc / 9O1dbQehU04$[] 
  []
 
+[17]
 
-Overfull \hbox (31.8862pt too wide) in paragraph at lines 427--428
-[]\OT1/cmr/m/n/10 tcp client: []$\OT1/cmtt/m/n/10 http : / / jsonrpc-[]cpp . so
-urceforge . net / index . php ? n = Main . HomePage$[] 
- []
+LaTeX Warning: Marginpar on page 18 moved.
 
-[12] [13]
-Overfull \hbox (43.43755pt too wide) in paragraph at lines 521--526
- []\OT1/cmr/bx/n/10 kurze Einf^^?uhrung[] \OT1/cmr/m/n/10 Be-nutzt Pro-to-buf z
-um er-stellen von Ser-vices und Nachrichtenob-
- []
-
-
-Overfull \hbox (4.35022pt too wide) in paragraph at lines 521--526
-\OT1/cmr/m/n/10 work von gRPC ist eben-falls in na-tivem C geschrieben. Die Hig
-hlevel-Framework-
- []
-
-
-Overfull \hbox (0.11162pt too wide) in paragraph at lines 527--529
-[]\OT1/cmr/m/n/10 Da die Def-i-ni-tio-nen der stubs nicht sprachge-bun-den er-f
-ol-gen ist eine (sp^^?atere)
- []
-
-
-Overfull \hbox (9.02173pt too wide) in paragraph at lines 552--554
- [][]\OT1/cmr/bx/n/10 Uberblick Funk-tion-sum-fang[] \OT1/cmr/m/n/10 Ein defini
-erter Ser-vice steht nach dem gener-
- []
-
-[14]
-Overfull \hbox (5.81123pt too wide) in paragraph at lines 580--584
+[18]
+Overfull \hbox (5.81123pt too wide) in paragraph at lines 555--559
  []\OT1/cmr/bx/n/10 Mercury[] \OT1/cmr/m/n/10 Home-page: []$\OT1/cmtt/m/n/10 ht
 tps : / / mercury-[]hpc . github . io/$[] \OT1/cmr/m/n/10 Doku-men-ta-tion:
  []
 
 
-Overfull \hbox (10.1635pt too wide) in paragraph at lines 580--584
+Overfull \hbox (10.1635pt too wide) in paragraph at lines 555--559
 []$\OT1/cmtt/m/n/10 http : / / mercury-[]hpc . github . io / documentation/$[] 
 \OT1/cmr/m/n/10 High-level RPC Layer: []$\OT1/cmtt/m/n/10 http :
  []
 
 
-Overfull \hbox (5.35849pt too wide) in paragraph at lines 580--584
+Overfull \hbox (5.35849pt too wide) in paragraph at lines 555--559
 \OT1/cmtt/m/n/10 / / mercury-[]hpc . github . io / documentation / #high-[]leve
 l-[]rpc-[]layer$[] \OT1/cmr/m/n/10 Mailing-
  []
 
 
-Overfull \hbox (26.31386pt too wide) in paragraph at lines 591--592
+Overfull \hbox (26.31386pt too wide) in paragraph at lines 566--567
  []\OT1/cmr/bx/n/10 Trios/Nessie[] []$\OT1/cmtt/m/n/10 https : / / software . s
 andia . gov / trac / nessie / wiki / WikiStart$[] 
  []
 
 
-Overfull \hbox (36.06784pt too wide) in paragraph at lines 595--596
+Overfull \hbox (36.06784pt too wide) in paragraph at lines 570--571
  []\OT1/cmr/bx/n/10 Portals[] []$\OT1/cmtt/m/n/10 https : / / www . researchgat
 e . net / publication / 221201996 _ Efficient _
  []
 
 
-Overfull \hbox (6.85838pt too wide) in paragraph at lines 599--601
+Overfull \hbox (6.85838pt too wide) in paragraph at lines 574--576
  []\OT1/cmr/bx/n/10 DART[] []$\OT1/cmtt/m/n/10 http : / / coewww . rutgers . ed
 u / www4 / cacweb / TASSL / Papers / dart _
  []
 
 
-Overfull \hbox (3.7192pt too wide) in paragraph at lines 599--601
-\OT1/cmtt/m/n/10 hpdc . pdf$[] []$https : / / www . researchgate . net / public
-ation / 220717741 _ DART _ a _
- []
-
-
-Overfull \hbox (13.9444pt too wide) in paragraph at lines 606--608
+Overfull \hbox (28.9444pt too wide) in paragraph at lines 583--585
  []\OT1/cmr/bx/n/10 ressourcen[] []$\OT1/cmtt/m/n/10 https : / / docs . python 
 . org / 2 . 5 / ext / callingPython . html$[] []$https :
  []
 
 
-Overfull \hbox (9.74693pt too wide) in paragraph at lines 606--608
+Overfull \hbox (9.74693pt too wide) in paragraph at lines 583--585
 \OT1/cmtt/m/n/10 / / www . codeproject . com / articles / 11805 / embedding-[]p
 ython-[]in-[]c-[]c-[]part-[]i$[] 
  []
 
 
-Overfull \hbox (8.21928pt too wide) in paragraph at lines 611--613
+Overfull \hbox (8.21928pt too wide) in paragraph at lines 588--590
 [][]$\OT1/cmtt/m/n/10 http : / / www . linuxjournal . com / article / 8497$[] [
 ]$https : / / www . codeproject .
  []
 
 
-Overfull \hbox (4.99698pt too wide) in paragraph at lines 611--613
+Overfull \hbox (4.99698pt too wide) in paragraph at lines 588--590
 \OT1/cmtt/m/n/10 com / articles / 820116 / embedding-[]python-[]program-[]in-[]
 a-[]c-[]cplusplus-[]code$[] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 617.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 594.
 
 (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 617.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 594.
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 632--633
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 609--610
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15]
-Overfull \hbox (10.74693pt too wide) in paragraph at lines 649--650
+
+Overfull \hbox (1.66698pt too wide) in paragraph at lines 615--616
+ []\OT1/cmr/bx/n/10 spring-server frame-work[] []$\OT1/cmtt/m/n/10 https : / / 
+github . com / bartobri / spring-[]server$[] 
+ []
+
+
+Overfull \hbox (10.74693pt too wide) in paragraph at lines 623--624
 []$\OT1/cmtt/m/n/10 https : / / www . quora . com / Is-[]there-[]a-[]C-[]struct
 -[]to-[]JSON-[]generator-[]library$[] 
  []
 
-
-Overfull \hbox (14.84608pt too wide) in paragraph at lines 653--658
- []\OT1/cmr/bx/n/10 Protocol Buffers[] []$\OT1/cmtt/m/n/10 https : / / develope
-rs . google . com / protocol-[]buffers/$[] \OT1/cmr/m/n/10 Pro-
+[19]
+Overfull \hbox (3.63689pt too wide) in paragraph at lines 631--636
+[][]$\OT1/cmtt/m/n/10 https : / / developers . google . com / protocol-[]buffer
+s/$[] \OT1/cmr/m/n/10 Pro-to-col buffers are
  []
 
 
-Overfull \hbox (0.96924pt too wide) in paragraph at lines 653--658
-\OT1/cmtt/m/n/10 protobuf-[]c / protobuf-[]c$[] []$https : / / github . com / p
-rotobuf-[]c / protobuf-[]c-[]rpc$[] 
+Overfull \hbox (20.98921pt too wide) in paragraph at lines 631--636
+\OT1/cmr/m/n/10 tured data. Im-ple-men-tierung f^^?ur C: []$\OT1/cmtt/m/n/10 ht
+tps : / / github . com / protobuf-[]c / protobuf-[]c$[]
  []
 
-[16]
-Overfull \hbox (37.0244pt too wide) in paragraph at lines 675--676
-[]\OT1/cmr/m/n/10 HPC in der Cloud []$\OT1/cmtt/m/n/10 http : / / grids . ucs .
- indiana . edu / ptliupages / publications /
+[20]
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 658--658
+[][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
+ []
+
+
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 658--658
+\OT1/cmr/m/n/5 rpc,socket,service 
+ []
+
+
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 658--658
+[][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
+ []
+
+
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 658--658
+\OT1/cmr/m/n/5 rpc,socket,service 
+ []
+
+
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 658--658
+[][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
+ []
+
+
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 658--658
+\OT1/cmr/m/n/5 rpc,socket,service 
+ []
+
+
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 658--658
+[][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
+ []
+
+
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 658--658
+\OT1/cmr/m/n/5 rpc,socket,service 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 720.
+               Default added (so using `tbp') on input line 691.
 
-[17]
-Overfull \hbox (4.6854pt too wide) in paragraph at lines 774--778
+[21]
+Overfull \hbox (6.16725pt too wide) in paragraph at lines 745--750
+[]\OT1/cmr/m/n/10 Benutzt Pro-to-buf zum er-stellen von Ser-vices und Nachricht
+enob-jek-ten (stubs).
+ []
+
+
+Overfull \hbox (3.87999pt too wide) in paragraph at lines 745--750
+\OT1/cmr/m/n/10 Of-fizieller sup-port f^^?ur C++ vorhan-den. Im-ple-men-tierung
+ f^^?ur c vorhan-den []$\OT1/cmtt/m/n/10 https :
+ []
+
+
+Overfull \hbox (0.11162pt too wide) in paragraph at lines 751--753
+[]\OT1/cmr/m/n/10 Da die Def-i-ni-tio-nen der stubs nicht sprachge-bun-den er-f
+ol-gen ist eine (sp^^?atere)
+ []
+
+[22]
+Overfull \hbox (37.0244pt too wide) in paragraph at lines 795--796
+[]\OT1/cmr/m/n/10 HPC in der Cloud []$\OT1/cmtt/m/n/10 http : / / grids . ucs .
+ indiana . edu / ptliupages / publications /
+ []
+
+[23]
+Overfull \hbox (4.6854pt too wide) in paragraph at lines 841--845
  []\OT1/cmr/bx/n/10 Kernmodule[] \OT1/cmr/m/n/10 Einige HYPRE-Methoden ^^?ubers
 chreiben. Map-ping HYPRE-
  []
 
-[18]
-Overfull \hbox (116.24602pt too wide) in paragraph at lines 783--788
+[24]
+Overfull \hbox (116.24602pt too wide) in paragraph at lines 850--855
 []$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
 ntu-[]on-[]virtualbox-[]for-[]devstack-[]2016-[]03-[]30/$[] 
  []
 
 
-Overfull \hbox (46.99661pt too wide) in paragraph at lines 783--788
+Overfull \hbox (46.99661pt too wide) in paragraph at lines 850--855
 []$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
 ntu-[]using-[]vagrant-[]2016-[]04-[]01/$[] 
  []
 
 
-Overfull \hbox (67.49643pt too wide) in paragraph at lines 783--788
+Overfull \hbox (67.49643pt too wide) in paragraph at lines 850--855
 []$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / downloading-[]and-
 []installing-[]devstack-[]2016-[]04-[]02/$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--788
+Underfull \hbox (badness 10000) in paragraph at lines 850--855
 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 795--808
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 862--875
 []$ 
  []
 
-[19]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 830--857
+[25]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 897--924
 []$[]$ 
  []
 
 
-Overfull \hbox (54.6426pt too wide) in paragraph at lines 871--876
+Overfull \hbox (54.6426pt too wide) in paragraph at lines 938--943
  []\OT1/cmr/bx/n/10 Reboot[] []$\OT1/cmtt/m/n/10 https : / / ask . openstack . 
 org / en / question / 5423 / rebooting-[]with-[]devstack/$[]
  []
 
 
-Overfull \hbox (8.945pt too wide) in paragraph at lines 871--876
+Overfull \hbox (8.945pt too wide) in paragraph at lines 938--943
 \OT1/cmr/m/n/10 Wenn die Va-grant-box herunter gefahren wurde muss de-vs-tack n
 ach einem erneuten
  []
 
-[20]
-Overfull \hbox (98.74629pt too wide) in paragraph at lines 887--888
+[26]
+Overfull \hbox (98.74629pt too wide) in paragraph at lines 954--955
 [][]$\OT1/cmtt/m/n/10 http : / / stackoverflow . com / questions / 36268822 / n
 o-[]rejoin-[]stack-[]sh-[]script-[]in-[]my-[]setup$[] 
  []
 
 
-Overfull \hbox (71.86824pt too wide) in paragraph at lines 897--898
+Overfull \hbox (71.86824pt too wide) in paragraph at lines 964--965
  []\OT1/cmr/bx/n/10 Verbindung zur Cloud[] \OT1/cmr/m/n/10 http://openstack-clo
 ud-mylearning.blogspot.de/2015/02/openstack-
  []
 
-[21] [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 917.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 917.
+[27] [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 984.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 984.
  (./researchPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 917.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 917.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 984.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 984.
 Package rerunfilecheck Info: File `researchPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 54B70A78CF0ED9CD90B6337348F65B8B;2461.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 917.
+(rerunfilecheck)             Checksum: F1CE33D4B4959770E2AE6E8EC94EB8EF;2420.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 984.
  ) 
 Here is how much of TeX's memory you used:
- 17998 strings out of 493013
- 325659 string characters out of 6139317
- 401595 words of memory out of 5000000
- 20956 multiletter control sequences out of 15000+600000
- 12278 words of font info for 48 fonts, out of 8000000 for 9000
+ 18289 strings out of 493013
+ 331682 string characters out of 6139317
+ 452087 words of memory out of 5000000
+ 21198 multiletter control sequences out of 15000+600000
+ 12446 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,56p,423b,1737s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,76p,423b,1735s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msam10.pfb>
-Output written on researchPaper.pdf (22 pages, 196991 bytes).
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on researchPaper.pdf (28 pages, 231120 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 650 compressed objects within 7 object streams
- 281 named destinations out of 1000 (max. 500000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 320 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
