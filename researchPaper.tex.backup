@@ -1,4 +1,6 @@
 \documentclass[a4paper,10pt]{article}
+
+%inputs
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -13,6 +15,10 @@ Recherche und Literaturverzeichnis}
 
 \begin{document}
 
+%settings
+\newcommand{\mycheckbox}[0]{\makebox[0pt][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$\checkmark$}}
+\newcommand{\myuncheckbox}[0]{\makebox[0em][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$ $}}
+
 \newenvironment{boxed}[1]
 {\begin{center}Definition\\
 \begin{tabular}{|p{0.9\textwidth}|}
@@ -25,8 +31,7 @@ Recherche und Literaturverzeichnis}
 \end{center}
 }
 
-\newcommand{\mycheckbox}[0]{\makebox[0pt][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$\checkmark$}}
-\newcommand{\myuncheckbox}[0]{\makebox[0em][l]{$\square$}\raisebox{0.15ex}{\hspace{0.1em}$ $}}
+%content
 
 \maketitle
 \newpage
@@ -38,14 +43,21 @@ Recherche und Literaturverzeichnis}
 \newpage
 
 \tableofcontents
+\newpage
 
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\lstlistoflistings
 \newpage
 
 \listoftodos
-
 \newpage
 
-\section{Informationssammlung und Einführung in die relevanten Themen}
+\section{Einführung in die relevanten Themen}
 
 \subsection{Allgemeines und Recherche zum Thema Cloud}
 
@@ -108,15 +120,15 @@ Ein \textbf{Once-in-a-lifetime workload} ist eine einmalige Lastspitze.
 `Provisioning` und `decomissioning` als Aktivitäten zum Hinzufügen oder Entfernen von weiteren Ressourcen.
 Das kann durch Benutzer über grafische oder Kommandozeilenschnittstellen geschehen oder automatisiert über eine API.
 \paragraph{Broad network access}
-Ein starkes Netzwerk [genauer definieren] ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen. 
+Ein starkes Netzwerk \todo{genauer definieren} ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen. 
 So kann Zugriffszeit auf Daten weniger abhängig von ihrem pysikalischen Speicherort werden.
 \paragraph{Measured service (pay-per-use)}
 Durch die Nutzung von Cloudsystemen kann man stark von der Flexibilität der Ressourcen profitieren.
 Diese Flexibilität muss sich auch im Bezahlmodell widerspiegeln.
 \paragraph{Resource pooling}
-Ein Cloudsystem benötigt einen (großen [genauer definieren]) Pool an Ressourcen.
+Ein Cloudsystem benötigt einen (großen \todo{genauer definieren}) Pool an Ressourcen.
 Nur so kann Flexibilität für die Nutzer gewährleistet werden.
-Um eine Austauschbarkeit der Ressourcen zu ermöglichen muss eine homogene Nutzung der Ressourcen existieren. [warum? flexible Nutzung, Kosten]
+Um eine Austauschbarkeit der Ressourcen zu ermöglichen muss eine homogene Nutzung der Ressourcen existieren. \todo{warum? flexible Nutzung, Kosten}
 \paragraph{Rapid elasticity}
 Elastizität von Cloudsystemen ermöglicht eine Effiziente Zuweisung von Ressourcen auf die Nutzer.
 Der Ressourcepool muss dynamisch unter den Nutzern aufgeteilt werden können.
@@ -152,8 +164,8 @@ Diese Aktionen sollten aufgrund von Monitoring der Systemlast ausgelöst werden.
 Damit die Verwaltung der Ressourcen jederzeit schnell und entsprechend der aktuellen Lage stattfindet sollte sie automatisiert sein.
 \paragraph{Loose coupling}
 Da sich die verfügbaren Ressourcen der Anwendung während der Laufzeit ändern können sollten Komponenten möglichst unabhängig voneinander sein.
-Das reduziert die Fehleranfälligkeit für die Fälle in denen Komponenten kurzzeitig nicht verfügbar sind. [wie?]
-Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webservices, SOA, asynchrone Kommunikation relevant für Cloudanwendungen. [Technologien etwas weiter ausführen]
+Das reduziert die Fehleranfälligkeit für die Fälle in denen Komponenten kurzzeitig nicht verfügbar sind. \todo{wie?}
+Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webservices, SOA, asynchrone Kommunikation relevant für Cloudanwendungen. \todo{Technologien etwas weiter ausführen}
 
 \subsubsection{Arten von Cloud}
 
@@ -166,7 +178,7 @@ Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webserv
 \end{itemize}
 
 \textbf{Infrastructure as a Service} gibt einem Zugang zu Netzwerk, Computern (unter umständen virtuell) und Speicher.
-Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Server Lösungen. [wie zum beispiel, kurz erläutern]
+Es ist daher sehr nah an den schon länger existierenden und bekannten Hosted Server Lösungen. \todo{wie zum beispiel, kurz erläutern}
 \textbf{Platform as a Service} dageben entfernt die Notwendigkeit die unterliegende Infrastruktur zu verwalten.
 Das betrifft Hardware sowie die Betriebssystemebene.
 Man erhält eine Umgebung in der man seine Anwendung ausführen kann, ohne sich um Themen wie Updates, Kapazitäten von Speicher und anderen Ressourcen oder ähnliche typische Adminaufgaben kümmern zu müssen.
@@ -194,8 +206,7 @@ So können sich unterschiedliche Anwendungen unter eigenständigen Umgebungen In
 
 \subsubsection{Cloudsysteme}
 
-Vergleich in Tabelle
-
+\todo{Vergleich in Tabelle? - Konflikt zu chpt. 'Gegenüberstellungen ...'}
 
 \paragraph{Verfügbare Cloudsysteme für public Clouds}
 
@@ -299,55 +310,63 @@ IaaS
 \subsubsection{Webtechnologien}
 
 \paragraph{RPC}
-
 (Vergleich zu REST etc)
 
-\paragraph{Service}
-
+\paragraph{Service/Webservice}
 \todo{erklärung service kommunikation allgemein}
+SOAP
 
 \paragraph{Socket}
-
 \todo{erklärung socket allgemein}
+
+\subsubsection{Mathematische Grundlagen}
+
+\paragraph{Laplace-Gleichung}
+Partielle Differentialegleichung.
+\todo{Grundlagen für HYPRE: 2D Laplace}
+\url{https://www.youtube.com/watch?v=Z9NjA_f2VZw}
+\url{https://www.youtube.com/watch?v=-D4GDdxJrpg}
 
 \subsection{HYPRE - Überblick über die Bibliothek}
 
-HYPRE ist eine freie Software von Lawrence Livermore National Laboratory.
-Es ist unter der GNU Lesser General Public License (Free Software Foundation) Version 2.1 lizensiert.
-Der Funktionsumfang von HYPRE umfasst 'Scalable Linear Solvers and Multigrid Methods'.
-Es steht als Bibliothek für die Sprachen C (nativ) und FORTRAN bereit.
-Die aktuellste Version 2.11.1 ist seit dem 09.06.2016 verfügbar.
-Bis zur vorletzten Version 2.10.1 wurde HYRPE auch mit dem Babel Interface bereit.
+HYPRE ist eine freie Software die vom Center for Applied Scientific Computing\cite{hypreCASC} entwickelt wird.
+Dieses ist ein Teil der Organisation Lawrence Livermore National Laboratory\cite{hypreLLNL}, einer der wichtigsten staatlichen Forschungseinrichtungen der USA\cite{hypreDownload}.
+
+HYPRE ist unter der GNU Lesser General Public License (Free Software Foundation) Version 2.1 lizensiert.
+Diese ermöglicht die Benutzung der Bibliothek HYPRE sowohl in freier als auch proprietär lizensierter Software.
+Der Funktionsumfang von HYPRE wird beschrieben als 'Scalable Linear Solvers and Multigrid Methods'.
+
+Die aktuellste Version 2.11 ist seit dem 09.06.2016 verfügbar.
+Die Bibliothek steht in dieser Version für die Sprachen C (nativ), C++ und FORTRAN bereit.
+Bis zur vorletzten Minorversion 2.10 wurde HYRPE auch mit dem Babel Interface angeboten.
 Dieses bot die Möglichkeit HYPRE von anderen Sprachen als C und FORTRAN zu nutzen.
 So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
+Seit Version 2.11.1 steht jedoch keine Implementierung mehr von HYPRE mit Babel Interface zur Verfügung.
 
-Nutzt MPI für Parallelisierbarung.
-
-\todo{performance}
 \todo{HYPRE genauer beschreiben}
 \todo{HYPRE beispiel ex5}
 
-\subsubsection{Funktionsumfang allgemein}
+\subsubsection{Funktionsumfang (und deren Funktionsweise)}
 
 Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
-\todo{was heist das? was genau kann man lösen?}
+\todo{was heist das? was genau kann man lösen?wie funktioniert das? (lässt sich das beantworten)}
+\todo{wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)}
+
+\paragraph{Performance}
+Nutzt MPI für Parallelisierbarkeit.
+
+\todo{performance}
 
 \paragraph{Conceptual Interfaces}
 \paragraph{Solver Strategies}
 \paragraph{Preconditioner(s)}
 
-\subsubsection{Funktionsweise}
-
-wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)
-
-\todo{wie funktioniert das? (lässt sich das beantworten)}
-
-\subsubsection{Verwendung}
+\subsubsection{Verwendung und Implementierung}
 
 \paragraph{Installation}
-\newline
-
-\begin{lstlisting}[frame=single,caption=blabla]
+Um HYPRE zu installieren sind einige Abhängigkeiten zu erfüllen.
+Die nötigen Schritte in einem Ubuntu sehen wie folgt aus:
+\begin{lstlisting}[frame=single,caption=Installation HYPRE in Ubuntu]
 cd /vagrant
 
 //yaourt mpich2
@@ -363,15 +382,16 @@ cd hypre/src
 
 ./configure
 
-//Alternativ kann auch das build tool CMake eingesetzt werden.
+//Alternativ kann auch das build tool CMake 
+//eingesetzt werden.
 make
 \end{lstlisting}
 
-\paragraph{Vorbereitungen vor einer Implementierung}
+\paragraph{Implementierung}
 
-\paragraph{erste Implementierung}
+\paragraph{Checkliste}
 
-liste siehe manual:
+Die folgenden Punkte beschreiben grob die notwendigen Schritte eines Workflows für die Implementierung.
 
 \begin{enumerate}
  \item Build any necessary auxiliary structures for your chosen conceptual interface. /
@@ -388,12 +408,91 @@ liste siehe manual:
  Lösung vom solver abrufen.
 \end{enumerate}
 
-\paragraph{Ausführung, Test}
+Zunächst müssen die Datenstrukturen für die In- und Outputdaten definiert werden.
+Dies können beispielsweise Matrizen oder Vektoren sein.
+Die Entscheidung über das Inputformat ist abhängig vom gewählten Input-Interface.
+
+Die gewählten Datenstrukturen müssen als nächstes mit den Inputdaten gefüllt werden.
+HYPRE stellt dafür verschiedene Calls bereit.
+\todo{beispiele}
+
+Der nächste Schritt ist das Anlegen des gewünschten Solvers.
+Es stehen verschiedene Solver bereit\cite{hypreManual}, beispielsweise SMG (a parallel semicoarsening multigrid solver) oder BoomerAMG (parallel implementation of the algebraic multigrid method).
+
+\subsubsection{Beispielhafter Einblick}
 
 In der HYPRE-Bibliothek steht eine Reihe von Beipielen für die Benutzung zur Verfügung.
 An dieser Stelle wird das Beispiel 5 näher betrachtet.
 Dieses löst ein zweidimensionales Laplaceproblem (nxn) ohne Randbedingungen.
 Die Anzahl der Unbekannten beträgt daher N=n².
+Die komplette Implementierung des Beispiel 5 ist im Anhang zu finden.
+
+\paragraph{Vorbereitungen}
+
+MPI initialisieren.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Vorbereitungen]
+
+//init mpi
+MPI_Init(&argc, &argv);
+MPI_Comm_rank(MPI_COMM_WORLD, &myid);
+MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+
+\end{lstlisting}
+
+\paragraph{Matrix anlegen (analog zu Vektor)}
+
+Matrizen und Vektoren anlegen.
+Es stehen analoge Methoden für Matrizen und Vektoren bereit.
+Im folgenden Listing \ref{HYPRENutzungMatrix} sind die wichtigen Methoden daher lediglich für das Beispiel der Matrix aufgeführt.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Matrix anlegen (analog dazu Vektor), label=HYPRENutzungMatrix]
+//create matrix / vector
+
+HYPRE_IJMatrix A;
+int ilower;
+int iupper;
+
+//...
+
+/* Create the matrix.
+  Note that this is a square matrix, so we indicate the row partition
+  size twice (since number of rows = number of cols) */
+HYPRE_IJMatrixCreate(MPI_COMM_WORLD, ilower, iupper, ilower, iupper, &A);
+
+/* Choose a parallel csr format storage (see the User's Manual) */
+HYPRE_IJMatrixSetObjectType(A, HYPRE_PARCSR);
+
+/* Initialize before setting coefficients */
+HYPRE_IJMatrixInitialize(A);
+
+//in einem loop:
+HYPRE_IJMatrixSetValues(A, 1, &nnz, &i, cols, values);
+
+/* Assemble after setting the coefficients */
+HYPRE_IJMatrixAssemble(A);
+
+/* Get the parcsr matrix object to use */
+HYPRE_IJMatrixGetObject(A, (void**) &parcsr_A);
+
+\end{lstlisting}
+
+\paragraph{Solver anlegen und aufrufen}
+
+Solver erstellen und aufrufen.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver anlegen und aufrufen]
+//create solver
+//(Boomer)
+\end{lstlisting}
+
+\paragraph{mit Preconditioner}
+
+Solver mit anderem Preconditioner.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
+//create smg (etc) mit anderem precond. 
+\end{lstlisting}
 
 \subsubsection{Ressourcen}
 
@@ -440,7 +539,7 @@ Es gibt in verschiedenen Sprachen Implementierungen von Server-Client-Frameworks
 XML-RPC Bibliothek für C und C++ \url{http://xmlrpc-c.sourceforge.net/}.
 
 Installation: \\
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=XML-RPC Installation]
 ./configure
 make
 make install
@@ -490,7 +589,7 @@ json-rpc-libs:
 
 install:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=yeryomin/libjrpc Installation]
 git clone git@github.com:yeryomin/libjrpc.git
 git clone git@github.com:yeryomin/libipsc.git
 git clone git@github.com:yeryomin/libfmt.git
@@ -523,7 +622,7 @@ so many unresolved dependencies.............. wow
 
 (needs libwebsockets installed: `yaourt libwebsockets` etc.)
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=jhlee4bb/jsonrpC Installation]
 git clone git@github.com:jhlee4bb/jsonrpC.git
 cd jsonrpC
 mkdir build
@@ -566,7 +665,7 @@ Bietet außerdem MPI-Unterstützung.
 
 \subsubsection{andere}
 
-\paragraph{Calling Python from C}
+\paragraph{Python in C Ausführen}
 
 \subparagraph{ressourcen}
 
@@ -580,14 +679,16 @@ better
 
 \subparagraph{basics}
 
-\begin{lstlisting}
+some text
+
+\begin{lstlisting}[frame=single,caption=Python in C ausführen]
 #include <python3.6m/Python.h>
 
 int main()
 {
   Py_Initialize();
   PyRun_SimpleString(
-    "print('Hello World from Embedded Python!!!')"
+    "print('Hello World from Embedded Python.')"
   );
   Py_Finalize();
 }
@@ -595,7 +696,7 @@ int main()
 
 kompilieren von c-code mit python3.6
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Python in C kompilieren]
 cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m 
   -lm -L/usr/lib/python3.6
 \end{lstlisting}
@@ -604,7 +705,7 @@ cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m
 
 \url{https://github.com/bartobri/spring-server}
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Installation bartobri/spring-server]
 git clone git@github.com:bartobri/spring-server.git
 \end{lstlisting}
 
@@ -632,10 +733,10 @@ Ist daher ungeeignet.
 
 \newpage
 
-\section{Vergleiche und Auswahl von Werkzeugen}
+\section{Gegenüberstellung verfügbarer Werkzeuge und Varianten}
 \todo{vergleiche kapitel ausarbeiten}
 
-\subsection{'private' vs 'public' Cloud}
+\subsection{'private' und 'public' Cloud}
 
 \begin{itemize}
  \item gibt es open source cloud systeme? welche?
@@ -680,19 +781,23 @@ anhand relevanter (für das Projekt) Eigenschaften
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption{Vergleich von Cloudanbietern}
 \label{my-label}
-\begin{tabular}{lllll}
-Cloudsystem & private       & PaaS & ... &  \\
-Openstack   & \mycheckbox   &  &     &  \\
-Apache CS   & \mycheckbox   &  &     &  \\
-Amazon AWS  & \myuncheckbox & \mycheckbox &     & 
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+Cloudsystem & private & public & PaaS & ... & ...\\
+\hline
+Openstack & \mycheckbox & ... & ... & ... & ...\\
+Apache CS & \mycheckbox & ... & ... & ... & ...\\
+Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
+\hline
 \end{tabular}
 \end{table}
 
 \newpage
 
-\section{Vorbereitungen für die Implementierung}
+\section{Auswertung der Vergleiche und Auswahl der Werkzeuge}
 
 Vergleiche verschiedener Technologien und Werkzeuge.
 Auswahl für den Einsatz bei der Implementierung.
@@ -707,7 +812,7 @@ Dokumentation: \url{http://www.grpc.io/docs/}.
 Installiere vagrant ubuntu 16.04.
 Setup von gRPC nach der Installation:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Installiere vagrant ubuntu 16.04]
 cd /vagrant
 sudo apt-get install build-essential autoconf libtool
 sudo apt-get install libgflags-dev libgtest-dev
@@ -741,7 +846,7 @@ Die Highlevel-Framework-API ist jedoch nicht in C verfügbar.
 Da die Definitionen der stubs nicht sprachgebunden erfolgen ist eine (spätere) Umstellung auf eine andere Sprache einfacher.
 Es müssen die stubs für die neue Sprache lediglich aus den gleichen Definitionen neu generiert werden.
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Beispiel grpc]
 package helloworld;
 
 // The greeting service definition.
@@ -766,7 +871,7 @@ message HelloReply {
 Ein definierter Service steht nach dem generieren der Implementierung in der gewünschten Sprache als Interface bereit.
 Dieses kann alternativ auch als AsyncService implementiert werden.
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=grpc Service Definition]
 //synchron
 class X : public Greeter::Service {}
 //oder asynchron
@@ -775,7 +880,7 @@ class X : public Greeter::AsyncService {}
 
 Listen von Request- oder Responseobjekten können in Form eines Streams übertragen werden.
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=grpc Funktion Definition]
 rpc ListFeatures(Rectangle) returns (stream Feature) {}
 \end{lstlisting}
 
@@ -835,7 +940,7 @@ Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 
-\section{(Test-)Installation OpenStack}
+\section{Beispielinstallation OpenStack}
 
 \url{http://docs.openstack.org/developer/devstack/}\\
 \url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
@@ -845,13 +950,15 @@ Webservices implementieren für Komunikation mit dem Server.
 
 Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
 
+\subsection{Vorbereitung für die Installation}
+
 \paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
 
 \begin{enumerate}
  \item \begin{verbatim}vagrant init bento/ubuntu-16.04\end{verbatim}
  \item Vagrantfile anpassen. Es sollten mindestens 4GB RAM zugewiesen werden, damit OpenStack performant läuft.\\
 \begin{minipage}{\textwidth}
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Installation Ubuntu 16.04 in Vagrant]
 Vagrant.configure(2) do |config|
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.network "private_network", type: "dhcp"
@@ -865,6 +972,8 @@ end
  \item \begin{verbatim}vagrant up\end{verbatim}
  \item \begin{verbatim}vagrant ssh\end{verbatim}
 \end{enumerate}
+ 
+\subsection{Installation}
  
 \paragraph{Devstack installieren}
   
@@ -885,7 +994,7 @@ Am Ende der erfolgreichen Installation erscheint die folgende Ausgabe in etwa so
 Von hier können die nötigen Informationen für das weitere Vorgehen entnommen werden.
 
 \begin{minipage}{\textwidth}
-\begin{lstlisting}
+\begin{lstlisting}[frame=single,caption=Ausgabe von DevStack]
 =========================
 DevStack Component Timing
 =========================
@@ -911,6 +1020,8 @@ The default users are: admin and demo
 The password: nomoresecret
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Starten}
 
 \paragraph{Openstack (Horizon) starten}
 
@@ -949,9 +1060,16 @@ Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services g
 
 So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
 
+\subsection{Benutzung Beispielhaft}
+
 \paragraph{Verbindung zur Cloud}
 
 http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
+
+\paragraph{Überblick Oberfläche und Funktionen erläutern}
+
+\todo{Oberfläche/Benutzung grob umreisen}
+\todo{evtl. anhand eines Workflow}
 
 \newpage
 
@@ -969,6 +1087,638 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
   \end{itemize}
 
 \end{itemize}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{cites}
+
+\newpage
+
+\appendix
+\section{\\HYPRE}
+\subsection{HYPRE Example 5}
+\begin{lstlisting}
+/*
+   Example 5
+
+   Interface:    Linear-Algebraic (IJ)
+
+   Compile with: make ex5
+
+   Sample run:   mpirun -np 4 ex5
+
+   Description:  This example solves the 2-D Laplacian problem with zero boundary
+                 conditions on an n x n grid.  The number of unknowns is N=n^2.
+                 The standard 5-point stencil is used, and we solve for the
+                 interior nodes only.
+
+                 This example solves the same problem as Example 3.  Available
+                 solvers are AMG, PCG, and PCG with AMG or Parasails
+                 preconditioners.  */
+
+#include <math.h>
+#include "_hypre_utilities.h"
+#include "HYPRE_krylov.h"
+#include "HYPRE.h"
+#include "HYPRE_parcsr_ls.h"
+
+#include "vis.c"
+
+int hypre_FlexGMRESModifyPCAMGExample(void *precond_data, int iterations,
+                                      double rel_residual_norm);
+
+
+int main (int argc, char *argv[])
+{
+   int i;
+   int myid, num_procs;
+   int N, n;
+
+   int ilower, iupper;
+   int local_size, extra;
+
+   int solver_id;
+   int vis, print_system;
+
+   double h, h2;
+
+   HYPRE_IJMatrix A;
+   HYPRE_ParCSRMatrix parcsr_A;
+   HYPRE_IJVector b;
+   HYPRE_ParVector par_b;
+   HYPRE_IJVector x;
+   HYPRE_ParVector par_x;
+
+   HYPRE_Solver solver, precond;
+
+   /* Initialize MPI */
+   MPI_Init(&argc, &argv);
+   MPI_Comm_rank(MPI_COMM_WORLD, &myid);
+   MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+
+   /* Default problem parameters */
+   n = 33;
+   solver_id = 0;
+   vis = 0;
+   print_system = 0;
+
+
+   /* Parse command line */
+   {
+      int arg_index = 0;
+      int print_usage = 0;
+
+      while (arg_index < argc)
+      {
+         if ( strcmp(argv[arg_index], "-n") == 0 )
+         {
+            arg_index++;
+            n = atoi(argv[arg_index++]);
+         }
+         else if ( strcmp(argv[arg_index], "-solver") == 0 )
+         {
+            arg_index++;
+            solver_id = atoi(argv[arg_index++]);
+         }
+         else if ( strcmp(argv[arg_index], "-vis") == 0 )
+         {
+            arg_index++;
+            vis = 1;
+         }
+         else if ( strcmp(argv[arg_index], "-print_system") == 0 )
+         {
+            arg_index++;
+            print_system = 1;
+         }
+         else if ( strcmp(argv[arg_index], "-help") == 0 )
+         {
+            print_usage = 1;
+            break;
+         }
+         else
+         {
+            arg_index++;
+         }
+      }
+
+      if ((print_usage) && (myid == 0))
+      {
+         printf("\n");
+         printf("Usage: %s [<options>]\n", argv[0]);
+         printf("\n");
+         printf("  -n <n>              : problem size in each direction (default: 33)\n");
+         printf("  -solver <ID>        : solver ID\n");
+         printf("                        0  - AMG (default) \n");
+         printf("                        1  - AMG-PCG\n");
+         printf("                        8  - ParaSails-PCG\n");
+         printf("                        50 - PCG\n");
+         printf("                        61 - AMG-FlexGMRES\n");
+         printf("  -vis                : save the solution for GLVis visualization\n");
+         printf("  -print_system       : print the matrix and rhs\n");
+         printf("\n");
+      }
+
+      if (print_usage)
+      {
+         MPI_Finalize();
+         return (0);
+      }
+   }
+
+   /* Preliminaries: want at least one processor per row */
+   if (n*n < num_procs) n = sqrt(num_procs) + 1;
+   N = n*n; /* global number of rows */
+   h = 1.0/(n+1); /* mesh size*/
+   h2 = h*h;
+
+   /* Each processor knows only of its own rows - the range is denoted by ilower
+      and upper.  Here we partition the rows. We account for the fact that
+      N may not divide evenly by the number of processors. */
+   local_size = N/num_procs;
+   extra = N - local_size*num_procs;
+
+   ilower = local_size*myid;
+   ilower += hypre_min(myid, extra);
+
+   iupper = local_size*(myid+1);
+   iupper += hypre_min(myid+1, extra);
+   iupper = iupper - 1;
+
+   /* How many rows do I have? */
+   local_size = iupper - ilower + 1;
+
+   /* Create the matrix.
+      Note that this is a square matrix, so we indicate the row partition
+      size twice (since number of rows = number of cols) */
+   HYPRE_IJMatrixCreate(MPI_COMM_WORLD, ilower, iupper, ilower, iupper, &A);
+
+   /* Choose a parallel csr format storage (see the User's Manual) */
+   HYPRE_IJMatrixSetObjectType(A, HYPRE_PARCSR);
+
+   /* Initialize before setting coefficients */
+   HYPRE_IJMatrixInitialize(A);
+
+   /* Now go through my local rows and set the matrix entries.
+      Each row has at most 5 entries. For example, if n=3:
+
+      A = [M -I 0; -I M -I; 0 -I M]
+      M = [4 -1 0; -1 4 -1; 0 -1 4]
+
+      Note that here we are setting one row at a time, though
+      one could set all the rows together (see the User's Manual).
+   */
+   {
+      int nnz;
+      double values[5];
+      int cols[5];
+
+      for (i = ilower; i <= iupper; i++)
+      {
+         nnz = 0;
+
+         /* The left identity block:position i-n */
+         if ((i-n)>=0)
+         {
+            cols[nnz] = i-n;
+            values[nnz] = -1.0;
+            nnz++;
+         }
+
+         /* The left -1: position i-1 */
+         if (i%n)
+         {
+            cols[nnz] = i-1;
+            values[nnz] = -1.0;
+            nnz++;
+         }
+
+         /* Set the diagonal: position i */
+         cols[nnz] = i;
+         values[nnz] = 4.0;
+         nnz++;
+
+         /* The right -1: position i+1 */
+         if ((i+1)%n)
+         {
+            cols[nnz] = i+1;
+            values[nnz] = -1.0;
+            nnz++;
+         }
+
+         /* The right identity block:position i+n */
+         if ((i+n)< N)
+         {
+            cols[nnz] = i+n;
+            values[nnz] = -1.0;
+            nnz++;
+         }
+
+         /* Set the values for row i */
+         HYPRE_IJMatrixSetValues(A, 1, &nnz, &i, cols, values);
+      }
+   }
+
+   /* Assemble after setting the coefficients */
+   HYPRE_IJMatrixAssemble(A);
+
+   /* Note: for the testing of small problems, one may wish to read
+      in a matrix in IJ format (for the format, see the output files
+      from the -print_system option).
+      In this case, one would use the following routine:
+      HYPRE_IJMatrixRead( <filename>, MPI_COMM_WORLD,
+                          HYPRE_PARCSR, &A );
+      <filename>  = IJ.A.out to read in what has been printed out
+      by -print_system (processor numbers are omitted).
+      A call to HYPRE_IJMatrixRead is an *alternative* to the
+      following sequence of HYPRE_IJMatrix calls:
+      Create, SetObjectType, Initialize, SetValues, and Assemble
+   */
+
+
+   /* Get the parcsr matrix object to use */
+   HYPRE_IJMatrixGetObject(A, (void**) &parcsr_A);
+
+
+   /* Create the rhs and solution */
+   HYPRE_IJVectorCreate(MPI_COMM_WORLD, ilower, iupper,&b);
+   HYPRE_IJVectorSetObjectType(b, HYPRE_PARCSR);
+   HYPRE_IJVectorInitialize(b);
+
+   HYPRE_IJVectorCreate(MPI_COMM_WORLD, ilower, iupper,&x);
+   HYPRE_IJVectorSetObjectType(x, HYPRE_PARCSR);
+   HYPRE_IJVectorInitialize(x);
+
+   /* Set the rhs values to h^2 and the solution to zero */
+   {
+      double *rhs_values, *x_values;
+      int    *rows;
+
+      rhs_values =  (double*) calloc(local_size, sizeof(double));
+      x_values =  (double*) calloc(local_size, sizeof(double));
+      rows = (int*) calloc(local_size, sizeof(int));
+
+      for (i=0; i<local_size; i++)
+      {
+         rhs_values[i] = h2;
+         x_values[i] = 0.0;
+         rows[i] = ilower + i;
+      }
+
+      HYPRE_IJVectorSetValues(b, local_size, rows, rhs_values);
+      HYPRE_IJVectorSetValues(x, local_size, rows, x_values);
+
+      free(x_values);
+      free(rhs_values);
+      free(rows);
+   }
+
+
+   HYPRE_IJVectorAssemble(b);
+   /*  As with the matrix, for testing purposes, one may wish to read in a rhs:
+       HYPRE_IJVectorRead( <filename>, MPI_COMM_WORLD,
+                                 HYPRE_PARCSR, &b );
+       as an alternative to the
+       following sequence of HYPRE_IJVectors calls:
+       Create, SetObjectType, Initialize, SetValues, and Assemble
+   */
+   HYPRE_IJVectorGetObject(b, (void **) &par_b);
+
+   HYPRE_IJVectorAssemble(x);
+   HYPRE_IJVectorGetObject(x, (void **) &par_x);
+
+
+  /*  Print out the system  - files names will be IJ.out.A.XXXXX
+       and IJ.out.b.XXXXX, where XXXXX = processor id */
+   if (print_system)
+   {
+      HYPRE_IJMatrixPrint(A, "IJ.out.A");
+      HYPRE_IJVectorPrint(b, "IJ.out.b");
+   }
+
+
+   /* Choose a solver and solve the system */
+
+   /* AMG */
+   if (solver_id == 0)
+   {
+      int num_iterations;
+      double final_res_norm;
+
+      /* Create solver */
+      HYPRE_BoomerAMGCreate(&solver);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_BoomerAMGSetPrintLevel(solver, 3);  /* print solve info + parameters */
+      HYPRE_BoomerAMGSetOldDefault(solver); /* Falgout coarsening with modified classical interpolaiton */
+      HYPRE_BoomerAMGSetRelaxType(solver, 3);   /* G-S/Jacobi hybrid relaxation */
+      HYPRE_BoomerAMGSetRelaxOrder(solver, 1);   /* uses C/F relaxation */
+      HYPRE_BoomerAMGSetNumSweeps(solver, 1);   /* Sweeeps on each level */
+      HYPRE_BoomerAMGSetMaxLevels(solver, 20);  /* maximum number of levels */
+      HYPRE_BoomerAMGSetTol(solver, 1e-7);      /* conv. tolerance */
+
+      /* Now setup and solve! */
+      HYPRE_BoomerAMGSetup(solver, parcsr_A, par_b, par_x);
+      HYPRE_BoomerAMGSolve(solver, parcsr_A, par_b, par_x);
+
+      /* Run info - needed logging turned on */
+      HYPRE_BoomerAMGGetNumIterations(solver, &num_iterations);
+      HYPRE_BoomerAMGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+      if (myid == 0)
+      {
+         printf("\n");
+         printf("Iterations = %d\n", num_iterations);
+         printf("Final Relative Residual Norm = %e\n", final_res_norm);
+         printf("\n");
+      }
+
+      /* Destroy solver */
+      HYPRE_BoomerAMGDestroy(solver);
+   }
+   /* PCG */
+   else if (solver_id == 50)
+   {
+      int num_iterations;
+      double final_res_norm;
+
+      /* Create solver */
+      HYPRE_ParCSRPCGCreate(MPI_COMM_WORLD, &solver);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_PCGSetMaxIter(solver, 1000); /* max iterations */
+      HYPRE_PCGSetTol(solver, 1e-7); /* conv. tolerance */
+      HYPRE_PCGSetTwoNorm(solver, 1); /* use the two norm as the stopping criteria */
+      HYPRE_PCGSetPrintLevel(solver, 2); /* prints out the iteration info */
+      HYPRE_PCGSetLogging(solver, 1); /* needed to get run info later */
+
+      /* Now setup and solve! */
+      HYPRE_ParCSRPCGSetup(solver, parcsr_A, par_b, par_x);
+      HYPRE_ParCSRPCGSolve(solver, parcsr_A, par_b, par_x);
+
+      /* Run info - needed logging turned on */
+      HYPRE_PCGGetNumIterations(solver, &num_iterations);
+      HYPRE_PCGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+      if (myid == 0)
+      {
+         printf("\n");
+         printf("Iterations = %d\n", num_iterations);
+         printf("Final Relative Residual Norm = %e\n", final_res_norm);
+         printf("\n");
+      }
+
+      /* Destroy solver */
+      HYPRE_ParCSRPCGDestroy(solver);
+   }
+   /* PCG with AMG preconditioner */
+   else if (solver_id == 1)
+   {
+      int num_iterations;
+      double final_res_norm;
+
+      /* Create solver */
+      HYPRE_ParCSRPCGCreate(MPI_COMM_WORLD, &solver);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_PCGSetMaxIter(solver, 1000); /* max iterations */
+      HYPRE_PCGSetTol(solver, 1e-7); /* conv. tolerance */
+      HYPRE_PCGSetTwoNorm(solver, 1); /* use the two norm as the stopping criteria */
+      HYPRE_PCGSetPrintLevel(solver, 2); /* print solve info */
+      HYPRE_PCGSetLogging(solver, 1); /* needed to get run info later */
+
+      /* Now set up the AMG preconditioner and specify any parameters */
+      HYPRE_BoomerAMGCreate(&precond);
+      HYPRE_BoomerAMGSetPrintLevel(precond, 1); /* print amg solution info */
+      HYPRE_BoomerAMGSetCoarsenType(precond, 6);
+      HYPRE_BoomerAMGSetOldDefault(precond); 
+      HYPRE_BoomerAMGSetRelaxType(precond, 6); /* Sym G.S./Jacobi hybrid */
+      HYPRE_BoomerAMGSetNumSweeps(precond, 1);
+      HYPRE_BoomerAMGSetTol(precond, 0.0); /* conv. tolerance zero */
+      HYPRE_BoomerAMGSetMaxIter(precond, 1); /* do only one iteration! */
+
+      /* Set the PCG preconditioner */
+      HYPRE_PCGSetPrecond(solver, (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSolve,
+                          (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSetup, precond);
+
+      /* Now setup and solve! */
+      HYPRE_ParCSRPCGSetup(solver, parcsr_A, par_b, par_x);
+      HYPRE_ParCSRPCGSolve(solver, parcsr_A, par_b, par_x);
+
+      /* Run info - needed logging turned on */
+      HYPRE_PCGGetNumIterations(solver, &num_iterations);
+      HYPRE_PCGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+      if (myid == 0)
+      {
+         printf("\n");
+         printf("Iterations = %d\n", num_iterations);
+         printf("Final Relative Residual Norm = %e\n", final_res_norm);
+         printf("\n");
+      }
+
+      /* Destroy solver and preconditioner */
+      HYPRE_ParCSRPCGDestroy(solver);
+      HYPRE_BoomerAMGDestroy(precond);
+   }
+   /* PCG with Parasails Preconditioner */
+   else if (solver_id == 8)
+   {
+      int    num_iterations;
+      double final_res_norm;
+
+      int      sai_max_levels = 1;
+      double   sai_threshold = 0.1;
+      double   sai_filter = 0.05;
+      int      sai_sym = 1;
+
+      /* Create solver */
+      HYPRE_ParCSRPCGCreate(MPI_COMM_WORLD, &solver);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_PCGSetMaxIter(solver, 1000); /* max iterations */
+      HYPRE_PCGSetTol(solver, 1e-7); /* conv. tolerance */
+      HYPRE_PCGSetTwoNorm(solver, 1); /* use the two norm as the stopping criteria */
+      HYPRE_PCGSetPrintLevel(solver, 2); /* print solve info */
+      HYPRE_PCGSetLogging(solver, 1); /* needed to get run info later */
+
+      /* Now set up the ParaSails preconditioner and specify any parameters */
+      HYPRE_ParaSailsCreate(MPI_COMM_WORLD, &precond);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_ParaSailsSetParams(precond, sai_threshold, sai_max_levels);
+      HYPRE_ParaSailsSetFilter(precond, sai_filter);
+      HYPRE_ParaSailsSetSym(precond, sai_sym);
+      HYPRE_ParaSailsSetLogging(precond, 3);
+
+      /* Set the PCG preconditioner */
+      HYPRE_PCGSetPrecond(solver, (HYPRE_PtrToSolverFcn) HYPRE_ParaSailsSolve,
+                          (HYPRE_PtrToSolverFcn) HYPRE_ParaSailsSetup, precond);
+
+      /* Now setup and solve! */
+      HYPRE_ParCSRPCGSetup(solver, parcsr_A, par_b, par_x);
+      HYPRE_ParCSRPCGSolve(solver, parcsr_A, par_b, par_x);
+
+
+      /* Run info - needed logging turned on */
+      HYPRE_PCGGetNumIterations(solver, &num_iterations);
+      HYPRE_PCGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+      if (myid == 0)
+      {
+         printf("\n");
+         printf("Iterations = %d\n", num_iterations);
+         printf("Final Relative Residual Norm = %e\n", final_res_norm);
+         printf("\n");
+      }
+
+      /* Destory solver and preconditioner */
+      HYPRE_ParCSRPCGDestroy(solver);
+      HYPRE_ParaSailsDestroy(precond);
+   }
+   /* Flexible GMRES with  AMG Preconditioner */
+   else if (solver_id == 61)
+   {
+      int    num_iterations;
+      double final_res_norm;
+      int    restart = 30;
+      int    modify = 1;
+
+
+      /* Create solver */
+      HYPRE_ParCSRFlexGMRESCreate(MPI_COMM_WORLD, &solver);
+
+      /* Set some parameters (See Reference Manual for more parameters) */
+      HYPRE_FlexGMRESSetKDim(solver, restart);
+      HYPRE_FlexGMRESSetMaxIter(solver, 1000); /* max iterations */
+      HYPRE_FlexGMRESSetTol(solver, 1e-7); /* conv. tolerance */
+      HYPRE_FlexGMRESSetPrintLevel(solver, 2); /* print solve info */
+      HYPRE_FlexGMRESSetLogging(solver, 1); /* needed to get run info later */
+
+
+      /* Now set up the AMG preconditioner and specify any parameters */
+      HYPRE_BoomerAMGCreate(&precond);
+      HYPRE_BoomerAMGSetPrintLevel(precond, 1); /* print amg solution info */
+      HYPRE_BoomerAMGSetCoarsenType(precond, 6);
+      HYPRE_BoomerAMGSetOldDefault(precond);
+      HYPRE_BoomerAMGSetRelaxType(precond, 6); /* Sym G.S./Jacobi hybrid */
+      HYPRE_BoomerAMGSetNumSweeps(precond, 1);
+      HYPRE_BoomerAMGSetTol(precond, 0.0); /* conv. tolerance zero */
+      HYPRE_BoomerAMGSetMaxIter(precond, 1); /* do only one iteration! */
+
+      /* Set the FlexGMRES preconditioner */
+      HYPRE_FlexGMRESSetPrecond(solver, (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSolve,
+                          (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSetup, precond);
+
+
+      if (modify)
+      /* this is an optional call  - if you don't call it, hypre_FlexGMRESModifyPCDefault
+         is used - which does nothing.  Otherwise, you can define your own, similar to
+         the one used here */
+         HYPRE_FlexGMRESSetModifyPC( solver,
+                                     (HYPRE_PtrToModifyPCFcn) hypre_FlexGMRESModifyPCAMGExample);
+
+
+      /* Now setup and solve! */
+      HYPRE_ParCSRFlexGMRESSetup(solver, parcsr_A, par_b, par_x);
+      HYPRE_ParCSRFlexGMRESSolve(solver, parcsr_A, par_b, par_x);
+
+      /* Run info - needed logging turned on */
+      HYPRE_FlexGMRESGetNumIterations(solver, &num_iterations);
+      HYPRE_FlexGMRESGetFinalRelativeResidualNorm(solver, &final_res_norm);
+      if (myid == 0)
+      {
+         printf("\n");
+         printf("Iterations = %d\n", num_iterations);
+         printf("Final Relative Residual Norm = %e\n", final_res_norm);
+         printf("\n");
+      }
+
+      /* Destory solver and preconditioner */
+      HYPRE_ParCSRFlexGMRESDestroy(solver);
+      HYPRE_BoomerAMGDestroy(precond);
+
+   }
+   else
+   {
+      if (myid ==0) printf("Invalid solver id specified.\n");
+   }
+
+   /* Save the solution for GLVis visualization, see vis/glvis-ex5.sh */
+   if (vis)
+   {
+      FILE *file;
+      char filename[255];
+
+      int nvalues = local_size;
+      int *rows = (int*) calloc(nvalues, sizeof(int));
+      double *values =  (double*) calloc(nvalues, sizeof(double));
+
+      for (i = 0; i < nvalues; i++)
+         rows[i] = ilower + i;
+
+      /* get the local solution */
+      HYPRE_IJVectorGetValues(x, nvalues, rows, values);
+
+      sprintf(filename, "%s.%06d", "vis/ex5.sol", myid);
+      if ((file = fopen(filename, "w")) == NULL)
+      {
+         printf("Error: can't open output file %s\n", filename);
+         MPI_Finalize();
+         exit(1);
+      }
+
+      /* save solution */
+      for (i = 0; i < nvalues; i++)
+         fprintf(file, "%.14e\n", values[i]);
+
+      fflush(file);
+      fclose(file);
+
+      free(rows);
+      free(values);
+
+      /* save global finite element mesh */
+      if (myid == 0)
+         GLVis_PrintGlobalSquareMesh("vis/ex5.mesh", n-1);
+   }
+
+   /* Clean up */
+   HYPRE_IJMatrixDestroy(A);
+   HYPRE_IJVectorDestroy(b);
+   HYPRE_IJVectorDestroy(x);
+
+   /* Finalize MPI*/
+   MPI_Finalize();
+
+   return(0);
+}
+
+/*--------------------------------------------------------------------------
+   hypre_FlexGMRESModifyPCAMGExample -
+
+    This is an example (not recommended)
+   of how we can modify things about AMG that
+   affect the solve phase based on how FlexGMRES is doing...For
+   another preconditioner it may make sense to modify the tolerance..
+
+ *--------------------------------------------------------------------------*/
+
+int hypre_FlexGMRESModifyPCAMGExample(void *precond_data, int iterations,
+                                   double rel_residual_norm)
+{
+
+
+   if (rel_residual_norm > .1)
+   {
+	   HYPRE_BoomerAMGSetNumSweeps((HYPRE_Solver)precond_data, 10);
+   }
+   else
+   {
+      HYPRE_BoomerAMGSetNumSweeps((HYPRE_Solver)precond_data, 1);
+   }
+
+
+   return 0;
+}
+
+\end{lstlisting}
 
 
 \end{document}
