@@ -7,6 +7,8 @@
 \usepackage{listings}
 \usepackage{amssymb}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%\usepackage[]{natbib}
+\usepackage{apacite}
 
 %opening
 \title{Auslagerung der Ausführung von Methoden der HYPRE Bibliothek in ein Cloudsystem
@@ -361,6 +363,8 @@ Nutzt MPI für Parallelisierbarkeit.
 \paragraph{Solver Strategies}
 \paragraph{Preconditioner(s)}
 
+Preconditioning	\cite{FritzschePreconditioning}
+
 \subsubsection{Verwendung und Implementierung}
 
 \paragraph{Installation}
@@ -487,6 +491,17 @@ Solver erstellen und aufrufen.
 \begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver anlegen und aufrufen]
 //create solver
 //(Boomer)
+
+/* Create solver */
+HYPRE_BoomerAMGCreate(&solver);
+
+/* Now setup and solve! */
+HYPRE_BoomerAMGSetup(solver, parcsr_A, par_b, par_x);
+HYPRE_BoomerAMGSolve(solver, parcsr_A, par_b, par_x);
+
+/* Destroy solver object */
+HYPRE_BoomerAMGDestroy(solver);
+
 \end{lstlisting}
 
 \paragraph{mit Preconditioner}
@@ -494,8 +509,59 @@ Solver erstellen und aufrufen.
 Solver mit anderem Preconditioner.
 
 \begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
-//create smg (etc) mit anderem precond. 
+//erstelle PCG mit AMG als preconditioner
+
+/* Create solver */
+HYPRE_ParCSRPCGCreate(MPI_COMM_WORLD, &solver);
+
+/* Now set up the AMG preconditioner and specify any parameters */
+HYPRE_BoomerAMGCreate(&precond);
+
+/* Set the PCG preconditioner */
+HYPRE_PCGSetPrecond(solver, (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSolve,
+                          (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSetup, precond);
+
+/* Now setup and solve! */
+HYPRE_ParCSRPCGSetup(solver, parcsr_A, par_b, par_x);
+HYPRE_ParCSRPCGSolve(solver, parcsr_A, par_b, par_x);
+
+/* Destroy solver and preconditioner */
+HYPRE_ParCSRPCGDestroy(solver);
+HYPRE_BoomerAMGDestroy(precond);
+
 \end{lstlisting}
+
+\paragraph{weitere Parameter}
+
+Vor dem Ausführen des solvers können weitere Parameter gesetzt werden.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
+/* Set some parameters (See Reference Manual for more parameters) */
+HYPRE_BoomerAMGSetPrintLevel(solver, 3);  /* print solve info + parameters */
+HYPRE_BoomerAMGSetOldDefault(solver); /* Falgout coarsening with modified classical interpolaiton */
+HYPRE_BoomerAMGSetRelaxType(solver, 3);   /* G-S/Jacobi hybrid relaxation */
+HYPRE_BoomerAMGSetRelaxOrder(solver, 1);   /* uses C/F relaxation */
+HYPRE_BoomerAMGSetNumSweeps(solver, 1);   /* Sweeeps on each level */
+HYPRE_BoomerAMGSetMaxLevels(solver, 20);  /* maximum number of levels */
+HYPRE_BoomerAMGSetTol(solver, 1e-7);      /* conv. tolerance */
+\end{lstlisting}
+
+\paragraph{Ergebnis auswerten}
+
+Nach dem Lösen des Problems können die Ergebnisse gelesen werden.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
+/* Run info - needed logging turned on */
+HYPRE_BoomerAMGGetNumIterations(solver, &num_iterations);
+HYPRE_BoomerAMGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+\end{lstlisting}
+
+\paragraph{Alles zusammenfügen}
+
+Im Anhang ist das komplette Beispiel 5 zu sehen, welches zuvor in Ausschnitten erläutert wurde.
+Im folgenden soll der Zusammenhang der einzelnen Methoden näher erläutert werden.
+\todo{näher erläutern, paragraphen oben drüber: methoden etwas genauer erklären}
+\cite{hypreReferenceManual}
 
 \subsubsection{Ressourcen}
 
@@ -1093,7 +1159,7 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \newpage
 
-\bibliographystyle{plain}
+\bibliographystyle{apacite}
 \bibliography{cites}
 
 \newpage

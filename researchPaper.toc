@@ -46,59 +46,63 @@
 \contentsline {paragraph}{Matrix anlegen (analog zu Vektor)}{17}{section*.55}
 \contentsline {paragraph}{Solver anlegen und aufrufen}{17}{section*.56}
 \contentsline {paragraph}{mit Preconditioner}{18}{section*.57}
-\contentsline {subsubsection}{\numberline {1.2.4}Ressourcen}{18}{subsubsection.1.2.4}
-\contentsline {subsection}{\numberline {1.3}Werkzeuge f\IeC {\"u}r die verteilte Ausf\IeC {\"u}hrung}{18}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}RPC}{18}{subsubsection.1.3.1}
-\contentsline {paragraph}{REST vs RPC}{18}{section*.60}
-\contentsline {paragraph}{XML-RPC}{18}{section*.62}
-\contentsline {subparagraph}{xml-rpc}{19}{section*.63}
-\contentsline {paragraph}{JSON-RPC}{19}{section*.64}
-\contentsline {subparagraph}{json-rpc}{19}{section*.66}
-\contentsline {subparagraph}{yeryomin/libjrpc}{20}{section*.67}
-\contentsline {subparagraph}{jhlee4bb/jsonrpC}{20}{section*.68}
-\contentsline {paragraph}{Bibliotheken/Frameworks/Implementierungen}{20}{section*.71}
-\contentsline {subparagraph}{Mercury}{21}{section*.72}
-\contentsline {subparagraph}{Trios/Nessie}{21}{section*.73}
-\contentsline {subparagraph}{Portals}{21}{section*.74}
-\contentsline {subparagraph}{DART}{21}{section*.75}
-\contentsline {subsubsection}{\numberline {1.3.2}andere}{21}{subsubsection.1.3.2}
-\contentsline {paragraph}{Python in C Ausf\IeC {\"u}hren}{21}{section*.76}
-\contentsline {subparagraph}{ressourcen}{21}{section*.77}
-\contentsline {subparagraph}{basics}{21}{section*.78}
-\contentsline {paragraph}{spring-server framework}{21}{section*.79}
-\contentsline {subsubsection}{\numberline {1.3.3}Serialisierung}{22}{subsubsection.1.3.3}
-\contentsline {paragraph}{Protocol Buffers}{22}{section*.81}
-\contentsline {subparagraph}{Fazit}{22}{section*.82}
-\contentsline {section}{\numberline {2}Gegen\IeC {\"u}berstellung verf\IeC {\"u}gbarer Werkzeuge und Varianten}{23}{section.2}
-\contentsline {subsection}{\numberline {2.1}'private' und 'public' Cloud}{23}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Technologie}{23}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Cloudtyp}{23}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Sprache}{23}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{23}{subsection.2.5}
-\contentsline {section}{\numberline {3}Auswertung der Vergleiche und Auswahl der Werkzeuge}{24}{section.3}
-\contentsline {subsection}{\numberline {3.1}gRPC}{24}{subsection.3.1}
-\contentsline {paragraph}{Installation}{24}{section*.85}
-\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{24}{section*.87}
-\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{25}{section*.88}
-\contentsline {subsection}{\numberline {3.2}Ressourcen}{25}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Roadmap Implementierung}{25}{subsection.3.3}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{26}{section*.90}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{26}{section*.91}
-\contentsline {subparagraph}{Fazit}{26}{section*.92}
-\contentsline {paragraph}{Client}{26}{section*.93}
-\contentsline {subparagraph}{Anforderungen}{26}{section*.94}
-\contentsline {subparagraph}{Kernmodule}{26}{section*.95}
-\contentsline {section}{\numberline {4}Beispielinstallation OpenStack}{27}{section.4}
-\contentsline {subsection}{\numberline {4.1}Vorbereitung f\IeC {\"u}r die Installation}{27}{subsection.4.1}
-\contentsline {paragraph}{Ubuntu 16.04 in Vagrant aufsetzen}{27}{section*.96}
-\contentsline {subsection}{\numberline {4.2}Installation}{27}{subsection.4.2}
-\contentsline {paragraph}{Devstack installieren}{27}{section*.97}
-\contentsline {subsection}{\numberline {4.3}Starten}{28}{subsection.4.3}
-\contentsline {paragraph}{Openstack (Horizon) starten}{28}{section*.98}
-\contentsline {paragraph}{Reboot}{29}{section*.99}
-\contentsline {subsection}{\numberline {4.4}Benutzung Beispielhaft}{29}{subsection.4.4}
-\contentsline {paragraph}{Verbindung zur Cloud}{29}{section*.100}
-\contentsline {paragraph}{\IeC {\"U}berblick Oberfl\IeC {\"a}che und Funktionen erl\IeC {\"a}utern}{29}{section*.102}
-\contentsline {section}{\numberline {5}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{30}{section.5}
-\contentsline {section}{\numberline {A}\\HYPRE}{32}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{32}{subsection.A.1}
+\contentsline {paragraph}{weitere Parameter}{18}{section*.58}
+\contentsline {paragraph}{Ergebnis auswerten}{19}{section*.59}
+\contentsline {paragraph}{Alles zusammenf\IeC {\"u}gen}{19}{section*.60}
+\contentsline {subsubsection}{\numberline {1.2.4}Ressourcen}{19}{subsubsection.1.2.4}
+\contentsline {subsection}{\numberline {1.3}Werkzeuge f\IeC {\"u}r die verteilte Ausf\IeC {\"u}hrung}{19}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}RPC}{19}{subsubsection.1.3.1}
+\contentsline {paragraph}{REST vs RPC}{19}{section*.64}
+\contentsline {paragraph}{XML-RPC}{20}{section*.66}
+\contentsline {subparagraph}{xml-rpc}{20}{section*.67}
+\contentsline {paragraph}{JSON-RPC}{20}{section*.68}
+\contentsline {subparagraph}{json-rpc}{21}{section*.70}
+\contentsline {subparagraph}{yeryomin/libjrpc}{21}{section*.71}
+\contentsline {subparagraph}{jhlee4bb/jsonrpC}{21}{section*.72}
+\contentsline {paragraph}{Bibliotheken/Frameworks/Implementierungen}{22}{section*.75}
+\contentsline {subparagraph}{Mercury}{22}{section*.76}
+\contentsline {subparagraph}{Trios/Nessie}{22}{section*.77}
+\contentsline {subparagraph}{Portals}{22}{section*.78}
+\contentsline {subparagraph}{DART}{22}{section*.79}
+\contentsline {subsubsection}{\numberline {1.3.2}andere}{22}{subsubsection.1.3.2}
+\contentsline {paragraph}{Python in C Ausf\IeC {\"u}hren}{22}{section*.80}
+\contentsline {subparagraph}{ressourcen}{22}{section*.81}
+\contentsline {subparagraph}{basics}{22}{section*.82}
+\contentsline {paragraph}{spring-server framework}{23}{section*.83}
+\contentsline {subsubsection}{\numberline {1.3.3}Serialisierung}{23}{subsubsection.1.3.3}
+\contentsline {paragraph}{Protocol Buffers}{23}{section*.85}
+\contentsline {subparagraph}{Fazit}{23}{section*.86}
+\contentsline {section}{\numberline {2}Gegen\IeC {\"u}berstellung verf\IeC {\"u}gbarer Werkzeuge und Varianten}{24}{section.2}
+\contentsline {subsection}{\numberline {2.1}'private' und 'public' Cloud}{24}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Technologie}{24}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cloudtyp}{24}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sprache}{24}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{24}{subsection.2.5}
+\contentsline {section}{\numberline {3}Auswertung der Vergleiche und Auswahl der Werkzeuge}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}gRPC}{25}{subsection.3.1}
+\contentsline {paragraph}{Installation}{25}{section*.89}
+\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{25}{section*.91}
+\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{26}{section*.92}
+\contentsline {subsection}{\numberline {3.2}Ressourcen}{26}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Roadmap Implementierung}{27}{subsection.3.3}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{27}{section*.94}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{27}{section*.95}
+\contentsline {subparagraph}{Fazit}{27}{section*.96}
+\contentsline {paragraph}{Client}{27}{section*.97}
+\contentsline {subparagraph}{Anforderungen}{27}{section*.98}
+\contentsline {subparagraph}{Kernmodule}{27}{section*.99}
+\contentsline {section}{\numberline {4}Beispielinstallation OpenStack}{28}{section.4}
+\contentsline {subsection}{\numberline {4.1}Vorbereitung f\IeC {\"u}r die Installation}{28}{subsection.4.1}
+\contentsline {paragraph}{Ubuntu 16.04 in Vagrant aufsetzen}{28}{section*.100}
+\contentsline {subsection}{\numberline {4.2}Installation}{28}{subsection.4.2}
+\contentsline {paragraph}{Devstack installieren}{28}{section*.101}
+\contentsline {subsection}{\numberline {4.3}Starten}{29}{subsection.4.3}
+\contentsline {paragraph}{Openstack (Horizon) starten}{29}{section*.102}
+\contentsline {paragraph}{Reboot}{30}{section*.103}
+\contentsline {subsection}{\numberline {4.4}Benutzung Beispielhaft}{30}{subsection.4.4}
+\contentsline {paragraph}{Verbindung zur Cloud}{30}{section*.104}
+\contentsline {paragraph}{\IeC {\"U}berblick Oberfl\IeC {\"a}che und Funktionen erl\IeC {\"a}utern}{30}{section*.106}
+\contentsline {section}{\numberline {5}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{31}{section.5}
+\contentsline {section}{References}{32}{section*.109}
+\contentsline {section}{\numberline {A}\\HYPRE}{33}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{33}{subsection.A.1}

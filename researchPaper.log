@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.24)  28 JUN 2017 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.24)  28 JUN 2017 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,36 +806,45 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count129
 )
-(./researchPaper.aux)
+(/usr/share/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count130
+\bibleftmargin=\skip47
+\bibindent=\skip48
+\bibparsep=\skip49
+\bibitemsep=\skip50
+\biblabelsep=\skip51
+) (./researchPaper.aux)
 \openout1 = `researchPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 16.
- (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 18.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
 
 (./researchPaper.out) (./researchPaper.out)
 \@outlinefile=\write4
@@ -844,16 +853,16 @@ LaTeX Info: Redefining \nameref on input line 16.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
+\scratchcounter=\count132
 \scratchdimen=\dimen161
 \scratchbox=\box40
-\nofMPsegments=\count132
-\nofMParguments=\count133
+\nofMPsegments=\count133
+\nofMParguments=\count134
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count134
+\MPscratchCnt=\count135
 \MPscratchDim=\dimen162
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -872,15 +881,22 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count137
+\c@lstlisting=\count138
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+\c@maskedRefs=\count139
+
+(/usr/share/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -888,7 +904,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 40.
+ine 42.
  [2] (./researchPaper.toc
 Overfull \hbox (6.7496pt too wide) in paragraph at lines 11--11
  [][] [][]\OT1/cmr/m/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing
@@ -916,211 +932,197 @@ Overfull \hbox (6.7496pt too wide) in paragraph at lines 11--11
 \openout9 = `researchPaper.tdo'.
 
  [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
 
-Overfull \hbox (28.05423pt too wide) in paragraph at lines 66--67
+Overfull \hbox (28.05423pt too wide) in paragraph at lines 68--69
 \OT1/cmr/m/n/10 for high-performance cloud net-works []$\OT1/cmtt/m/n/10 http :
- / / ieeexplore . ieee . org / document /
+// ieeexplore [] .ieee [] .org / document /
  []
 
 
-Overfull \hbox (10.19304pt too wide) in paragraph at lines 67--68
-\OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http : / / 
-ieeexplore . ieee . org / abstract /
+Overfull \hbox (10.19304pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 the Ama-zon Web Ser-vices Cloud []$\OT1/cmtt/m/n/10 http :// ie
+eexplore [] .ieee [] .org / abstract /
  []
 
-<graphics/cloudComputingOverview.pdf, id=348, 552.0625pt x 491.8375pt>
+<graphics/cloudComputingOverview.pdf, id=361, 552.0625pt x 491.8375pt>
 File: graphics/cloudComputingOverview.pdf Graphic file (type pdf)
 
 <use graphics/cloudComputingOverview.pdf>
 Package pdftex.def Info: graphics/cloudComputingOverview.pdf used on input line
- 85.
+ 87.
 (pdftex.def)             Requested size: 345.0pt x 307.37515pt.
 
-Overfull \hbox (17.2228pt too wide) in paragraph at lines 88--90
+Overfull \hbox (17.2228pt too wide) in paragraph at lines 90--92
 []\OT1/cmr/m/n/10 Im Fol-gen-den wer-den die eben kurz angeschnit-te-nen Eigen-
 schaften von Cloudsys-
  []
 
 [8] [9 <./graphics/cloudComputingOverview.pdf>]
-Overfull \hbox (11.07191pt too wide) in paragraph at lines 123--125
+Overfull \hbox (11.07191pt too wide) in paragraph at lines 125--127
  []\OT1/cmr/bx/n/10 Broad net-work ac-cess[] \OT1/cmr/m/n/10 Ein starkes Net-zw
 -erk [][][]ist es-sen-tiell um eine Verbesserung
  []
 
 
-Overfull \hbox (16.55005pt too wide) in paragraph at lines 129--132
+Overfull \hbox (16.55005pt too wide) in paragraph at lines 131--134
  []\OT1/cmr/bx/n/10 Resource pool-ing[] \OT1/cmr/m/n/10 Ein Cloudsys-tem ben^^?
 otigt einen (gro^^Yen [][][]) Pool an Ressourcen.
  []
 
 
-Overfull \hbox (13.45087pt too wide) in paragraph at lines 136--136
+Overfull \hbox (13.45087pt too wide) in paragraph at lines 138--138
 []\OT1/cmr/bx/n/10 IDEAL cloud-native ap-pli-ca-tions [Cloud-com-put-ing-Pat-te
 rns chap.
  []
 
 [10]
-Overfull \hbox (5.72266pt too wide) in paragraph at lines 156--161
+Overfull \hbox (5.72266pt too wide) in paragraph at lines 158--163
 \OT1/cmr/m/n/10 nicht nur die `Verbesserung` einer Ressource eine bessere per-f
 or-mance erm^^?oglichen
  []
 
 
-Overfull \hbox (21.43027pt too wide) in paragraph at lines 162--165
+Overfull \hbox (21.43027pt too wide) in paragraph at lines 164--167
  []\OT1/cmr/bx/n/10 Automated man-age-ment[] \OT1/cmr/m/n/10 Durch die Elas-tiz
 it^^?at k^^?onnen Ressourcen von Cloudan-
  []
 
 
-Overfull \hbox (7.25075pt too wide) in paragraph at lines 166--169
+Overfull \hbox (7.25075pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 der Laufzeit ^^?andern k^^?onnen soll-ten Kom-po-nen-ten m^^?og
 lichst un-abh^^?angig voneinan-
  []
 
 [11]
-Overfull \hbox (15.01479pt too wide) in paragraph at lines 209--209
+Overfull \hbox (15.01479pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/5 'Gegen^^?uberstellungen 
  []
 
 
-Overfull \hbox (15.01479pt too wide) in paragraph at lines 209--209
+Overfull \hbox (15.01479pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/5 'Gegen^^?uberstellungen 
  []
 
 
-Overfull \hbox (15.01479pt too wide) in paragraph at lines 209--209
+Overfull \hbox (15.01479pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/5 'Gegen^^?uberstellungen 
  []
 
 
-Overfull \hbox (15.01479pt too wide) in paragraph at lines 209--209
+Overfull \hbox (15.01479pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/5 'Gegen^^?uberstellungen 
  []
 
 
-Overfull \hbox (7.78207pt too wide) in paragraph at lines 215--217
- []\OT1/cmr/bx/n/10 Amazon EC2[] []$\OT1/cmtt/m/n/10 https : / / www . youtube 
-. com / watch ? v = jLVPqoV4YjU & index =
+Overfull \hbox (7.78207pt too wide) in paragraph at lines 217--219
+ []\OT1/cmr/bx/n/10 Amazon EC2[] []$\OT1/cmtt/m/n/10 https :// www [] .youtube 
+[] .com / watch [] ?v = jLVPqoV4YjU&index =
  []
 
 
-Overfull \hbox (177.27475pt too wide) in paragraph at lines 233--234
-[]\OT1/cmr/m/n/10 a guide to open source cloud []$\OT1/cmtt/m/n/10 http : / / w
-ww . tomsitpro . com / articles / open-[]source-[]cloud-[]computing-[]software 
-,[]
+Overfull \hbox (1.52626pt too wide) in paragraph at lines 235--236
+[]\OT1/cmr/m/n/10 a guide to open source cloud []$\OT1/cmtt/m/n/10 http :// www
+ [] .tomsitpro [] .com / articles / open []
  []
 
 
-Overfull \hbox (35.30385pt too wide) in paragraph at lines 234--235
-[]\OT1/cmr/m/n/10 5 open source cloud plat-forms []$\OT1/cmtt/m/n/10 http : / /
- solutionsreview . com / cloud-[]platforms /
+Overfull \hbox (34.80385pt too wide) in paragraph at lines 236--237
+[]\OT1/cmr/m/n/10 5 open source cloud plat-forms []$\OT1/cmtt/m/n/10 http :// s
+olutionsreview [] .com / cloud [] -platforms /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 246--249
+Underfull \hbox (badness 10000) in paragraph at lines 248--251
 
  []
 
 
-Overfull \hbox (30.6098pt too wide) in paragraph at lines 255--259
+Overfull \hbox (30.6098pt too wide) in paragraph at lines 257--261
 \OT1/cmr/m/n/10 devstack for get-ting started with open-stack []$\OT1/cmtt/m/n/
-10 http : / / docs . openstack . org / developer /
+10 http :// docs [] .openstack [] .org / developer /
  []
 
 
-Overfull \hbox (1.91495pt too wide) in paragraph at lines 255--259
-\OT1/cmr/m/n/10 install open-stack on ubuntu []$\OT1/cmtt/m/n/10 https : / / ww
-w . youtube . com / watch ? v = jpk4i66-[]IU4$[] 
+Overfull \hbox (1.41495pt too wide) in paragraph at lines 257--261
+\OT1/cmr/m/n/10 install open-stack on ubuntu []$\OT1/cmtt/m/n/10 https :// www 
+[] .youtube [] .com / watch [] ?v = jpk4i66 [] -IU4$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 257--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--266
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Overfull \hbox (31.27573pt too wide) in paragraph at lines 267--268
-[]\OT1/cmr/m/n/10 Beispielkonfiguration: []$\OT1/cmtt/m/n/10 https : / / www . 
-openstack . org / software / sample-[]configs #
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Overfull \hbox (30.77573pt too wide) in paragraph at lines 269--270
+[]\OT1/cmr/m/n/10 Beispielkonfiguration: []$\OT1/cmtt/m/n/10 https :// www [] .
+openstack [] .org / software / sample [] -configs #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 287.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 289.
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 
-Overfull \hbox (4.38959pt too wide) in paragraph at lines 295--297
+Overfull \hbox (4.38959pt too wide) in paragraph at lines 297--299
 \OT1/cmr/m/n/10 pro-vi-sion re-sources' [http://docs.cloudstack.apache.org/en/l
 atest/concepts.html] 
  []
 
 
-Overfull \hbox (32.9708pt too wide) in paragraph at lines 305--306
+Overfull \hbox (27.22084pt too wide) in paragraph at lines 307--308
 []\OT1/cmr/m/n/10 BOOK: cloud com-put-ing pat-terns []$\OT1/cmtt/m/n/10 https :
- / / katalog . bibliothek . tu-[]chemnitz .
+// katalog [] .bibliothek [] .tu [] -chemnitz []
  []
 
 
-Overfull \hbox (142.6639pt too wide) in paragraph at lines 306--307
-[]\OT1/cmr/m/n/10 raspberry pi pri-vate cloud []$\OT1/cmtt/m/n/10 https : / / s
-c5 . io / posts / a-[]private-[]raspberry-[]pi-[]cloud-[]with-[]arm-[]docker/$[
-] 
- []
-
-
-Overfull \hbox (5.19235pt too wide) in paragraph at lines 307--308
-[]\OT1/cmr/m/n/10 more rasp-berry []$\OT1/cmtt/m/n/10 https : / / www . raspber
-rypi . org / forums / viewtopic . php ?
+Overfull \hbox (2.66508pt too wide) in paragraph at lines 308--309
+[]\OT1/cmr/m/n/10 raspberry pi pri-vate cloud []$\OT1/cmtt/m/n/10 https :// sc5
+ [] .io / posts / a [] -private [] -raspberry []
  []
 
 
 LaTeX Warning: Marginpar on page 14 moved.
 
 
-Overfull \hbox (1.39233pt too wide) in paragraph at lines 325--329
- []\OT1/cmr/bx/n/10 Laplace-Gleichung[] \OT1/cmr/m/n/10 Par-tielle Dif-fer-en-t
-iale-gle-ichung. [][][][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
+Overfull \hbox (7.49915pt too wide) in paragraph at lines 327--331
+\OT1/cmtt/m/n/10 .com / watch [] ?v = Z9NjA [] []f2VZw$[] []$https :// www [] .
+youtube [] .com / watch [] ?v = []-D4GDdxJrpg$[] 
  []
 
 
-Overfull \hbox (4.2192pt too wide) in paragraph at lines 325--329
-\OT1/cmtt/m/n/10 com / watch ? v = Z9NjA _ f2VZw$[] []$https : / / www . youtub
-e . com / watch ? v = -[]D4GDdxJrpg$[] 
- []
-
-
-Overfull \hbox (4.4717pt too wide) in paragraph at lines 332--334
+Overfull \hbox (28.08284pt too wide) in paragraph at lines 334--336
 \OT1/cmr/m/n/10 HYPRE ist eine freie Soft-ware die vom Cen-ter for Ap-plied Sci
--en-tific Computing[[]]
+-en-tific Computing[][]CASC[],
  []
 
 [14]
@@ -1134,13 +1136,13 @@ LaTeX Warning: Marginpar on page 15 moved.
 LaTeX Warning: Marginpar on page 15 moved.
 
 
-Overfull \hbox (5.77127pt too wide) in paragraph at lines 367--369
+Overfull \hbox (5.77127pt too wide) in paragraph at lines 371--373
  []\OT1/cmr/bx/n/10 Installation[] \OT1/cmr/m/n/10 Um HYPRE zu in-stal-lieren s
 ind einige Abh^^?angigkeiten zu erf^^?ullen.
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 369.
+nput line 373.
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -1149,7 +1151,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.380 //gefolgt von einem `make` ausgeführt 
+l.384 //gefolgt von einem `make` ausgeführt 
                                              werden.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1163,7 +1165,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.380 //gefolgt von einem `make` ausgeführt 
+l.384 //gefolgt von einem `make` ausgeführt 
                                              werden.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1177,1037 +1179,1128 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.427 ...zahl der Unbekannten beträgt daher N=n²
+l.431 ...zahl der Unbekannten beträgt daher N=n²
                                                   .
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [16]
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 462--463
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 466--467
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 464--466
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 468--470
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 466--467
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 470--471
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [17]
-Overfull \hbox (160.71848pt too wide) in paragraph at lines 503--504
-[]\OT1/cmr/m/n/10 offiziell: []$\OT1/cmtt/m/n/10 http : / / computation . llnl 
-. gov / projects / hypre-[]scalable-[]linear-[]solvers-[]multigrid-[]methods$[]
- 
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 517--518
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (239.80193pt too wide) in paragraph at lines 504--505
-[][]\OT1/cmr/m/n/10 Ubersicht Pub-lika-tio-nen: []$\OT1/cmtt/m/n/10 http : / / 
-computation . llnl . gov / projects / hypre-[]scalable-[]linear-[]solvers-[]mul
-tigrid-[]methods /
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 521--522
+[][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.47017pt too wide) in paragraph at lines 506--507
-[]\OT1/cmr/m/n/10 (mehr) beispiele []$\OT1/cmtt/m/n/10 https : / / redmine . sc
-orec . rpi . edu / anonsvn / fastmath /
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 522--524
+[][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.24724pt too wide) in paragraph at lines 506--507
-\OT1/cmtt/m/n/10 docs / ATPESC _ 2013 / Exercises / hypre / examples / README _
- files / c . html$[] 
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 539--540
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.7211pt too wide) in paragraph at lines 523--524
-[]\OT1/cmr/m/n/10 Implementing re-mote pro-ce-dure calls []$\OT1/cmtt/m/n/10 ht
-tp : / / dl . acm . org / citation . cfm ?
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 540--541
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-LaTeX Warning: Marginpar on page 18 moved.
-
-
-Overfull \hbox (32.03831pt too wide) in paragraph at lines 542--543
- []\OT1/cmr/bx/n/10 xml-rpc[] \OT1/cmr/m/n/10 XML-RPC Bib-lio-thek f^^?ur C und
- C++ []$\OT1/cmtt/m/n/10 http : / / xmlrpc-[]c . sourceforge .
+Overfull \hbox (255.0061pt too wide) in paragraph at lines 541--542
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 542--543
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 543--544
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 544--545
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 545--546
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 546--547
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [18]
-Overfull \hbox (46.91402pt too wide) in paragraph at lines 574--575
-[]\OT1/cmr/m/n/10 rpc client?: []$\OT1/cmtt/m/n/10 https : / / groups . google 
-. com / forum / # ! topic / json-[]rpc / 9O1dbQehU04$[] 
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 556--557
+[][][][][][][][][][][] 
  []
+
+
+Overfull \hbox (21.71967pt too wide) in paragraph at lines 569--570
+[]\OT1/cmr/m/n/10 offiziell: []$\OT1/cmtt/m/n/10 http :// computation [] .llnl 
+[] .gov / projects / hypre [] -scalable [] -linear []
+ []
+
+
+Overfull \hbox (11.5539pt too wide) in paragraph at lines 570--571
+[][]\OT1/cmr/m/n/10 Ubersicht Pub-lika-tio-nen: []$\OT1/cmtt/m/n/10 http :// co
+mputation [] .llnl [] .gov / projects / hypre []
+ []
+
+
+Overfull \hbox (1.91628pt too wide) in paragraph at lines 571--572
+[]\OT1/cmr/m/n/10 Pursuing scal-a-bil-ity for hypre's con-cep-tual in-ter-faces
+ []$\OT1/cmtt/m/n/10 http :// dl [] .acm [] .org /
+ []
+
+
+Overfull \hbox (3.47017pt too wide) in paragraph at lines 572--573
+[]\OT1/cmr/m/n/10 (mehr) beispiele []$\OT1/cmtt/m/n/10 https :// redmine [] .sc
+orec [] .rpi [] .edu / anonsvn / fastmath /
+ []
+
+
+Overfull \hbox (5.97102pt too wide) in paragraph at lines 588--589
+[]\OT1/cmr/m/n/10 understanding rest and rpc for http []$\OT1/cmtt/m/n/10 https
+ :// www [] .smashingmagazine [] .com /
+ []
+
+
+LaTeX Warning: Marginpar on page 19 moved.
 
 [19]
+Overfull \hbox (26.28836pt too wide) in paragraph at lines 608--609
+ []\OT1/cmr/bx/n/10 xml-rpc[] \OT1/cmr/m/n/10 XML-RPC Bib-lio-thek f^^?ur C und
+ C++ []$\OT1/cmtt/m/n/10 http :// xmlrpc [] -c [] .sourceforge []
+ []
 
-LaTeX Warning: Marginpar on page 20 moved.
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
 
 
-Overfull \hbox (5.81123pt too wide) in paragraph at lines 647--651
+Overfull \hbox (46.41402pt too wide) in paragraph at lines 640--641
+[]\OT1/cmr/m/n/10 rpc client?: []$\OT1/cmtt/m/n/10 https :// groups [] .google 
+[] .com / forum / # [] !topic / json [] -rpc / 9O1dbQehU04$[] 
+ []
+
+[20] [21]
+
+LaTeX Warning: Marginpar on page 22 moved.
+
+
+Overfull \hbox (5.31123pt too wide) in paragraph at lines 713--717
  []\OT1/cmr/bx/n/10 Mercury[] \OT1/cmr/m/n/10 Home-page: []$\OT1/cmtt/m/n/10 ht
-tps : / / mercury-[]hpc . github . io/$[] \OT1/cmr/m/n/10 Doku-men-ta-tion:
+tps :// mercury [] -hpc [] .github [] .io /$[] \OT1/cmr/m/n/10 Doku-men-ta-tion
+:
  []
 
 
-Overfull \hbox (10.1635pt too wide) in paragraph at lines 647--651
-[]$\OT1/cmtt/m/n/10 http : / / mercury-[]hpc . github . io / documentation/$[] 
-\OT1/cmr/m/n/10 High-level RPC Layer: []$\OT1/cmtt/m/n/10 http :
+Overfull \hbox (20.1634pt too wide) in paragraph at lines 713--717
+[]$\OT1/cmtt/m/n/10 http :// mercury [] -hpc [] .github [] .io / documentation 
+/$[] \OT1/cmr/m/n/10 High-level RPC Layer: []$\OT1/cmtt/m/n/10 http ://
  []
 
 
-Overfull \hbox (5.35849pt too wide) in paragraph at lines 647--651
-\OT1/cmtt/m/n/10 / / mercury-[]hpc . github . io / documentation / #high-[]leve
-l-[]rpc-[]layer$[] \OT1/cmr/m/n/10 Mailing-
- []
-
-[20]
-Overfull \hbox (26.31386pt too wide) in paragraph at lines 658--659
- []\OT1/cmr/bx/n/10 Trios/Nessie[] []$\OT1/cmtt/m/n/10 https : / / software . s
-andia . gov / trac / nessie / wiki / WikiStart$[] 
+Overfull \hbox (12.49751pt too wide) in paragraph at lines 713--717
+\OT1/cmtt/m/n/10 mercury [] -hpc [] .github [] .io / documentation / #high [] -
+level [] -rpc [] -layer$[] \OT1/cmr/m/n/10 Mailing-List:
  []
 
 
-Overfull \hbox (36.06784pt too wide) in paragraph at lines 662--663
- []\OT1/cmr/bx/n/10 Portals[] []$\OT1/cmtt/m/n/10 https : / / www . researchgat
-e . net / publication / 221201996 _ Efficient _
+Overfull \hbox (26.31386pt too wide) in paragraph at lines 724--725
+ []\OT1/cmr/bx/n/10 Trios/Nessie[] []$\OT1/cmtt/m/n/10 https :// software [] .s
+andia [] .gov / trac / nessie / wiki / WikiStart$[] 
  []
 
 
-Overfull \hbox (6.85838pt too wide) in paragraph at lines 666--668
- []\OT1/cmr/bx/n/10 DART[] []$\OT1/cmtt/m/n/10 http : / / coewww . rutgers . ed
-u / www4 / cacweb / TASSL / Papers / dart _
+Overfull \hbox (29.34789pt too wide) in paragraph at lines 728--729
+ []\OT1/cmr/bx/n/10 Portals[] []$\OT1/cmtt/m/n/10 https :// www [] .researchgat
+e [] .net / publication / 221201996 [] []Efficient []
  []
 
 
-Overfull \hbox (28.9444pt too wide) in paragraph at lines 675--677
- []\OT1/cmr/bx/n/10 ressourcen[] []$\OT1/cmtt/m/n/10 https : / / docs . python 
-. org / 2 . 5 / ext / callingPython . html$[] []$https :
+Overfull \hbox (1.60843pt too wide) in paragraph at lines 732--734
+ []\OT1/cmr/bx/n/10 DART[] []$\OT1/cmtt/m/n/10 http :// coewww [] .rutgers [] .
+edu / www4 / cacweb / TASSL / Papers / dart []
  []
 
 
-Overfull \hbox (9.74693pt too wide) in paragraph at lines 675--677
-\OT1/cmtt/m/n/10 / / www . codeproject . com / articles / 11805 / embedding-[]p
-ython-[]in-[]c-[]c-[]part-[]i$[] 
+Overfull \hbox (39.4443pt too wide) in paragraph at lines 741--743
+ []\OT1/cmr/bx/n/10 ressourcen[] []$\OT1/cmtt/m/n/10 https :// docs [] .python 
+[] .org / 2 [] .5 / ext / callingPython [] .html$[] []$https ://
  []
 
 
-Overfull \hbox (8.21928pt too wide) in paragraph at lines 680--682
-[][]$\OT1/cmtt/m/n/10 http : / / www . linuxjournal . com / article / 8497$[] [
-]$https : / / www . codeproject .
+Overfull \hbox (2.96933pt too wide) in paragraph at lines 746--748
+[][]$\OT1/cmtt/m/n/10 http :// www [] .linuxjournal [] .com / article / 8497$[]
+ []$https :// www [] .codeproject []
  []
 
 
-Overfull \hbox (4.99698pt too wide) in paragraph at lines 680--682
-\OT1/cmtt/m/n/10 com / articles / 820116 / embedding-[]python-[]program-[]in-[]
-a-[]c-[]cplusplus-[]code$[] 
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 746--748
+\OT1/cmtt/m/n/10 .com / articles / 820116 / embedding [] -python [] -program []
+ -in [] -a [] -c [] -cplusplus [] -code$[] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 688.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 754.
 
 (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 688.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 754.
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 703--704
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 769--770
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (1.66698pt too wide) in paragraph at lines 709--710
- []\OT1/cmr/bx/n/10 spring-server frame-work[] []$\OT1/cmtt/m/n/10 https : / / 
-github . com / bartobri / spring-[]server$[] 
- []
-
-
-Overfull \hbox (10.74693pt too wide) in paragraph at lines 717--718
-[]$\OT1/cmtt/m/n/10 https : / / www . quora . com / Is-[]there-[]a-[]C-[]struct
--[]to-[]JSON-[]generator-[]library$[] 
- []
-
-[21]
-Overfull \hbox (3.63689pt too wide) in paragraph at lines 725--730
-[][]$\OT1/cmtt/m/n/10 https : / / developers . google . com / protocol-[]buffer
-s/$[] \OT1/cmr/m/n/10 Pro-to-col buffers are
- []
-
-
-Overfull \hbox (20.98921pt too wide) in paragraph at lines 725--730
-\OT1/cmr/m/n/10 tured data. Im-ple-men-tierung f^^?ur C: []$\OT1/cmtt/m/n/10 ht
-tps : / / github . com / protobuf-[]c / protobuf-[]c$[]
+Overfull \hbox (1.16698pt too wide) in paragraph at lines 775--776
+ []\OT1/cmr/bx/n/10 spring-server frame-work[] []$\OT1/cmtt/m/n/10 https :// gi
+thub [] .com / bartobri / spring [] -server$[] 
  []
 
 [22]
-Overfull \hbox (8.03966pt too wide) in paragraph at lines 739--739
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 783--784
+[]$\OT1/cmtt/m/n/10 https :// www [] .quora [] .com / Is [] -there [] -a [] -C 
+[] -struct [] -to [] -JSON [] -generator [] -library$[] 
+ []
+
+
+Overfull \hbox (3.13689pt too wide) in paragraph at lines 791--796
+[][]$\OT1/cmtt/m/n/10 https :// developers [] .google [] .com / protocol [] -bu
+ffers /$[] \OT1/cmr/m/n/10 Pro-to-col buffers are
+ []
+
+
+Overfull \hbox (9.4893pt too wide) in paragraph at lines 791--796
+\OT1/cmr/m/n/10 tured data. Im-ple-men-tierung f^^?ur C: []$\OT1/cmtt/m/n/10 ht
+tps :// github [] .com / protobuf [] -c / protobuf []
+ []
+
+[23]
+Overfull \hbox (8.03966pt too wide) in paragraph at lines 805--805
 []\OT1/cmr/bx/n/14.4 Gegen^^?uberstellung verf^^?ugbarer Werkzeuge und
  []
 
 
-Overfull \hbox (3.8062pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 818--818
 [][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
  []
 
 
-Overfull \hbox (3.18114pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 818--818
 \OT1/cmr/m/n/5 rpc,socket,service 
  []
 
 
-Overfull \hbox (3.8062pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 818--818
 [][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
  []
 
 
-Overfull \hbox (3.18114pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 818--818
 \OT1/cmr/m/n/5 rpc,socket,service 
  []
 
 
-Overfull \hbox (3.8062pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 818--818
 [][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
  []
 
 
-Overfull \hbox (3.18114pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 818--818
 \OT1/cmr/m/n/5 rpc,socket,service 
  []
 
 
-Overfull \hbox (3.8062pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.8062pt too wide) in paragraph at lines 818--818
 [][][][]\OT1/cmr/m/n/5 tabelle/vergleiche 
  []
 
 
-Overfull \hbox (3.18114pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.18114pt too wide) in paragraph at lines 818--818
 \OT1/cmr/m/n/5 rpc,socket,service 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 785.
+               Default added (so using `tbp') on input line 851.
 
-[23]
-Overfull \hbox (6.16725pt too wide) in paragraph at lines 843--848
+[24]
+Overfull \hbox (6.16725pt too wide) in paragraph at lines 909--914
 []\OT1/cmr/m/n/10 Benutzt Pro-to-buf zum er-stellen von Ser-vices und Nachricht
 enob-jek-ten (stubs).
  []
 
 
-Overfull \hbox (3.87999pt too wide) in paragraph at lines 843--848
+Overfull \hbox (14.3799pt too wide) in paragraph at lines 909--914
 \OT1/cmr/m/n/10 Of-fizieller sup-port f^^?ur C++ vorhan-den. Im-ple-men-tierung
- f^^?ur c vorhan-den []$\OT1/cmtt/m/n/10 https :
+ f^^?ur c vorhan-den []$\OT1/cmtt/m/n/10 https ://
  []
 
-[24]
-Overfull \hbox (0.11162pt too wide) in paragraph at lines 849--851
+
+Overfull \hbox (2.34958pt too wide) in paragraph at lines 909--914
+\OT1/cmtt/m/n/10 github [] .com / protobuf [] -c / protobuf [] -c$[]\OT1/cmr/m/
+n/10 . Das Ba-s-is-frame-work von gRPC ist eben-
+ []
+
+[25]
+Overfull \hbox (0.11162pt too wide) in paragraph at lines 915--917
 []\OT1/cmr/m/n/10 Da die Def-i-ni-tio-nen der stubs nicht sprachge-bun-den er-f
 ol-gen ist eine (sp^^?atere)
  []
 
 
-Overfull \hbox (37.0244pt too wide) in paragraph at lines 893--894
-[]\OT1/cmr/m/n/10 HPC in der Cloud []$\OT1/cmtt/m/n/10 http : / / grids . ucs .
- indiana . edu / ptliupages / publications /
+Overfull \hbox (37.0244pt too wide) in paragraph at lines 959--960
+[]\OT1/cmr/m/n/10 HPC in der Cloud []$\OT1/cmtt/m/n/10 http :// grids [] .ucs [
+] .indiana [] .edu / ptliupages / publications /
  []
 
-[25]
-Overfull \hbox (4.6854pt too wide) in paragraph at lines 939--943
+[26]
+Overfull \hbox (4.6854pt too wide) in paragraph at lines 1005--1009
  []\OT1/cmr/bx/n/10 Kernmodule[] \OT1/cmr/m/n/10 Einige HYPRE-Methoden ^^?ubers
 chreiben. Map-ping HYPRE-
  []
 
-[26]
-Overfull \hbox (116.24602pt too wide) in paragraph at lines 948--953
-[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
-ntu-[]on-[]virtualbox-[]for-[]devstack-[]2016-[]03-[]30/$[] 
+[27]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 1014--1019
+[]$\OT1/cmtt/m/n/10 http :// ronaldbradford [] .com / blog / setting [] -up [] 
+-ubuntu [] -on [] -virtualbox [] -for []
  []
 
 
-Overfull \hbox (46.99661pt too wide) in paragraph at lines 948--953
-[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / setting-[]up-[]ubu
-ntu-[]using-[]vagrant-[]2016-[]04-[]01/$[] 
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 1014--1019
+[]$\OT1/cmtt/m/n/10 http :// ronaldbradford [] .com / blog / setting [] -up [] 
+-ubuntu [] -using [] -vagrant [] -2016 []
  []
 
 
-Overfull \hbox (67.49643pt too wide) in paragraph at lines 948--953
-[]$\OT1/cmtt/m/n/10 http : / / ronaldbradford . com / blog / downloading-[]and-
-[]installing-[]devstack-[]2016-[]04-[]02/$[] 
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 1014--1019
+[]$\OT1/cmtt/m/n/10 http :// ronaldbradford [] .com / blog / downloading [] -an
+d [] -installing [] -devstack []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--953
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1019
 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 962--975
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1028--1041
 []$ 
  []
 
-[27]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 999--1026
+[28]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 1065--1092
 []$[]$ 
  []
 
 
-Overfull \hbox (54.6426pt too wide) in paragraph at lines 1042--1047
- []\OT1/cmr/bx/n/10 Reboot[] []$\OT1/cmtt/m/n/10 https : / / ask . openstack . 
-org / en / question / 5423 / rebooting-[]with-[]devstack/$[]
+Overfull \hbox (1.14305pt too wide) in paragraph at lines 1108--1113
+ []\OT1/cmr/bx/n/10 Reboot[] []$\OT1/cmtt/m/n/10 https :// ask [] .openstack []
+ .org / en / question / 5423 / rebooting [] -with []
+ []
+
+[29]
+Overfull \hbox (32.24684pt too wide) in paragraph at lines 1124--1125
+[][]$\OT1/cmtt/m/n/10 http :// stackoverflow [] .com / questions / 36268822 / n
+o [] -rejoin [] -stack [] -sh [] -script []
  []
 
 
-Overfull \hbox (8.945pt too wide) in paragraph at lines 1042--1047
-\OT1/cmr/m/n/10 Wenn die Va-grant-box herunter gefahren wurde muss de-vs-tack n
-ach einem erneuten
- []
-
-[28]
-Overfull \hbox (98.74629pt too wide) in paragraph at lines 1058--1059
-[][]$\OT1/cmtt/m/n/10 http : / / stackoverflow . com / questions / 36268822 / n
-o-[]rejoin-[]stack-[]sh-[]script-[]in-[]my-[]setup$[] 
- []
-
-
-Overfull \hbox (71.86824pt too wide) in paragraph at lines 1070--1071
+Overfull \hbox (71.86824pt too wide) in paragraph at lines 1136--1137
  []\OT1/cmr/bx/n/10 Verbindung zur Cloud[] \OT1/cmr/m/n/10 http://openstack-clo
 ud-mylearning.blogspot.de/2015/02/openstack-
  []
 
 
-Overfull \hbox (18.13286pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (18.13286pt too wide) in paragraph at lines 1140--1140
 [][][][]\OT1/cmr/m/n/5 Oberfl^^?ache/Benutzung 
  []
 
 
-Overfull \hbox (18.13286pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (18.13286pt too wide) in paragraph at lines 1140--1140
 [][][][]\OT1/cmr/m/n/5 Oberfl^^?ache/Benutzung 
  []
 
 
-Overfull \hbox (18.13286pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (18.13286pt too wide) in paragraph at lines 1140--1140
 [][][][]\OT1/cmr/m/n/5 Oberfl^^?ache/Benutzung 
  []
 
 
-Overfull \hbox (18.13286pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (18.13286pt too wide) in paragraph at lines 1140--1140
 [][][][]\OT1/cmr/m/n/5 Oberfl^^?ache/Benutzung 
  []
 
 
-LaTeX Warning: Marginpar on page 29 moved.
+LaTeX Warning: Marginpar on page 30 moved.
 
-[29] [30] (./researchPaper.bbl) [31]
+[30] [31] (./researchPaper.bbl
+Underfull \hbox (badness 1603) in paragraph at lines 41--57
+[]\OT1/cmr/m/n/10 CASC.  (2017b).  \OT1/cmr/m/it/10 Hypre soft-ware re-leases. 
+ \OT1/cmr/m/n/10 on-line.  Re-trieved from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--57
+[]$\OT1/cmtt/m/n/10 https :// computation [] .llnl [] .gov / projects / hypre [
+] -scalable [] -linear []
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 41--57
+\OT1/cmtt/m/n/10 -solvers [] -multigrid [] -methods / software$[]   \OT1/cmr/m/
+n/10 (zuletzt be-sucht am
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 69--83
+[]\OT1/cmr/m/n/10 CASC.  (2017c).  \OT1/cmr/m/it/10 Ref-er-ence man-ual hypre\O
+T1/cmr/m/n/10 .  on-line.  Re-trieved from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--83
+[]$\OT1/cmtt/m/n/10 https :// computation [] .llnl [] .gov / projects / hypre [
+] -scalable [] -linear []
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 95--109
+[]\OT1/cmr/m/n/10 CASC.  (2017d).  \OT1/cmr/m/it/10 User's man-ual hypre\OT1/cm
+r/m/n/10 .  on-line.  Re-trieved from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--109
+[]$\OT1/cmtt/m/n/10 https :// computation [] .llnl [] .gov / projects / hypre [
+] -scalable [] -linear []
+ []
+
+) [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1102.
+(hyperref)                removing `\\' on input line 1168.
 
 
-Overfull \hbox (141.00494pt too wide) in paragraph at lines 1114--1115
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 1180--1181
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 1181--1182
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1116--1117
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1182--1183
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1185--1186
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 1120--1121
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 1186--1187
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1131--1132
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1197--1198
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1132--1135
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1198--1201
 [][][][][][][][] 
  []
 
-[32]
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 1182--1183
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 1192--1193
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1197--1198
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 [33]
-Overfull \hbox (195.0055pt too wide) in paragraph at lines 1213--1214
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 1248--1249
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1215--1216
-[][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 1258--1259
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1216--1217
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1217--1218
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1219--1220
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (177.00531pt too wide) in paragraph at lines 1220--1221
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.00427pt too wide) in paragraph at lines 1221--1222
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1232--1233
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (135.00488pt too wide) in paragraph at lines 1238--1239
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1239--1240
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1240--1241
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1263--1264
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [34]
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1255--1256
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (195.0055pt too wide) in paragraph at lines 1279--1280
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1256--1257
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 1257--1259
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1281--1282
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1259--1260
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1282--1283
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 1265--1266
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1283--1284
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1266--1268
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1271--1272
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 1272--1273
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[35]
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1321--1322
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 1328--1329
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 1329--1330
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1334--1335
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1336--1337
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1338--1339
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1285--1286
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1347--1348
-[][][][][][][][][][][][][][][][] 
- []
-
-[36]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1351--1352
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1355--1356
+Overfull \hbox (177.00531pt too wide) in paragraph at lines 1286--1287
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1360--1361
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 1287--1288
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1298--1299
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 1304--1305
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1305--1306
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1306--1307
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[35]
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1321--1322
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1322--1323
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 1323--1325
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1325--1326
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 1331--1332
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1332--1334
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1337--1338
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 1338--1339
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1387--1388
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 1394--1395
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 1395--1396
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1400--1401
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1402--1403
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1361--1362
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1404--1405
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1413--1414
+[][][][][][][][][][][][][][][][] 
+ []
+
+[37]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1417--1418
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1421--1422
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1426--1427
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1371--1372
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1427--1428
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1437--1438
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1372--1374
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1438--1440
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (129.00482pt too wide) in paragraph at lines 1381--1382
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 1447--1448
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1386--1387
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1452--1453
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1394--1395
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1460--1461
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37]
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1414--1415
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (153.00507pt too wide) in paragraph at lines 1415--1416
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (291.00647pt too wide) in paragraph at lines 1416--1417
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (147.005pt too wide) in paragraph at lines 1417--1418
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1418--1419
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1419--1420
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1420--1421
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1421--1423
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1424--1425
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1425--1427
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1428--1429
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1429--1430
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1434--1435
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 [38]
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1450--1451
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1480--1481
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1451--1452
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1452--1453
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (165.00519pt too wide) in paragraph at lines 1453--1454
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 1454--1455
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1455--1457
+Overfull \hbox (153.00507pt too wide) in paragraph at lines 1481--1482
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1458--1459
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1459--1461
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1463--1464
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1468--1469
+Overfull \hbox (291.00647pt too wide) in paragraph at lines 1482--1483
 [][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (147.005pt too wide) in paragraph at lines 1483--1484
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (99.00452pt too wide) in paragraph at lines 1484--1485
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1485--1486
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1486--1487
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (165.00519pt too wide) in paragraph at lines 1487--1488
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1488--1489
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1489--1491
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1491--1492
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1493--1494
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1496--1497
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1498--1499
-[][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1485--1486
+[][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39]
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1499--1501
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1486--1487
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1487--1489
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1502--1503
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (135.00488pt too wide) in paragraph at lines 1503--1505
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1506--1507
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1490--1491
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1507--1509
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1491--1493
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1511--1512
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1494--1495
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1516--1517
-[][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1495--1496
+[][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1538--1539
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1500--1501
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[39]
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1516--1517
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1539--1540
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1517--1518
 [][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1540--1541
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1518--1519
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (165.00519pt too wide) in paragraph at lines 1541--1542
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 1519--1520
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1542--1543
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1543--1545
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1545--1546
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1548--1549
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[40]
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1549--1550
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1555--1556
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (135.00488pt too wide) in paragraph at lines 1556--1558
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1559--1560
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1560--1563
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1565--1566
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1570--1571
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 1520--1521
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 1588--1590
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 1590--1591
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 1592--1593
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1593--1594
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1594--1595
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1595--1598
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1521--1523
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1598--1599
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1524--1525
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1525--1527
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1529--1530
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1534--1535
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1550--1551
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1551--1552
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1552--1553
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 1553--1554
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1554--1555
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1555--1557
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1557--1558
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1559--1560
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1562--1563
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1564--1565
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[40]
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1565--1567
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1568--1569
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 1569--1571
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1572--1573
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1573--1575
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1577--1578
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1582--1583
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1604--1605
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1605--1606
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1606--1607
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 1607--1608
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1608--1609
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1609--1611
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1611--1612
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1614--1615
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [41]
-Overfull \hbox (117.0047pt too wide) in paragraph at lines 1600--1601
-[][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1615--1616
+[][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1603--1604
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1605--1606
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1606--1608
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (159.00513pt too wide) in paragraph at lines 1609--1610
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1621--1622
 [][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (135.00488pt too wide) in paragraph at lines 1610--1613
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 1622--1624
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (189.00543pt too wide) in paragraph at lines 1614--1615
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (171.00525pt too wide) in paragraph at lines 1615--1616
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (237.00592pt too wide) in paragraph at lines 1618--1621
-[][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1622--1623
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1625--1626
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1623--1625
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1626--1629
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1626--1627
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1631--1632
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 1627--1628
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1632--1633
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1636--1637
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 1643--1644
-[][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 1654--1656
+[][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 1646--1647
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[42]
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 1654--1656
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 1665--1666
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 1656--1657
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 1682--1683
-[][][][][][][][][][][][][][][] 
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 1658--1659
+[][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 1696--1697
-[][][][] 
- []
-
-[43]
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 1701--1702
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1659--1660
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 1702--1704
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1660--1661
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1661--1664
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1664--1665
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[42]
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 1666--1667
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1669--1670
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 1704--1706
-[][][][][] 
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1671--1672
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (93.00446pt too wide) in paragraph at lines 1706--1707
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1672--1674
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.00513pt too wide) in paragraph at lines 1675--1676
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 1676--1679
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (189.00543pt too wide) in paragraph at lines 1680--1681
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (171.00525pt too wide) in paragraph at lines 1681--1682
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (237.00592pt too wide) in paragraph at lines 1684--1687
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1688--1689
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 1707--1708
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1689--1691
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1692--1693
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 1693--1694
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1698--1699
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 1709--1710
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 1712--1713
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[43]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 1720--1722
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 1731--1732
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 1748--1749
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 1762--1763
+[][][][] 
+ []
+
+[44]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 1767--1768
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 1768--1770
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 1770--1772
+[][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 1772--1773
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 1773--1774
 [][][][][][][][] 
  []
 
 
-Overfull \hbox (81.00433pt too wide) in paragraph at lines 1713--1714
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 1779--1780
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 1717--1718
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 1783--1784
 [][][][][][][][][][][][] 
  []
 
-[44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1727.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1727.
+[45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1793.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1793.
  (./researchPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1727.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1727.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1793.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1793.
 
 Package rerunfilecheck Info: File `researchPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 3BC4D26D578D000E9EAAC66146CE6EBC;2944.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1727.
+(rerunfilecheck)             Checksum: 6A8B8FC6470A8DBF92A2D83AF40C1BA2;2993.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1793.
  ) 
 Here is how much of TeX's memory you used:
- 19102 strings out of 493013
- 344828 string characters out of 6139317
- 500370 words of memory out of 5000000
- 21303 multiletter control sequences out of 15000+600000
+ 19590 strings out of 493013
+ 351326 string characters out of 6139317
+ 510960 words of memory out of 5000000
+ 21735 multiletter control sequences out of 15000+600000
  12792 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,76p,423b,1817s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,76p,443b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -2219,10 +2312,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on researchPaper.pdf (44 pages, 322498 bytes).
+Output written on researchPaper.pdf (45 pages, 333856 bytes).
 PDF statistics:
- 1780 PDF objects out of 2073 (max. 8388607)
- 1699 compressed objects within 17 object streams
- 1024 named destinations out of 1200 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1875 PDF objects out of 2073 (max. 8388607)
+ 1792 compressed objects within 18 object streams
+ 1072 named destinations out of 1200 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 

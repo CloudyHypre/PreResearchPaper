@@ -1,25 +1,160 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{hypreManual}
-Center for Applied Scientific Computing (Lawrence Livermore National
-  Laboratory).
-\newblock {\em User's Manual HYPRE}, 03 2017.
+\bibitem [\protect \citeauthoryear {%
+CASC%
+}{%
+CASC%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+hypreCASC}
+\APACinsertmetastar {%
+hypreCASC}%
+\begin{APACrefauthors}%
+CASC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {Homepage Center for Applied Scientific Computing.} {Homepage
+  center for applied scientific computing.}
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL} \url{https://computation.llnl.gov/casc} \end{APACrefURL}
+\newblock
+\APACrefnote{zuletzt besucht am 28.06.2017}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{hypreDownload}
-Center for Applied Scientific Computing (Lawrence Livermore
-  National~Laboratory).
-\newblock Hypre software releases.
-\newblock zuletzt besucht am 28.06.2017.
+\bibitem [\protect \citeauthoryear {%
+CASC%
+}{%
+CASC%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+hypreDownload}
+\APACinsertmetastar {%
+hypreDownload}%
+\begin{APACrefauthors}%
+CASC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {HYPRE Software Releases.} {Hypre software releases.}
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{https://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/software}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{zuletzt besucht am 28.06.2017}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{hypreCASC}
-Center for Applied Scientific Computing (Lawrence Livermore
-  National~Laboratory).
-\newblock Überlick center for applied scientific computing.
-\newblock zuletzt besucht am 28.06.2017.
+\bibitem [\protect \citeauthoryear {%
+CASC%
+}{%
+CASC%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
+hypreReferenceManual}
+\APACinsertmetastar {%
+hypreReferenceManual}%
+\begin{APACrefauthors}%
+CASC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017{\protect \BCnt {3}}}.
+\newblock
+\APACrefbtitle {Reference Manual HYPRE} {Reference manual hypre}.
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{https://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/software}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{hypreLLNL}
-Lawrence Livermore~National Laboratory.
-\newblock Überblick lawrence livermore national laboratory.
-\newblock zuletzt besucht am 28.06.2017.
+\bibitem [\protect \citeauthoryear {%
+CASC%
+}{%
+CASC%
+}{%
+{\protect \APACyear {2017}}%
+{\protect \APACexlab {{\protect \BCnt {4}}}}}]{%
+hypreManual}
+\APACinsertmetastar {%
+hypreManual}%
+\begin{APACrefauthors}%
+CASC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017{\protect \BCnt {4}}}.
+\newblock
+\APACrefbtitle {User's Manual HYPRE} {User's manual hypre}.
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{https://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/software}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fritzsche%
+}{%
+Fritzsche%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+FritzschePreconditioning}
+\APACinsertmetastar {%
+FritzschePreconditioning}%
+\begin{APACrefauthors}%
+Fritzsche, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\newblock
+\APACrefbtitle {Overlapping and Nonoverlapping Orderings for Preconditioning}
+  {Overlapping and nonoverlapping orderings for preconditioning}.
+\newblock
+\APACaddressPublisher{}{Wuppertal: Universitätsbibliothek Wuppertal}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+LLNL%
+}{%
+LLNL%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+hypreLLNL}
+\APACinsertmetastar {%
+hypreLLNL}%
+\begin{APACrefauthors}%
+LLNL.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Homepage Lawrence Livermore National Laboratory.} {Homepage
+  lawrence livermore national laboratory.}
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL} \url{https://www.llnl.gov/} \end{APACrefURL}
+\newblock
+\APACrefnote{zuletzt besucht am 28.06.2017}
+\PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

@@ -429,7 +429,10 @@ Die komplette Implementierung des Beispiel 5 ist im Anhang zu finden.
 
 \paragraph{Vorbereitungen}
 
-MPI initialisieren.
+Da HYPRE für die Parallelisierung auf die MPI Bibliothek zurückgreift muss dieses auch zu Beginn der Anwendung initialsiert werden.
+Dafür muss durch \begin{verbatim}MPI_INIT()\end{verbatim} eine grundsätzliche MPI-Session gestartet werden.
+Weiterhin müssen für die Prozesse ein Kommunikator bestimmt und die eigene id sowie die gesamte Anzahl der Prozesse gelesen werden.
+Dafür werden die Methoden \begin{verbatim}MPI_Comm_rank()\end{verbatim} und \begin{verbatim}MPI_Comm_size()\end{verbatim} aufgerufen.
 
 \begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Vorbereitungen]
 
@@ -484,6 +487,17 @@ Solver erstellen und aufrufen.
 \begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver anlegen und aufrufen]
 //create solver
 //(Boomer)
+
+/* Create solver */
+HYPRE_BoomerAMGCreate(&solver);
+
+/* Now setup and solve! */
+HYPRE_BoomerAMGSetup(solver, parcsr_A, par_b, par_x);
+HYPRE_BoomerAMGSolve(solver, parcsr_A, par_b, par_x);
+
+/* Destroy solver object */
+HYPRE_BoomerAMGDestroy(solver);
+
 \end{lstlisting}
 
 \paragraph{mit Preconditioner}
@@ -491,7 +505,26 @@ Solver erstellen und aufrufen.
 Solver mit anderem Preconditioner.
 
 \begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
-//create smg (etc) mit anderem precond. 
+//erstelle PCG mit AMG als preconditioner
+
+/* Create solver */
+HYPRE_ParCSRPCGCreate(MPI_COMM_WORLD, &solver);
+
+/* Now set up the AMG preconditioner and specify any parameters */
+HYPRE_BoomerAMGCreate(&precond);
+
+/* Set the PCG preconditioner */
+HYPRE_PCGSetPrecond(solver, (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSolve,
+                          (HYPRE_PtrToSolverFcn) HYPRE_BoomerAMGSetup, precond);
+
+/* Now setup and solve! */
+HYPRE_ParCSRPCGSetup(solver, parcsr_A, par_b, par_x);
+HYPRE_ParCSRPCGSolve(solver, parcsr_A, par_b, par_x);
+
+/* Destroy solver and preconditioner */
+HYPRE_ParCSRPCGDestroy(solver);
+HYPRE_BoomerAMGDestroy(precond);
+
 \end{lstlisting}
 
 \subsubsection{Ressourcen}
