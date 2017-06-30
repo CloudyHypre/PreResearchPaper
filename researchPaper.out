@@ -1,38 +1,36 @@
 \BOOKMARK [1][-]{section.1}{Einf\374hrung in die relevanten Themen}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Allgemeines und Recherche zum Thema Cloud}{section.1}% 2
 \BOOKMARK [3][-]{subsubsection.1.1.1}{Einf\374hrung und Grundbegriffe zu Cloudcomputing}{subsection.1.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.2}{NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}{subsection.1.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.1.3}{IDEAL cloud-native applications [CloudcomputingPatterns chap. 1.2]}{subsection.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.4}{Arten von Cloud}{subsection.1.1}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.5}{Cloudsysteme}{subsection.1.1}% 7
-\BOOKMARK [3][-]{subsubsection.1.1.6}{Ressourcen}{subsection.1.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.1.7}{Webtechnologien}{subsection.1.1}% 9
-\BOOKMARK [3][-]{subsubsection.1.1.8}{Mathematische Grundlagen}{subsection.1.1}% 10
-\BOOKMARK [2][-]{subsection.1.2}{HYPRE - \334berblick \374ber die Bibliothek}{section.1}% 11
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Funktionsumfang \(und deren Funktionsweise\)}{subsection.1.2}% 12
-\BOOKMARK [3][-]{subsubsection.1.2.2}{Verwendung und Implementierung}{subsection.1.2}% 13
-\BOOKMARK [3][-]{subsubsection.1.2.3}{Beispielhafter Einblick}{subsection.1.2}% 14
-\BOOKMARK [3][-]{subsubsection.1.2.4}{Ressourcen}{subsection.1.2}% 15
-\BOOKMARK [2][-]{subsection.1.3}{Werkzeuge f\374r die verteilte Ausf\374hrung}{section.1}% 16
-\BOOKMARK [3][-]{subsubsection.1.3.1}{RPC}{subsection.1.3}% 17
-\BOOKMARK [3][-]{subsubsection.1.3.2}{andere}{subsection.1.3}% 18
-\BOOKMARK [3][-]{subsubsection.1.3.3}{Serialisierung}{subsection.1.3}% 19
-\BOOKMARK [1][-]{section.2}{Gegen\374berstellung verf\374gbarer Werkzeuge und Varianten}{}% 20
-\BOOKMARK [2][-]{subsection.2.1}{'private' und 'public' Cloud}{section.2}% 21
-\BOOKMARK [2][-]{subsection.2.2}{Technologie}{section.2}% 22
-\BOOKMARK [2][-]{subsection.2.3}{Cloudtyp}{section.2}% 23
-\BOOKMARK [2][-]{subsection.2.4}{Sprache}{section.2}% 24
-\BOOKMARK [2][-]{subsection.2.5}{Vergleich ausgew\344hlter Cloudsysteme in einer Tabelle}{section.2}% 25
-\BOOKMARK [1][-]{section.3}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 26
-\BOOKMARK [2][-]{subsection.3.1}{gRPC}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.2}{Ressourcen}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.3}{Roadmap Implementierung}{section.3}% 29
-\BOOKMARK [1][-]{section.4}{Beispielinstallation OpenStack}{}% 30
-\BOOKMARK [2][-]{subsection.4.1}{Vorbereitung f\374r die Installation}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.2}{Installation}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.3}{Starten}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.4}{Benutzung Beispielhaft}{section.4}% 34
-\BOOKMARK [1][-]{section.5}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 35
-\BOOKMARK [1][-]{section*.109}{References}{}% 36
-\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 37
-\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 38
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Kategorisierung von Cloudsystemen}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Cloudsysteme}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{Ressourcen}{subsection.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.2}{Mathematische Grundlagen}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.3}{HYPRE - \334berblick \374ber die Bibliothek}{section.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Funktionsumfang \(und deren Funktionsweise\)}{subsection.1.3}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Verwendung und Implementierung}{subsection.1.3}% 10
+\BOOKMARK [3][-]{subsubsection.1.3.3}{Beispielhafter Einblick}{subsection.1.3}% 11
+\BOOKMARK [3][-]{subsubsection.1.3.4}{Ressourcen}{subsection.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.4}{Webtechnologien und Werkzeuge f\374r die verteilte Ausf\374hrung}{section.1}% 13
+\BOOKMARK [3][-]{subsubsection.1.4.1}{RPC}{subsection.1.4}% 14
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Service/Webservice}{subsection.1.4}% 15
+\BOOKMARK [3][-]{subsubsection.1.4.3}{Socket}{subsection.1.4}% 16
+\BOOKMARK [1][-]{section.2}{Implementierungen von Webtechnologien}{}% 17
+\BOOKMARK [2][-]{subsubsection.2.0.1}{RPC}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.0.2}{andere}{subsubsection.2.0.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.0.3}{Serialisierung}{subsubsection.2.0.1}% 20
+\BOOKMARK [2][-]{subsection.2.1}{Beispielinstallation OpenStack}{section.2}% 21
+\BOOKMARK [1][-]{section.3}{Gegen\374berstellung verf\374gbarer Werkzeuge und Varianten}{}% 22
+\BOOKMARK [2][-]{subsection.3.1}{'private' und 'public' Cloud}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.2}{Technologie}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.3}{Cloudtyp}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.4}{Sprache}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.5}{Vergleich ausgew\344hlter Cloudsysteme in einer Tabelle}{section.3}% 27
+\BOOKMARK [1][-]{section.4}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 28
+\BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 31
+\BOOKMARK [1][-]{section.5}{Verteilten Ausf\374hrung von HYPRE}{}% 32
+\BOOKMARK [1][-]{section.6}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 33
+\BOOKMARK [1][-]{section*.112}{References}{}% 34
+\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 35
+\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 36
