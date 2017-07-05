@@ -131,6 +131,33 @@ Fritzsche, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Henson%
+\ \BBA {} Yang%
+}{%
+Henson%
+\ \BBA {} Yang%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+Henson00boomeramg}
+\APACinsertmetastar {%
+Henson00boomeramg}%
+\begin{APACrefauthors}%
+Henson, V\BPBI E.%
+\BCBT {}\ \BBA {} Yang, U\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {BoomerAMG: a Parallel Algebraic Multigrid Solver and
+  Preconditioner} {Boomeramg: a parallel algebraic multigrid solver and
+  preconditioner}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Numerical Mathematics}{41}{}{155--177}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 LLNL%
 }{%
 LLNL%

@@ -351,14 +351,57 @@ Dieses bot die Möglichkeit HYPRE von anderen Sprachen als C und FORTRAN zu nutz
 So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
 Seit Version 2.11.1 steht jedoch keine Implementierung mehr von HYPRE mit Babel Interface zur Verfügung.
 
-\todo{HYPRE genauer beschreiben}
-\todo{HYPRE beispiel ex5}
-
 \subsubsection{Funktionsumfang (und deren Funktionsweise)}
 
 Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
-\todo{was heist das? was genau kann man lösen?wie funktioniert das? (lässt sich das beantworten)}
-\todo{wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)}
+Zur detaillierteren Erklärung von HYPRE kann man diese Beschreibung genauer Betrachten:
+
+Der Begriff \textbf{Solver} beschreibt ein Stück Software, dieses kann beispielsweise als Bibliothek implementiert sein.
+Mit Hilfe dieses Stücks Software kann man ein mathematisches Problem lösen.
+Für ein Problem kann es verschiedene Implementierungen von \textbf{Solvern} geben.
+Diese können bei unterschiedlichen Faktoren der Eingabedaten Vor- und Nachteile haben.
+Diese können beispielsweise in Performance oder Genauigkeit liegen.
+
+\textbf{Linear} beschreibt die Art von Problemen die HYPRE lösen kann.
+Es handelt sich dabei um die lineare Algebra.
+Ein wichtiger Teil der linearen Algebra sind lineare Gleichungssysteme.
+\todo{erweitern}
+
+Das zweite Adjektiv zum Begriff Solver ist \textbf{scalable}, also skalierbar.
+Es gibt also einen Hinweis darauf, dass die Implementierungen der Solver in HYPRE auch oder besonders bei großen Eingaben eine gute Performanz aufweisen.
+Für die Bewertung wird bei einer wachsenden Problemgröße ebenso die Rechenkapazität erhöht.
+Skalierbarkeit einer Funktion liegt dann vor, wenn die nötige Ausführungszeit dabei konstant gehalten werden kann.\cite{Henson00boomeramg}
+Dabei ist es in der Regel hilfreich, dass rechenintensive Teile parallel ausgeführt werden können.
+Man spricht in diesem Fall von horizontaler Skalierung, also dem hinzufügen weiterer Berechnungsknoten.
+Das können beispielsweise weitere Rechner sein die einem Cluster hinzugefügt werden.
+Um dabei eine verbesserte Leistung zu erhalten muss die Software eine entsprechende Skalierung unterstützen.
+Die Berechnungen müssen also in voneinander unabhängige Teile gespalten werden können.
+Im Gegensatz dazu steht die vertikale Skalierung.
+Hier hat man eine einzige Ressource deren Rechenleistung erhöht wird.
+Diese ist für eine Software in der Regel einfacher zu nutzen, stößt allerdings schneller an Grenzen.
+So kann die die Signalfrequenz einer CPU zum Beispiel nicht beliebig weit erhöht werden.
+
+Der zweite Teil der Beschreibung lautet \textbf{Multigrid Methods} steht für Mehrgitterverfahren.
+Diese stellen eine Approximationslösung für Differentialgleichungen dar.
+Dafür werden die Eingabedaten auf eine Weise ausgedünnt, bei der sich die Lösung so wenig wie möglich verändert.
+Eine solche Verkleinerung der Daten ist bei Problemen mit bis zu Milliarden von Unbekannten wichtig.
+So kann die Komplexität von Problemen erheblich reduziert werden.
+HYPRE verwendet beispielsweise Algebraic Multigrid Methods (AMG).
+
+Eine parallele Implementierung davon ist \textbf{BoomerAMG}.
+Dieser wurde bereits für Probleme mit dutzenden Millionen Unbekannten auf Maschinen mit über Tausend Prozessoren eingesetzt.\cite{Henson00boomeramg}
+Mehrgitterverfahren können als sogenannte Preconditioner, oder Vorkonditionierer, eingesetzt werden.
+Dabei werden die Eingabedaten noch vor dem Lösen optimiert.
+BoomerAMG kann beispielsweise direkt als Solver verwendet werden.
+Ebenso kann es aber auch als Preconditioner verwendet werden und anschließend ein anderer Solver zum Einsatz kommen.
+Beispielsweise bei der Verwendung des Krylow-Unterraum-Verfahren ist eine Vorkonditionierung wichtig. 
+Dieses ist auf das Lösen dünnbesetzter Gleichungssysteme optimiert.
+Wenn die Eingabedaten diesem Kriterium nicht entsprechen sollten sie also zunächst mit einem anderen Verfahren vorkonditioniert werden.
+
+Im wesentlichen stellt HYPRE also Funktionen zum Lösen linearer Algebra bereit.
+Diese sind soweit optimiert, dass sie skalieren.
+Die Performanz der Berechnungen kann durch Mehrgitterverfahren verbessert werden.
+BoomerAMG ist ein Beispiel für ein solches Verfahren welches parallelisierbar ist.
 
 \paragraph{Performance}
 Nutzt MPI für Parallelisierbarkeit.

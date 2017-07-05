@@ -7,6 +7,15 @@
 \usepackage{listings}
 \usepackage{amssymb}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%\usepackage[]{natbib}
+\usepackage{apacite}
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
 
 %opening
 \title{Auslagerung der Ausführung von Methoden der HYPRE Bibliothek in ein Cloudsystem
@@ -31,16 +40,22 @@ Recherche und Literaturverzeichnis}
 \end{center}
 }
 
-%content
+%title
 
 \maketitle
-\newpage
+\thispagestyle{empty}
+\blankpage
+\setcounter{page}{1}
+\renewcommand{\thepage}{\roman{page}}
+
+%abstract
 
 \begin{abstract}
 \todo{abstract formulieren}
 \end{abstract}
+\blankpage
 
-\newpage
+%meta
 
 \tableofcontents
 \newpage
@@ -56,6 +71,11 @@ Recherche und Literaturverzeichnis}
 
 \listoftodos
 \newpage
+
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+
+%content
 
 \section{Einführung in die relevanten Themen}
 
@@ -106,7 +126,7 @@ Ein \textbf{Once-in-a-lifetime workload} ist eine einmalige Lastspitze.
 \textbf{Unpredictable workload} liegt vor, wenn sich die Last ständig, jedoch unregelmäßig und zufällig verändert, sodass diese nicht vorhersehbar ist.
 \textbf{Continuously changing workload} verändert sich in linear steigend oder fallend.
 
-\subsubsection{NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}
+\paragraph{NIST definition introduces five fundamental properties that characterize a cloud offering [CloudcomputingPatterns chap. 1.1]}
 
 \begin{itemize}
  \item On-demand self-service
@@ -116,24 +136,24 @@ Ein \textbf{Once-in-a-lifetime workload} ist eine einmalige Lastspitze.
  \item Rapid elasticity
 \end{itemize}
 
-\paragraph{On-demand self-service}
+\subparagraph{On-demand self-service}
 `Provisioning` und `decomissioning` als Aktivitäten zum Hinzufügen oder Entfernen von weiteren Ressourcen.
 Das kann durch Benutzer über grafische oder Kommandozeilenschnittstellen geschehen oder automatisiert über eine API.
-\paragraph{Broad network access}
+\subparagraph{Broad network access}
 Ein starkes Netzwerk \todo{genauer definieren} ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen. 
 So kann Zugriffszeit auf Daten weniger abhängig von ihrem pysikalischen Speicherort werden.
-\paragraph{Measured service (pay-per-use)}
+\subparagraph{Measured service (pay-per-use)}
 Durch die Nutzung von Cloudsystemen kann man stark von der Flexibilität der Ressourcen profitieren.
 Diese Flexibilität muss sich auch im Bezahlmodell widerspiegeln.
-\paragraph{Resource pooling}
+\subparagraph{Resource pooling}
 Ein Cloudsystem benötigt einen (großen \todo{genauer definieren}) Pool an Ressourcen.
 Nur so kann Flexibilität für die Nutzer gewährleistet werden.
 Um eine Austauschbarkeit der Ressourcen zu ermöglichen muss eine homogene Nutzung der Ressourcen existieren. \todo{warum? flexible Nutzung, Kosten}
-\paragraph{Rapid elasticity}
+\subparagraph{Rapid elasticity}
 Elastizität von Cloudsystemen ermöglicht eine Effiziente Zuweisung von Ressourcen auf die Nutzer.
 Der Ressourcepool muss dynamisch unter den Nutzern aufgeteilt werden können.
 
-\subsubsection{IDEAL cloud-native applications [CloudcomputingPatterns chap. 1.2]}
+\paragraph{IDEAL cloud-native applications [CloudcomputingPatterns chap. 1.2]}
 
 \begin{itemize}
  \item Isolated state
@@ -143,31 +163,31 @@ Der Ressourcepool muss dynamisch unter den Nutzern aufgeteilt werden können.
  \item Loose coupling
 \end{itemize}
 
-\paragraph{Isolated state}
+\subparagraph{Isolated state}
 Cloudanwendungen und ihre Komponenten sollten zustandslos sein.
 Jede Ressource die zustandslos ist kann deutlich einfacher entfernt oder hinzugefügt werden als eine Ressource mit einem Zustand.
 So können aufeinander folgende Interaktionen eines Nutzers beliebig auf verschiedene Ressourcen verteilt werden.
 Eine Ressource die beispielsweise die erste Interaktion getätigt hat wird für weitere Interaktionen nicht mehr benötigt.
-\paragraph{Distribution}
+\subparagraph{Distribution}
 Cloudsysteme können auf viele verschiedene Standorte verteilt sein.
 In jedem Fall bestehen sie aus vielen verschiedenen Ressourcen.
 Anwendungen sollten daher aus mehreren Komponenten bestehen, die auf verschiedene Ressourcen verteilt werden können.
-\paragraph{Elasticity}
+\subparagraph{Elasticity}
 Horizontale Skalierung statt vertikaler Skalierung:
 Anwendung soll vom Hinzufügen weiterer Ressourcen profitieren können (horizontal).
 Es soll nicht nur die `Verbesserung` einer Ressource eine bessere performance ermöglichen (vertikal).
 Die Stärke von Cloudsystemen ist die dynamische Zuweisung von Ressourcen.
 Cloudanwendungen müssen daher horizontal skalieren, also eine Parallelisierbarkeit vorweisen.
-\paragraph{Automated management}
+\subparagraph{Automated management}
 Durch die Elastizität können Ressourcen von Cloudanwendungen während der Laufzeit ständig hinzugefügt und entfernt werden.
 Diese Aktionen sollten aufgrund von Monitoring der Systemlast ausgelöst werden.
 Damit die Verwaltung der Ressourcen jederzeit schnell und entsprechend der aktuellen Lage stattfindet sollte sie automatisiert sein.
-\paragraph{Loose coupling}
+\subparagraph{Loose coupling}
 Da sich die verfügbaren Ressourcen der Anwendung während der Laufzeit ändern können sollten Komponenten möglichst unabhängig voneinander sein.
 Das reduziert die Fehleranfälligkeit für die Fälle in denen Komponenten kurzzeitig nicht verfügbar sind. \todo{wie?}
 Da verteilte Anwendung diese Eigenschaft aufweisen sind Technologien wie Webservices, SOA, asynchrone Kommunikation relevant für Cloudanwendungen. \todo{Technologien etwas weiter ausführen}
 
-\subsubsection{Arten von Cloud}
+\subsubsection{Kategorisierung von Cloudsystemen}
 
 \paragraph{Cloud Service Models}
 
@@ -307,19 +327,7 @@ IaaS
  \item more raspberry \url{https://www.raspberrypi.org/forums/viewtopic.php?f=36&t=54997}
 \end{itemize}
 
-\subsubsection{Webtechnologien}
-
-\paragraph{RPC}
-(Vergleich zu REST etc)
-
-\paragraph{Service/Webservice}
-\todo{erklärung service kommunikation allgemein}
-SOAP
-
-\paragraph{Socket}
-\todo{erklärung socket allgemein}
-
-\subsubsection{Mathematische Grundlagen}
+\subsection{Mathematische Grundlagen}
 
 \paragraph{Laplace-Gleichung}
 Partielle Differentialegleichung.
@@ -343,12 +351,56 @@ Dieses bot die Möglichkeit HYPRE von anderen Sprachen als C und FORTRAN zu nutz
 So wurde im User Manual die Verwendung aus der Sprache Python beschrieben.
 Seit Version 2.11.1 steht jedoch keine Implementierung mehr von HYPRE mit Babel Interface zur Verfügung.
 
-\todo{HYPRE genauer beschreiben}
-\todo{HYPRE beispiel ex5}
-
 \subsubsection{Funktionsumfang (und deren Funktionsweise)}
 
 Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
+Zur detaillierteren Erklärung von HYPRE kann man diese Beschreibung genauer Betrachten:
+
+Der Begriff \textbf{Solver} beschreibt ein Stück Software, dieses kann beispielsweise als Bibliothek implementiert sein.
+Mit Hilfe dieses Stücks Software kann man ein mathematisches Problem lösen.
+Für ein Problem kann es verschiedene Implementierungen von \textbf{Solvern} geben.
+Diese können bei unterschiedlichen Faktoren der Eingabedaten Vor- und Nachteile haben.
+Diese können beispielsweise in Performance oder Genauigkeit liegen.
+
+\textbf{Linear} beschreibt die Art von Problemen die HYPRE lösen kann.
+Es handelt sich dabei um die lineare Algebra.
+Ein wichtiger Teil der linearen Algebra sind lineare Gleichungssysteme.
+\todo{erweitern}
+
+Das zweite Adjektiv zum Begriff Solver ist \textbf{scalable}, also skalierbar.
+Es gibt also einen Hinweis darauf, dass die Implementierungen der Solver in HYPRE auch oder besonders bei großen Eingaben eine gute Performanz aufweisen.
+Für die Bewertung wird bei einer wachsenden Problemgröße ebenso die Rechenkapazität erhöht.
+Skalierbarkeit einer Funktion liegt dann vor, wenn die nötige Ausführungszeit dabei konstant gehalten werden kann.\cite{Henson00boomeramg}
+Dabei ist es in der Regel hilfreich, dass rechenintensive Teile parallel ausgeführt werden können.
+Man spricht in diesem Fall von horizontaler Skalierung, also dem hinzufügen weiterer Berechnungsknoten.
+Das können beispielsweise weitere Rechner sein die einem Cluster hinzugefügt werden.
+Um dabei eine verbesserte Leistung zu erhalten muss die Software eine entsprechende Skalierung unterstützen.
+Die Berechnungen müssen also in voneinander unabhängige Teile gespalten werden können.
+Im Gegensatz dazu steht die vertikale Skalierung.
+Hier hat man eine einzige Ressource deren Rechenleistung erhöht wird.
+Diese ist für eine Software in der Regel einfacher zu nutzen, stößt allerdings schneller an Grenzen.
+So kann die die Signalfrequenz einer CPU zum Beispiel nicht beliebig weit erhöht werden.
+
+Der zweite Teil der Beschreibung lautet \textbf{Multigrid Methods} steht für Mehrgitterverfahren.
+Diese stellen eine Approximationslösung für Differentialgleichungen dar.
+Dafür werden die Eingabedaten auf eine Weise ausgedünnt, bei der sich die Lösung so wenig wie möglich verändert.
+Eine solche Verkleinerung der Daten ist bei Problemen mit bis zu Milliarden von Unbekannten wichtig.
+So kann die Komplexität von Problemen erheblich reduziert werden.
+HYPRE verwendet beispielsweise Algebraic Multigrid Methods (AMG).
+Eine parallele Implementierung davon ist \textbf{BoomerAMG}.
+Dieser wurde bereits für Probleme mit dutzenden Millionen Unbekannten auf Maschinen mit über Tausend Prozessoren eingesetzt.\cite{Henson00boomeramg}
+Mehrgitterverfahren können als sogenannte Preconditioner, oder Vorkonditionierer, eingesetzt werden.
+Dabei werden die Eingabedaten noch vor dem Lösen optimiert.
+BoomerAMG kann beispielsweise direkt als Solver verwendet werden.
+Ebenso kann es aber auch als Preconditioner verwendet werden und anschließend ein anderer Solver zum Einsatz kommen.
+Multigridverfahren sind jedoch nicht die einzige Form von Preconditionern die HYPRE bereit stellt.
+\textbf{Krylow-Unterraum-Verfahren}
+
+Im wesentlichen stellt HYPRE also Funktionen zum Lösen linearer Algebra bereit.
+Diese sind soweit optimiert, dass sie skalieren.
+Die Performanz der Berechnungen kann durch Mehrgitterverfahren verbessert werden.
+BoomerAMG ist ein Beispiel für ein solches Verfahren welches parallelisierbar ist.
+
 \todo{was heist das? was genau kann man lösen?wie funktioniert das? (lässt sich das beantworten)}
 \todo{wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)}
 
@@ -360,6 +412,8 @@ Nutzt MPI für Parallelisierbarkeit.
 \paragraph{Conceptual Interfaces}
 \paragraph{Solver Strategies}
 \paragraph{Preconditioner(s)}
+
+Preconditioning	\cite{FritzschePreconditioning}
 
 \subsubsection{Verwendung und Implementierung}
 
@@ -527,6 +581,38 @@ HYPRE_BoomerAMGDestroy(precond);
 
 \end{lstlisting}
 
+\paragraph{weitere Parameter}
+
+Vor dem Ausführen des solvers können weitere Parameter gesetzt werden.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
+/* Set some parameters (See Reference Manual for more parameters) */
+HYPRE_BoomerAMGSetPrintLevel(solver, 3);  /* print solve info + parameters */
+HYPRE_BoomerAMGSetOldDefault(solver); /* Falgout coarsening with modified classical interpolaiton */
+HYPRE_BoomerAMGSetRelaxType(solver, 3);   /* G-S/Jacobi hybrid relaxation */
+HYPRE_BoomerAMGSetRelaxOrder(solver, 1);   /* uses C/F relaxation */
+HYPRE_BoomerAMGSetNumSweeps(solver, 1);   /* Sweeeps on each level */
+HYPRE_BoomerAMGSetMaxLevels(solver, 20);  /* maximum number of levels */
+HYPRE_BoomerAMGSetTol(solver, 1e-7);      /* conv. tolerance */
+\end{lstlisting}
+
+\paragraph{Ergebnis auswerten}
+
+Nach dem Lösen des Problems können die Ergebnisse gelesen werden.
+
+\begin{lstlisting}[frame=single,caption=HYPRE Nutzung: Solver mit Preconditioner]
+/* Run info - needed logging turned on */
+HYPRE_BoomerAMGGetNumIterations(solver, &num_iterations);
+HYPRE_BoomerAMGGetFinalRelativeResidualNorm(solver, &final_res_norm);
+\end{lstlisting}
+
+\paragraph{Alles zusammenfügen}
+
+Im Anhang ist das komplette Beispiel 5 zu sehen, welches zuvor in Ausschnitten erläutert wurde.
+Im folgenden soll der Zusammenhang der einzelnen Methoden näher erläutert werden.
+\todo{näher erläutern, paragraphen oben drüber: methoden etwas genauer erklären}
+\cite{hypreReferenceManual}
+
 \subsubsection{Ressourcen}
 
 \begin{itemize}
@@ -536,9 +622,23 @@ HYPRE_BoomerAMGDestroy(precond);
  \item (mehr) beispiele \url{https://redmine.scorec.rpi.edu/anonsvn/fastmath/docs/ATPESC_2013/Exercises/hypre/examples/README_files/c.html}
 \end{itemize}
 
-\subsection{Werkzeuge für die verteilte Ausführung}
+\subsection{Webtechnologien und Werkzeuge für die verteilte Ausführung}
 
 \subsubsection{RPC}
+(Vergleich zu REST etc)
+
+\subsubsection{Service/Webservice}
+\todo{erklärung service kommunikation allgemein}
+SOAP
+
+\subsubsection{Socket}
+\todo{erklärung socket allgemein}
+
+\newpage
+
+\section{Implementierungen von Webtechnologien}
+
+\subsection{RPC}
 
 \todo{rpc aufräumen}
 
@@ -670,7 +770,7 @@ völlig veraltet - websocket-lib ist inziwschen komplett inkompatibel
 \todo{client and server stubs: \url{https://github.com/masroorhasan/RPC}}
 \todo{rpc for php and c: \url{https://github.com/laruence/yar}}
 
-\paragraph{Bibliotheken/Frameworks/Implementierungen}
+\subsection{Bibliotheken/Frameworks/Implementierungen}
 
 \subparagraph{Mercury}
 
@@ -696,7 +796,7 @@ Bietet außerdem MPI-Unterstützung.
 \url{http://coewww.rutgers.edu/www4/cacweb/TASSL/Papers/dart_hpdc.pdf}
 % \url{https://www.researchgate.net/publication/220717741_DART_a_substrate_for_high_speed_asynchronous_data_IO}
 
-\subsubsection{andere}
+\subsection{andere}
 
 \paragraph{Python in C Ausführen}
 
@@ -742,7 +842,7 @@ cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m
 git clone git@github.com:bartobri/spring-server.git
 \end{lstlisting}
 
-\subsubsection{Serialisierung}
+\subsection{Serialisierung}
 
 \url{https://www.quora.com/Is-there-a-C-struct-to-JSON-generator-library}
 
@@ -763,6 +863,138 @@ Implementierung für C:
 Generiert den Code für structs selbstständig.
 Für den Anwendungsfall bestehen die Strukturen jedoch bereits und müssen umgewandelt werden.
 Ist daher ungeeignet.
+
+
+\subsection{Beispielinstallation OpenStack}
+
+\url{http://docs.openstack.org/developer/devstack/}\\
+\url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
+\url{http://ronaldbradford.com/blog/setting-up-ubuntu-on-virtualbox-for-devstack-2016-03-30/}\\
+\url{http://ronaldbradford.com/blog/setting-up-ubuntu-using-vagrant-2016-04-01/}\\
+\url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
+
+Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
+
+\paragraph{Vorbereitung für die Installation}
+
+\subparagraph{Ubuntu 16.04 in Vagrant aufsetzen}
+
+\begin{enumerate}
+ \item \begin{verbatim}vagrant init bento/ubuntu-16.04\end{verbatim}
+ \item Vagrantfile anpassen. Es sollten mindestens 4GB RAM zugewiesen werden, damit OpenStack performant läuft.\\
+\begin{minipage}{\textwidth}
+\begin{lstlisting}[frame=single,caption=Installation Ubuntu 16.04 in Vagrant]
+Vagrant.configure(2) do |config|
+  config.vm.box = "bento/ubuntu-16.04"
+  config.vm.network "private_network", type: "dhcp"
+ 
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+  end
+end
+\end{lstlisting}
+\end{minipage}
+ \item \begin{verbatim}vagrant up\end{verbatim}
+ \item \begin{verbatim}vagrant ssh\end{verbatim}
+\end{enumerate}
+ 
+\paragraph{Installation}
+ 
+\subparagraph{Devstack installieren}
+  
+\begin{enumerate}
+ \item \begin{verbatim}git clone https://git.openstack.org/openstack-dev/devstack \end{verbatim}
+ \item  \begin{verbatim}cd devstack\end{verbatim}
+ \item Bei Bedarf zu einem (älteren) stable release wechseln: \begin{verbatim}git checkout stable/ocata\end{verbatim} oder \begin{verbatim}git checkout stable/mitaka\end{verbatim} Die master-branch kann auch genutzt werden.
+ \item \begin{verbatim}ifconfig enp0s8 | grep addr\end{verbatim}
+ \item \begin{verbatim}inet addr kopieren\end{verbatim}
+ \item \begin{verbatim}cp samples/local.conf .\end{verbatim}
+ \item \begin{verbatim}HOST_IP="xxx.xxx.xxx.xxx"\end{verbatim}
+ \item \begin{verbatim}echo "HOST_IP=${HOST_IP}" >> local.conf\end{verbatim}
+ \item Es muss ein user mit sudo-rechten (ohne passwort) existieren, der nicht root ist. Der Standarduser vagrant ist dafür geeignet.
+ \item \begin{verbatim}./stack.sh\end{verbatim}
+\end{enumerate}
+
+Am Ende der erfolgreichen Installation erscheint die folgende Ausgabe in etwa so.
+Von hier können die nötigen Informationen für das weitere Vorgehen entnommen werden.
+
+\begin{minipage}{\textwidth}
+\begin{lstlisting}[frame=single,caption=Ausgabe von DevStack]
+=========================
+DevStack Component Timing
+=========================
+Total runtime         3644
+
+run_process            87
+test_with_retry         7
+apt-get-update         12
+pip_install           881
+restart_apache_server  20
+wait_for_service       61
+git_timed             355
+apt-get               457
+=========================
+
+
+
+This is your host IP address: 172.28.128.3
+This is your host IPv6 address: ::1
+Horizon is now available at http://172.28.128.3/dashboard
+Keystone is serving at http://172.28.128.3/identity/
+The default users are: admin and demo
+The password: nomoresecret
+\end{lstlisting}
+\end{minipage}
+
+\paragraph{Starten}
+
+\subparagraph{Openstack (Horizon) starten}
+
+Die folgenden Informationen sind abhängig von der Konfiguration.
+Für dieses Beispiel sind folgende Daten notwendig.
+
+\begin{enumerate}
+ \item \url{http://172.28.128.3/dashboard} in einem Browser öffnen
+ \item Benutzername admin oder demo
+ \item Password nomoresecret
+\end{enumerate}
+
+\subparagraph{Reboot}
+
+\url{https://ask.openstack.org/en/question/5423/rebooting-with-devstack/}
+Wenn die Vagrantbox herunter gefahren wurde muss devstack nach einem erneuten Start ebenfalls neu gestartet werden.
+Ansonsten können die verschiedenen Services nicht genutzt werden.
+Das Webfrontend Horizon kann in diesem Fall keinerlei Ressourcen laden.
+Zum erneuten Erstellen der openstack Umgebung können die folgenden Befehle genutzt werden.
+
+\begin{verbatim}
+ ./unstack.sh
+ ./stack.sh
+\end{verbatim}
+
+Bei einem erneuten Ausführen von stack.sh würden jedoch alle Datenbanken neu erstellt werden.
+Das würde zu einem kompletten Datenverlust führen.
+Dies ist aber nicht in jedem Fall gewünscht.
+Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services gestartet werden können.
+
+\url{http://stackoverflow.com/questions/36268822/no-rejoin-stack-sh-script-in-my-setup}
+
+\begin{verbatim}
+ screen -c stack-screenrc
+\end{verbatim}
+
+So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
+
+\paragraph{Benutzung Beispielhaft}
+
+\subparagraph{Verbindung zur Cloud}
+
+http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
+
+\subparagraph{Überblick Oberfläche und Funktionen erläutern}
+
+\todo{Oberfläche/Benutzung grob umreisen}
+\todo{evtl. anhand eines Workflow}
 
 \newpage
 
@@ -973,138 +1205,10 @@ Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 
-\section{Beispielinstallation OpenStack}
-
-\url{http://docs.openstack.org/developer/devstack/}\\
-\url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
-\url{http://ronaldbradford.com/blog/setting-up-ubuntu-on-virtualbox-for-devstack-2016-03-30/}\\
-\url{http://ronaldbradford.com/blog/setting-up-ubuntu-using-vagrant-2016-04-01/}\\
-\url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
-
-Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
-
-\subsection{Vorbereitung für die Installation}
-
-\paragraph{Ubuntu 16.04 in Vagrant aufsetzen}
-
-\begin{enumerate}
- \item \begin{verbatim}vagrant init bento/ubuntu-16.04\end{verbatim}
- \item Vagrantfile anpassen. Es sollten mindestens 4GB RAM zugewiesen werden, damit OpenStack performant läuft.\\
-\begin{minipage}{\textwidth}
-\begin{lstlisting}[frame=single,caption=Installation Ubuntu 16.04 in Vagrant]
-Vagrant.configure(2) do |config|
-  config.vm.box = "bento/ubuntu-16.04"
-  config.vm.network "private_network", type: "dhcp"
- 
-  config.vm.provider "virtualbox" do |v|
-    v.memory = 4096
-  end
-end
-\end{lstlisting}
-\end{minipage}
- \item \begin{verbatim}vagrant up\end{verbatim}
- \item \begin{verbatim}vagrant ssh\end{verbatim}
-\end{enumerate}
- 
-\subsection{Installation}
- 
-\paragraph{Devstack installieren}
-  
-\begin{enumerate}
- \item \begin{verbatim}git clone https://git.openstack.org/openstack-dev/devstack \end{verbatim}
- \item  \begin{verbatim}cd devstack\end{verbatim}
- \item Bei Bedarf zu einem (älteren) stable release wechseln: \begin{verbatim}git checkout stable/ocata\end{verbatim} oder \begin{verbatim}git checkout stable/mitaka\end{verbatim} Die master-branch kann auch genutzt werden.
- \item \begin{verbatim}ifconfig enp0s8 | grep addr\end{verbatim}
- \item \begin{verbatim}inet addr kopieren\end{verbatim}
- \item \begin{verbatim}cp samples/local.conf .\end{verbatim}
- \item \begin{verbatim}HOST_IP="xxx.xxx.xxx.xxx"\end{verbatim}
- \item \begin{verbatim}echo "HOST_IP=${HOST_IP}" >> local.conf\end{verbatim}
- \item Es muss ein user mit sudo-rechten (ohne passwort) existieren, der nicht root ist. Der Standarduser vagrant ist dafür geeignet.
- \item \begin{verbatim}./stack.sh\end{verbatim}
-\end{enumerate}
-
-Am Ende der erfolgreichen Installation erscheint die folgende Ausgabe in etwa so.
-Von hier können die nötigen Informationen für das weitere Vorgehen entnommen werden.
-
-\begin{minipage}{\textwidth}
-\begin{lstlisting}[frame=single,caption=Ausgabe von DevStack]
-=========================
-DevStack Component Timing
-=========================
-Total runtime         3644
-
-run_process            87
-test_with_retry         7
-apt-get-update         12
-pip_install           881
-restart_apache_server  20
-wait_for_service       61
-git_timed             355
-apt-get               457
-=========================
-
-
-
-This is your host IP address: 172.28.128.3
-This is your host IPv6 address: ::1
-Horizon is now available at http://172.28.128.3/dashboard
-Keystone is serving at http://172.28.128.3/identity/
-The default users are: admin and demo
-The password: nomoresecret
-\end{lstlisting}
-\end{minipage}
-
-\subsection{Starten}
-
-\paragraph{Openstack (Horizon) starten}
-
-Die folgenden Informationen sind abhängig von der Konfiguration.
-Für dieses Beispiel sind folgende Daten notwendig.
-
-\begin{enumerate}
- \item \url{http://172.28.128.3/dashboard} in einem Browser öffnen
- \item Benutzername admin oder demo
- \item Password nomoresecret
-\end{enumerate}
-
-\paragraph{Reboot}
-
-\url{https://ask.openstack.org/en/question/5423/rebooting-with-devstack/}
-Wenn die Vagrantbox herunter gefahren wurde muss devstack nach einem erneuten Start ebenfalls neu gestartet werden.
-Ansonsten können die verschiedenen Services nicht genutzt werden.
-Das Webfrontend Horizon kann in diesem Fall keinerlei Ressourcen laden.
-Zum erneuten Erstellen der openstack Umgebung können die folgenden Befehle genutzt werden.
-
-\begin{verbatim}
- ./unstack.sh
- ./stack.sh
-\end{verbatim}
-
-Bei einem erneuten Ausführen von stack.sh würden jedoch alle Datenbanken neu erstellt werden.
-Das würde zu einem kompletten Datenverlust führen.
-Dies ist aber nicht in jedem Fall gewünscht.
-Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services gestartet werden können.
-
-\url{http://stackoverflow.com/questions/36268822/no-rejoin-stack-sh-script-in-my-setup}
-
-\begin{verbatim}
- screen -c stack-screenrc
-\end{verbatim}
-
-So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
-
-\subsection{Benutzung Beispielhaft}
-
-\paragraph{Verbindung zur Cloud}
-
-http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
-
-\paragraph{Überblick Oberfläche und Funktionen erläutern}
-
-\todo{Oberfläche/Benutzung grob umreisen}
-\todo{evtl. anhand eines Workflow}
+\section{Verteilten Ausführung von HYPRE}
 
 \newpage
+
 
 \section{Zukünftige, weiterführende Arbeiten}
 
@@ -1112,18 +1216,21 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \begin{itemize}
  \item Skalierbarkeit der Cloud (einsetzen)
- \item Vorteile der Auslagerung:
+ \item Benchmarking lokal vs. remote HPC vs. cloud vs. ...
+ \item daraus ableiten: Vorteile der Auslagerung:
   \begin{itemize}
-    \item performance
-    \item speicher
-    \item lösbarkeit (nur remote überhaupt lösbar)
+    \item Performance
+    \item Speicher
+    \item Lösbarkeit (nur remote überhaupt lösbar)
   \end{itemize}
-
+ \item Beispiel in nutzbares Framework umwandeln
+ \item Beispiel nicht nur lokal sonder auch in Cloudumgebung
+ \item auf remote Seite (effektiv) parallelisieren
 \end{itemize}
 
 \newpage
 
-\bibliographystyle{plain}
+\bibliographystyle{apacite}
 \bibliography{cites}
 
 \newpage

@@ -15,22 +15,23 @@
 \BOOKMARK [3][-]{subsubsection.1.4.2}{Service/Webservice}{subsection.1.4}% 15
 \BOOKMARK [3][-]{subsubsection.1.4.3}{Socket}{subsection.1.4}% 16
 \BOOKMARK [1][-]{section.2}{Implementierungen von Webtechnologien}{}% 17
-\BOOKMARK [2][-]{subsubsection.2.0.1}{RPC}{section.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.0.2}{andere}{subsubsection.2.0.1}% 19
-\BOOKMARK [3][-]{subsubsection.2.0.3}{Serialisierung}{subsubsection.2.0.1}% 20
-\BOOKMARK [2][-]{subsection.2.1}{Beispielinstallation OpenStack}{section.2}% 21
-\BOOKMARK [1][-]{section.3}{Gegen\374berstellung verf\374gbarer Werkzeuge und Varianten}{}% 22
-\BOOKMARK [2][-]{subsection.3.1}{'private' und 'public' Cloud}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.2}{Technologie}{section.3}% 24
-\BOOKMARK [2][-]{subsection.3.3}{Cloudtyp}{section.3}% 25
-\BOOKMARK [2][-]{subsection.3.4}{Sprache}{section.3}% 26
-\BOOKMARK [2][-]{subsection.3.5}{Vergleich ausgew\344hlter Cloudsysteme in einer Tabelle}{section.3}% 27
-\BOOKMARK [1][-]{section.4}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 28
-\BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 31
-\BOOKMARK [1][-]{section.5}{Verteilten Ausf\374hrung von HYPRE}{}% 32
-\BOOKMARK [1][-]{section.6}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 33
-\BOOKMARK [1][-]{section*.112}{References}{}% 34
-\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 35
-\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 36
+\BOOKMARK [2][-]{subsection.2.1}{RPC}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.2}{Bibliotheken/Frameworks/Implementierungen}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.3}{andere}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.4}{Serialisierung}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.5}{Beispielinstallation OpenStack}{section.2}% 22
+\BOOKMARK [1][-]{section.3}{Gegen\374berstellung verf\374gbarer Werkzeuge und Varianten}{}% 23
+\BOOKMARK [2][-]{subsection.3.1}{'private' und 'public' Cloud}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.2}{Technologie}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.3}{Cloudtyp}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.4}{Sprache}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.5}{Vergleich ausgew\344hlter Cloudsysteme in einer Tabelle}{section.3}% 28
+\BOOKMARK [1][-]{section.4}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 29
+\BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 32
+\BOOKMARK [1][-]{section.5}{Verteilten Ausf\374hrung von HYPRE}{}% 33
+\BOOKMARK [1][-]{section.6}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 34
+\BOOKMARK [1][-]{section*.108}{References}{}% 35
+\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 36
+\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 37
