@@ -108,6 +108,61 @@ CASC.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+DeNero%
+}{%
+DeNero%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+CS61A}
+\APACinsertmetastar {%
+CS61A}%
+\begin{APACrefauthors}%
+DeNero, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Distributed and Parallel Computing.} {Distributed and parallel
+  computing.}
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{http://wla.berkeley.edu/~cs61a/fa11/lectures/communication.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{zuletzt besucht am 10.07.2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Forum%
+}{%
+Forum%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+mpi31report}
+\APACinsertmetastar {%
+mpi31report}%
+\begin{APACrefauthors}%
+Forum, M\BPBI P\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2015}.
+\newblock
+\APACrefbtitle {MPI: A Message-Passing Interface Standard} {Mpi: A
+  message-passing interface standard}.
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL} \url{http://mpi-forum.org/docs/mpi-3.1/mpi31-report.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fritzsche%
 }{%
 Fritzsche%
@@ -182,6 +237,59 @@ LLNL.%
 \begin{APACrefURL} \url{https://www.llnl.gov/} \end{APACrefURL}
 \newblock
 \APACrefnote{zuletzt besucht am 28.06.2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+MPI-Forum%
+}{%
+MPI-Forum%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+MPIhome}
+\APACinsertmetastar {%
+MPIhome}%
+\begin{APACrefauthors}%
+MPI-Forum.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {MPI Forum Homepage.} {Mpi forum homepage.}
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL} \url{http://mpi-forum.org} \end{APACrefURL}
+\newblock
+\APACrefnote{zuletzt besucht am 10.07.2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rauber%
+\ \BBA {} Rünger%
+}{%
+Rauber%
+\ \BBA {} Rünger%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+ppRauberRuenger}
+\APACinsertmetastar {%
+ppRauberRuenger}%
+\begin{APACrefauthors}%
+Rauber, T.%
+\BCBT {}\ \BBA {} Rünger, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Parallel Programming: For Multicore and Cluster Systems}
+  {Parallel programming: For multicore and cluster systems}\
+  (\PrintOrdinal{2nd}\ \BEd).
+\newblock
+\APACaddressPublisher{Berlin}{Heidelberg: Springer}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

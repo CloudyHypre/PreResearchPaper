@@ -73,22 +73,22 @@
   url = "http://mpi-forum.org",
   note = "zuletzt besucht am 10.07.2017"
 },
-@misc{CS61A,
-  author  = "John DeNero",
-  title   = "Distributed and Parallel Computing",
+@misc{MPIhome,
+  author  = "MPI-Forum",
+  title   = "MPI Forum Homepage",
   year = "2017",
   howpublished = "online",
-  url = "http://wla.berkeley.edu/~cs61a/fa11/lectures/communication.html",
+  url = "http://mpi-forum.org",
   note = "zuletzt besucht am 10.07.2017"
-},
-@book{mpi31report,
+}
+@book{hypreReferenceManual,
 	title		= "MPI: A Message-Passing Interface Standard",
 	organization	= "Message Passing Interface Forum",
 	author	= "Message Passing Interface Forum",
 	year		= "2015",
 	month		= "06",
   howpublished = "online",
-  url = "http://mpi-forum.org/docs/mpi-3.1/mpi31-report.pdf"
+  url = "http://mpi-forum.org/docs/mpi-3.1/mpi31-report.pdf",
 },
 
 

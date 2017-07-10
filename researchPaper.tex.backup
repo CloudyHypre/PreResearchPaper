@@ -335,6 +335,63 @@ Partielle Differentialegleichung.
 \url{https://www.youtube.com/watch?v=Z9NjA_f2VZw}
 \url{https://www.youtube.com/watch?v=-D4GDdxJrpg}
 
+\subsection{Parallele Programmierung}
+
+Die absolute Ausführungszeit ist ein Hauptkriterium für die Performanz.
+Sie sollte möglicht gering sein.
+Ab einem gewissen Punkt kann die sequentielle Ausführung jedoch nicht mehr wesentlich optimiert werden.
+Sollte es im Algorithmus jedoch unabhängige Berechnungen geben kann eine parallele Ausführung eine deutlich Verbesserung der Ausführungszeit erreichen.
+Parallele Programme werden immernoch auf einem einzelnen Computer ausgeführt.
+An der Ausführung sind mehrere Prozesse beteiligt.
+Diese kommunizieren über einen gemeinsamen Speicher.
+
+\paragraph{Grundbegriffe Paralleler Ausführung}
+
+Die Ausführungszeit läuft bei einer parallelen Berechnung ab dem Start des Programmes bis die Ausführung des letzten teilnehmenden Prozessors beendet ist\cite{ppRauberRuenger}.
+Diese Zeit nennt sich parallele Ausführungszeit $T_p(n)$, wobei $n$ die Problemgröße beschreibt.
+Kriterien zur Bewertung eines parallelen Programmes sind Kosten, Speedup und Effizienz.
+
+\subparagraph{Die Kosten}\cite[180]{ppRauberRuenger} $C_p(n)$ ergeben sich aus dem Produkt der parallelen Ausführungszeit $T_p(n)$ und der Anzahl der Prozessoren $p$:
+
+\begin{center}
+$C_p(n) = T_p(n) * p$
+\end{center}
+
+Die Kosten geben so die insgesamt notwendige Arbeit an.
+
+\subparagraph{Der Speedup}\cite[180-182]{ppRauberRuenger} gibt die Verbesserung der parallelen Implementierung im Vergleich zur sequentiellen Implementierung an.
+Er wird durch $S_p(n)$ beschrieben und ergibt sich aus der Division von der Ausführungszeit der besten sequentiellen Lösung $T^*(n)$ durch die parallele Ausführungszeit $T_p(n)$:
+
+\begin{center}
+$S_p(n) = \frac{T^*(n)}{T_p(n)}$
+\end{center}
+
+Der Speedup gibt somit die relative Ersparnis der parallelen Ausführung im Vergleich zur Sequentiellen an.
+
+\subparagraph{Die Effizienz}\cite[182-183]{ppRauberRuenger} $E_p(n)$ ist ein Maß für die Performanz eines parallelen Programms.
+Sie kann auf verschiedene Arten bestimmt werden:
+Die Division besten sequentiellen Lösung $T^*(n)$ durch die Kosten $C_p(n)$.
+Oder der Division des Speedup $S_p(n)$ durch die Anzahl der Prozessoren $p$.
+
+\begin{center}
+$E_p(n) = \frac{T^*(n)}{C_p(n)} = \frac{S_p(n)}{p}$
+\end{center}
+
+Eine optimale Effizienz wird durch den Wert 1 beschrieben $E_p(n) = 1$.
+Diese wird erreicht wenn $S_p(n) = p$ ist.
+
+\paragraph{Verteilte Ausführung}
+
+Verteilte Systeme bestehen im Unterschied zur parallelen Programmierung.
+Hierbei wird nicht mehr nur auf einem Computer gerechnet.
+Es befinden sich stattdessen mehrere autonome in einem Netzwerk.
+Diese kommunizieren über den Austausch von Nachrichten.
+Ein Standard für den Nachrichtenaustausch im verteilten sowie parallelen Rechnen ist das Message Passing Interface - MPI\cite{MPIhome}.
+
+\paragraph{MPI}\cite[12]{ppRauberRuenger}
+
+\todo{Nutzt MPI für Parallelisierbarkeit: MPI - Message Passing Interface.}
+
 \subsection{HYPRE - Überblick über die Bibliothek}
 
 HYPRE ist eine freie Software die vom Center for Applied Scientific Computing\cite{hypreCASC} entwickelt wird.
@@ -355,6 +412,8 @@ Seit Version 2.11.1 steht jedoch keine Implementierung mehr von HYPRE mit Babel 
 
 Wie bereits erwähnt wird der Funktionsumfang von HYPRE als 'Scalable Linear Solvers and Multigrid Methods' beschrieben.
 Zur detaillierteren Erklärung von HYPRE kann man diese Beschreibung genauer Betrachten:
+
+\paragraph{Begriffsklärung}
 
 Der Begriff \textbf{Solver} beschreibt ein Stück Software, dieses kann beispielsweise als Bibliothek implementiert sein.
 Mit Hilfe dieses Stücks Software kann man ein mathematisches Problem lösen.
@@ -387,25 +446,24 @@ Dafür werden die Eingabedaten auf eine Weise ausgedünnt, bei der sich die Lös
 Eine solche Verkleinerung der Daten ist bei Problemen mit bis zu Milliarden von Unbekannten wichtig.
 So kann die Komplexität von Problemen erheblich reduziert werden.
 HYPRE verwendet beispielsweise Algebraic Multigrid Methods (AMG).
+
 Eine parallele Implementierung davon ist \textbf{BoomerAMG}.
 Dieser wurde bereits für Probleme mit dutzenden Millionen Unbekannten auf Maschinen mit über Tausend Prozessoren eingesetzt.\cite{Henson00boomeramg}
 Mehrgitterverfahren können als sogenannte Preconditioner, oder Vorkonditionierer, eingesetzt werden.
 Dabei werden die Eingabedaten noch vor dem Lösen optimiert.
 BoomerAMG kann beispielsweise direkt als Solver verwendet werden.
 Ebenso kann es aber auch als Preconditioner verwendet werden und anschließend ein anderer Solver zum Einsatz kommen.
-Multigridverfahren sind jedoch nicht die einzige Form von Preconditionern die HYPRE bereit stellt.
-\textbf{Krylow-Unterraum-Verfahren}
+Beispielsweise bei der Verwendung des Krylow-Unterraum-Verfahren ist eine Vorkonditionierung wichtig. 
+Dieses ist auf das Lösen dünnbesetzter Gleichungssysteme optimiert.
+Wenn die Eingabedaten diesem Kriterium nicht entsprechen sollten sie also zunächst mit einem anderen Verfahren vorkonditioniert werden.
 
 Im wesentlichen stellt HYPRE also Funktionen zum Lösen linearer Algebra bereit.
 Diese sind soweit optimiert, dass sie skalieren.
 Die Performanz der Berechnungen kann durch Mehrgitterverfahren verbessert werden.
 BoomerAMG ist ein Beispiel für ein solches Verfahren welches parallelisierbar ist.
 
-\todo{was heist das? was genau kann man lösen?wie funktioniert das? (lässt sich das beantworten)}
-\todo{wie löst sie die probleme (groben einblick in die funktionsweise der methoden, falls möglich)}
-
-\paragraph{Performance}
-Nutzt MPI für Parallelisierbarkeit.
+\paragraph{Performanz}
+Nutzt MPI für Parallelisierbarkeit: MPI - Message Passing Interface.
 
 \todo{performance}
 
