@@ -80,24 +80,31 @@
 \contentsline {subsection}{\numberline {2.4}Serialisierung}{19}{subsection.2.4}
 \contentsline {paragraph}{Protocol Buffers}{19}{section*.89}
 \contentsline {subparagraph}{Fazit}{19}{section*.90}
-\contentsline {subsection}{\numberline {2.5}Beispielinstallation OpenStack: Devstack}{20}{subsection.2.5}
-\contentsline {paragraph}{Grafische Oberfl\IeC {\"a}che}{20}{section*.93}
-\contentsline {subparagraph}{Overview}{20}{section*.94}
-\contentsline {subparagraph}{Instances}{21}{section*.95}
-\contentsline {subparagraph}{Volumes}{23}{section*.96}
-\contentsline {subparagraph}{Images}{23}{section*.97}
-\contentsline {subparagraph}{Key Pairs}{23}{figure.8}
-\contentsline {subparagraph}{API Access}{23}{figure.9}
-\contentsline {subparagraph}{Bereich Network}{23}{section*.100}
-\contentsline {paragraph}{Workflow zum Erstellen einer Instanz}{23}{section*.102}
-\contentsline {paragraph}{Vorbereitung f\IeC {\"u}r die Installation}{23}{section*.103}
-\contentsline {subparagraph}{Ubuntu 16.04 in Vagrant aufsetzen}{24}{section*.104}
-\contentsline {paragraph}{Installation}{24}{section*.105}
-\contentsline {subparagraph}{Devstack installieren}{24}{section*.106}
-\contentsline {paragraph}{Starten}{25}{section*.107}
-\contentsline {subparagraph}{Openstack (Horizon) starten}{25}{section*.108}
-\contentsline {subparagraph}{Reboot}{26}{section*.109}
-\contentsline {paragraph}{SSH-Verbindung zur Cloud}{26}{section*.110}
+\contentsline {subsection}{\numberline {2.5}Beispielinstallation OpenStack: Devstack}{19}{subsection.2.5}
+\contentsline {paragraph}{OpenStack Projekte}{19}{section*.92}
+\contentsline {subparagraph}{Nova}{20}{section*.93}
+\contentsline {subparagraph}{Glance}{20}{section*.94}
+\contentsline {subparagraph}{Cinder}{20}{section*.95}
+\contentsline {subparagraph}{Neutron}{20}{section*.96}
+\contentsline {subparagraph}{Horizon}{20}{section*.97}
+\contentsline {subparagraph}{Heat}{20}{section*.98}
+\contentsline {paragraph}{DevStack}{20}{section*.99}
+\contentsline {paragraph}{Grafische Oberfl\IeC {\"a}che}{20}{section*.101}
+\contentsline {subparagraph}{Overview}{20}{section*.102}
+\contentsline {subparagraph}{Instances}{21}{section*.103}
+\contentsline {subparagraph}{Volumes}{23}{section*.104}
+\contentsline {subparagraph}{Images}{23}{section*.105}
+\contentsline {subparagraph}{Key Pairs}{23}{section*.106}
+\contentsline {subparagraph}{API Access}{23}{section*.107}
+\contentsline {subparagraph}{Bereich Network}{24}{section*.108}
+\contentsline {paragraph}{Vorbereitung f\IeC {\"u}r die Installation}{24}{section*.109}
+\contentsline {subparagraph}{Ubuntu 16.04 in Vagrant aufsetzen}{24}{section*.110}
+\contentsline {paragraph}{Installation}{24}{section*.111}
+\contentsline {subparagraph}{Devstack installieren}{24}{section*.112}
+\contentsline {paragraph}{Starten}{25}{section*.113}
+\contentsline {subparagraph}{Openstack (Horizon) starten}{26}{section*.114}
+\contentsline {subparagraph}{Reboot}{26}{section*.115}
+\contentsline {paragraph}{SSH-Verbindung zur Cloud}{26}{section*.116}
 \contentsline {section}{\numberline {3}Gegen\IeC {\"u}berstellung verf\IeC {\"u}gbarer Werkzeuge und Varianten}{27}{section.3}
 \contentsline {subsection}{\numberline {3.1}'private' und 'public' Cloud}{27}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Technologie}{27}{subsection.3.2}
@@ -106,19 +113,19 @@
 \contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{27}{subsection.3.5}
 \contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{28}{section.4}
 \contentsline {subsection}{\numberline {4.1}gRPC}{28}{subsection.4.1}
-\contentsline {paragraph}{Installation}{28}{section*.113}
-\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{28}{section*.115}
-\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{29}{section*.116}
+\contentsline {paragraph}{Installation}{28}{section*.119}
+\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{28}{section*.121}
+\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{29}{section*.122}
 \contentsline {subsection}{\numberline {4.2}Ressourcen}{29}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Roadmap Implementierung}{30}{subsection.4.3}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{30}{section*.118}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{30}{section*.119}
-\contentsline {subparagraph}{Fazit}{30}{section*.120}
-\contentsline {paragraph}{Client}{30}{section*.121}
-\contentsline {subparagraph}{Anforderungen}{30}{section*.122}
-\contentsline {subparagraph}{Kernmodule}{30}{section*.123}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{30}{section*.124}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{30}{section*.125}
+\contentsline {subparagraph}{Fazit}{30}{section*.126}
+\contentsline {paragraph}{Client}{30}{section*.127}
+\contentsline {subparagraph}{Anforderungen}{30}{section*.128}
+\contentsline {subparagraph}{Kernmodule}{30}{section*.129}
 \contentsline {section}{\numberline {5}Verteilten Ausf\IeC {\"u}hrung von HYPRE}{31}{section.5}
 \contentsline {section}{\numberline {6}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{32}{section.6}
-\contentsline {section}{References}{33}{section*.125}
+\contentsline {section}{References}{33}{section*.131}
 \contentsline {section}{\numberline {A}\\HYPRE}{34}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{34}{subsection.A.1}

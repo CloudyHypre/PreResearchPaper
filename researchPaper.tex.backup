@@ -994,6 +994,8 @@ Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
 Die Oberfläche besteht aus drei großen Bereichen: Project, Admin und Identity.
 Diese können am linken Rand ausgewählt werden.
 Wichtig ist der Project-Bereich, in dem die Projekteigenschaften abgerufen und geändert werden können.
+Der Bereich des Projekts ist noch einmal unterteilt in Compute und Network.
+Die Unterpunkte beider Bereiche werden im folgenden Abschnitt kurz erläutert.
 
 \subparagraph{Overview}
 
@@ -1005,7 +1007,7 @@ Diese zeigt einen Überblick über Instances, VCPUs, RAM, Floating IPs, Security
 \centering
 \caption{Überblick über die Cloud}
 \label{fig:devstack:overview}
-\includegraphics[width=\textwidth]{graphics/devstack/01_Overview}
+\includegraphics[width=\textwidth, trim={0 5cm 0 0}, clip]{graphics/devstack/01_Overview}
 \end{figure}
 
 \begin{minipage}{\textwidth}
@@ -1023,11 +1025,31 @@ Hier ist eine kurze Beschreibung der Punkte:
 
 \subparagraph{Instances}
 
+Hier können Instanzen überblickt und verwaltet werden.
+In Abbildung \ref{fig:devstack:empty_instance} ist die Seite ohne Instanzen zu sehen.
+Beim Erstellen einer neuen Instanz ist ein Wizard behilflich, siehe Abbildung \ref{fig:devstack:launch_instance}.
+In diesem können folgende Informationen angelegt werden: Details, Source, Falvor, Networks, Network Ports, Security Groups, Key Pair, Configuration, Server Groups, Scheduler Hints und Metadata.
+In Abbildung \ref{fig:devstack:loading_instance} sieht man eine Instanz die gerade geladen wird.
+
 \begin{figure}[htbp]
 \centering
-\caption{Überblick über das Projekt}
-\label{fig:devstack:overview}
-\includegraphics[width=\textwidth, trim={0 5cm 0 0}, clip]{graphics/devstack/01_Overview}
+\caption{Erste Instanz lädt nach dem Anlegen}
+\label{fig:devstack:loading_instance}
+\includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/11_LaunchInstanceAlternative}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\caption{Leere Übersicht über Instanzen}
+\label{fig:devstack:empty_instance}
+\includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/05_InstancesEmpty}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\caption{Instanz anlegen}
+\label{fig:devstack:launch_instance}
+\includegraphics[width=\textwidth, trim={0 10cm 0 0}, clip]{graphics/devstack/06a_LaunchInstance}
 \end{figure}
 
 \subparagraph{Volumes}
@@ -1047,21 +1069,28 @@ Es hat den Namen 'New Volume' und ist 4GB groß.
 \subparagraph{Images}
 
 Im Tab Images ist die Übersicht über die Images gegeben.
-
+Es existiert ein Image für CirrOS.
+CirrOS ist eine minimale Linux Distribution. \url {https://docs.openstack.org/image-guide/obtain-images.html}
+Es kann aber auch ein beliebiges anderes virtual machine image benutzt werden.
 
 \begin{figure}[htbp]
 \centering
-\caption{Volumes des Projekts}
-\label{fig:devstack:volumes}
+\caption{Images des Projekts}
+\label{fig:devstack:images}
 \includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/02_Images}
 \end{figure}
 
 \subparagraph{Key Pairs}
 
+Es können ssh-Schlüsselpaare benutzt werden, um den Zugriff auf Images auf sichere Art zu ermöglichen.
+In diesem Menü kann neues Schlüsselpaar erzeugt werden.
+Wird das Paar beim Erstellen einer neuen Instanz ausgewählt wird der public key in diesem hinterlegt.
+Der erzeugte private key kann vom anderen Ende der ssh-Verbindung genutzt werden.
+
 \begin{figure}[htbp]
 \centering
-\caption{Volumes des Projekts}
-\label{fig:devstack:volumes}
+\caption{Key Pairs}
+\label{fig:devstack:key_pairs}
 \includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/03_KeyPairs}
 \end{figure}
 
@@ -1070,9 +1099,13 @@ Im Tab Images ist die Übersicht über die Images gegeben.
 \begin{figure}[htbp]
 \centering
 \caption{API Zugriff auf das Projekts}
-\label{fig:devstack:volumes}
+\label{fig:devstack:api_access}
 \includegraphics[width=\textwidth, trim={0 10cm 0 0}, clip]{graphics/devstack/04_ApiAccess}
 \end{figure}
+
+\subparagraph{Bereich Network}
+
+Im Bereich Network befinden sich die Unterpunkte Network Topology, Networks, Routers, Security Groups und Floating IPs.
 
 \paragraph{Workflow zum Erstellen einer Instanz}
 

@@ -78,6 +78,8 @@ Recherche und Literaturverzeichnis}
 
 %content
 
+\todo{allgemeine einführung inklusive übersicht}
+
 \section{Einführung in die relevanten Themen}
 
 \subsection{Allgemeines und Recherche zum Thema Cloud}
@@ -965,9 +967,22 @@ Ist daher ungeeignet.
 
 \subsection{Beispielinstallation OpenStack: Devstack}
 
-\todo{Nova, Horizon ...}
 
-Devstack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
+\paragraph{OpenStack Projekte}
+
+\todo{Nova, Horizon ...}
+\url{https://www.openstack.org/software/project-navigator}
+
+\subparagraph{Nova}
+\subparagraph{Glance}
+\subparagraph{Cinder}
+\subparagraph{Neutron}
+\subparagraph{Horizon}
+\subparagraph{Heat}
+
+\paragraph{DevStack}
+
+DevStack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
 Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
 DevStack ist nicht für den Produktiveinsatz vorgesehen.
 
@@ -1070,7 +1085,8 @@ Es hat den Namen 'New Volume' und ist 4GB groß.
 
 Im Tab Images ist die Übersicht über die Images gegeben.
 Es existiert ein Image für CirrOS.
-CirrOS ist ein 
+CirrOS ist eine minimale Linux Distribution. \url {https://docs.openstack.org/image-guide/obtain-images.html}
+Es kann aber auch ein beliebiges anderes virtual machine image benutzt werden.
 
 \begin{figure}[htbp]
 \centering
@@ -1081,6 +1097,11 @@ CirrOS ist ein
 
 \subparagraph{Key Pairs}
 
+Es können ssh-Schlüsselpaare benutzt werden, um den Zugriff auf Images auf sichere Art zu ermöglichen.
+In diesem Menü kann neues Schlüsselpaar erzeugt werden.
+Wird das Paar beim Erstellen einer neuen Instanz ausgewählt wird der public key in diesem hinterlegt.
+Der erzeugte private key kann vom anderen Ende der ssh-Verbindung genutzt werden.
+
 \begin{figure}[htbp]
 \centering
 \caption{Key Pairs}
@@ -1089,6 +1110,11 @@ CirrOS ist ein
 \end{figure}
 
 \subparagraph{API Access}
+
+In der Abbildung \ref{fig:devstack:api_access} sind einige Elemente des Menüs API Access zu sehen.
+Die Liste zeigt das Mapping von Services auf Endpunkte.
+Alle Endpunkte sind in diesem Fall auf die ip 172.28.128.3 gemapped.
+Dies ist die ip, über die auch die Grafische Oberfläche in diesem Fall erreichbar ist.
 
 \begin{figure}[htbp]
 \centering
@@ -1100,10 +1126,6 @@ CirrOS ist ein
 \subparagraph{Bereich Network}
 
 Im Bereich Network befinden sich die Unterpunkte Network Topology, Networks, Routers, Security Groups und Floating IPs.
-
-\paragraph{Workflow zum Erstellen einer Instanz}
-
-\todo{evtl. anhand eines Workflow}
 
 \paragraph{Vorbereitung für die Installation}
 
@@ -1234,6 +1256,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 
 \section{Gegenüberstellung verfügbarer Werkzeuge und Varianten}
+
+\todo{gesamt etwa 15-20 seiten}
 \todo{vergleiche kapitel ausarbeiten}
 
 \subsection{'private' und 'public' Cloud}
@@ -1311,6 +1335,7 @@ Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
 
 \section{Auswertung der Vergleiche und Auswahl der Werkzeuge}
 
+\todo{gesamt etwa 5-10 seiten}
 Vergleiche verschiedener Technologien und Werkzeuge.
 Auswahl für den Einsatz bei der Implementierung.
 
@@ -1466,6 +1491,7 @@ Webservices implementieren für Komunikation mit dem Server.
 
 \section{Verteilten Ausführung von HYPRE}
 
+\todo{gesamt etwa 20-25 seiten}
 \newpage
 
 
