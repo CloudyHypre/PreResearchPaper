@@ -9,6 +9,7 @@
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 %\usepackage[]{natbib}
 \usepackage{apacite}
+\usepackage{csquotes}
 
 \newcommand{\blankpage}{
 \newpage
@@ -384,11 +385,29 @@ Diese wird erreicht wenn $S_p(n) = p$ ist.
 
 Verteilte Systeme bestehen im Unterschied zur parallelen Programmierung.
 Hierbei wird nicht mehr nur auf einem Computer gerechnet.
-Es befinden sich stattdessen mehrere autonome in einem Netzwerk.
+Es befinden sich stattdessen mehrere autonome in einem Netzwerk\cite{CS61A}.
 Diese kommunizieren über den Austausch von Nachrichten.
-Ein Standard für den Nachrichtenaustausch im verteilten sowie parallelen Rechnen ist das Message Passing Interface - MPI\cite{MPIhome}.
+Ein Standard für den Nachrichtenaustausch im verteilten sowie parallelen Rechnen ist das Message-Passing Interface - MPI\cite{MPIhome}.
 
-\paragraph{MPI}\cite[12]{ppRauberRuenger}
+\paragraph{MPI}
+
+
+MPI wird beschrieben als \blockquote[{\cite[1]{mpi31report}}]{message-passing library interface specification}.
+
+
+MPI definiert einen Standard für message passing Bibliotheken, also Nachrichtenübertragung.
+Der Standard wird vom MPI Forum spezifiziert.
+Er existiert in verschiedenen Versionen.
+1994 wurde die erste Version veröffentlicht: MPI-1.0\cite[ii]{mpi31report}.
+Die derzeit aktuellste Version ist MPI-3.1, welche seit 2015 existiert.
+
+
+
+Es existiert eine Reihe von Implementierungen.
+Drei frei verfügbare Beispiele sind MPICH, LAM/MPI und OpenMPI\footnote{MPICH: \url{http://www.mpich.org}, LAM/MPI: \url{http://www.lam-mpi.org}, OpenMPI: \url{http://www.open-mpi.org}}\cite[228]{ppRauberRuenger}.
+Wobei LAM/MPI einer mehrerer Vorgänger von OpenMPI ist.
+
+
 
 \todo{Nutzt MPI für Parallelisierbarkeit: MPI - Message Passing Interface.}
 
@@ -683,7 +702,17 @@ Im folgenden soll der Zusammenhang der einzelnen Methoden näher erläutert werd
 \subsection{Webtechnologien und Werkzeuge für die verteilte Ausführung}
 
 \subsubsection{RPC}
-(Vergleich zu REST etc)
+
+RPC steht für Remote Procedure Call.
+In klassischen Programmen werden Funktionsaufrufe (oder Prozeduraufrufe) auf einem einzelnen Gerät mit einem einzigen Prozess durchgeführt.
+Ein Schritt zur parallelen Ausführung ist die Interprozesskommunikation, bei der verschiedene Prozesse eines Systems miteinander kommunizieren können.
+RPC geht noch einen Schritt weiter.
+Die kommunizierenden Prozesse befinden sich hier in verschiedenen Adressräumen, können sich also auf verschiedenen Geräten befinden.
+Der besondere Gedanke hinter RPC ist der, dass diese Aufrufe entfernter Programme Funktions- oder Prozedurbezogen erfolgen sollen.
+Anstatt also eine Funktion aufzurufen und lokal auszuführen, soll sie auf einem entfernten System ausgeführt werden.
+Die Implementierung mit RPC soll sich nicht weiter vom Programmablauf mit lokalen Funktionen unterscheiden.
+Dennoch sind einige Unterschiede notwenig, um die Verbindung aufzubauen und zu verwalten.
+Es unterscheidet sich hier von anderen Kommunikationsprotokollen wie REST\todo{was ist rest}, welches eine ressourcenbezogene Kommunikation verwendet.
 
 \subsubsection{Service/Webservice}
 \todo{erklärung service kommunikation allgemein}
@@ -923,7 +952,11 @@ Für den Anwendungsfall bestehen die Strukturen jedoch bereits und müssen umgew
 Ist daher ungeeignet.
 
 
-\subsection{Beispielinstallation OpenStack}
+\subsection{Beispielinstallation OpenStack: Devstack}
+
+Devstack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
+Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
+DevStack ist nicht für den Produktiveinsatz vorgesehen.
 
 \url{http://docs.openstack.org/developer/devstack/}\\
 \url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
@@ -1053,6 +1086,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \todo{Oberfläche/Benutzung grob umreisen}
 \todo{evtl. anhand eines Workflow}
+
+
 
 \newpage
 
