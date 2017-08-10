@@ -723,6 +723,18 @@ SOAP
 
 \newpage
 
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Implementierungen von Webtechnologien}
 
 \subsection{RPC}
@@ -951,12 +963,21 @@ Generiert den Code für structs selbstständig.
 Für den Anwendungsfall bestehen die Strukturen jedoch bereits und müssen umgewandelt werden.
 Ist daher ungeeignet.
 
-
 \subsection{Beispielinstallation OpenStack: Devstack}
 
 Devstack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
 Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
 DevStack ist nicht für den Produktiveinsatz vorgesehen.
+
+In der Grundstruktur verschiedener Cloudsysteme gibt es starke Überschneidungen. 
+Es gibt eine Menge von Hardwareressourcen die zur Verfügung stehen.
+Dazu zählen Beispielsweise CPUs, RAM oder Speicher.
+Es gibt weiterhin Instanzen von virtuellen Containern.
+Diese Container beinhalten alles notwendige, um Software ausführen zu können.
+Sie sind sehr leichtgewichtig und schlank.
+\todo{evtl docker container ausführlicher}
+Das liegt daran, dass sie kein komplettes eigenes Betriebssystem mitbringen.
+Dies stellt den Hauptunterschied zu herkömmlichen Virtuellen Maschinen dar.
 
 \url{http://docs.openstack.org/developer/devstack/}\\
 \url{https://www.youtube.com/watch?v=jpk4i66-IU4}\\
@@ -965,6 +986,37 @@ DevStack ist nicht für den Produktiveinsatz vorgesehen.
 \url{http://ronaldbradford.com/blog/downloading-and-installing-devstack-2016-04-02/}\\
 
 Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
+
+\paragraph{Grafische Oberfläche}
+
+\todo{Oberfläche/Benutzung grob umreisen}
+\todo{evtl. anhand eines Workflow}
+
+Die Oberfläche besteht aus drei großen Bereichen: Project, Admin und Identity.
+Wichtig ist der Project-Bereich, in dem die Projekteigenschaften abgerufen und geändert werden können.
+
+Eine gute Übersicht über den aktuellen Zustand der Cloud bietet hier die Seite 'Overview'.
+In Abbildung \ref{fig:devstack:overview} ist ein Screenshot zu sehen.
+Diese zeigt einen Überblick über Instances, VCPUs, RAM, Floating IPs, Security Groups, Volumes und Volume Storage.
+
+\begin{figure}[htbp]
+\centering
+\caption{Überblick über die Cloud}
+\label{fig:devstack:overview}
+\includegraphics[width=\textwidth]{graphics/devstack/01_Overview}
+\end{figure}
+
+Hier ist eine kurze Beschreibung der Punkte:
+\begin{itemize}
+ \item Instances - die aktuell geladenen Instanzen, diese werden unten genauer beschrieben
+ \item VCPUs - die virtuellen CPUs, Instanzen werden für die Ausführung auf diese aufgeteilt
+ \item RAM - der RAM wird ebenso wie die CPUs unter den Instanzen aufgeteilt
+ \item Floating IPs - diese können Instanzen zugewiesen werden, damit diese von außerhalb der Cloud erreichbar sind
+ \item Security Groups - "Security groups are sets of IP filter rules that are applied to an instance’s networking." \url{https://www.mirantis.com/openstack-portal/express-openstack-portal/manage-openstack-security-groups-via-horizon/}
+ \item Volumes
+ \item Volume Storage
+\end{itemize}
+
 
 \paragraph{Vorbereitung für die Installation}
 
@@ -1076,20 +1128,23 @@ Dafür steht eine screen-Konfiguration bereit mit der die notwendigen Services g
 
 So kann eine bestehende openstack-Konfiguration auch nach einem Neustart weiter genutzt werden.
 
-\paragraph{Benutzung Beispielhaft}
-
-\subparagraph{Verbindung zur Cloud}
+\paragraph{SSH-Verbindung zur Cloud}
 
 http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm-using-ssh.html
 
-\subparagraph{Überblick Oberfläche und Funktionen erläutern}
-
-\todo{Oberfläche/Benutzung grob umreisen}
-\todo{evtl. anhand eines Workflow}
-
-
-
 \newpage
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Gegenüberstellung verfügbarer Werkzeuge und Varianten}
 \todo{vergleiche kapitel ausarbeiten}
@@ -1154,6 +1209,18 @@ Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
 \end{table}
 
 \newpage
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Auswertung der Vergleiche und Auswahl der Werkzeuge}
 
@@ -1298,9 +1365,32 @@ Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Verteilten Ausführung von HYPRE}
 
 \newpage
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Zukünftige, weiterführende Arbeiten}
@@ -1323,10 +1413,26 @@ Webservices implementieren für Komunikation mit dem Server.
 
 \newpage
 
+
+
+
+
+
+
+
 \bibliographystyle{apacite}
 \bibliography{cites}
 
 \newpage
+
+
+
+
+
+
+
+
+
 
 \appendix
 \section{\\HYPRE}
