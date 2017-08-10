@@ -965,6 +965,8 @@ Ist daher ungeeignet.
 
 \subsection{Beispielinstallation OpenStack: Devstack}
 
+\todo{Nova, Horizon ...}
+
 Devstack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
 Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
 DevStack ist nicht für den Produktiveinsatz vorgesehen.
@@ -989,13 +991,13 @@ Automatisches Setup: \url{https://github.com/lorin/devstack-vm}
 
 \paragraph{Grafische Oberfläche}
 
-\todo{Oberfläche/Benutzung grob umreisen}
-\todo{evtl. anhand eines Workflow}
-
 Die Oberfläche besteht aus drei großen Bereichen: Project, Admin und Identity.
+Diese können am linken Rand ausgewählt werden.
 Wichtig ist der Project-Bereich, in dem die Projekteigenschaften abgerufen und geändert werden können.
 
-Eine gute Übersicht über den aktuellen Zustand der Cloud bietet hier die Seite 'Overview'.
+\subparagraph{Overview}
+
+Eine gute Übersicht über den aktuellen Zustand des Projekts bietet hier die Seite 'Overview'.
 In Abbildung \ref{fig:devstack:overview} ist ein Screenshot zu sehen.
 Diese zeigt einen Überblick über Instances, VCPUs, RAM, Floating IPs, Security Groups, Volumes und Volume Storage.
 
@@ -1006,17 +1008,75 @@ Diese zeigt einen Überblick über Instances, VCPUs, RAM, Floating IPs, Security
 \includegraphics[width=\textwidth]{graphics/devstack/01_Overview}
 \end{figure}
 
+\begin{minipage}{\textwidth}
 Hier ist eine kurze Beschreibung der Punkte:
 \begin{itemize}
  \item Instances - die aktuell geladenen Instanzen, diese werden unten genauer beschrieben
  \item VCPUs - die virtuellen CPUs, Instanzen werden für die Ausführung auf diese aufgeteilt
  \item RAM - der RAM wird ebenso wie die CPUs unter den Instanzen aufgeteilt
  \item Floating IPs - diese können Instanzen zugewiesen werden, damit diese von außerhalb der Cloud erreichbar sind
- \item Security Groups - "Security groups are sets of IP filter rules that are applied to an instance’s networking." \url{https://www.mirantis.com/openstack-portal/express-openstack-portal/manage-openstack-security-groups-via-horizon/}
- \item Volumes
- \item Volume Storage
+ \item Security Groups - Die security groups bieten die Möglichkeit ip-Filter für ein Projekt anzulegen. Jedes Projekt erhält nach dem Erstellen standardmäßig einen Filter der alle IPs blockiert. "Security groups are sets of IP filter rules that are applied to an instance’s networking." \url{https://www.mirantis.com/openstack-portal/express-openstack-portal/manage-openstack-security-groups-via-horizon/}
+ \item Volumes - Diese verwalten den verfügbaren Festplattenspeicher. Es können Volumen mit einer bestimmten Speicherkapazität erstellt werden und Instanzen zugewiesen werden. Jede Instanz benötigt mindestens ein Volume.
+ \item Volume Storage - dieses Diagram bietet einen Überblick über den Speicherplatz den die Volumes belegen.
 \end{itemize}
+\end{minipage}
 
+\subparagraph{Instances}
+
+\begin{figure}[htbp]
+\centering
+\caption{Überblick über das Projekt}
+\label{fig:devstack:overview}
+\includegraphics[width=\textwidth, trim={0 5cm 0 0}, clip]{graphics/devstack/01_Overview}
+\end{figure}
+
+\subparagraph{Volumes}
+
+Von hier können die Volumes gesteuert werden.
+Es gibt einen Überblick über alle bestehenden Instanzen.
+In der Abbildung \ref{fig:devstack:volumes} existiert ein Volume.
+Es hat den Namen 'New Volume' und ist 4GB groß.
+
+\begin{figure}[htbp]
+\centering
+\caption{Volumes des Projekts}
+\label{fig:devstack:volumes}
+\includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/14_AddedVolume}
+\end{figure}
+
+\subparagraph{Images}
+
+Im Tab Images ist die Übersicht über die Images gegeben.
+
+
+\begin{figure}[htbp]
+\centering
+\caption{Volumes des Projekts}
+\label{fig:devstack:volumes}
+\includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/02_Images}
+\end{figure}
+
+\subparagraph{Key Pairs}
+
+\begin{figure}[htbp]
+\centering
+\caption{Volumes des Projekts}
+\label{fig:devstack:volumes}
+\includegraphics[width=\textwidth, trim={0 17cm 0 0}, clip]{graphics/devstack/03_KeyPairs}
+\end{figure}
+
+\subparagraph{API Access}
+
+\begin{figure}[htbp]
+\centering
+\caption{API Zugriff auf das Projekts}
+\label{fig:devstack:volumes}
+\includegraphics[width=\textwidth, trim={0 10cm 0 0}, clip]{graphics/devstack/04_ApiAccess}
+\end{figure}
+
+\paragraph{Workflow zum Erstellen einer Instanz}
+
+\todo{evtl. anhand eines Workflow}
 
 \paragraph{Vorbereitung für die Installation}
 
