@@ -1375,11 +1375,11 @@ Im Vergleich werden sowohl Clouds von kommerziellen als auch gemeinnützigen Anb
 \caption{Meta zu Cloudanbietern}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{l p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm} }
 \hline
- & Openstack & Apache CS & Amazon EC2 & Azure\\
+ & Amazon EC2 & Apache CloudStack & Microsoft Azure & Openstack\\
 \hline
-Anbieter & ... & ... & ... & ...\\
+Anbieter & Amazon & Apache & Microsoft & OpenStack Foundation \footnote{initiiert von Rackspace Hosting und NASA} \\
 seit wann & ... & ... & ... & ...\\
 Lizenz & ... & ... & ... & ...\\
 \hline
@@ -1396,7 +1396,8 @@ Lizenz & ... & ... & ... & ...\\
  & Openstack & Apache CS & Amazon EC2 & Azure\\
 \hline
 pricing & ... & ... & ... & ...\\
-private/public & ... & ... & ... & ...\\
+private & \mycheckbox & ... & ... & ...\\
+public & \mycheckbox & ... & ... & ...\\
 PaaS & ... & ... & ... & ...\\
 elastic & ... & ... & ... & ...\\
 \hline
@@ -1631,12 +1632,32 @@ Die Berechnung von sehr großen Problemen könnte die Kapazitäten eines Rechner
 Selbst bei unendlicher Zeit wäre eine Berechnung nicht möglich.
 In diesem Fall wäre eine externe Berechnung unvermeidbar.
 
+\todo{hpc begriff klären}
+Es muss festgestellt werden ob die externe Ausführung in einem Cloudsystem sinnvoll ist.
+Es sollte auch ein Vergleich zu einem HPC-System stattfinden.
+Dabei ist zum einen entscheidend ob oder wie sich Implementierung auf den jeweiligen Systemen unterscheidet.
+Zum anderen ist besonders interessant, ob ein Cloudsystem eine ausreichend schnelle Berechnung durchführen kann.
+Cloudsysteme sind zwar hervorragend skalierbar, jedoch nicht unbedingt auf High Performance Computing ausgelegt.
+Dabei gibt es jedoch Unterschied zwischen den verschiedenen verfügbaren Clouds.
+Die Verwendung von Linux-Images in der Cloud ermöglicht beispielsweise die Verwendung von herkömmlichen HPC-Werkzeugen wie MPI.
+Private Cloudsysteme wie OpenStack können zudem auf eigener Infrastruktur zum Einsatz kommen.
+Sie können also auch auf eigenen HPC Systemen eingesetzt werden.
+
+\todo{hpc openstack}\url{https://wiki.openstack.org/wiki/HPC}
+
 \subsubsection{Umsetzung}
 
 \todo{mpi in der cloud}\url{https://cyclecomputing.com/running-mpi-applications-in-amazon-ec2/}
 
 
+
 \subsection{Benchmarks}
+
+\todo{nur planung, evtl in weiterführende arbeiten}
+
+Um zu überprüfen ob oder ab wann die Ausführung auf einem externen Rechner Vorteile bringt sind Benchmarks erforderlich.
+Es müssen verschieden Komplexe Probleme gemessen werden.
+Ebenso müssen für die Ausführungen auf verschiedenen Systemen gemessen werden.
 
 \newpage
 

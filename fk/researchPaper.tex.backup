@@ -10,6 +10,7 @@
 %\usepackage[]{natbib}
 \usepackage{apacite}
 \usepackage{csquotes}
+\usepackage{placeins}
 
 \newcommand{\blankpage}{
 \newpage
@@ -1268,6 +1269,22 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  \item was sind unterschiede (neben dem access, zB performance?)
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Private vs. Public Cloud}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & private & public\\
+\hline
+a & ... & ...\\
+b & ... & ...\\
+c & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Technologie}
 
 \todo{tabelle/vergleiche zwischen technologien: rpc,socket,service etc}
@@ -1278,6 +1295,22 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  \item abwägen zwischen performance, aufwand ...
  \item welche framework könnten genutzt werden
 \end{itemize}
+
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & RPC & Socket & Service & Azure\\
+\hline
+performance & ... & ... & ... & ...\\
+aufwand & ... & ... & ... & ...\\
+frameworks & ... & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Cloudtyp}
 
@@ -1290,6 +1323,22 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  \item aber entscheidend: wie eignen sich diese typen für `unsere` Implementierung
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & IaaS & PaaS & SaaS\\
+\hline
+a & ... & ... & ...\\
+b & ... & ... & ...\\
+c & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Sprache}
 
 \begin{itemize}
@@ -1299,9 +1348,43 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & C/C++ & Python & Hybrid\\
+\hline
+a & ... & ... & ...\\
+b & ... & ... & ...\\
+c & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Vergleich ausgewählter Cloudsysteme in einer Tabelle}
 
-anhand relevanter (für das Projekt) Eigenschaften
+Im folgenden Abschnitt werden einige bestehende Cloudsysteme miteinander verglichen.
+Dazu werden relevante Kriterien heran gezogen.
+Im Vergleich werden sowohl Clouds von kommerziellen als auch gemeinnützigen Anbietern berücksichtigt.
+
+\begin{table}[]
+\centering
+\caption{Meta zu Cloudanbietern}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & Openstack & Apache CS & Amazon EC2 & Azure\\
+\hline
+Anbieter & ... & ... & ... & ...\\
+seit wann & ... & ... & ... & ...\\
+Lizenz & ... & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
 
 \begin{table}[]
 \centering
@@ -1310,11 +1393,12 @@ anhand relevanter (für das Projekt) Eigenschaften
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{llllll}
 \hline
-Cloudsystem & private & public & PaaS & ... & ...\\
+ & Openstack & Apache CS & Amazon EC2 & Azure\\
 \hline
-Openstack & \mycheckbox & ... & ... & ... & ...\\
-Apache CS & \mycheckbox & ... & ... & ... & ...\\
-Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
+pricing & ... & ... & ... & ...\\
+private/public & ... & ... & ... & ...\\
+PaaS & ... & ... & ... & ...\\
+elastic & ... & ... & ... & ...\\
 \hline
 \end{tabular}
 \end{table}
@@ -1547,12 +1631,23 @@ Die Berechnung von sehr großen Problemen könnte die Kapazitäten eines Rechner
 Selbst bei unendlicher Zeit wäre eine Berechnung nicht möglich.
 In diesem Fall wäre eine externe Berechnung unvermeidbar.
 
+Es muss festgestellt werden ob die externe Ausführung in einem Cloudsystem sinnvoll ist.
+Es sollte auch ein Vergleich zu einem HPC-System stattfinden.
+
+
 \subsubsection{Umsetzung}
 
 \todo{mpi in der cloud}\url{https://cyclecomputing.com/running-mpi-applications-in-amazon-ec2/}
 
 
+
 \subsection{Benchmarks}
+
+\todo{nur planung, evtl in weiterführende arbeiten}
+
+Um zu überprüfen ob oder ab wann die Ausführung auf einem externen Rechner Vorteile bringt sind Benchmarks erforderlich.
+Es müssen verschieden Komplexe Probleme gemessen werden.
+Ebenso müssen für die Ausführungen auf verschiedenen Systemen gemessen werden.
 
 \newpage
 
