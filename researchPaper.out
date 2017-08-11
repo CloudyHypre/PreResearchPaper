@@ -31,8 +31,12 @@
 \BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 31
 \BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 32
 \BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 33
-\BOOKMARK [1][-]{section.5}{Verteilten Ausf\374hrung von HYPRE}{}% 34
-\BOOKMARK [1][-]{section.6}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 35
-\BOOKMARK [1][-]{section*.131}{References}{}% 36
-\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 37
-\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 38
+\BOOKMARK [1][-]{section.5}{Verteilte Ausf\374hrung von HYPRE}{}% 34
+\BOOKMARK [2][-]{subsection.5.1}{Kompatibilit\344tsschicht HYPRE - rpcHYPRE}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.2}{In der Cloud}{section.5}% 36
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Umsetzung}{subsection.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.3}{Benchmarks}{section.5}% 38
+\BOOKMARK [1][-]{section.6}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 39
+\BOOKMARK [1][-]{section*.137}{References}{}% 40
+\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 41
+\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 42

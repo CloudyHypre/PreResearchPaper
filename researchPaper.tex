@@ -10,6 +10,7 @@
 %\usepackage[]{natbib}
 \usepackage{apacite}
 \usepackage{csquotes}
+\usepackage{placeins}
 
 \newcommand{\blankpage}{
 \newpage
@@ -1268,6 +1269,22 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  \item was sind unterschiede (neben dem access, zB performance?)
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Private vs. Public Cloud}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & private & public\\
+\hline
+a & ... & ...\\
+b & ... & ...\\
+c & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Technologie}
 
 \todo{tabelle/vergleiche zwischen technologien: rpc,socket,service etc}
@@ -1278,6 +1295,22 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  \item abwägen zwischen performance, aufwand ...
  \item welche framework könnten genutzt werden
 \end{itemize}
+
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & RPC & Socket & Service & Azure\\
+\hline
+performance & ... & ... & ... & ...\\
+aufwand & ... & ... & ... & ...\\
+frameworks & ... & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Cloudtyp}
 
@@ -1290,6 +1323,22 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  \item aber entscheidend: wie eignen sich diese typen für `unsere` Implementierung
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & IaaS & PaaS & SaaS\\
+\hline
+a & ... & ... & ...\\
+b & ... & ... & ...\\
+c & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Sprache}
 
 \begin{itemize}
@@ -1299,9 +1348,43 @@ wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
  zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
 \end{itemize}
 
+\begin{table}[]
+\centering
+\caption{Vergleich von Technologien}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & C/C++ & Python & Hybrid\\
+\hline
+a & ... & ... & ...\\
+b & ... & ... & ...\\
+c & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
+
 \subsection{Vergleich ausgewählter Cloudsysteme in einer Tabelle}
 
-anhand relevanter (für das Projekt) Eigenschaften
+Im folgenden Abschnitt werden einige bestehende Cloudsysteme miteinander verglichen.
+Dazu werden relevante Kriterien heran gezogen.
+Im Vergleich werden sowohl Clouds von kommerziellen als auch gemeinnützigen Anbietern berücksichtigt.
+
+\begin{table}[]
+\centering
+\caption{Meta zu Cloudanbietern}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llllll}
+\hline
+ & Openstack & Apache CS & Amazon EC2 & Azure\\
+\hline
+Anbieter & ... & ... & ... & ...\\
+seit wann & ... & ... & ... & ...\\
+Lizenz & ... & ... & ... & ...\\
+\hline
+\end{tabular}
+\end{table}
 
 \begin{table}[]
 \centering
@@ -1310,11 +1393,12 @@ anhand relevanter (für das Projekt) Eigenschaften
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{llllll}
 \hline
-Cloudsystem & private & public & PaaS & ... & ...\\
+ & Openstack & Apache CS & Amazon EC2 & Azure\\
 \hline
-Openstack & \mycheckbox & ... & ... & ... & ...\\
-Apache CS & \mycheckbox & ... & ... & ... & ...\\
-Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
+pricing & ... & ... & ... & ...\\
+private/public & ... & ... & ... & ...\\
+PaaS & ... & ... & ... & ...\\
+elastic & ... & ... & ... & ...\\
 \hline
 \end{tabular}
 \end{table}
@@ -1489,9 +1573,71 @@ Webservices implementieren für Komunikation mit dem Server.
 
 
 
-\section{Verteilten Ausführung von HYPRE}
+\section{Verteilte Ausführung von HYPRE}
 
 \todo{gesamt etwa 20-25 seiten}
+
+Für die verteilte Ausführung von HYPRE muss zunächst die Kommunikation mit einem externen Server möglich sein.
+Um diese zu Implementieren kommt grpc zum Einsatz.
+Client und Server kommunizieren also über Remote Procedure Calls.
+Es existiert ein proto-File, welches die Definition des HYPRE-Servers enthält.
+
+Dafür ist ein eigenes grpc Package entstanden, welches einen Service definiert.
+Dieser Service beinhaltet die verfügbaren HYPRE Methoden.
+Es sind also beispielsweise Methoden vorhanden zum Verwalten der Matrizen und Vectoren für die Eingabedaten.
+Diese ermöglichen das Erstellen, Setzen von Eigenschaften oder Löschen.
+Ebenso gibt es Methoden zum Bearbeiten von Solvern.
+
+Es sind neben den Methoden auch Nachrichten, Messages definiert.
+Diese werden als Argumente für die Methoden verwendet.
+Sie verhalten sich als dynamischer Datentyp.
+Grpc erlaubt eine Reihe von Standardtypen, die zu Messages zusammengefügt werden können.
+Nach der Übersetzung in die jeweilige Sprache sind die Messages in der Regel Klassen.
+
+Es gibt HYPRE-Methoden in denen Objekte als Argumente übergeben werden.
+Für die verteilte Ausführung werden diese Objekte jedoch nicht zwischen Client und Server übertragen.
+Es werden die Methoden zum Erstellen und Setzen der Eigenschaften vom Client aufgerufen.
+Der Client erhält dabei einen Identifikator unter dem der Server das Objekt speichert.
+
+Die Definition des HYPRE-rpc Services im proto-File ermöglicht das generieren von C++ Code.
+Aus den Messages und aus dem Service hypreSrv werden Klassen erzeugt.
+Die darin enthaltenen Variablen werden zu Klassenvariablen.
+Die Eigentliche Logik zur Kommunikation wird vom grpc-Framework bereit gestellt.
+Es müssen also lediglich die Messages erstellt und RPC-Methoden aufgerufen werden.
+
+\subsection{Kompatibilitätsschicht HYPRE - rpcHYPRE}
+
+\todo{das ist nur geplant, bisher nicht implementiert}
+Die Verwendung der RPC Aufrufe unterscheidet sich von der Verwendung der HYPRE Methoden.
+Das betrifft zum einen die Benennung, aber besonders die Argumente der Methoden.
+Die verteilte Ausführung von HYPRE sollte idealer Weise analog zur lokalen Variante verwendbar sein.
+Um dies zu Realisieren ist eine weitere Schicht zwischen bestehenden HYPRE Programmen und der RPC Implementierung notwendig.
+Diese kann die offizielle HYPRE-Bibliothek ersetzen.
+Dafür müssen alle Aufrufe, Klassen und Definitionen aus der HYPRE-Bibliothek auch in der neuen Bibliothek vorhanden sein.
+Diese sind dann gegenenfalls anders implementiert, die Schnittstellen sollten sich jedoch nicht unterscheiden.
+
+\subsection{In der Cloud}
+
+Das Ziel der verteilten Ausführung ist es, rechenintensive Teile auf ein System externes auszulagern.
+Kriterien für die Auslagerung sind Ausführungszeit, Rechenlast und Lösbarkeit.
+
+Die Zeitersparnis der Berechnungen sollte mindestens gleich groß zu den Einbußen durch die Übertragung sein.
+Ist dies nicht der Fall würde die gesamte Ausführungszeit steigen.
+
+Selbst wenn keine relevante Zeitersparnis erzielt werden kann ist es dennoch möglich zumindestens die Last auf dem lokalen Rechner zu reduzieren.
+
+Ein weiteres Kriterium ist die Lösbarkeit.
+Die Berechnung von sehr großen Problemen könnte die Kapazitäten eines Rechners komplett übersteigen.
+Selbst bei unendlicher Zeit wäre eine Berechnung nicht möglich.
+In diesem Fall wäre eine externe Berechnung unvermeidbar.
+
+\subsubsection{Umsetzung}
+
+\todo{mpi in der cloud}\url{https://cyclecomputing.com/running-mpi-applications-in-amazon-ec2/}
+
+
+\subsection{Benchmarks}
+
 \newpage
 
 

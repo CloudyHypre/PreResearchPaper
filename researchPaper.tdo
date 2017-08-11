@@ -1,32 +1,38 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ abstract formulieren}{i}{section*.1}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ check das hier:}{1}{section*.7}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ genauer definieren}{3}{section*.12}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ genauer definieren}{3}{section*.15}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ warum? flexible Nutzung, Kosten}{3}{section*.16}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ wie?}{4}{section*.24}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Technologien etwas weiter ausf\IeC {\"u}hren}{4}{section*.25}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ wie zum beispiel, kurz erl\IeC {\"a}utern}{4}{section*.27}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Vergleich in Tabelle? - Konflikt zu chpt. 'Gegen\IeC {\"u}berstellungen ...'}{5}{section*.29}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Grundlagen f\IeC {\"u}r HYPRE: 2D Laplace}{7}{section*.37}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Nutzt MPI f\IeC {\"u}r Parallelisierbarkeit: MPI - Message Passing Interface.}{8}{section*.44}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erweitern}{9}{section*.46}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ performance}{10}{section*.48}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ beispiele}{11}{section*.55}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ n\IeC {\"a}her erl\IeC {\"a}utern, paragraphen oben dr\IeC {\"u}ber: methoden etwas genauer erkl\IeC {\"a}ren}{14}{section*.63}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ was ist rest}{15}{section*.64}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erkl\IeC {\"a}rung service kommunikation allgemein}{15}{section*.65}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erkl\IeC {\"a}rung socket allgemein}{15}{section*.66}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ rpc aufr\IeC {\"a}umen}{16}{section*.67}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ skizze rpc call (vs skizze rest call)}{16}{section*.69}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ warum rest ungeeignet}{16}{section*.70}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ liste durchgehen}{17}{section*.74}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ client and server stubs: \url {https://github.com/masroorhasan/RPC}}{18}{section*.78}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ rpc for php and c: \url {https://github.com/laruence/yar}}{18}{section*.79}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ protobuf \IeC {\"u}berarbeiten und nach oben zu grpc verweisen}{19}{section*.89}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Nova, Horizon ...}{19}{section*.92}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ evtl docker container ausf\IeC {\"u}hrlicher}{20}{section*.100}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ vergleiche kapitel ausarbeiten}{27}{section*.117}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ tabelle/vergleiche zwischen technologien: rpc,socket,service etc}{27}{section*.118}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ grpc genauer beschreiben (auch protobuf)}{28}{section*.121}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ roadmap checken/erweitern/abhaken}{30}{section*.123}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ eventuell werden Teile von hier in die aktuelle Arbeit verschoben}{32}{section*.130}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ allgemeine einf\IeC {\"u}hrung inklusive \IeC {\"u}bersicht}{1}{section*.7}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ check das hier:}{1}{section*.8}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ genauer definieren}{3}{section*.13}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ genauer definieren}{3}{section*.16}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ warum? flexible Nutzung, Kosten}{3}{section*.17}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ wie?}{4}{section*.25}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Technologien etwas weiter ausf\IeC {\"u}hren}{4}{section*.26}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ wie zum beispiel, kurz erl\IeC {\"a}utern}{4}{section*.28}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Vergleich in Tabelle? - Konflikt zu chpt. 'Gegen\IeC {\"u}berstellungen ...'}{5}{section*.30}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Grundlagen f\IeC {\"u}r HYPRE: 2D Laplace}{7}{section*.38}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Nutzt MPI f\IeC {\"u}r Parallelisierbarkeit: MPI - Message Passing Interface.}{8}{section*.45}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erweitern}{9}{section*.47}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ performance}{10}{section*.49}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ beispiele}{11}{section*.56}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ n\IeC {\"a}her erl\IeC {\"a}utern, paragraphen oben dr\IeC {\"u}ber: methoden etwas genauer erkl\IeC {\"a}ren}{14}{section*.64}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ was ist rest}{15}{section*.65}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erkl\IeC {\"a}rung service kommunikation allgemein}{15}{section*.66}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ erkl\IeC {\"a}rung socket allgemein}{15}{section*.67}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ rpc aufr\IeC {\"a}umen}{16}{section*.68}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ skizze rpc call (vs skizze rest call)}{16}{section*.70}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ warum rest ungeeignet}{16}{section*.71}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ liste durchgehen}{17}{section*.75}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ client and server stubs: \url {https://github.com/masroorhasan/RPC}}{18}{section*.79}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ rpc for php and c: \url {https://github.com/laruence/yar}}{18}{section*.80}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ protobuf \IeC {\"u}berarbeiten und nach oben zu grpc verweisen}{19}{section*.90}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Nova, Horizon ...}{19}{section*.93}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ evtl docker container ausf\IeC {\"u}hrlicher}{20}{section*.101}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ gesamt etwa 15-20 seiten}{27}{section*.118}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ vergleiche kapitel ausarbeiten}{27}{section*.119}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ tabelle/vergleiche zwischen technologien: rpc,socket,service etc}{27}{section*.120}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ gesamt etwa 5-10 seiten}{29}{section*.121}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ grpc genauer beschreiben (auch protobuf)}{29}{section*.124}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ roadmap checken/erweitern/abhaken}{31}{section*.126}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ gesamt etwa 20-25 seiten}{32}{section*.133}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ das ist nur geplant, bisher nicht implementiert}{32}{section*.134}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ mpi in der cloud}{33}{section*.135}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ eventuell werden Teile von hier in die aktuelle Arbeit verschoben}{34}{section*.136}

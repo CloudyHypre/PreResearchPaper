@@ -78,6 +78,8 @@ Recherche und Literaturverzeichnis}
 
 %content
 
+\todo{allgemeine einführung inklusive übersicht}
+
 \section{Einführung in die relevanten Themen}
 
 \subsection{Allgemeines und Recherche zum Thema Cloud}
@@ -965,9 +967,22 @@ Ist daher ungeeignet.
 
 \subsection{Beispielinstallation OpenStack: Devstack}
 
-\todo{Nova, Horizon ...}
 
-Devstack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
+\paragraph{OpenStack Projekte}
+
+\todo{Nova, Horizon ...}
+\url{https://www.openstack.org/software/project-navigator}
+
+\subparagraph{Nova}
+\subparagraph{Glance}
+\subparagraph{Cinder}
+\subparagraph{Neutron}
+\subparagraph{Horizon}
+\subparagraph{Heat}
+
+\paragraph{DevStack}
+
+DevStack ist ein Projekt von OpenStack, welches eine Grundinstallation einer OpenStack-Umgebung bereitstellen soll.
 Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
 DevStack ist nicht für den Produktiveinsatz vorgesehen.
 
@@ -1096,6 +1111,11 @@ Der erzeugte private key kann vom anderen Ende der ssh-Verbindung genutzt werden
 
 \subparagraph{API Access}
 
+In der Abbildung \ref{fig:devstack:api_access} sind einige Elemente des Menüs API Access zu sehen.
+Die Liste zeigt das Mapping von Services auf Endpunkte.
+Alle Endpunkte sind in diesem Fall auf die ip 172.28.128.3 gemapped.
+Dies ist die ip, über die auch die Grafische Oberfläche in diesem Fall erreichbar ist.
+
 \begin{figure}[htbp]
 \centering
 \caption{API Zugriff auf das Projekts}
@@ -1106,10 +1126,6 @@ Der erzeugte private key kann vom anderen Ende der ssh-Verbindung genutzt werden
 \subparagraph{Bereich Network}
 
 Im Bereich Network befinden sich die Unterpunkte Network Topology, Networks, Routers, Security Groups und Floating IPs.
-
-\paragraph{Workflow zum Erstellen einer Instanz}
-
-\todo{evtl. anhand eines Workflow}
 
 \paragraph{Vorbereitung für die Installation}
 
@@ -1240,6 +1256,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 
 \section{Gegenüberstellung verfügbarer Werkzeuge und Varianten}
+
+\todo{gesamt etwa 15-20 seiten}
 \todo{vergleiche kapitel ausarbeiten}
 
 \subsection{'private' und 'public' Cloud}
@@ -1317,6 +1335,7 @@ Amazon AWS & \myuncheckbox & ... & \mycheckbox & ... &  ...\\
 
 \section{Auswertung der Vergleiche und Auswahl der Werkzeuge}
 
+\todo{gesamt etwa 5-10 seiten}
 Vergleiche verschiedener Technologien und Werkzeuge.
 Auswahl für den Einsatz bei der Implementierung.
 
@@ -1470,7 +1489,70 @@ Webservices implementieren für Komunikation mit dem Server.
 
 
 
-\section{Verteilten Ausführung von HYPRE}
+\section{Verteilte Ausführung von HYPRE}
+
+\todo{gesamt etwa 20-25 seiten}
+
+Für die verteilte Ausführung von HYPRE muss zunächst die Kommunikation mit einem externen Server möglich sein.
+Um diese zu Implementieren kommt grpc zum Einsatz.
+Client und Server kommunizieren also über Remote Procedure Calls.
+Es existiert ein proto-File, welches die Definition des HYPRE-Servers enthält.
+
+Dafür ist ein eigenes grpc Package entstanden, welches einen Service definiert.
+Dieser Service beinhaltet die verfügbaren HYPRE Methoden.
+Es sind also beispielsweise Methoden vorhanden zum Verwalten der Matrizen und Vectoren für die Eingabedaten.
+Diese ermöglichen das Erstellen, Setzen von Eigenschaften oder Löschen.
+Ebenso gibt es Methoden zum Bearbeiten von Solvern.
+
+Es sind neben den Methoden auch Nachrichten, Messages definiert.
+Diese werden als Argumente für die Methoden verwendet.
+Sie verhalten sich als dynamischer Datentyp.
+Grpc erlaubt eine Reihe von Standardtypen, die zu Messages zusammengefügt werden können.
+Nach der Übersetzung in die jeweilige Sprache sind die Messages in der Regel Klassen.
+
+Es gibt HYPRE-Methoden in denen Objekte als Argumente übergeben werden.
+Für die verteilte Ausführung werden diese Objekte jedoch nicht zwischen Client und Server übertragen.
+Es werden die Methoden zum Erstellen und Setzen der Eigenschaften vom Client aufgerufen.
+Der Client erhält dabei einen Identifikator unter dem der Server das Objekt speichert.
+
+Die Definition des HYPRE-rpc Services im proto-File ermöglicht das generieren von C++ Code.
+Aus den Messages und aus dem Service hypreSrv werden Klassen erzeugt.
+Die darin enthaltenen Variablen werden zu Klassenvariablen.
+Die Eigentliche Logik zur Kommunikation wird vom grpc-Framework bereit gestellt.
+Es müssen also lediglich die Messages erstellt und RPC-Methoden aufgerufen werden.
+
+\subsection{Kompatibilitätsschicht HYPRE - rpcHYPRE}
+
+\todo{das ist nur geplant, bisher nicht implementiert}
+Die Verwendung der RPC Aufrufe unterscheidet sich von der Verwendung der HYPRE Methoden.
+Das betrifft zum einen die Benennung, aber besonders die Argumente der Methoden.
+Die verteilte Ausführung von HYPRE sollte idealer Weise analog zur lokalen Variante verwendbar sein.
+Um dies zu Realisieren ist eine weitere Schicht zwischen bestehenden HYPRE Programmen und der RPC Implementierung notwendig.
+Diese kann die offizielle HYPRE-Bibliothek ersetzen.
+Dafür müssen alle Aufrufe, Klassen und Definitionen aus der HYPRE-Bibliothek auch in der neuen Bibliothek vorhanden sein.
+Diese sind dann gegenenfalls anders implementiert, die Schnittstellen sollten sich jedoch nicht unterscheiden.
+
+\subsection{In der Cloud}
+
+Das Ziel der verteilten Ausführung ist es, rechenintensive Teile auf ein System externes auszulagern.
+Kriterien für die Auslagerung sind Ausführungszeit, Rechenlast und Lösbarkeit.
+
+Die Zeitersparnis der Berechnungen sollte mindestens gleich groß zu den Einbußen durch die Übertragung sein.
+Ist dies nicht der Fall würde die gesamte Ausführungszeit steigen.
+
+Selbst wenn keine relevante Zeitersparnis erzielt werden kann ist es dennoch möglich zumindestens die Last auf dem lokalen Rechner zu reduzieren.
+
+Ein weiteres Kriterium ist die Lösbarkeit.
+Die Berechnung von sehr großen Problemen könnte die Kapazitäten eines Rechners komplett übersteigen.
+Selbst bei unendlicher Zeit wäre eine Berechnung nicht möglich.
+In diesem Fall wäre eine externe Berechnung unvermeidbar.
+
+\subsubsection{Umsetzung}
+
+\todo{mpi in der cloud}\url{https://cyclecomputing.com/running-mpi-applications-in-amazon-ec2/}
+
+
+\subsection{Benchmarks}
 
 \newpage
 
