@@ -1421,7 +1421,7 @@ Lizenz & proprietär & Apache License 2 & Plattform ist Closed source, Client SD
 Entwickelt in & ? & Java & ? & Python\\
 Homepage & \url{https://aws.amazon.com/ec2/} & \url{https://cloudstack.apache.org} & \url{https://azure.microsoft.com} & \url{https://openstack.org} \\
 Pricing & verschiedene Modelle, zB. on-demand oder reserviert & kostenfrei, weil selbst gehosted und deployed & pay for use & kostenfrei wenn selbst gehosted und deployed, sonst abhängig von einem der zahlreichen Partner\\
-Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, Lufthansa & NASA, Intel, PayPal\\
+Bekannte Nutzer & & Dell, Huawai, SAP & &\\
 \hline
 \end{tabular}
 \end{table}
@@ -1434,13 +1434,11 @@ Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, L
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{llllll}
 \hline
- & Amazon EC2 & Apache CS & Azure & Openstack \\
+ & Openstack & Apache CS & Amazon EC2 & Azure\\
 \hline
-private & ... & ... & ... & ...\\
-public & ... & ... & ... & ...\\
+private & \mycheckbox & ... & ... & ...\\
+public & \mycheckbox & ... & ... & ...\\
 PaaS & ... & ... & ... & ...\\
-IaaS & ... & ... & ... & ...\\
-SaaS & ... & ... & ... & ...\\
 elastic & ... & ... & ... & ...\\
 self deployed &&&&\\
 hosted &&&&\\
