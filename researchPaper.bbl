@@ -213,6 +213,34 @@ Henson, V\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kavis%
+}{%
+Kavis%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+ArchitectingTheCloud}
+\APACinsertmetastar {%
+ArchitectingTheCloud}%
+\begin{APACrefauthors}%
+Kavis, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Architecting the Cloud: Design Decisions for Cloud Computing
+  Service Models (SaaS, PaaS, and IaaS)} {Architecting the cloud: Design
+  decisions for cloud computing service models (saas, paas, and iaas)}.
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{http://proquest.tech.safaribooksonline.de/9781118826461}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 LLNL%
 }{%
 LLNL%
@@ -263,6 +291,33 @@ MPI-Forum.%
 \begin{APACrefURL} \url{http://mpi-forum.org} \end{APACrefURL}
 \newblock
 \APACrefnote{zuletzt besucht am 10.07.2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NIST%
+}{%
+NIST%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+NISTCC}
+\APACinsertmetastar {%
+NISTCC}%
+\begin{APACrefauthors}%
+NIST.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Cloud Computing Synopsis and Recommendations} {Cloud computing
+  synopsis and recommendations}.
+\newblock
+\APAChowpublished {online}.
+\newblock
+\begin{APACrefURL}
+  \url{http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-146.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
