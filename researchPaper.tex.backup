@@ -1279,9 +1279,13 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 \hline
  & private & public\\
 \hline
-a & ... & ...\\
-b & ... & ...\\
-c & ... & ...\\
+Drittanbieter beteiligt & \myuncheckbox & \mycheckbox\\
+Infrastruktur & muss selbst verwaltet werden & beim Cloudanbieter\\
+Plattform & selbst einrichten & selbst einrichten\\
+Skalierbarkeit (der Infrastruktur) & hängt vom genutzten Rechenzentrum ab & große Cloudanbieter können nahezu beliebig skalieren\\
+Daten & lokal & in Datencenter des Cloudanbieters\\
+spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Networking) & je nach Verfügbarkeit beim Anbieter\\
+%Vorteilhaft für & Große Unternehmen & Kleiner bis Große Unternehmen\\ 
 \hline
 \end{tabular}
 \end{table}
@@ -1421,7 +1425,7 @@ Lizenz & proprietär & Apache License 2 & Plattform ist Closed source, Client SD
 Entwickelt in & ? & Java & ? & Python\\
 Homepage & \url{https://aws.amazon.com/ec2/} & \url{https://cloudstack.apache.org} & \url{https://azure.microsoft.com} & \url{https://openstack.org} \\
 Pricing & verschiedene Modelle, zB. on-demand oder reserviert & kostenfrei, weil selbst gehosted und deployed & pay for use & kostenfrei wenn selbst gehosted und deployed, sonst abhängig von einem der zahlreichen Partner\\
-Bekannte Nutzer & & Dell, Huawai, SAP & &\\
+Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, Lufthansa & NASA, Intel, PayPal\\
 \hline
 \end{tabular}
 \end{table}
@@ -1434,11 +1438,13 @@ Bekannte Nutzer & & Dell, Huawai, SAP & &\\
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{llllll}
 \hline
- & Openstack & Apache CS & Amazon EC2 & Azure\\
+ & Amazon EC2 & Apache CS & Azure & Openstack \\
 \hline
-private & \mycheckbox & ... & ... & ...\\
-public & \mycheckbox & ... & ... & ...\\
+private & ... & ... & ... & ...\\
+public & ... & ... & ... & ...\\
 PaaS & ... & ... & ... & ...\\
+IaaS & ... & ... & ... & ...\\
+SaaS & ... & ... & ... & ...\\
 elastic & ... & ... & ... & ...\\
 self deployed &&&&\\
 hosted &&&&\\

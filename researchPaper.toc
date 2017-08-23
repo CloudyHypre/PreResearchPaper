@@ -108,10 +108,10 @@
 \contentsline {section}{\numberline {3}Gegen\IeC {\"u}berstellung verf\IeC {\"u}gbarer Werkzeuge und Varianten}{27}{section.3}
 \contentsline {subsection}{\numberline {3.1}'private' und 'public' Cloud}{27}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Technologie}{27}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Cloudtyp}{27}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Cloudtyp}{28}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Sprache}{28}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{28}{subsection.3.5}
-\contentsline {paragraph}{Meta}{29}{section*.122}
+\contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{29}{subsection.3.5}
+\contentsline {paragraph}{Meta}{30}{section*.122}
 \contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{32}{section.4}
 \contentsline {subsection}{\numberline {4.1}gRPC}{32}{subsection.4.1}
 \contentsline {paragraph}{Installation}{32}{section*.125}

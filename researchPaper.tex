@@ -1275,13 +1275,18 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 \caption{Private vs. Public Cloud}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{2.1cm} p{4.3cm} p{4.3cm}}
 \hline
  & private & public\\
 \hline
-a & ... & ...\\
-b & ... & ...\\
-c & ... & ...\\
+Drittanbieter beteiligt & \myuncheckbox & \mycheckbox\\
+Infrastruktur selbst verwaltet & \mycheckbox & \myuncheckbox\\
+Plattform selbst verwaltet & \mycheckbox & \mycheckbox\\
+Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
+Skalierbarkeit (der Infrastruktur) & hängt vom genutzten Rechenzentrum ab & große Cloudanbieter können nahezu beliebig skalieren\\
+Skalierbarkeit (nach unten) & Maximalanforderung muss immer vorhanden sein (echte Hardware) & bei geringer/keiner Auslastung herunter fahrbar - Kosten Einsparung\\
+spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Networking) & je nach Verfügbarkeit beim Anbieter\\
+Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
 \hline
 \end{tabular}
 \end{table}
