@@ -95,19 +95,19 @@
 
 
 
-@article{pvp,
-    title = "Das unterscheidet Private und Public Cloud",
-    author = "Hadi Stiel",
-    journal = "Computerwoche",
-    year = "2011",
-    volume = "09",
-    pages = ""
-},
-@misc{pvp2,
-    title = "Public vs. Private Cloud Computing",
-    author = "onlinetech",
-    year = "2017",
+@misc{citeTitle,
+    title = "XXX",
+    author = "Max Mustermann and Maria Musterfrau",
+    year = "YYYY",
     howpublished = "online",
-    url = "http://www.onlinetech.com/resources/references/public-vs-private-cloud-computing",
-    note = "zuletzt besucht am 23.08.2017"
+    url = "https://katalog.bibliothek.tu-chemnitz.de/Record/ai-48-Q1dfXzIwMTEwMjI4NDc0MDAxNjQxMjc1MjEzNDQ0MjM",
+    note = "zuletzt besucht am DD.MM.YYYY"
+},
+@misc{citeTitle,
+    title = "XXX",
+    author = "Max Mustermann and Maria Musterfrau",
+    year = "YYYY",
+    howpublished = "online",
+    url = "http://url.de",
+    note = "zuletzt besucht am DD.MM.YYYY"
 },

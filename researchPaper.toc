@@ -111,26 +111,26 @@
 \contentsline {subsection}{\numberline {3.3}Cloudtyp}{28}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Sprache}{28}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{29}{subsection.3.5}
-\contentsline {paragraph}{Meta}{30}{section*.122}
+\contentsline {paragraph}{Meta}{30}{section*.123}
 \contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{32}{section.4}
 \contentsline {subsection}{\numberline {4.1}gRPC}{32}{subsection.4.1}
-\contentsline {paragraph}{Installation}{32}{section*.125}
-\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{32}{section*.127}
-\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{33}{section*.128}
+\contentsline {paragraph}{Installation}{32}{section*.126}
+\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{32}{section*.128}
+\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{33}{section*.129}
 \contentsline {subsection}{\numberline {4.2}Ressourcen}{33}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Roadmap Implementierung}{33}{subsection.4.3}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{33}{section*.130}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{34}{section*.131}
-\contentsline {subparagraph}{Fazit}{34}{section*.132}
-\contentsline {paragraph}{Client}{34}{section*.133}
-\contentsline {subparagraph}{Anforderungen}{34}{section*.134}
-\contentsline {subparagraph}{Kernmodule}{34}{section*.135}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{33}{section*.131}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{34}{section*.132}
+\contentsline {subparagraph}{Fazit}{34}{section*.133}
+\contentsline {paragraph}{Client}{34}{section*.134}
+\contentsline {subparagraph}{Anforderungen}{34}{section*.135}
+\contentsline {subparagraph}{Kernmodule}{34}{section*.136}
 \contentsline {section}{\numberline {5}Verteilte Ausf\IeC {\"u}hrung von HYPRE}{35}{section.5}
 \contentsline {subsection}{\numberline {5.1}Kompatibilit\IeC {\"a}tsschicht HYPRE - rpcHYPRE}{35}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}In der Cloud}{35}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Umsetzung}{36}{subsubsection.5.2.1}
 \contentsline {subsection}{\numberline {5.3}Benchmarks}{36}{subsection.5.3}
 \contentsline {section}{\numberline {6}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{37}{section.6}
-\contentsline {section}{References}{38}{section*.143}
+\contentsline {section}{References}{38}{section*.144}
 \contentsline {section}{\numberline {A}\\HYPRE}{39}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{39}{subsection.A.1}
