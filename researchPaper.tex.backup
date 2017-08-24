@@ -1261,6 +1261,7 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \todo{gesamt etwa 15-20 seiten}
 \todo{vergleiche kapitel ausarbeiten}
+\todo{beschreibung als prosatext zu vergleichen in tabellen}
 
 \subsection{'private' und 'public' Cloud}
 
@@ -1275,20 +1276,24 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 \caption{Private vs. Public Cloud}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{2.1cm} p{4.3cm} p{4.3cm}}
 \hline
  & private & public\\
 \hline
 Drittanbieter beteiligt & \myuncheckbox & \mycheckbox\\
-Infrastruktur & muss selbst verwaltet werden & beim Cloudanbieter\\
-Plattform & selbst einrichten & selbst einrichten\\
+Infrastruktur selbst verwaltet & \mycheckbox & \myuncheckbox\\
+Plattform selbst verwaltet & \mycheckbox & \mycheckbox\\
+Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
 Skalierbarkeit (der Infrastruktur) & hängt vom genutzten Rechenzentrum ab & große Cloudanbieter können nahezu beliebig skalieren\\
-Daten & lokal & in Datencenter des Cloudanbieters\\
+Skalierbarkeit (nach unten) & Maximalanforderung muss immer vorhanden sein (echte Hardware) & bei geringer/keiner Auslastung herunter fahrbar - Kosten Einsparung\\
 spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Networking) & je nach Verfügbarkeit beim Anbieter\\
-%Vorteilhaft für & Große Unternehmen & Kleiner bis Große Unternehmen\\ 
+Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
 \hline
 \end{tabular}
 \end{table}
+
+\cite{pvp}
+\cite{pvp2}
 
 \subsection{Technologie}
 
@@ -1306,43 +1311,63 @@ spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Network
 \caption{Vergleich von Technologien}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{2.3cm} p{2.8cm} p{2.8cm} p{2.8cm}}
 \hline
- & RPC & Socket & Service & Azure\\
+ & RPC & Socket & Service\\
 \hline
-performance & ... & ... & ... & ...\\
-aufwand & ... & ... & ... & ...\\
-frameworks & ... & ... & ... & ...\\
+performance & ... & ... & ...\\
+aufwand & ... & ... & ...\\
+frameworks & ... & ... & ...\\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Cloudtyp}
+\subsection{Service Modelle}
 
-wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
-
+Übersicht über die verfügbaren Service Modelle von Clouds:
 \begin{itemize}
- \item Infrastructure as a Service (IaaS)
- \item Platform as a Service (PaaS)
  \item Software as a Service (SaaS)
- \item aber entscheidend: wie eignen sich diese typen für `unsere` Implementierung
+ \item Platform as a Service (PaaS)
+ \item Infrastructure as a Service (IaaS)
 \end{itemize}
+
+Eine Cloud kann Nutzern Zugang zu Softwareanwendungen geben.
+Diese befinden sich im Gegensatz zu traditionellen Anwendungen nicht auf dem lokalen Gerät des Nutzers, sondern laufen auf einem entfernten System, dem Cloudsystem.
+In diesem Fall spricht man von Software as a Service, SaaS.
+
+Weiterhin kann eine Cloud Zugang zu einer weitestgehend fertigen Entwicklungs- beziehungsweise Laufzeitumgebung bieten.
+Hier können Nutzer ohnes eigenhändiges Installieren und Pflegen von Betriebssystemen, Bibliotheken, Datenbanken oder Ähnlichem ihre Software ausrollen.
+In diesem Fall spricht man von Platform as a Service, PaaS.
+
+Schließlich kann eine Cloud auch lediglich Zugang zu Rechen- und Speicherkapazität geben.
+Hier können Nutzer eigene Systeme installieren.
+Das Planen, Installieren und Verwalten eines eigenen Rechenzentrums und dessen Hardware ist nicht nötig.
+In diesem Fall spricht man von Infrastructure as a Service, IaaS.
+
+\todo{wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt}
 
 \begin{table}[H]
 \centering
-\caption{Vergleich von Technologien}
+\caption{Vergleich von Modellen}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{2cm} p{2.1cm} p{2.1cm} p{2.1cm} p{2.1cm}}
 \hline
- & IaaS & PaaS & SaaS\\
+ & Datacenter & IaaS & PaaS & SaaS\\
 \hline
-a & ... & ... & ...\\
-b & ... & ... & ...\\
-c & ... & ... & ...\\
+Infrastruktur & \mycheckbox & \myuncheckbox & \myuncheckbox & \myuncheckbox\\
+Application Stack & \mycheckbox & \mycheckbox & \myuncheckbox & \myuncheckbox\\
+Application & \mycheckbox & \mycheckbox & \mycheckbox & \myuncheckbox\\
+User & \mycheckbox & \mycheckbox & \mycheckbox & \mycheckbox\\
 \hline
 \end{tabular}
 \end{table}
+
+``The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. 
+The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications and possibly limited control of select networking components (e.g., host firewalls).'' 
+\cite{NISTCC}
+
+\cite{ArchitectingTheCloud}
 
 \subsection{Sprache}
 
@@ -1436,14 +1461,14 @@ Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, L
 \caption{Vergleich von Cloudanbietern}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{1.5cm} p{2.3cm} p{2.3cm} p{2.3cm} p{2.3cm}}
 \hline
  & Amazon EC2 & Apache CS & Azure & Openstack \\
 \hline
-private & ... & ... & ... & ...\\
-public & ... & ... & ... & ...\\
+private & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
+public & \mycheckbox & (\mycheckbox) & \mycheckbox & (\mycheckbox)\\
+IaaS & ... & \mycheckbox & ... & \mycheckbox\\
 PaaS & ... & ... & ... & ...\\
-IaaS & ... & ... & ... & ...\\
 SaaS & ... & ... & ... & ...\\
 elastic & ... & ... & ... & ...\\
 self deployed &&&&\\
@@ -1451,6 +1476,11 @@ hosted &&&&\\
 \hline
 \end{tabular}
 \end{table}
+
+Apache CS und Openstack werden als private Clouds entwickelt.
+Es gibt jedoch Unternehmen, die diese auf Ihrer eigenen Infrastruktur auch als public Clouds anbieten.
+
+
 
 \newpage
 

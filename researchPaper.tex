@@ -1271,6 +1271,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  \item was sind unterschiede (neben dem access, zB performance?)
 \end{itemize}
 
+\todo{evtl hybrid ergänzen}
+
 \begin{table}[H]
 \centering
 \caption{Private vs. Public Cloud}
@@ -1322,16 +1324,29 @@ frameworks & ... & ... & ...\\
 \end{tabular}
 \end{table}
 
-\subsection{Cloudtyp}
+\subsection{Service Modelle}
 
-wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt
-
+Übersicht über die verfügbaren Service Modelle von Clouds:
 \begin{itemize}
- \item Infrastructure as a Service (IaaS)
- \item Platform as a Service (PaaS)
  \item Software as a Service (SaaS)
- \item aber entscheidend: wie eignen sich diese typen für `unsere` Implementierung
+ \item Platform as a Service (PaaS)
+ \item Infrastructure as a Service (IaaS)
 \end{itemize}
+
+Eine Cloud kann Nutzern Zugang zu Softwareanwendungen geben.
+Diese befinden sich im Gegensatz zu traditionellen Anwendungen nicht auf dem lokalen Gerät des Nutzers, sondern laufen auf einem entfernten System, dem Cloudsystem.
+In diesem Fall spricht man von Software as a Service, SaaS.
+
+Weiterhin kann eine Cloud Zugang zu einer weitestgehend fertigen Entwicklungs- beziehungsweise Laufzeitumgebung bieten.
+Hier können Nutzer ohnes eigenhändiges Installieren und Pflegen von Betriebssystemen, Bibliotheken, Datenbanken oder Ähnlichem ihre Software ausrollen.
+In diesem Fall spricht man von Platform as a Service, PaaS.
+
+Schließlich kann eine Cloud auch lediglich Zugang zu Rechen- und Speicherkapazität geben.
+Hier können Nutzer eigene Systeme installieren.
+Das Planen, Installieren und Verwalten eines eigenen Rechenzentrums und dessen Hardware ist nicht nötig.
+In diesem Fall spricht man von Infrastructure as a Service, IaaS.
+
+\todo{wird evtl schon teilweise in abschnitt 1 (allgemeines zur cloud) abgedeckt}
 
 \begin{table}[H]
 \centering
@@ -1448,21 +1463,24 @@ Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, L
 \caption{Vergleich von Cloudanbietern}
 \label{my-label}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{llllll}
+\begin{tabular}{p{1.5cm} p{2.3cm} p{2.3cm} p{2.3cm} p{2.3cm}}
 \hline
  & Amazon EC2 & Apache CS & Azure & Openstack \\
 \hline
-private & ... & ... & ... & ...\\
-public & ... & ... & ... & ...\\
-PaaS & ... & ... & ... & ...\\
-IaaS & ... & ... & ... & ...\\
-SaaS & ... & ... & ... & ...\\
+private & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
+public & \mycheckbox & (\mycheckbox) & \mycheckbox & (\mycheckbox)\\
+hybrid & & \mycheckbox &&\\
+Service Modell & Iaas & Iaas & Iaas & Iaas\\
 elastic & ... & ... & ... & ...\\
 self deployed &&&&\\
 hosted &&&&\\
 \hline
 \end{tabular}
 \end{table}
+
+Apache CS und Openstack werden als private Clouds entwickelt.
+Es gibt jedoch Unternehmen, die diese auf Ihrer eigenen Infrastruktur auch als public Clouds anbieten.
+
 
 \newpage
 
@@ -1632,11 +1650,16 @@ Webservices implementieren für Komunikation mit dem Server.
 
 
 
+\section{Verteilte Ausführung von HYPRE - Planung}
 
+\subsection{HPC in der Cloud}
 
-\section{Verteilte Ausführung von HYPRE}
+\subsection{Planung der Bibliothek - Client}
 
+\todo{Umschreiben sodass es einer Planung entspricht und nicht den status quo beschreibt}
 \todo{gesamt etwa 20-25 seiten}
+
+\subsubsection{Allgemein}
 
 Für die verteilte Ausführung von HYPRE muss zunächst die Kommunikation mit einem externen Server möglich sein.
 Um diese zu Implementieren kommt grpc zum Einsatz.
@@ -1666,7 +1689,7 @@ Die darin enthaltenen Variablen werden zu Klassenvariablen.
 Die Eigentliche Logik zur Kommunikation wird vom grpc-Framework bereit gestellt.
 Es müssen also lediglich die Messages erstellt und RPC-Methoden aufgerufen werden.
 
-\subsection{Kompatibilitätsschicht HYPRE - rpcHYPRE}
+\subsubsection{Kompatibilitätsschicht HYPRE - rpcHYPRE}
 
 \todo{das ist nur geplant, bisher nicht implementiert}
 Die Verwendung der RPC Aufrufe unterscheidet sich von der Verwendung der HYPRE Methoden.
@@ -1677,7 +1700,7 @@ Diese kann die offizielle HYPRE-Bibliothek ersetzen.
 Dafür müssen alle Aufrufe, Klassen und Definitionen aus der HYPRE-Bibliothek auch in der neuen Bibliothek vorhanden sein.
 Diese sind dann gegenenfalls anders implementiert, die Schnittstellen sollten sich jedoch nicht unterscheiden.
 
-\subsection{In der Cloud}
+\subsection{In der Cloud - Server}
 
 Das Ziel der verteilten Ausführung ist es, rechenintensive Teile auf ein System externes auszulagern.
 Kriterien für die Auslagerung sind Ausführungszeit, Rechenlast und Lösbarkeit.
@@ -1708,6 +1731,22 @@ Sie können also auch auf eigenen HPC Systemen eingesetzt werden.
 \subsubsection{Umsetzung}
 
 \todo{mpi in der cloud}\url{https://cyclecomputing.com/running-mpi-applications-in-amazon-ec2/}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+\section{Verteilte Ausführung von HYPRE - Beispielhafte Implementierung}
+
+\todo{Implementierung beschreiben}
 
 
 

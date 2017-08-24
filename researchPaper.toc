@@ -108,29 +108,33 @@
 \contentsline {section}{\numberline {3}Gegen\IeC {\"u}berstellung verf\IeC {\"u}gbarer Werkzeuge und Varianten}{27}{section.3}
 \contentsline {subsection}{\numberline {3.1}'private' und 'public' Cloud}{27}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Technologie}{27}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Cloudtyp}{28}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Service Modelle}{28}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Sprache}{29}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{29}{subsection.3.5}
-\contentsline {paragraph}{Meta}{30}{section*.123}
+\contentsline {paragraph}{Meta}{30}{section*.125}
 \contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{33}{section.4}
 \contentsline {subsection}{\numberline {4.1}gRPC}{33}{subsection.4.1}
-\contentsline {paragraph}{Installation}{33}{section*.126}
-\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{33}{section*.128}
-\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{34}{section*.129}
+\contentsline {paragraph}{Installation}{33}{section*.128}
+\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{33}{section*.130}
+\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{34}{section*.131}
 \contentsline {subsection}{\numberline {4.2}Ressourcen}{34}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Roadmap Implementierung}{34}{subsection.4.3}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{34}{section*.131}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{35}{section*.132}
-\contentsline {subparagraph}{Fazit}{35}{section*.133}
-\contentsline {paragraph}{Client}{35}{section*.134}
-\contentsline {subparagraph}{Anforderungen}{35}{section*.135}
-\contentsline {subparagraph}{Kernmodule}{35}{section*.136}
-\contentsline {section}{\numberline {5}Verteilte Ausf\IeC {\"u}hrung von HYPRE}{36}{section.5}
-\contentsline {subsection}{\numberline {5.1}Kompatibilit\IeC {\"a}tsschicht HYPRE - rpcHYPRE}{36}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}In der Cloud}{36}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Umsetzung}{37}{subsubsection.5.2.1}
-\contentsline {subsection}{\numberline {5.3}Benchmarks}{37}{subsection.5.3}
-\contentsline {section}{\numberline {6}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{38}{section.6}
-\contentsline {section}{References}{39}{section*.144}
-\contentsline {section}{\numberline {A}\\HYPRE}{40}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{40}{subsection.A.1}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{34}{section*.133}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{35}{section*.134}
+\contentsline {subparagraph}{Fazit}{35}{section*.135}
+\contentsline {paragraph}{Client}{35}{section*.136}
+\contentsline {subparagraph}{Anforderungen}{35}{section*.137}
+\contentsline {subparagraph}{Kernmodule}{35}{section*.138}
+\contentsline {section}{\numberline {5}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Planung}{36}{section.5}
+\contentsline {subsection}{\numberline {5.1}HPC in der Cloud}{36}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Planung der Bibliothek - Client}{36}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Allgemein}{36}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Kompatibilit\IeC {\"a}tsschicht HYPRE - rpcHYPRE}{36}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}In der Cloud - Server}{37}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Umsetzung}{37}{subsubsection.5.3.1}
+\contentsline {section}{\numberline {6}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Beispielhafte Implementierung}{38}{section.6}
+\contentsline {subsection}{\numberline {6.1}Benchmarks}{38}{subsection.6.1}
+\contentsline {section}{\numberline {7}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{39}{section.7}
+\contentsline {section}{References}{40}{section*.148}
+\contentsline {section}{\numberline {A}\\HYPRE}{41}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{41}{subsection.A.1}
