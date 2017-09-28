@@ -1310,6 +1310,16 @@ Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
 
 \todo{tabelle/vergleiche zwischen technologien: rpc,socket,service etc}
 
+Es gibt verschiedene Technologien und Werkzeuge um eine Kommunikation zwischen zwei Endpunkten zu ermöglichen.
+Es sollen in diesem Abschnitt drei davon betrachtet werden: RPC, Sockets und Services.
+Dabei werden jedoch Methoden verglichen, die durchaus auch nebeneinander verwendet werden können.
+So könnte beispielsweise die Verbindung einer RPC-Kommunikation über Sockets stattfinden.
+Der Vergleich bezieht sich daher eher auf die reine Verwendung der jeweiligen Technologie, unabhängig von möglichen Frameworks darüber oder Techniken im Hintergrund.
+Für Sockets in der Sprache C könnte somit beispielsweise die Bibliothek sys/socket zum Einsatz kommen: \begin{verbatim}#include <sys/socket.h>\end{verbatim}
+Für RPC beispielsweise die Bibliothek xmlrpc \begin{verbatim}#include \end{verbatim}
+Services stehen repräsentativ für eine serviceorientierte Architektur (SOA).
+Diese könnte zum Beispiel REST verwenden.
+
 \begin{itemize}
  \item welche Werkzeuge für die kommunikation zwischen client und cloud
  \item rpc, socket, service ...
@@ -1326,12 +1336,16 @@ Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
 \hline
  & RPC & Socket & Service\\
 \hline
+Server zu Client & 1:n & 1:1 & 1:n \\
+Bezug & Methoden & - & Daten (deren Manipulation)\\
 performance & ... & ... & ...\\
 aufwand & ... & ... & ...\\
 frameworks & ... & ... & ...\\
 \hline
 \end{tabular}
 \end{table}
+
+Am Ende wird ein Framework die Beste Lösung sein.
 
 \subsection{Service Modelle}
 
