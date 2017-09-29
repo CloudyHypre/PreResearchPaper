@@ -48,7 +48,7 @@ Recherche und Literaturverzeichnis}
 }
 {
 \\\\\hline
-\end{tabular} 
+\end{tabular}
 \end{center}
 }
 
@@ -154,7 +154,7 @@ Ein \textbf{Once-in-a-lifetime workload} ist eine einmalige Lastspitze.
 `Provisioning` und `decomissioning` als Aktivitäten zum Hinzufügen oder Entfernen von weiteren Ressourcen.
 Das kann durch Benutzer über grafische oder Kommandozeilenschnittstellen geschehen oder automatisiert über eine API.
 \subparagraph{Broad network access}
-Ein starkes Netzwerk \todo{genauer definieren} ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen. 
+Ein starkes Netzwerk \todo{genauer definieren} ist essentiell um eine Verbesserung durch die Auslagerung von Berechnungen zu erreichen.
 So kann Zugriffszeit auf Daten weniger abhängig von ihrem pysikalischen Speicherort werden.
 \subparagraph{Measured service (pay-per-use)}
 Durch die Nutzung von Cloudsystemen kann man stark von der Flexibilität der Ressourcen profitieren.
@@ -231,7 +231,7 @@ Bei dieser Variante muss sich der Nutzer um keinerlei Aufgaben der Verwaltung de
 
 Eine \textbf{public cloud} ist für jeden verfügbar.
 Eine \textbf{private cloud} dagegen nur für ein einziges Unternehmen oder einen Nutzer (od. Interessengemeinschaft).
-Eine \textbf{community cloud} liegt zwischen den beiden ersten Varianten. 
+Eine \textbf{community cloud} liegt zwischen den beiden ersten Varianten.
 Sie ist in der Regel für eine Menge von Unternehmen verfügbar.
 Das kann notwendig werden, falls die Unternehmen an einem gemeinsamen Projekt arbeiten.
 Bei \textbf{hybrid clouds} ist von mehreren Clouds die Rede.
@@ -485,7 +485,7 @@ Mehrgitterverfahren können als sogenannte Preconditioner, oder Vorkonditioniere
 Dabei werden die Eingabedaten noch vor dem Lösen optimiert.
 BoomerAMG kann beispielsweise direkt als Solver verwendet werden.
 Ebenso kann es aber auch als Preconditioner verwendet werden und anschließend ein anderer Solver zum Einsatz kommen.
-Beispielsweise bei der Verwendung des Krylow-Unterraum-Verfahren ist eine Vorkonditionierung wichtig. 
+Beispielsweise bei der Verwendung des Krylow-Unterraum-Verfahren ist eine Vorkonditionierung wichtig.
 Dieses ist auf das Lösen dünnbesetzter Gleichungssysteme optimiert.
 Wenn die Eingabedaten diesem Kriterium nicht entsprechen sollten sie also zunächst mit einem anderen Verfahren vorkonditioniert werden.
 
@@ -520,13 +520,13 @@ sudo apt-get install mpich
 //Download https://github.com/LLNL/hypre
 git clone https://github.com/LLNL/hypre
 
-//Innerhalb des Verzeichnis muss `configure` 
-//gefolgt von einem `make` ausgeführt werden. 
+//Innerhalb des Verzeichnis muss `configure`
+//gefolgt von einem `make` ausgeführt werden.
 cd hypre/src
 
 ./configure
 
-//Alternativ kann auch das build tool CMake 
+//Alternativ kann auch das build tool CMake
 //eingesetzt werden.
 make
 \end{lstlisting}
@@ -541,7 +541,7 @@ Die folgenden Punkte beschreiben grob die notwendigen Schritte eines Workflows f
  \item Build any necessary auxiliary structures for your chosen conceptual interface. /
  Datenstrukturen für Gitter (Grid) und Schablone (Stencil) aufbauen, abhängig vom gewählten Interface.
  \item Build the matrix, solution vector, and right-hand-side vector through your chosen conceptual interface. /
- Matrix, Lösungsvektor, right-hand-side Vektor aufbauen. 
+ Matrix, Lösungsvektor, right-hand-side Vektor aufbauen.
  Diese können über verschiedene HYPRE-calls mit den jeweiligen Informationen gefüllt werden.
  \item Build solvers and preconditioners and set solver parameters (optional). /
  Solver und preconditioner aufbauen und deren Parameter setzen.
@@ -942,7 +942,7 @@ int main()
 kompilieren von c-code mit python3.6
 
 \begin{lstlisting}[frame=single,caption=Python in C kompilieren, breaklines=true]
-cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m 
+cc prog.c -o prog.o -I/usr/include/python3.6m -lpython3.6m
   -lm -L/usr/lib/python3.6
 \end{lstlisting}
 
@@ -997,7 +997,7 @@ DevStack ist ein Projekt von OpenStack, welches eine Grundinstallation einer Ope
 Es soll helfen eine Entwicklungsumgebung für OpenStack mit wenigen Schritten einzurichten.
 DevStack ist nicht für den Produktiveinsatz vorgesehen.
 
-In der Grundstruktur verschiedener Cloudsysteme gibt es starke Überschneidungen. 
+In der Grundstruktur verschiedener Cloudsysteme gibt es starke Überschneidungen.
 Es gibt eine Menge von Hardwareressourcen die zur Verfügung stehen.
 Dazu zählen Beispielsweise CPUs, RAM oder Speicher.
 Es gibt weiterhin Instanzen von virtuellen Containern.
@@ -1150,7 +1150,7 @@ Im Bereich Network befinden sich die Unterpunkte Network Topology, Networks, Rou
 Vagrant.configure(2) do |config|
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.network "private_network", type: "dhcp"
- 
+
   config.vm.provider "virtualbox" do |v|
     v.memory = 4096
   end
@@ -1160,11 +1160,11 @@ end
  \item \begin{verbatim}vagrant up\end{verbatim}
  \item \begin{verbatim}vagrant ssh\end{verbatim}
 \end{enumerate}
- 
+
 \paragraph{Installation}
- 
+
 \subparagraph{Devstack installieren}
-  
+
 \begin{enumerate}
  \item \begin{verbatim}git clone https://git.openstack.org/openstack-dev/devstack \end{verbatim}
  \item  \begin{verbatim}cd devstack\end{verbatim}
@@ -1395,8 +1395,8 @@ User & \mycheckbox & \mycheckbox & \mycheckbox & \mycheckbox\\
 \end{tabular}
 \end{table}
 
-``The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. 
-The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications and possibly limited control of select networking components (e.g., host firewalls).'' 
+``The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications.
+The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications and possibly limited control of select networking components (e.g., host firewalls).''
 \cite{NISTCC}
 
 \cite{ArchitectingTheCloud}
@@ -1406,7 +1406,7 @@ The consumer does not manage or control the underlying cloud infrastructure but 
 \begin{itemize}
  \item hardware-nah: C/C++ (bessere performance)
  \item vs netzwerknah: (bessere möglichkeiten die kommunikation zu Implementieren)
- \item kann eine hybridform eingsetzt werden? 
+ \item kann eine hybridform eingsetzt werden?
  zB (micro-)service: bib in c kommuniziert mit client-backend in php, dieses führt die calls zum server aus
 \end{itemize}
 
@@ -1419,9 +1419,9 @@ The consumer does not manage or control the underlying cloud infrastructure but 
 \hline
  & C/C++ & Python & Hybrid\\
 \hline
-a & ... & ... & ...\\
-b & ... & ... & ...\\
-c & ... & ... & ...\\
+Level & Hochsprache & Hochsprache & ...\\
+ & Skriptsprache & kompliliert & ...\\
+ & ... & ... & ...\\
 \hline
 \end{tabular}
 \end{table}
@@ -2237,7 +2237,7 @@ int main (int argc, char *argv[])
       HYPRE_BoomerAMGCreate(&precond);
       HYPRE_BoomerAMGSetPrintLevel(precond, 1); /* print amg solution info */
       HYPRE_BoomerAMGSetCoarsenType(precond, 6);
-      HYPRE_BoomerAMGSetOldDefault(precond); 
+      HYPRE_BoomerAMGSetOldDefault(precond);
       HYPRE_BoomerAMGSetRelaxType(precond, 6); /* Sym G.S./Jacobi hybrid */
       HYPRE_BoomerAMGSetNumSweeps(precond, 1);
       HYPRE_BoomerAMGSetTol(precond, 0.0); /* conv. tolerance zero */
