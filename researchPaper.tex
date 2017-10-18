@@ -1424,7 +1424,7 @@ Level & Hochsprache & Hochsprache & ...\\
 Interpreter/Compiler & Skriptsprache & kompliliert & ...\\
  & Performance & vorgefertigter Code, wenig Boilerplate & ...\\
 Typisierung & streng & schwach/dynamisch & \\
-# & Sicherheit && \\
+ & Sicherheit && \\
 \hline
 \end{tabular}
 \end{table}
@@ -1502,18 +1502,48 @@ Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, L
 \hline
 private & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
 public & \mycheckbox & (\mycheckbox) & \mycheckbox & (\mycheckbox)\\
-hybrid & & \mycheckbox &&\\
-Service Modell & Iaas & Iaas & Iaas & Iaas\\
-elastic & ... & ... & ... & ...\\
-self deployed &&&&\\
-hosted &&&&\\
+hybrid & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
+Service Modell & Iaas & (Iaas) & Iaas & (Iaas)\\
+elastic & \mycheckbox & (\mycheckbox) & \mycheckbox & (\mycheckbox)\\
+self deployed & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
+hosted & \mycheckbox & \mycheckbox & \mycheckbox& \mycheckbox\\
+open source & \myuncheckbox & \mycheckbox & \myuncheckbox & \mycheckbox\\
 \hline
 \end{tabular}
 \end{table}
 
-Apache CS und Openstack werden als private Clouds entwickelt.
+\todo{beispiele für drittanbieter hybrid cloud (zB ibm)}
+Apache CS und OpenStack werden als private Clouds entwickelt.
 Es gibt jedoch Unternehmen, die diese auf Ihrer eigenen Infrastruktur auch als public Clouds anbieten.
+Sie stellen in diesem Fall also einen Hybridtyp zwischen private und public Cloud dar.
 
+Im Falle von OpenStack existiert ein Marktplatz auf dem nach zertifizierten Abietern von public OpenStack Clouds gesucht werden kann
+(siehe \url{https://www.openstack.org/marketplace/public-clouds/}).
+Dort ist Beispielsweise die Deutsche Telekom vertreten
+(siehe \url{https://www.openstack.org/marketplace/public-clouds/deutsche-telekom/open-telekom-cloud}).
+
+Dadurch können auch alle dieser Cloudsysteme als IaaS verwendet werden.
+Apache CS und Openstack bieten jedoch keine IaaS wenn man sie als private Cloud verwendet.
+In diesem Fall muss eine eigene Infrastuktur verwendet werden.
+Um diese trotzdem als IaaS-Cloud zu nutzen kann man jedoch eine Hosted-Lösung von einem Drittanbieter nutzen.
+
+Der Gedanke einer elastischen Cloud ist vor allem bei den beiden public Clouds wirksam.
+Deren Anbieter besitzen große Rechenzentren, die die Anforderungen eines einzelnen Projekts weit überschreiten.
+Diese werden nur durch eine hohe Anzahl von Nutzern ausgelastet.
+Bei einer wechselhaften Auslastung können Ressourcen zwischen verschiedenen Nutzern clever aufgeteilt werden.
+Dadurch reduziert sich deren Leerlauf.
+
+Da private Clouds in der Regel nur einen Nutzer haben kann die Elastizität weniger gut genutzt werden.
+Besonders wenn lediglich ein einzelnes oder wenige Projekte auf dem privaten Cloudsystem laufen.
+Sollten diese gerade eine geringe Last verursachen ist ein Leerlauf des Cloudsystems nicht zu vermeiden.
+Bei großen Unternehmen mit sehr vielen Anwendungen und Zugriffen kann allerdings ein ähnlicher Effekt wie bei public Clouds entstehen.
+
+Nur die privaten Clouds können selbst deployed werden.
+Dagegen können alle vier Cloudsysteme als hosted Lösung genutzt werden.
+
+Apache CS und Openstack stehen unter einer Open Source Lizenz.
+Amazon EC2 und Azure sind dagegen proprietäre Software.
+Sollte man selbst Änderungen an seinem Cloudsystem vornehmen wollen kommen also nur die Ersteren in Frage.
 
 \newpage
 
