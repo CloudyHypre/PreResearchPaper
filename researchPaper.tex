@@ -1477,9 +1477,9 @@ Im Vergleich werden sowohl Clouds von kommerziellen als auch gemeinnützigen Anb
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{p{1.5cm} p{2.3cm} p{2.3cm} p{2.3cm} p{2.3cm} }
 \hline
- & Amazon EC2 & Apache CloudStack & Microsoft Azure & Openstack\\
+ & Amazon EC2 & Apache CloudStack & Microsoft Azure & OpenStack\\
 \hline
-Anbieter & Amazon & Apache & Microsoft & OpenStack Foundation \footnotemark \\
+Anbieter & Amazon & Apache Software Foundation & Microsoft & OpenStack Foundation \footnotemark \\
 Initialer Release & 2006 & 2010 & 2010 & 2010 \\
 Lizenz & proprietär & Apache License 2 & Plattform ist Closed source, Client SDKs Open Source & Apache License 2.0\\
 Entwickelt in & ? & Java & ? & Python\\
@@ -1490,6 +1490,46 @@ Bekannte Nutzer & Netflix, Expedia, airbnb & Dell, Huawai, SAP & Daimler, BMW, L
 \end{tabular}
 \end{table}
 \footnotetext{initiiert von Rackspace Hosting und NASA}
+
+Die vier Cloudsysteme werden von vier verschiedenen Anbietern entwickelt.
+Bei EC2 und Azure handelt es sich um die Unternehmen Amazon und Microsoft.
+Apache CloudStack und OpenStack werden von den Organisationen Apache Software Foundation beziehungsweise der OpenStack Foundation entwickelt.
+
+Die Amazon Cloud stellt einen der ersten Vertreter von echten Cloudsystemen dar.
+Mit 'echten' Cloudsystemen sind die modernen Clouds gemeint, wie wir sie heute kennen.
+Schon vorher gab es große Datencenter, welche beispielsweise über VPN erreichbar waren.
+Sie sind allerdings nur als indirekter Vorläufer heutiger Cloudsysteme zu sehen.
+Diese wurde 2006 in einer ersten Beta für die Öffentlichkeit zugänglich.
+Erste Versionen von Apache CloudStack, Microsoft Azure und OpenStack wurden allesamt im Jahr 2010 veröffentlicht.
+
+Die Cloudsysteme von Amazon und Microsoft stehen unter einer proprietären Lizenz.
+Dagegen sind CloudStack und OpenStack Open Source Clouds.
+
+Für die verschiedenen Clouds stehen ganz unterschiedliche Preismodelle zur Verfügung.
+Sollte man die beiden Open Source Clouds als private Cloud nutzen wollen, fallen keine extra Kosten an.
+Dafür ist in diesem Fall ein erhöhter Integrations- und Pfelgeaufwand nötig.
+
+Amazon selbst bietet verschiedene Modelle.
+Eine günstige Variante für den Einstieg kann On-Demand sein.
+Man zahlt im Nachhinein für Ressourcen nur genau in dem Maße wie man sie genutzt hat.
+Das ist vor allem bei stark variierender Last vorteilhaft.
+Ein weiteres Modell sind die Reserved Instances.
+Diese werden fest reserviert.
+Sollte man eine anhalten hohe Auslastung haben kann dieses Modell besser geeignet sein.
+Die zwei weiteren Modelle lauten Spot-Instances (flexible Reservekapazität) und Dedicated Hosts (physikalischer Server).
+Die Nutzungsdauer wird sekundengenau abgerechnet.
+
+Die Kosten für Microsofts Azure hängen von verschiedenen Faktoren ab.
+Zum einen bezahlt man für jedes Produkt den man Nutzt, das kann zum Beispiel eine Compute- oder Storageeinheit sein.
+Der Preis ist zusätzlich von der Qualität des Produkts abhängig, ein größerer Speicher kostet also mehr.
+Faktor drei ist die Nutzungsdauer des Produkts.
+Das Modell ähnelt damit dem On-Demand Modell von Amazon.
+
+Alle vier Cloudsysteme haben sehr namhafte Vertreter vorzuweisen.
+Die Amazon EC2 wird beispielsweise von Netflix, Expedia und airbnb verwendet.
+Daimler, BMW und Lufthansa setzen dagegen auf Microsofts Azure.
+Die Open Source Cloud CloudStack wird von Dell, Huawai und ebenfalls Daimler eingesetzt.
+Die NASA, Intel und PayPal zählen zu den Nutzern von OpenStack.
 
 \begin{table}[H]
 \centering
