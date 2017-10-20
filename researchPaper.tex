@@ -1274,11 +1274,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \subsection{'private' und 'public' Cloud}
 
-\begin{itemize}
- \item gibt es open source cloud systeme? welche?
- \item welche public clouds gibt es (zB aws, windows azure, adobe creative)
- \item was sind unterschiede (neben dem access, zB performance?)
-\end{itemize}
+Es kann zwischen private und public Clouds unterschieden werden.
+Im folgenden Abschnitt werden beide Arten einander gegenübergestellt.
 
 \todo{evtl hybrid ergänzen}
 
@@ -1292,19 +1289,54 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  & private & public\\
 \hline
 Drittanbieter beteiligt & \myuncheckbox & \mycheckbox\\
+Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
+Privatsphäre & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
+Sicherheit & in eigener Verantwortung & Verantwortung liegt beim Cloudanbieter\\
 Infrastruktur selbst verwaltet & \mycheckbox & \myuncheckbox\\
 Plattform selbst verwaltet & \mycheckbox & \mycheckbox\\
-Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
 Skalierbarkeit (der Infrastruktur) & hängt vom genutzten Rechenzentrum ab & große Cloudanbieter können nahezu beliebig skalieren\\
 Skalierbarkeit (nach unten) & Maximalanforderung muss immer vorhanden sein (echte Hardware) & bei geringer/keiner Auslastung herunter fahrbar - Kosten Einsparung\\
 spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Networking) & je nach Verfügbarkeit beim Anbieter\\
-Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
 \hline
 \end{tabular}
 \end{table}
 
 \cite{pvp}
 \cite{pvp2}
+
+Der wesentliche Unterschied zwischen private und public Cloud liegt in der Beteiligung eines Drittanbieters.
+Dieser ist lediglich bei der public Cloud vorhanden.
+Er stellt das Cloudsystem für seine Nutzer zum Zugriff auf dessen Infrastruktur zur Verfügung.
+Die Daten liegen also auf dem System des Drittanbieters.
+Selbst ohne dauerhaft genutzte Festplatte müssen zumindestens Daten für den Zeitraum der Verarbeitung an das Cloudsystem übertragen werden.
+Das kann bei sensiblen Daten relevant sein.
+Dies betrifft auch die Punkte Sicherheit und Privatsphäre.
+Man muss dann dem Anbieter der public Cloud Vertrauen schenken und hat keinen direkten Einfluss.
+In einer private Cloud ist dagegen kein Drittanbieter involviert.
+Diese wird auf der eigenen Infrastruktur installiert.
+Man ist also selbst für Daten und deren Sicherheit sowie Privatsphäre verantwortlich.
+
+Das führt auch zum nächsten Unterschied.
+Die Infrastruktur muss in der private Cloud selbst verwaltet werden.
+In der public Cloud dagegen nicht.
+
+Verwaltung von Plattform sowieso Software hängen vom Cloudtyp ab.
+In der Regel ist bei einem Cloudsystem von einem IaaS die Rede.
+In dem Fall spielt es keine Rolle ob sie private oder public ist.
+Bei beiden müssen Plattform und Software selbst verwaltet werden.
+
+Die eigene Verwaltung der Infrastuktur hat daraus folgende Effekte auf die Eigenschaften der Cloud.
+Die Skalierbarkeit einer privaten Cloud wird in der Regel eher an Grenzen stoßen.
+Die Ressourcen für sind im Gegensatz zur public Cloud nicht flexibel.
+Sollten diese nicht mehr den Anforderungen genügen muss das Rechenzentrum erweitert werden, sobald dessen Grenzen erreicht sind.
+In der public Cloud können jederzeit neue Ressourcen hinzugefügt werden.
+Dies kann automatisiert und mit geringem Zeitaufwand erfolgen.
+Theoretisch wird der Nutzer hier nie an die Grenzen des Rechenzentrums stoßen.
+
+Besonders problematisch sind Anwendungen mit stark schwankender Auslastung in privaten Clouds.
+In Phasen mit geringer Last wird Hardware unter Umständen nicht effizient ausgelastet.
+Während solcher Zeiträume können in public Clouds Ressourcen deaktiviert werden.
+Dies kann eine erhebliche Kosteneinsparung erzeugen.
 
 \subsection{Technologie}
 

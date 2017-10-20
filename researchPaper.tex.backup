@@ -1274,11 +1274,8 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
 
 \subsection{'private' und 'public' Cloud}
 
-\begin{itemize}
- \item gibt es open source cloud systeme? welche?
- \item welche public clouds gibt es (zB aws, windows azure, adobe creative)
- \item was sind unterschiede (neben dem access, zB performance?)
-\end{itemize}
+Es kann zwischen private und public Clouds unterschieden werden.
+Im folgenden Abschnitt werden beide Arten einander gegenübergestellt.
 
 \todo{evtl hybrid ergänzen}
 
@@ -1292,19 +1289,40 @@ http://openstack-cloud-mylearning.blogspot.de/2015/02/openstack-how-to-access-vm
  & private & public\\
 \hline
 Drittanbieter beteiligt & \myuncheckbox & \mycheckbox\\
+Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
 Infrastruktur selbst verwaltet & \mycheckbox & \myuncheckbox\\
 Plattform selbst verwaltet & \mycheckbox & \mycheckbox\\
-Daten bei Drittanbieter & \myuncheckbox & \mycheckbox\\
 Skalierbarkeit (der Infrastruktur) & hängt vom genutzten Rechenzentrum ab & große Cloudanbieter können nahezu beliebig skalieren\\
 Skalierbarkeit (nach unten) & Maximalanforderung muss immer vorhanden sein (echte Hardware) & bei geringer/keiner Auslastung herunter fahrbar - Kosten Einsparung\\
 spezielle Hardware & spezielle Hardware kann ausgewählt werden (zB HPC, Networking) & je nach Verfügbarkeit beim Anbieter\\
-Sicherheit & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
+Privatsphäre & kein Zugriff für Dritte & abhängig vom Cloudanbieter\\
+Sicherheit & in eigener Verantwortung & Verantwortung liegt beim Cloudanbieter\\
 \hline
 \end{tabular}
 \end{table}
 
 \cite{pvp}
 \cite{pvp2}
+
+Der wesentliche Unterschied zwischen private und public Cloud liegt in der Beteiligung eines Drittanbieters.
+Dieser ist lediglich bei der public Cloud vorhanden.
+Er stellt das Cloudsystem für seine Nutzer zum Zugriff auf dessen Infrastruktur zur Verfügung.
+Die Daten liegen also auf dem System des Drittanbieters.
+Selbst ohne dauerhaft genutzte Festplatte müssen zumindestens Daten für den Zeitraum der Verarbeitung an das Cloudsystem übertragen werden.
+Das kann bei sensiblen Daten relevant sein.
+In einer private Cloud ist dagegen kein Drittanbieter involviert.
+Diese wird auf der eigenen Infrastruktur installiert.
+
+Das führt auch zum nächsten Unterschied.
+Die Infrastruktur muss in der private Cloud selbst verwaltet werden.
+In der public Cloud dagegen nicht.
+
+Verwaltung von Plattform sowieso Software hängen vom Cloudtyp ab.
+In der Regel ist bei einem Cloudsystem von einem IaaS die Rede.
+In dem Fall spielt es keine Rolle ob sie private oder public ist.
+Bei beiden müssen Plattform und Software selbst verwaltet werden.
+
+
 
 \subsection{Technologie}
 
@@ -1495,17 +1513,19 @@ Die vier Cloudsysteme werden von vier verschiedenen Anbietern entwickelt.
 Bei EC2 und Azure handelt es sich um die Unternehmen Amazon und Microsoft.
 Apache CloudStack und OpenStack werden von den Organisationen Apache Software Foundation beziehungsweise der OpenStack Foundation entwickelt.
 
-Die Amazon Cloud stellt einen der ersten Vertreter von echten Cloudsystemen dar. \todo{'echte' cloud - vorreiter erklären (VPN, DATA CENTER)}
+Die Amazon Cloud stellt einen der ersten Vertreter von echten Cloudsystemen dar.
+Mit 'echten' Cloudsystemen sind die modernen Clouds gemeint, wie wir sie heute kennen.
+Schon vorher gab es große Datencenter, welche beispielsweise über VPN erreichbar waren.
+Sie sind allerdings nur als indirekter Vorläufer heutiger Cloudsysteme zu sehen.
 Diese wurde 2006 in einer ersten Beta für die Öffentlichkeit zugänglich.
 Erste Versionen von Apache CloudStack, Microsoft Azure und OpenStack wurden allesamt im Jahr 2010 veröffentlicht.
 
 Die Cloudsysteme von Amazon und Microsoft stehen unter einer proprietären Lizenz.
 Dagegen sind CloudStack und OpenStack Open Source Clouds.
 
-\todo{pricing}
 Für die verschiedenen Clouds stehen ganz unterschiedliche Preismodelle zur Verfügung.
 Sollte man die beiden Open Source Clouds als private Cloud nutzen wollen, fallen keine extra Kosten an.
-Dafür ist in diesem Fall ein erhöhter Integrations- und Pfelgeaufwand nötig.
+Dafür ist in diesem Fall ein erhöhter Integrations- und Pflegeaufwand nötig.
 
 Amazon selbst bietet verschiedene Modelle.
 Eine günstige Variante für den Einstieg kann On-Demand sein.
@@ -1521,6 +1541,7 @@ Die Kosten für Microsofts Azure hängen von verschiedenen Faktoren ab.
 Zum einen bezahlt man für jedes Produkt den man Nutzt, das kann zum Beispiel eine Compute- oder Storageeinheit sein.
 Der Preis ist zusätzlich von der Qualität des Produkts abhängig, ein größerer Speicher kostet also mehr.
 Faktor drei ist die Nutzungsdauer des Produkts.
+Das Modell ähnelt damit dem On-Demand Modell von Amazon.
 
 Alle vier Cloudsysteme haben sehr namhafte Vertreter vorzuweisen.
 Die Amazon EC2 wird beispielsweise von Netflix, Expedia und airbnb verwendet.
@@ -1752,6 +1773,17 @@ Webservices implementieren für Komunikation mit dem Server.
 \section{Verteilte Ausführung von HYPRE - Planung}
 
 \subsection{HPC in der Cloud}
+
+\subsection{Überblick}
+
+\begin{figure}[htbp]
+\centering
+\caption{Module HYPRE in der Cloud}
+\label{fig:cloudyHypreModules}
+\includegraphics[width=\textwidth]{graphics/cloudHypreModules}
+\end{figure}
+
+\todo{fix figure: convert into nice pdf}
 
 \subsection{Planung der Bibliothek - Client}
 
