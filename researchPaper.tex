@@ -1366,18 +1366,24 @@ Diese könnte zum Beispiel REST verwenden.
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{p{2.3cm} p{2.8cm} p{2.8cm} p{2.8cm}}
 \hline
- & RPC & Socket & Service\\
+ & RPC & Socket & REST Service\\
 \hline
 Server zu Client & 1:n & 1:1 & 1:n \\
-Bezug & Methoden & - & Daten (deren Manipulation)\\
-performance & ... & ... & ...\\
-aufwand & ... & ... & ...\\
-frameworks & ... & ... & ...\\
+Bezug Übertragung & Methoden & Datenstreams & Daten (deren Manipulation)\\
+Performance & ... & mehr Freiheiten für Optimierung & ...\\
+Frameworks/Wrapper & diverse RPC Frameworks, zB XML-RPC & RPC, Services & zB Django REST framework\\
 \hline
 \end{tabular}
 \end{table}
 
+Sockets können für RPC und für Services zum Einsatz kommen.
+
+Aufwand: Sockets einen Layer tiefer -> mehr
+RPC und REST weniger
+RPC und REST mit (gutem) Framework opti
+
 Am Ende wird ein Framework die Beste Lösung sein.
+
 
 \subsection{Service Modelle}
 
@@ -1449,14 +1455,14 @@ The consumer does not manage or control the underlying cloud infrastructure but 
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{llllll}
 \hline
- & C/C++ & Python & Hybrid\\
+ & C/C++ & Python\\
 \hline
-erste Version & 1972 & 1991 & \\
-Level & Hochsprache & Hochsprache & ...\\
-Interpreter/Compiler & Skriptsprache & kompliliert & ...\\
- & Performance & vorgefertigter Code, wenig Boilerplate & ...\\
-Typisierung & streng & schwach/dynamisch & \\
- & Sicherheit && \\
+erste Version & 1972 & 1991\\
+Level & Hochsprache & Hochsprache\\
+Interpreter/Compiler & Skriptsprache & kompliliert\\
+Stärken & Performance & vorgefertigter Code, wenig Boilerplate\\
+Typisierung & streng & schwach/dynamisch\\
+ & Sicherheit &\\
 \hline
 \end{tabular}
 \end{table}
