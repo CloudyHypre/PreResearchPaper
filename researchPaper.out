@@ -27,21 +27,22 @@
 \BOOKMARK [2][-]{subsection.3.3}{Service Modelle}{section.3}% 27
 \BOOKMARK [2][-]{subsection.3.4}{Sprache}{section.3}% 28
 \BOOKMARK [2][-]{subsection.3.5}{Vergleich ausgew\344hlter Cloudsysteme in einer Tabelle}{section.3}% 29
-\BOOKMARK [1][-]{section.4}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 30
-\BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 33
-\BOOKMARK [1][-]{section.5}{Verteilte Ausf\374hrung von HYPRE - Planung}{}% 34
-\BOOKMARK [2][-]{subsection.5.1}{HPC in der Cloud}{section.5}% 35
-\BOOKMARK [2][-]{subsection.5.2}{\334berblick}{section.5}% 36
-\BOOKMARK [2][-]{subsection.5.3}{Planung der Bibliothek - Client}{section.5}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Allgemein}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Kompatibilit\344tsschicht HYPRE - rpcHYPRE}{subsection.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.4}{In der Cloud - Server}{section.5}% 40
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Umsetzung}{subsection.5.4}% 41
-\BOOKMARK [1][-]{section.6}{Verteilte Ausf\374hrung von HYPRE - Beispielhafte Implementierung}{}% 42
-\BOOKMARK [2][-]{subsection.6.1}{Benchmarks}{section.6}% 43
-\BOOKMARK [1][-]{section.7}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 44
-\BOOKMARK [1][-]{section*.149}{References}{}% 45
-\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 46
-\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.3.6}{HPC vs Cloud Computing}{section.3}% 30
+\BOOKMARK [1][-]{section.4}{Auswertung der Vergleiche und Auswahl der Werkzeuge}{}% 31
+\BOOKMARK [2][-]{subsection.4.1}{gRPC}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.2}{Ressourcen}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.3}{Roadmap Implementierung}{section.4}% 34
+\BOOKMARK [1][-]{section.5}{Verteilte Ausf\374hrung von HYPRE - Planung}{}% 35
+\BOOKMARK [2][-]{subsection.5.1}{HPC in der Cloud}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.2}{\334berblick}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.3}{Planung der Bibliothek - Client}{section.5}% 38
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Allgemein}{subsection.5.3}% 39
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Kompatibilit\344tsschicht HYPRE - rpcHYPRE}{subsection.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.4}{In der Cloud - Server}{section.5}% 41
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Umsetzung}{subsection.5.4}% 42
+\BOOKMARK [1][-]{section.6}{Verteilte Ausf\374hrung von HYPRE - Beispielhafte Implementierung}{}% 43
+\BOOKMARK [2][-]{subsection.6.1}{Benchmarks}{section.6}% 44
+\BOOKMARK [1][-]{section.7}{Zuk\374nftige, weiterf\374hrende Arbeiten}{}% 45
+\BOOKMARK [1][-]{section*.150}{References}{}% 46
+\BOOKMARK [1][-]{appendix.A}{HYPRE}{}% 47
+\BOOKMARK [2][-]{subsection.A.1}{HYPRE Example 5}{appendix.A}% 48

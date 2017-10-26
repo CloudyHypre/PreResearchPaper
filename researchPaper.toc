@@ -112,30 +112,31 @@
 \contentsline {subsection}{\numberline {3.4}Sprache}{30}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Vergleich ausgew\IeC {\"a}hlter Cloudsysteme in einer Tabelle}{31}{subsection.3.5}
 \contentsline {paragraph}{Meta}{32}{section*.125}
-\contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{36}{section.4}
-\contentsline {subsection}{\numberline {4.1}gRPC}{36}{subsection.4.1}
-\contentsline {paragraph}{Installation}{36}{section*.128}
-\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{36}{section*.130}
-\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{37}{section*.131}
-\contentsline {subsection}{\numberline {4.2}Ressourcen}{37}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Roadmap Implementierung}{37}{subsection.4.3}
-\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{37}{section*.133}
-\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{38}{section*.134}
-\contentsline {subparagraph}{Fazit}{38}{section*.135}
-\contentsline {paragraph}{Client}{38}{section*.136}
-\contentsline {subparagraph}{Anforderungen}{38}{section*.137}
-\contentsline {subparagraph}{Kernmodule}{38}{section*.138}
-\contentsline {section}{\numberline {5}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Planung}{39}{section.5}
-\contentsline {subsection}{\numberline {5.1}HPC in der Cloud}{39}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}\IeC {\"U}berblick}{39}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Planung der Bibliothek - Client}{39}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Allgemein}{39}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Kompatibilit\IeC {\"a}tsschicht HYPRE - rpcHYPRE}{40}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}In der Cloud - Server}{40}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Umsetzung}{41}{subsubsection.5.4.1}
-\contentsline {section}{\numberline {6}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Beispielhafte Implementierung}{42}{section.6}
-\contentsline {subsection}{\numberline {6.1}Benchmarks}{42}{subsection.6.1}
-\contentsline {section}{\numberline {7}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{43}{section.7}
-\contentsline {section}{References}{44}{section*.149}
-\contentsline {section}{\numberline {A}\\HYPRE}{45}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{45}{subsection.A.1}
+\contentsline {subsection}{\numberline {3.6}HPC vs Cloud Computing}{35}{subsection.3.6}
+\contentsline {section}{\numberline {4}Auswertung der Vergleiche und Auswahl der Werkzeuge}{37}{section.4}
+\contentsline {subsection}{\numberline {4.1}gRPC}{37}{subsection.4.1}
+\contentsline {paragraph}{Installation}{37}{section*.129}
+\contentsline {paragraph}{kurze Einf\IeC {\"u}hrung}{37}{section*.131}
+\contentsline {paragraph}{\IeC {\"U}berblick Funktionsumfang}{38}{section*.132}
+\contentsline {subsection}{\numberline {4.2}Ressourcen}{38}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Roadmap Implementierung}{38}{subsection.4.3}
+\contentsline {paragraph}{Was muss zwischen Client und Server \IeC {\"u}bertragen werden:}{38}{section*.134}
+\contentsline {subparagraph}{(sp\IeC {\"a}ter:)}{39}{section*.135}
+\contentsline {subparagraph}{Fazit}{39}{section*.136}
+\contentsline {paragraph}{Client}{39}{section*.137}
+\contentsline {subparagraph}{Anforderungen}{39}{section*.138}
+\contentsline {subparagraph}{Kernmodule}{39}{section*.139}
+\contentsline {section}{\numberline {5}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Planung}{40}{section.5}
+\contentsline {subsection}{\numberline {5.1}HPC in der Cloud}{40}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}\IeC {\"U}berblick}{40}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Planung der Bibliothek - Client}{40}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Allgemein}{40}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Kompatibilit\IeC {\"a}tsschicht HYPRE - rpcHYPRE}{41}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}In der Cloud - Server}{41}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Umsetzung}{42}{subsubsection.5.4.1}
+\contentsline {section}{\numberline {6}Verteilte Ausf\IeC {\"u}hrung von HYPRE - Beispielhafte Implementierung}{43}{section.6}
+\contentsline {subsection}{\numberline {6.1}Benchmarks}{43}{subsection.6.1}
+\contentsline {section}{\numberline {7}Zuk\IeC {\"u}nftige, weiterf\IeC {\"u}hrende Arbeiten}{44}{section.7}
+\contentsline {section}{References}{45}{section*.150}
+\contentsline {section}{\numberline {A}\\HYPRE}{46}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}HYPRE Example 5}{46}{subsection.A.1}

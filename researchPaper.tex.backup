@@ -1370,14 +1370,17 @@ Diese könnte zum Beispiel REST verwenden.
 \hline
 Server zu Client & 1:n & 1:1 & 1:n \\
 Bezug Übertragung & Methoden & Datenstreams & Daten (deren Manipulation)\\
-Performance & ... & ... & ...\\
-Aufwand & ... & ... & ...\\
-Frameworks/Wrapper & diverse RPC Frameworks & RPC, Services & ...\\
+Performance & ... & mehr Freiheiten für Optimierung & ...\\
+Frameworks/Wrapper & diverse RPC Frameworks, zB XML-RPC & RPC, Services & zB Django REST framework\\
 \hline
 \end{tabular}
 \end{table}
 
 Sockets können für RPC und für Services zum Einsatz kommen.
+
+Aufwand: Sockets einen Layer tiefer -> mehr
+RPC und REST weniger
+RPC und REST mit (gutem) Framework opti
 
 Am Ende wird ein Framework die Beste Lösung sein.
 
@@ -1618,6 +1621,35 @@ Dagegen können alle vier Cloudsysteme als hosted Lösung genutzt werden.
 Apache CS und Openstack stehen unter einer Open Source Lizenz.
 Amazon EC2 und Azure sind dagegen proprietäre Software.
 Sollte man selbst Änderungen an seinem Cloudsystem vornehmen wollen kommen also nur die Ersteren in Frage.
+
+\subsection{HPC vs Cloud Computing}
+
+Im Bereich des High Performance Computing kommt sehr spezielle Hardware zum Einsatz.
+Diese wird für bestimmte Anforderungen optimiert.
+
+Cloud Computing stellt ebenso wie HPC sehr viel Rechenressourcen bereit.
+Diese ist in der Regel allerdings für einen sehr allgemeinen Einsatz vorgesehen.
+Besonders im Bereich des Networking müssen hier Abstriche gemacht werden.
+Grund dafür sind mangelnde Optimierung und verteilte Rechenzentren.
+
+Dennoch können auch in der Cloud noch Optimierungen vorgenommen werden. \todo{welche}
+Microsoft plant derzeit Supercomputer in die Produktpalette von Azure aufzunehmen. \url{https://www.golem.de/news/cray-und-microsoft-supercomputer-in-der-azure-cloud-mieten-1710-130774.html}
+
+\begin{table}[H]
+\centering
+\caption{HPC vs Cloud Computing}
+\label{my-label}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{2.7cm} p{4cm} p{4cm}}
+\hline
+ & HPC & Cloud Computing \\
+\hline
+spezielle Konfiguration/Hardware & . & .\\
+Networking & . & .\\
+manuelle Optimierungen & . & .\\
+\hline
+\end{tabular}
+\end{table}
 
 \newpage
 
